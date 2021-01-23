@@ -1,0 +1,6 @@
+syntax: glob
+ATC/obj/Debug/*
+ATC/bin/Debug/*
+~$navpoints.xlsx
+.git/*
+.gitignore

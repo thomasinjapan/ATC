@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEB99954-35FB-4884-89CE-9BAF013D5755}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ATC.My.MyApplication</StartupObject>
+    <RootNamespace>ATC</RootNamespace>
+    <AssemblyName>ATC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\ATC\dev\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\Thomas-zenbook1\atc\bin\</InstallUrl>
+    <MinimumRequiredVersion>0.2.6.5</MinimumRequiredVersion>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>0.2.6.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ATC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ATC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>02534109AE36BC645843BBED9825FFC167E796B5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ATC_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="airportclasses\clsAirNavPoint.vb" />
+    <Compile Include="airportclasses\clsAirport.vb" />
+    <Compile Include="airportclasses\clsLandscape.vb" />
+    <Compile Include="airportclasses\clsPathWay.vb" />
+    <Compile Include="airportclasses\ramp\clsRunwayTaxiPath.vb" />
+    <Compile Include="airportclasses\clsWaySection.vb" />
+    <Compile Include="airportclasses\ramp\gate\clsGatePath.vb" />
+    <Compile Include="airportclasses\runway\arrival\clsExitWay.vb" />
+    <Compile Include="airportclasses\runway\arrival\clsAirPath.vb" />
+    <Compile Include="airportclasses\runway\departure\clsTakeOffPath.vb" />
+    <Compile Include="airportclasses\runway\departure\clsTakeOffPoint.vb" />
+    <Compile Include="airportclasses\runway\arrival\clsTouchDownWayPoint.vb" />
+    <Compile Include="airportclasses\runway\departure\clsTakeOffWay.vb" />
+    <Compile Include="airportclasses\ramp\gate\clsGate.vb" />
+    <Compile Include="airportclasses\ramp\gate\clsGateWaySection.vb" />
+    <Compile Include="airportclasses\runway\arrival\clsTouchDownWay.vb" />
+    <Compile Include="airportclasses\runway\departure\lineupway\clsLineUpWay.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Forms\ctlStripe.Designer.vb">
+      <DependentUpon>ctlStripe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ctlStripe.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ctlStripeList.Designer.vb">
+      <DependentUpon>ctlStripeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ctlStripeList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ctlWindRose.Designer.vb">
+      <DependentUpon>ctlWindRose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ctlWindRose.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMainMenu.Designer.vb">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTowerRadar.Designer.vb">
+      <DependentUpon>frmTowerRadar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTowerRadar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAppDepRadar.Designer.vb">
+      <DependentUpon>frmAppDepRadar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAppDepRadar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moving_objects\clsDistanceCollection.vb" />
+    <Compile Include="moving_objects\clsLocation.vb" />
+    <Compile Include="moving_objects\clsMovingObject.vb" />
+    <Compile Include="airportclasses\clsNavigationPoint.vb" />
+    <Compile Include="moving_objects\clsPlane.vb" />
+    <Compile Include="airportclasses\ramp\clsRamp.vb" />
+    <Compile Include="airportclasses\runway\clsRunWay.vb" />
+    <Compile Include="moving_objects\clsSpeedCollection.vb" />
+    <Compile Include="airportclasses\clsNavigationPath.vb" />
+    <Compile Include="airportclasses\ramp\clsConnectionPoint.vb" />
+    <Compile Include="game\clsGame.vb" />
+    <Compile Include="coordinates\clsEarth.vb" />
+    <Compile Include="Forms\frmGroundRadar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGroundRadar.Designer.vb">
+      <DependentUpon>frmGroundRadar.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAllControl.Designer.vb">
+      <DependentUpon>frmAllControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAllControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modules\mdlHelpers.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pathfinder\clsAStarCard.vb" />
+    <Compile Include="pathfinder\clsAStarEngine.vb" />
+    <Compile Include="pathfinder\clsVisitedComboCollection.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\ctlStripe.resx">
+      <DependentUpon>ctlStripe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ctlStripeList.resx">
+      <DependentUpon>ctlStripeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ctlWindRose.resx">
+      <DependentUpon>ctlWindRose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGroundRadar.resx">
+      <DependentUpon>frmGroundRadar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAllControl.resx">
+      <DependentUpon>frmAllControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTowerRadar.resx">
+      <DependentUpon>frmTowerRadar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAppDepRadar.resx">
+      <DependentUpon>frmAppDepRadar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <Content Include="data\hiroshima.atc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Naha.atc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\haneda_2012.atc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\narita_2012.atc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

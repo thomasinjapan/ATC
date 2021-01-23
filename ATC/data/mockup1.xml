@@ -1,0 +1,102 @@
+<!-- <airport name="Hiroshima" IATA="HIJ" ICAO="RJOA" ref_lng="132.8990806251201" ref_lat="34.44320766433793" date="2020/05/22"> -->
+
+<airport name="Mockup" IATA="MOC" ICAO="MOCK" date="2020/05/22" ref_lng="139.1048895999355" ref_lat="37.95564617685842">
+  <ramp id="RAMP">
+     <gate lnglat="139.1017250373853,37.9596175069395,0" parkingdirection="0" name="GATE 1" isholdpoint="false" poiground="true" id="Gate1" comment="Gate1" />
+    <gate lnglat="139.1083435344969,37.95976181556945,0" parkingdirection="0" name="GATE 2" isholdpoint="false" poiground="true" id="Gate2" comment="Gate2" />
+    <connectionpoint lnglat="139.1017343495779,37.95796307956518,0" name="" isholdpoint="false" poiground="false" id="AW" comment="AW" />
+    <connectionpoint lnglat="139.1039225373036,37.95790304624903,0" name="" isholdpoint="false" poiground="false" id="AX" comment="AX" />
+    <connectionpoint lnglat="139.1060089512158,37.95768247925834,0" name="" isholdpoint="false" poiground="false" id="AY" comment="AY" />
+    <connectionpoint lnglat="139.1077136986032,37.95748192899821,0" name="" isholdpoint="false" poiground="false" id="AZ" comment="AZ" />
+    <connectionpoint lnglat="139.1016328147666,37.95615752692333,0" name="" isholdpoint="false" poiground="false" id="BW" comment="BW" />
+    <connectionpoint lnglat="139.1036428576283,37.95595705698314,0" name="" isholdpoint="false" poiground="false" id="BX" comment="BX" />
+    <connectionpoint lnglat="139.1055510969431,37.95593710264668,0" name="" isholdpoint="false" poiground="false" id="BY" comment="BY" />
+    <connectionpoint lnglat="139.1075611130906,37.95587699802154,0" name="" isholdpoint="false" poiground="false" id="BZ" comment="BZ" />
+    <connectionpoint lnglat="139.1016584664935,37.95455260343822,0" name="" isholdpoint="false" poiground="false" id="CW" comment="CW" />
+    <connectionpoint lnglat="139.1035412315337,37.95455274296202,0" name="" isholdpoint="false" poiground="false" id="CX" comment="CX" />
+    <connectionpoint lnglat="139.1055766392536,37.95465316603976,0" name="" isholdpoint="false" poiground="false" id="CY" comment="CY" />
+    <connectionpoint lnglat="139.1078664940313,37.95455294401087,0" name="" isholdpoint="false" poiground="false" id="CZ" comment="CZ" />
+    <connectionpoint lnglat="139.1013533895287,37.95272696724046,0" name="RUNWAY 10" isholdpoint="true" poiground="true" id="DW" comment="DW" />
+    <connectionpoint lnglat="139.1034396469184,37.95276725299076,0" name="" isholdpoint="false" poiground="false" id="DX" comment="DX" />
+    <connectionpoint lnglat="139.1057294420646,37.95272725915671,0" name="" isholdpoint="false" poiground="false" id="DY" comment="DY" />
+    <connectionpoint lnglat="139.1077393735709,37.95272733145933,0" name="RUNWAY 28" isholdpoint="true" poiground="true" id="DZ" comment="DZ" />
+    <gatepath connectionpoint="AW" gate="Gate1" maxspeed="10" id="Gate1Path" comment="Gate1Path" />
+    <gatepath connectionpoint="AZ" gate="Gate2" maxspeed="10" id="Gate2Path" comment="Gate2Path" />
+	
+	
+			
+		<!-- manual after here -->	
+		<!-- taxiways on taxiway A -->
+		<taxiway connectionpoint1="AW" connectionpoint2="AX" maxspeed="15" name="A" comment="A1" />
+		<taxiway connectionpoint1="AX" connectionpoint2="AY" maxspeed="15" name="A" comment="A2" />
+		<taxiway connectionpoint1="AY" connectionpoint2="AZ" maxspeed="15" name="A" comment="A3" />
+		
+		<!-- taxiways on taxiway B -->
+		<taxiway connectionpoint1="BW" connectionpoint2="BX" maxspeed="15" name="B" comment="B1" />
+		<taxiway connectionpoint1="BX" connectionpoint2="BY" maxspeed="15" name="B" comment="B2" />
+		<taxiway connectionpoint1="BY" connectionpoint2="BZ" maxspeed="15" name="B" comment="B3" />
+		
+		<!-- taxiways on taxiway C -->
+		<taxiway connectionpoint1="CW" connectionpoint2="CX" maxspeed="15" name="C" comment="C1" />
+		<taxiway connectionpoint1="CX" connectionpoint2="CY" maxspeed="15" name="C" comment="C2" />
+		<taxiway connectionpoint1="CY" connectionpoint2="CZ" maxspeed="15" name="C" comment="C3" />
+		
+		<!-- taxiways on taxiway D -->
+		<taxiway connectionpoint1="DW" connectionpoint2="DX" maxspeed="15" name="D" comment="D1" />
+		<taxiway connectionpoint1="DX" connectionpoint2="DY" maxspeed="15" name="D" comment="D2" />
+		<taxiway connectionpoint1="DY" connectionpoint2="DZ" maxspeed="15" name="D" comment="D3" />
+		
+		
+		<!-- taxiways on taxiway W -->
+		<taxiway connectionpoint1="AW" connectionpoint2="BW" maxspeed="15" name="W" comment="W1" />
+		<taxiway connectionpoint1="BW" connectionpoint2="CW" maxspeed="15" name="W" comment="W2" />
+		<taxiway connectionpoint1="CW" connectionpoint2="DW" maxspeed="15" name="W" comment="W3" />
+		
+		<!-- taxiways on taxiway X -->
+		<taxiway connectionpoint1="AX" connectionpoint2="BX" maxspeed="15" name="X" comment="X1" />
+		<taxiway connectionpoint1="BX" connectionpoint2="CX" maxspeed="15" name="X" comment="X2" />
+		<taxiway connectionpoint1="CX" connectionpoint2="DX" maxspeed="15" name="X" comment="X3" />
+		
+		<!-- taxiways on taxiway Y -->
+		<taxiway connectionpoint1="AY" connectionpoint2="BY" maxspeed="15" name="Y" comment="Y1" />
+		<taxiway connectionpoint1="BY" connectionpoint2="CY" maxspeed="15" name="Y" comment="Y2" />
+		<taxiway connectionpoint1="CY" connectionpoint2="DY" maxspeed="15" name="Y" comment="Y3" />
+		
+		<!-- taxiways on taxiway Z -->
+		<taxiway connectionpoint1="AZ" connectionpoint2="BZ" maxspeed="15" name="Z" comment="Z1" />
+		<taxiway connectionpoint1="BZ" connectionpoint2="CZ" maxspeed="15" name="Z" comment="Z2" />
+		<taxiway connectionpoint1="CZ" connectionpoint2="DZ" maxspeed="15" name="Z" comment="Z3" />
+		
+		
+				
+	</ramp>
+
+	<runway id="10-28">
+		 <takeoffpoint lnglat="139.1015614584187,37.9516891455428,0" name="" isholdpoint="false" poitower="false" id="10:Start" comment="10:Start" />
+    <takeoffpoint lnglat="139.1074796965425,37.95139910260992,0" name="" isholdpoint="false" poitower="false" id="10:End" comment="10:End" />
+    <takeoffpoint lnglat="139.1071831549929,37.95166878248735,0" name="" isholdpoint="false" poitower="false" id="28:Start" comment="28:Start" />
+    <takeoffpoint lnglat="139.1016308844769,37.95134048540685,0" name="" isholdpoint="false" poitower="false" id="28:End" comment="28:End" />
+    <lineuppath ramp="RAMP" towardsramp="DW" towardsrunway="10:Start" maxspeed="10" id="ramp-10" comment="ramp-10" />
+    <lineuppath ramp="RAMP" towardsramp="DZ" towardsrunway="28:Start" maxspeed="10" id="ramp-28" comment="ramp-28" />
+    <touchdownwaypoint lnglat="139.1018365546964,37.95231020755154,0" name="LAND10" isholdpoint="false" poitower="true" id="10:ArrivalStart" comment="10:ArrivalStart" />
+    <touchdownwaypoint lnglat="139.1075492154923,37.95215179449325,0" name="" isholdpoint="false" poitower="false" id="10:ArrivalEnd" comment="10:ArrivalEnd" />
+    <touchdownwaypoint lnglat="139.1076743664451,37.95157779891758,0" name="LAND28" isholdpoint="false" poitower="true" id="28:ArrivalStart" comment="28:ArrivalStart" />
+    <touchdownwaypoint lnglat="139.101856164226,37.95200553941496,0" name="" isholdpoint="false" poitower="false" id="28:ArrivalEnd" comment="28:ArrivalEnd" />
+    <exitpath towardsrunway="10:ArrivalEnd" ramp="RAMP" towardsramp="DZ" maxspeed="10" id="10:Exit" comment="10:Exit" />
+    <exitpath towardsrunway="28:ArrivalEnd" ramp="RAMP" towardsramp="DW" maxspeed="10" id="28:Exit" comment="28:Exit" />
+
+		<!-- manual from here -->
+		<!-- departure -->
+
+		<takeoffway takeoffstartpoint="10:Start" takeoffendpoint="10:End" maxspeed="154" comment="departure 10" />
+		<takeoffway takeoffstartpoint="28:Start" takeoffendpoint="28:End" maxspeed="154" comment="departure 28" />
+
+		<!-- arrival -->
+		<touchdownway startpoint="10:ArrivalStart" endpoint="10:ArrivalEnd" maxspeed="25" comment="10:arrival" />
+		<touchdownway startpoint="28:ArrivalStart" endpoint="28:ArrivalEnd" maxspeed="25" comment="28:arrival" />
+
+		
+		
+	</runway>
+	
+</airport>

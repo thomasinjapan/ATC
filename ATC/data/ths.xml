@@ -1,0 +1,34 @@
+<airport name="Thomas" IATA="THS" ICAO="XTHS">	
+	<runway id="abd76a35-f814-4e66-86d8-c342e390957e">
+		<entrypoint1 lng="5" lat="1" name="315" id="ae8bc2ea-ec56-495d-acf1-b3e933c4fcb1" />
+		<entrypoint2 lng="7" lat="5" name="135" id="8bc054d5-a4b1-44d6-94c9-ca776200c9b6" />
+	</runway>
+
+	<ramp id="a3558b8e-7e31-4be9-a9d6-7cb4385ac8eb">
+		<gate lng="1" lat="7" parkingdirection= "180" name="Gate1" isholdpoint="false" id="48cd5be5-b1a7-42d0-9af8-b114021e5906" />
+		<gate lng="3" lat="7" parkingdirection= "180" name="Gate2" isholdpoint="false" id="26953b65-eb98-4dc2-9a39-fa203f47f5ed" />
+		
+		<taxiwaypoint lng="1" lat="3" isholdpoint="false" id="c204b433-e734-4062-92bf-9db7ad8982b8" />
+		<taxiwaypoint lng="3" lat="2" isholdpoint="true" id="046be887-86c1-4aeb-88e3-f684952188dd" />
+		<taxiwaypoint lng="1" lat="5" isholdpoint="false" id="346c7796-9e30-4ee9-888d-438df449b2fa" />
+		<taxiwaypoint lng="3" lat="5" isholdpoint="false" id="63126f44-66ad-4cac-a22a-66d701340c73" />
+		<taxiwaypoint lng="5" lat="5" isholdpoint="true" id="1df28280-ab1a-4961-a292-79228ee92b3e" />
+		
+		<taxiway waypoint1="c204b433-e734-4062-92bf-9db7ad8982b8" waypoint2="046be887-86c1-4aeb-88e3-f684952188dd" maxspeed="14" name="A"/>
+		<taxiway waypoint1="346c7796-9e30-4ee9-888d-438df449b2fa" waypoint2="63126f44-66ad-4cac-a22a-66d701340c73" maxspeed="14" name="B"/>
+		<taxiway waypoint1="63126f44-66ad-4cac-a22a-66d701340c73" waypoint2="1df28280-ab1a-4961-a292-79228ee92b3e" maxspeed="14" name="B"/>
+		<taxiway waypoint1="c204b433-e734-4062-92bf-9db7ad8982b8" waypoint2="346c7796-9e30-4ee9-888d-438df449b2fa" maxspeed="14" name="Z"/>
+		<taxiway waypoint1="046be887-86c1-4aeb-88e3-f684952188dd" waypoint2="63126f44-66ad-4cac-a22a-66d701340c73" maxspeed="14" name="Y"/>
+
+		<gateway waypoint="346c7796-9e30-4ee9-888d-438df449b2fa" gate="48cd5be5-b1a7-42d0-9af8-b114021e5906" maxspeed="14" />
+		<gateway waypoint="63126f44-66ad-4cac-a22a-66d701340c73" gate="26953b65-eb98-4dc2-9a39-fa203f47f5ed" maxspeed="14" />
+
+	</ramp>
+
+	<ramp2runway>
+		<entryway runway="abd76a35-f814-4e66-86d8-c342e390957e" entrypoint="ae8bc2ea-ec56-495d-acf1-b3e933c4fcb1" ramp="a3558b8e-7e31-4be9-a9d6-7cb4385ac8eb" waypoint="046be887-86c1-4aeb-88e3-f684952188dd"  maxspeed="14" name="A1"/>
+		<entryway runway="abd76a35-f814-4e66-86d8-c342e390957e" entrypoint="8bc054d5-a4b1-44d6-94c9-ca776200c9b6" ramp="a3558b8e-7e31-4be9-a9d6-7cb4385ac8eb" waypoint="1df28280-ab1a-4961-a292-79228ee92b3e" maxspeed="14" name="B1"/>
+	</ramp2runway>
+	
+</airport>
+	
