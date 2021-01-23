@@ -35,8 +35,6 @@ Public Class clsRamp
                 End If
             Next
 
-
-
             Return result
         End Get
     End Property
