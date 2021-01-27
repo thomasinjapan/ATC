@@ -5,6 +5,8 @@ Imports System.Runtime.Serialization
 Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.Xml.Serialization
 
+' foo test
+
 <Serializable>
 Public Class clsGame
     Friend Const PLANE_HISTORY As Long = 20
