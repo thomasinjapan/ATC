@@ -479,7 +479,14 @@ Public Class clsRunWay
 
                 'first check if plane is in bounds
                 '!!! check if cprrect
-                If mostLeft < (cx - r) And mostRight > (cx + r) And mostTop < (cy - r) And mostBottom > (cy + r) Then
+                'If mostLeft < (cx - r) And mostRight > (cx + r) And mostTop < (cy - r) And mostBottom > (cy + r) Then
+                If (Not (
+                        ((cx - r) < mostLeft And (cx - r) < mostRight And (cx - r) < mostLeft And (cx + r) < mostRight) Or
+                        ((cx - r) > mostLeft And (cx - r) > mostRight And (cx + r) > mostLeft And (cx + r) > mostRight)
+                    ) And Not (
+                        ((cy - r) < mostTop And (cy - r) < mostBottom And (cy - r) < mostTop And (cy + r) < mostBottom) Or
+                        ((cy - r) > mostTop And (cy - r) > mostBottom And (cy + r) > mostTop And (cy + r) > mostBottom)
+                    )) Then
 
                     'get closest point on runway
                     Dim distX As Double = x1 - x2
