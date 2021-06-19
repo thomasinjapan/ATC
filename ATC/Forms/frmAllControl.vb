@@ -329,17 +329,18 @@ Public Class frmAllControl
                         End If
                     Next
                 End If
-            End If
 
-            'write current exinode to label
-            If Not selectedPlane.tower_assignedExitPointID = "" Then
-                'Me.lblTowerExitVia.Text = "exiting via " & selectedPlane.tower_assignedExitPointID
-                Dim exitPointName As String = selectedPlane.tower_assignedLandingPoint.getLandingPath.Find(Function(p As clsAStarEngine.structPathStep) p.nextWayPoint.objectID = selectedPlane.tower_assignedExitPointID).nextWayPoint.UIName
-                Me.lblTowerExitVia.Text = "exiting via " & exitPointName
+                'write current exit node to label
+                If Not selectedPlane.tower_assignedExitPointID = "" Then
+                    'Me.lblTowerExitVia.Text = "exiting via " & selectedPlane.tower_assignedExitPointID
+                    Dim exitPointName As String = selectedPlane.tower_assignedLandingPoint.getLandingPath.Find(Function(p As clsAStarEngine.structPathStep) p.nextWayPoint.objectID = selectedPlane.tower_assignedExitPointID).nextWayPoint.UIName
+                    Me.lblTowerExitVia.Text = "exiting via " & exitPointName
+                Else
+                    Me.lblTowerExitVia.Text = "exiting via NEXT"
+                End If
             Else
                 Me.lblTowerExitVia.Text = "exiting via NEXT"
             End If
-
 
             'select heading in heading trackbar
             Dim targetDirection As Integer = CInt(selectedPlane.target_direction)

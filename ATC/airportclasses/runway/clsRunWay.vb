@@ -196,6 +196,7 @@ Public Class clsRunWay
     'gameplay
     Friend Property isInUse As Boolean = False
 
+
     Friend ReadOnly Property windDirectionFrom As Double
         Get
             Return (Me.windDirectionTo + 180) Mod 360
@@ -425,7 +426,7 @@ Public Class clsRunWay
     End Sub
 
     Friend Sub updateIsInUse(ByRef planes As List(Of clsPlane))
-        Dim result As Boolean = False
+        Dim result_isInUse As Boolean = False
 
 
         'runway end points
@@ -469,8 +470,12 @@ Public Class clsRunWay
         'check if at least one plane intersects w/ longes takeoffline
         For Each singlePlane As clsPlane In planes
 
-            'look only at planes that are on the ground and don't gate
-            If Not singlePlane.currentState = clsPlane.enumPlaneState.ground_atGate AndAlso singlePlane.pos_Altitude.feet < 50 Then
+            'look only at planes that are below 50 feet and don't gate
+            'also, filter planes that have the same altitude as the touchdownwaypoint to ignore the incoming plane itself
+            If Not singlePlane.currentState = clsPlane.enumPlaneState.ground_atGate AndAlso
+                singlePlane.pos_Altitude.feet < 50 AndAlso
+                singlePlane.pos_Altitude.feet <> Me.touchDownWayPoints.First.altitude.feet Then
+
 
                 'circle data
                 Dim cx As Double = singlePlane.pos_X.meters
@@ -508,15 +513,19 @@ Public Class clsRunWay
                     Dim distance As Double = Math.Sqrt((newDistX * newDistX) + (newDistY * newDistY))
 
                     If distance <= r Then
-                        result = True
+                        result_isInUse = True
+
                         Exit For
                     End If
                 End If
             End If
         Next
-        If Not Me.arrivalPoint Is Nothing Then Me.arrivalPoint.isInUse = result
+        If Not Me.arrivalPoint Is Nothing Then
+            Me.arrivalPoint.isInUse = result_isInUse
 
-        Me.isInUse = result
+        End If
+        Me.isInUse = result_isInUse
+
     End Sub
 
 
