@@ -25,9 +25,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>\\Thomas-zenbook1\atc\bin\</InstallUrl>
-    <MinimumRequiredVersion>0.2.6.5</MinimumRequiredVersion>
-    <ApplicationRevision>7</ApplicationRevision>
+    <InstallUrl>\\Thomas-zenbook14\atc\bin\</InstallUrl>
+    <MinimumRequiredVersion>0.2.6.8</MinimumRequiredVersion>
+    <ApplicationRevision>9</ApplicationRevision>
     <ApplicationVersion>0.2.6.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
