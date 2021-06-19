@@ -466,6 +466,14 @@ Public Class clsRunWay
         Dim mostRight As Double = Me.mostRight
         Dim mostTop As Double = Me.mostTop
         Dim mostBottom As Double = Me.mostBottom
+        Dim touchdownAltitude As clsDistanceCollection = Nothing
+
+        If Not Me.touchDownWayPoints.Length = 0 Then
+            touchdownAltitude = New clsDistanceCollection(Me.touchDownWayPoints.First.altitude.feet, clsDistanceCollection.enumDistanceUnits.feet)
+        Else
+            touchdownAltitude = New clsDistanceCollection(-100, clsDistanceCollection.enumDistanceUnits.feet)
+        End If
+
 
         'check if at least one plane intersects w/ longes takeoffline
         For Each singlePlane As clsPlane In planes
@@ -474,7 +482,7 @@ Public Class clsRunWay
             'also, filter planes that have the same altitude as the touchdownwaypoint to ignore the incoming plane itself
             If Not singlePlane.currentState = clsPlane.enumPlaneState.ground_atGate AndAlso
                 singlePlane.pos_Altitude.feet < 50 AndAlso
-                singlePlane.pos_Altitude.feet <> Me.touchDownWayPoints.First.altitude.feet Then
+                singlePlane.pos_Altitude.feet <> touchdownAltitude.feet Then
 
 
                 'circle data
