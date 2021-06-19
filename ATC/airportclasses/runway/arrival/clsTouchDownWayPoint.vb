@@ -7,7 +7,9 @@ Public Class clsTouchDownWayPoint
 
     Friend ReadOnly Property isArrivalPoint As Boolean
     Friend Property FINALs As List(Of clsAirPath)
-    Friend Property isInUse As Boolean = False
+    Friend Property isInUse As Boolean = False      'returns true if runway is in use
+
+
 
     Friend ReadOnly Property landingAngle As Double
         Get
@@ -24,9 +26,9 @@ Public Class clsTouchDownWayPoint
         Get
             'take all remaining segments of the landingpath and calculate the sum of the lengths
             Dim result As New clsDistanceCollection(0, clsDistanceCollection.enumDistanceUnits.meters)
-            Dim landingpath As List(Of clsastarengine.structPathStep) = Me.getLandingPath
+            Dim landingpath As List(Of clsAStarEngine.structPathStep) = Me.getLandingPath
 
-            For Each singleSegment As clsastarengine.structPathStep In landingpath
+            For Each singleSegment As clsAStarEngine.structPathStep In landingpath
                 If Not singleSegment.taxiwayToWayPoint Is Nothing Then result.meters += singleSegment.taxiwayToWayPoint.length
                 'End If
             Next
@@ -51,8 +53,8 @@ Public Class clsTouchDownWayPoint
 
     End Sub
 
-    Friend Function getLandingPath() As List(Of clsastarengine.structPathStep)
-        Dim result As New List(Of clsastarengine.structPathStep)
+    Friend Function getLandingPath() As List(Of clsAStarEngine.structPathStep)
+        Dim result As New List(Of clsAStarEngine.structPathStep)
 
         Dim landingPoint As clsTouchDownWayPoint = Me
 
@@ -60,7 +62,7 @@ Public Class clsTouchDownWayPoint
         'go through the path until there is no landingwaypoint on the poopsite left
         Dim currentPoint As clsTouchDownWayPoint = landingPoint
 
-        Dim newWayPart As New clsastarengine.structPathStep With {.nextWayPoint = currentPoint, .taxiwayToWayPoint = Nothing}
+        Dim newWayPart As New clsAStarEngine.structPathStep With {.nextWayPoint = currentPoint, .taxiwayToWayPoint = Nothing}
         result.Add(newWayPart)
 
         '!!! I assume that the landingpoint has only one path connected
