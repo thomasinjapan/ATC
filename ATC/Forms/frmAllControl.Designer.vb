@@ -24,8 +24,6 @@ Partial Class frmAllControl
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.cmdGroundPushbackApproved = New System.Windows.Forms.Button()
-        Me.cmdGroundContinueTaxi = New System.Windows.Forms.Button()
-        Me.cmdGroundHold = New System.Windows.Forms.Button()
         Me.cmdTowerLineUpAndWait = New System.Windows.Forms.Button()
         Me.cmdTowerTakeOff = New System.Windows.Forms.Button()
         Me.cmdTowerLineUpandTakeOff = New System.Windows.Forms.Button()
@@ -47,7 +45,6 @@ Partial Class frmAllControl
         Me.cmdGroundChangeTaxi = New System.Windows.Forms.Button()
         Me.cmdGroundClearVia = New System.Windows.Forms.Button()
         Me.lblGroundTaxiTo = New System.Windows.Forms.Label()
-        Me.cmdGroundTaxiTo = New System.Windows.Forms.Button()
         Me.lblVia = New System.Windows.Forms.Label()
         Me.txtVia = New System.Windows.Forms.TextBox()
         Me.lstGround = New ATC.ctlStripeList()
@@ -120,6 +117,9 @@ Partial Class frmAllControl
         Me.cmsTowerExitVia = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.cmsGroundTaxiTo = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.cmsAppDepSTARvia = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.cmdGroundTaxiTo = New System.Windows.Forms.Button()
+        Me.cmdGroundContinueTaxi = New System.Windows.Forms.Button()
+        Me.cmdGroundHold = New System.Windows.Forms.Button()
         CType(Me.trkAppDepSpeed, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.trkAppDepHeading, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabControls.SuspendLayout()
@@ -145,26 +145,6 @@ Partial Class frmAllControl
         Me.cmdGroundPushbackApproved.TabIndex = 2
         Me.cmdGroundPushbackApproved.Text = "pushback approved | ⬇"
         Me.cmdGroundPushbackApproved.UseVisualStyleBackColor = True
-        '
-        'cmdGroundContinueTaxi
-        '
-        Me.cmdGroundContinueTaxi.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdGroundContinueTaxi.Location = New System.Drawing.Point(512, 35)
-        Me.cmdGroundContinueTaxi.Name = "cmdGroundContinueTaxi"
-        Me.cmdGroundContinueTaxi.Size = New System.Drawing.Size(144, 63)
-        Me.cmdGroundContinueTaxi.TabIndex = 3
-        Me.cmdGroundContinueTaxi.Text = "continue taxi | ✔"
-        Me.cmdGroundContinueTaxi.UseVisualStyleBackColor = True
-        '
-        'cmdGroundHold
-        '
-        Me.cmdGroundHold.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdGroundHold.Location = New System.Drawing.Point(512, 104)
-        Me.cmdGroundHold.Name = "cmdGroundHold"
-        Me.cmdGroundHold.Size = New System.Drawing.Size(144, 63)
-        Me.cmdGroundHold.TabIndex = 4
-        Me.cmdGroundHold.Text = "hold position | ⛔"
-        Me.cmdGroundHold.UseVisualStyleBackColor = True
         '
         'cmdTowerLineUpAndWait
         '
@@ -403,16 +383,6 @@ Partial Class frmAllControl
         Me.lblGroundTaxiTo.Size = New System.Drawing.Size(145, 24)
         Me.lblGroundTaxiTo.TabIndex = 49
         Me.lblGroundTaxiTo.Text = "current: -"
-        '
-        'cmdGroundTaxiTo
-        '
-        Me.cmdGroundTaxiTo.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!)
-        Me.cmdGroundTaxiTo.Location = New System.Drawing.Point(334, 6)
-        Me.cmdGroundTaxiTo.Name = "cmdGroundTaxiTo"
-        Me.cmdGroundTaxiTo.Size = New System.Drawing.Size(172, 23)
-        Me.cmdGroundTaxiTo.TabIndex = 11
-        Me.cmdGroundTaxiTo.Text = "taxi to | 🔀"
-        Me.cmdGroundTaxiTo.UseVisualStyleBackColor = True
         '
         'lblVia
         '
@@ -1142,6 +1112,43 @@ Partial Class frmAllControl
         '
         Me.cmsAppDepSTARvia.Name = "cmsAppDepSTARvia"
         Me.cmsAppDepSTARvia.Size = New System.Drawing.Size(61, 4)
+        '
+        'cmdGroundTaxiTo
+        '
+        Me.cmdGroundTaxiTo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.cmdGroundTaxiTo.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!)
+        Me.cmdGroundTaxiTo.Image = Global.ATC.My.Resources.Resources.imgRunway
+        Me.cmdGroundTaxiTo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdGroundTaxiTo.Location = New System.Drawing.Point(334, 6)
+        Me.cmdGroundTaxiTo.Name = "cmdGroundTaxiTo"
+        Me.cmdGroundTaxiTo.Size = New System.Drawing.Size(172, 23)
+        Me.cmdGroundTaxiTo.TabIndex = 11
+        Me.cmdGroundTaxiTo.Text = "taxi to | 🔀"
+        Me.cmdGroundTaxiTo.UseVisualStyleBackColor = True
+        '
+        'cmdGroundContinueTaxi
+        '
+        Me.cmdGroundContinueTaxi.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdGroundContinueTaxi.Image = Global.ATC.My.Resources.Resources.imgContinueTaxi
+        Me.cmdGroundContinueTaxi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdGroundContinueTaxi.Location = New System.Drawing.Point(512, 35)
+        Me.cmdGroundContinueTaxi.Name = "cmdGroundContinueTaxi"
+        Me.cmdGroundContinueTaxi.Size = New System.Drawing.Size(144, 63)
+        Me.cmdGroundContinueTaxi.TabIndex = 3
+        Me.cmdGroundContinueTaxi.Text = "           continue taxi | ✔"
+        Me.cmdGroundContinueTaxi.UseVisualStyleBackColor = True
+        '
+        'cmdGroundHold
+        '
+        Me.cmdGroundHold.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdGroundHold.Image = Global.ATC.My.Resources.Resources.imgHoldTaxi
+        Me.cmdGroundHold.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmdGroundHold.Location = New System.Drawing.Point(512, 104)
+        Me.cmdGroundHold.Name = "cmdGroundHold"
+        Me.cmdGroundHold.Size = New System.Drawing.Size(144, 63)
+        Me.cmdGroundHold.TabIndex = 4
+        Me.cmdGroundHold.Text = "          hold position | ⛔"
+        Me.cmdGroundHold.UseVisualStyleBackColor = True
         '
         'frmAllControl
         '

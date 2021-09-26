@@ -252,6 +252,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\imgHoldTaxi.png" />
+    <None Include="Resources\imgContinueTaxi.png" />
+    <None Include="Resources\imgRunway.png" />
     <None Include="app.manifest" />
     <Content Include="data\hiroshima.atc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
