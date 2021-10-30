@@ -37,6 +37,16 @@
 		<BalloonStyle>
 		</BalloonStyle>
 	</Style>
+	<Style id="sn_triangle">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<Style id="sn_placemark_circle30">
 		<IconStyle>
 			<scale>1.2</scale>
@@ -249,6 +259,16 @@
 			<styleUrl>#sh_ylw-pushpin13</styleUrl>
 		</Pair>
 	</StyleMap>
+	<StyleMap id="msn_triangle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_triangle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_triangle0</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_placemark_circle_highlight4">
 		<IconStyle>
 			<scale>1.2</scale>
@@ -320,7 +340,7 @@
 			</ItemIcon>
 		</ListStyle>
 	</Style>
-	<Style id="sn_triangle">
+	<Style id="sn_triangle0">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
@@ -534,6 +554,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<Style id="sh_triangle0">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin4">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -561,10 +591,10 @@
 			<color>bfd9d9d9</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="msn_triangle">
+	<StyleMap id="msn_triangle0">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_triangle</styleUrl>
+			<styleUrl>#sn_triangle0</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -599,16 +629,6 @@
 				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
 			</ItemIcon>
 		</ListStyle>
-	</Style>
-	<Style id="sh_triangle0">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 	</Style>
 	<Style id="sn_ylw-pushpin5">
 		<IconStyle>
@@ -1072,16 +1092,6 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sn_triangle0">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
 	<StyleMap id="msn_ylw-pushpin10">
 		<Pair>
 			<key>normal</key>
@@ -1191,16 +1201,6 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_triangle0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_triangle0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_triangle0</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="inline182">
 		<LineStyle>
 			<color>ffffffaa</color>
@@ -1409,7 +1409,6 @@ maxcrosswind:90</description>
 		</Placemark>
 		<Placemark>
 			<name>appdep</name>
-			<visibility>0</visibility>
 			<styleUrl>#inline183</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
@@ -1420,7 +1419,6 @@ maxcrosswind:90</description>
 		</Placemark>
 		<Placemark>
 			<name>tracon</name>
-			<visibility>0</visibility>
 			<styleUrl>#inline168</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
@@ -1431,10 +1429,8 @@ maxcrosswind:90</description>
 		</Placemark>
 		<Folder>
 			<name>Landscape</name>
-			<visibility>0</visibility>
 			<Placemark>
 				<name>coastline</name>
-				<visibility>0</visibility>
 				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<tessellate>1</tessellate>
@@ -1449,7 +1445,6 @@ maxcrosswind:90</description>
 			</Placemark>
 			<Placemark>
 				<name>TARMAC</name>
-				<visibility>0</visibility>
 				<styleUrl>#msn_ylw-pushpin20</styleUrl>
 				<Polygon>
 					<tessellate>1</tessellate>
@@ -1464,7 +1459,6 @@ maxcrosswind:90</description>
 			</Placemark>
 			<Placemark>
 				<name>Terminal1</name>
-				<visibility>0</visibility>
 				<styleUrl>#msn_ylw-pushpin50</styleUrl>
 				<Polygon>
 					<tessellate>1</tessellate>
@@ -1480,14 +1474,11 @@ maxcrosswind:90</description>
 		</Folder>
 		<Folder>
 			<name>helpers</name>
-			<visibility>0</visibility>
 			<Folder>
 				<name>final08L</name>
-				<visibility>0</visibility>
 				<open>1</open>
 				<Placemark>
 					<name>08LILS</name>
-					<visibility>0</visibility>
 					<styleUrl>#inline180</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
@@ -1499,11 +1490,9 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>final08R</name>
-				<visibility>0</visibility>
 				<open>1</open>
 				<Placemark>
 					<name>08RILS</name>
-					<visibility>0</visibility>
 					<styleUrl>#inline173</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
@@ -1515,11 +1504,9 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>final26R</name>
-				<visibility>0</visibility>
 				<open>1</open>
 				<Placemark>
 					<name>26RILS</name>
-					<visibility>0</visibility>
 					<styleUrl>#inline175</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
@@ -1531,11 +1518,9 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>final26L</name>
-				<visibility>0</visibility>
 				<open>1</open>
 				<Placemark>
 					<name>26LILS</name>
-					<visibility>0</visibility>
 					<styleUrl>#inline162</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
@@ -1547,11 +1532,9 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>arrdep</name>
-				<visibility>0</visibility>
 				<open>1</open>
 				<Placemark>
 					<name>TGL 16.0DME</name>
-					<visibility>0</visibility>
 					<styleUrl>#inline0</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
@@ -1564,13 +1547,11 @@ maxcrosswind:90</description>
 		</Folder>
 		<Folder>
 			<name>Airnavpoints</name>
-			<visibility>0</visibility>
+			<open>1</open>
 			<Folder>
 				<name>arrival</name>
-				<visibility>0</visibility>
 				<Placemark>
 					<name>CVC R068/NRE 24.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<LookAt>
 						<longitude>140.8541501843541</longitude>
@@ -1591,7 +1572,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>CVC R068/HKE 25.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<LookAt>
 						<longitude>140.8854659094483</longitude>
@@ -1612,7 +1592,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>NRE R115/24.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<LookAt>
 						<longitude>140.8100463632676</longitude>
@@ -1633,7 +1612,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>NRE R115/HKE 25.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<LookAt>
 						<longitude>140.8206395776543</longitude>
@@ -1654,7 +1632,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>NRE R135/24.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<LookAt>
 						<longitude>140.7201027546962</longitude>
@@ -1675,7 +1652,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>NRE R135/HKE 25.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<LookAt>
 						<longitude>140.7201027546962</longitude>
@@ -1696,7 +1672,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>SNE R093/14.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<LookAt>
 						<longitude>140.2743142239237</longitude>
@@ -1717,7 +1692,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>SNE R093/16.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<Camera>
 						<longitude>140.3098807095372</longitude>
@@ -1738,7 +1712,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>TYE R161/20.0DME</name>
-					<visibility>0</visibility>
 					<description>type:pilot</description>
 					<LookAt>
 						<longitude>140.433267298931</longitude>
@@ -1759,7 +1732,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>DT431</name>
-					<visibility>0</visibility>
 					<description>type:STAR</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -1787,7 +1759,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>DT436</name>
-					<visibility>0</visibility>
 					<open>1</open>
 					<description>type:STAR</description>
 					<LookAt>
@@ -1816,7 +1787,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>DT456</name>
-					<visibility>0</visibility>
 					<open>1</open>
 					<description>type:STAR</description>
 					<LookAt>
@@ -1845,7 +1815,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>DT454</name>
-					<visibility>0</visibility>
 					<open>1</open>
 					<description>type:STAR</description>
 					<LookAt>
@@ -1874,7 +1843,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>DT452</name>
-					<visibility>0</visibility>
 					<open>1</open>
 					<description>type:STAR</description>
 					<LookAt>
@@ -1903,7 +1871,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>NASAT</name>
-					<visibility>0</visibility>
 					<description>type:STAR</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -1931,7 +1898,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>KOMIV</name>
-					<visibility>0</visibility>
 					<open>1</open>
 					<description>type:STAR</description>
 					<LookAt>
@@ -1960,7 +1926,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>LABOX</name>
-					<visibility>0</visibility>
 					<open>1</open>
 					<description>type:STAR</description>
 					<LookAt>
@@ -1989,7 +1954,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>PINUV</name>
-					<visibility>0</visibility>
 					<description>type:STAR</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2017,7 +1981,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>RENKI</name>
-					<visibility>0</visibility>
 					<open>1</open>
 					<description>type:STAR</description>
 					<LookAt>
@@ -2047,11 +2010,9 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>departure</name>
-				<visibility>0</visibility>
 				<open>1</open>
 				<Placemark>
 					<name>TGL R260/16.0DME</name>
-					<visibility>0</visibility>
 					<open>1</open>
 					<description>type:pilot</description>
 					<LookAt>
@@ -2080,51 +2041,7 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>BKD</name>
-					<visibility>0</visibility>
 					<open>1</open>
-					<description>type:SID</description>
-					<Camera>
-						<longitude>12.45575277777778</longitude>
-						<latitude>52.7222</latitude>
-						<altitude>3133.6</altitude>
-						<heading>0</heading>
-						<tilt>45</tilt>
-						<roll>0</roll>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</Camera>
-					<styleUrl>#msn_triangle</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>11.54621666666667,53.034525,2133.6</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>DT262</name>
-					<visibility>0</visibility>
-					<open>1</open>
-					<description>type:SID</description>
-					<Camera>
-						<longitude>12.45575277777778</longitude>
-						<latitude>52.7222</latitude>
-						<altitude>3133.6</altitude>
-						<heading>0</heading>
-						<tilt>45</tilt>
-						<roll>0</roll>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</Camera>
-					<styleUrl>#msn_triangle</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>12.99677777777778,52.53100277777777,2133.6</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>TUBRI</name>
-					<visibility>0</visibility>
 					<description>type:SID</description>
 					<Camera>
 						<longitude>12.45575277777778</longitude>
@@ -2140,17 +2057,56 @@ maxcrosswind:90</description>
 						<extrude>1</extrude>
 						<altitudeMode>relativeToGround</altitudeMode>
 						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>12.45575277777778,52.7222,2133.6</coordinates>
+						<coordinates>11.54621666666667,53.034525,2133.6</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>DT262</name>
+					<open>1</open>
+					<description>type:SID</description>
+					<Camera>
+						<longitude>12.45575277777778</longitude>
+						<latitude>52.7222</latitude>
+						<altitude>3133.6</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<roll>0</roll>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</Camera>
+					<styleUrl>#msn_triangle</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>12.99677777777778,52.53100277777777,1219.2</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>TUBRI</name>
+					<description>type:SID</description>
+					<Camera>
+						<longitude>12.45575277777778</longitude>
+						<latitude>52.7222</latitude>
+						<altitude>3133.6</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<roll>0</roll>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</Camera>
+					<styleUrl>#msn_triangle</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>12.45575277777778,52.7222,10000</coordinates>
 					</Point>
 				</Placemark>
 			</Folder>
 			<Folder>
 				<name>neutral</name>
-				<visibility>0</visibility>
 				<open>1</open>
 				<Placemark>
 					<name>TGL</name>
-					<visibility>0</visibility>
 					<description>type:DVOR</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2179,10 +2135,8 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>08Lfinal</name>
-				<visibility>0</visibility>
 				<Placemark>
 					<name>08LILS1000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<Camera>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2210,7 +2164,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08LILS2000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2238,7 +2191,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08LILS3000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2266,7 +2218,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08LILS5000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2294,7 +2245,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08LILS8000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2322,7 +2272,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08LILS13000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2350,7 +2299,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08LILS21000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2379,10 +2327,8 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>08Rfinal</name>
-				<visibility>0</visibility>
 				<Placemark>
 					<name>08RILS1000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2410,7 +2356,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08RILS2000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2438,7 +2383,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08RILS3000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2466,7 +2410,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08RILS5000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2494,7 +2437,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08RILS8000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2522,7 +2464,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08RILS13000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2550,7 +2491,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>08RILS21000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2579,10 +2519,8 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>26Lfinal</name>
-				<visibility>0</visibility>
 				<Placemark>
 					<name>26LILS1000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<Camera>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2610,7 +2548,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26LILS2000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2638,7 +2575,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26LILS3000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2666,7 +2602,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26LILS5000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2694,7 +2629,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26LILS8000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2722,7 +2656,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26LILS13000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2750,7 +2683,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26LILS21000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2779,10 +2711,8 @@ maxcrosswind:90</description>
 			</Folder>
 			<Folder>
 				<name>26Rfinal</name>
-				<visibility>0</visibility>
 				<Placemark>
 					<name>26RILS1000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2810,7 +2740,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26RILS2000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2838,7 +2767,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26RILS3000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2866,7 +2794,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26RILS5000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2894,7 +2821,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26RILS8000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2922,7 +2848,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26RILS13000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2950,7 +2875,6 @@ maxcrosswind:90</description>
 				</Placemark>
 				<Placemark>
 					<name>26RILS21000</name>
-					<visibility>0</visibility>
 					<description>type:ILS</description>
 					<LookAt>
 						<gx:TimeStamp><when>2020-04-18</when>
@@ -2990,10 +2914,8 @@ NASAT</description>
 		</Folder>
 		<Folder>
 			<name>SIDs</name>
-			<visibility>0</visibility>
 			<Folder>
 				<name>BKD 6L</name>
-				<visibility>0</visibility>
 				<open>1</open>
 				<description>DT262
 TGL R260/16.0DME
@@ -3377,7 +3299,6 @@ StripeName:</description>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
 						<styleUrl>#msn_ylw-pushpin8</styleUrl>
-						<gx:balloonVisibility>1</gx:balloonVisibility>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.27551100493043,52.55582119615471,0</coordinates>
