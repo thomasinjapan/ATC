@@ -1,0 +1,707 @@
+<airport name="Tegel" IATA="TXL" ICAO="EDDT" date="2014/05/01" maxcrosswind="90" ref_lng="13.28771111111115" ref_lat="52.55968611111113">
+  <groundradar>
+    <coordinate lnglat="13.2606628276503,52.54819348871724,0" />
+    <coordinate lnglat="13.31339568742969,52.54935122167863,0" />
+    <coordinate lnglat="13.31520967069053,52.56661936622306,0" />
+    <coordinate lnglat="13.25664758386339,52.56469292908314,0" />
+    <coordinate lnglat="13.2606628276503,52.54819348871724,0" />
+  </groundradar>
+  <tower>
+    <coordinate lnglat="13.94941130482134,52.5917084685205,-7.081154781429788e-10" />
+    <coordinate lnglat="13.95121969153589,52.55653422837658,-7.081154781429788e-10" />
+    <coordinate lnglat="13.9479801231796,52.52139802721396,0" />
+    <coordinate lnglat="13.93972925868885,52.48656684883848,-7.081154781429788e-10" />
+    <coordinate lnglat="13.92654143166743,52.45230473051001,0" />
+    <coordinate lnglat="13.90852773954773,52.41887078807061,0" />
+    <coordinate lnglat="13.8858348802899,52.38651729603701,0" />
+    <coordinate lnglat="13.85864375454845,52.35548783553319,0" />
+    <coordinate lnglat="13.82716785177639,52.32601552198481,0" />
+    <coordinate lnglat="13.79165143895002,52.29832132352337,0" />
+    <coordinate lnglat="13.75236757052692,52.27261248007434,0" />
+    <coordinate lnglat="13.70961593794755,52.24908103213712,0" />
+    <coordinate lnglat="13.66372057650576,52.22790246732092,-7.081154781429788e-10" />
+    <coordinate lnglat="13.61502744679558,52.20923449178266,0" />
+    <coordinate lnglat="13.56390190723944,52.19321593282847,0" />
+    <coordinate lnglat="13.51072609345982,52.17996577809105,0" />
+    <coordinate lnglat="13.45589621951538,52.16958235588109,0" />
+    <coordinate lnglat="13.3998198153177,52.16214266053269,0" />
+    <coordinate lnglat="13.34291291391086,52.15770182581556,0" />
+    <coordinate lnglat="13.28559720175667,52.15629274876738,-7.081154781429788e-10" />
+    <coordinate lnglat="13.2282971447477,52.15792586560454,0" />
+    <coordinate lnglat="13.17143710238188,52.16258908068848,-7.081154781429788e-10" />
+    <coordinate lnglat="13.11543844238934,52.17024784885655,-7.081154781429788e-10" />
+    <coordinate lnglat="13.06071666810683,52.18084541075955,0" />
+    <coordinate lnglat="13.00767857105059,52.19430318017867,0" />
+    <coordinate lnglat="12.95671942143583,52.2105212816131,-7.081154781429788e-10" />
+    <coordinate lnglat="12.90822020982229,52.22937923573309,0" />
+    <coordinate lnglat="12.86254495361103,52.25073678957125,0" />
+    <coordinate lnglat="12.82003808275934,52.2744348875759,-7.081154781429788e-10" />
+    <coordinate lnglat="12.78102191978788,52.30029677887007,-7.081154781429788e-10" />
+    <coordinate lnglat="12.74579426989773,52.32812925524159,0" />
+    <coordinate lnglat="12.7146261377557,52.35772401353974,0" />
+    <coordinate lnglat="12.68775958820486,52.38885913526482,0" />
+    <coordinate lnglat="12.6654057687658,52.42130067521865,0" />
+    <coordinate lnglat="12.64774311226866,52.45480435013697,0" />
+    <coordinate lnglat="12.63491573824199,52.48911731725826,0" />
+    <coordinate lnglat="12.62703207173596,52.52398003180885,0" />
+    <coordinate lnglat="12.62416369802245,52.55912817141171,0" />
+    <coordinate lnglat="12.62634447104667,52.59429461447384,0" />
+    <coordinate lnglat="12.63356989256553,52.62921145869119,0" />
+    <coordinate lnglat="12.64579677755852,52.66361206495122,0" />
+    <coordinate lnglat="12.66294321971579,52.69723311113283,0" />
+    <coordinate lnglat="12.68488886857912,52.72981663962596,0" />
+    <coordinate lnglat="12.71147552723605,52.76111208184042,0" />
+    <coordinate lnglat="12.74250807635831,52.79087824257218,-7.081154781429788e-10" />
+    <coordinate lnglat="12.77775572686456,52.81888522686461,0" />
+    <coordinate lnglat="12.8169535996212,52.84491629196815,0" />
+    <coordinate lnglat="12.85980462643853,52.86876960717603,0" />
+    <coordinate lnglat="12.90598176224983,52.89025990471865,-7.081154781429788e-10" />
+    <coordinate lnglat="12.95513049387606,52.90922000553734,0" />
+    <coordinate lnglat="13.00687162627955,52.92550220464005,0" />
+    <coordinate lnglat="13.0608043228119,52.93897950186189,-7.081154781429788e-10" />
+    <coordinate lnglat="13.11650937178269,52.94954666520679,0" />
+    <coordinate lnglat="13.17355264782955,52.95712111551744,0" />
+    <coordinate lnglat="13.23148873317426,52.96164362298956,0" />
+    <coordinate lnglat="13.28986466100077,52.96307880798508,0" />
+    <coordinate lnglat="13.3482237409803,52.9614154406766,0" />
+    <coordinate lnglat="13.40610942546503,52.95666653623482,-7.081154781429788e-10" />
+    <coordinate lnglat="13.46306917412152,52.94886924451141,0" />
+    <coordinate lnglat="13.51865827480406,52.93808453543129,0" />
+    <coordinate lnglat="13.57244357927502,52.92439668354564,0" />
+    <coordinate lnglat="13.62400711393649,52.90791255737046,0" />
+    <coordinate lnglat="13.67294952799897,52.88876072120404,0" />
+    <coordinate lnglat="13.71889334440353,52.86709035904381,0" />
+    <coordinate lnglat="13.76148598224833,52.84307003197835,-7.081154781429788e-10" />
+    <coordinate lnglat="13.80040252334336,52.8168862819853,0" />
+    <coordinate lnglat="13.83534819971701,52.78874209640334,-7.081154781429788e-10" />
+    <coordinate lnglat="13.86606058330742,52.75885524844857,0" />
+    <coordinate lnglat="13.89231146357331,52.72745653000986,0" />
+    <coordinate lnglat="13.91390840323941,52.69478789357863,0" />
+    <coordinate lnglat="13.930695966748,52.66110052055546,-7.081154781429788e-10" />
+    <coordinate lnglat="13.94255662012636,52.62665283333498,-7.081154781429788e-10" />
+    <coordinate lnglat="13.94941130482134,52.5917084685205,-7.081154781429788e-10" />
+  </tower>
+  <appdep>
+    <coordinate lnglat="15.3515756886287,52.61202703557185,0" />
+    <coordinate lnglat="15.34865928849614,52.50256614433755,-7.081154781429788e-10" />
+    <coordinate lnglat="15.33013849557684,52.39367440545889,0" />
+    <coordinate lnglat="15.29626733242578,52.28617291299248,0" />
+    <coordinate lnglat="15.24740945947191,52.18086640129643,0" />
+    <coordinate lnglat="15.18403241072556,52.07853760194535,-7.081154781429788e-10" />
+    <coordinate lnglat="15.10670141540302,51.97994191296174,0" />
+    <coordinate lnglat="15.0160729114908,51.88580239848169,0" />
+    <coordinate lnglat="14.91288784414561,51.79680513210339,0" />
+    <coordinate lnglat="14.79796482820595,51.71359489303038,0" />
+    <coordinate lnglat="14.67219324048981,51.6367712206962,0" />
+    <coordinate lnglat="14.53652629438851,51.56688483081235,0" />
+    <coordinate lnglat="14.39197413685178,51.50443439366121,0" />
+    <coordinate lnglat="14.23959699642341,51.44986367389675,0" />
+    <coordinate lnglat="14.08049840068226,51.40355903005373,-7.081154781429788e-10" />
+    <coordinate lnglat="13.91581847235338,51.36584727132784,0" />
+    <coordinate lnglat="13.74672730552295,51.33699386891044,-7.081154781429788e-10" />
+    <coordinate lnglat="13.57441841681453,51.31720151917686,-7.081154781429788e-10" />
+    <coordinate lnglat="13.40010226104867,51.30660905627808,-7.081154781429788e-10" />
+    <coordinate lnglat="13.22499979677401,51.30529071211889,0" />
+    <coordinate lnglat="13.05033608409605,51.31325572226964,0" />
+    <coordinate lnglat="12.87733389540325,51.33044827701294,0" />
+    <coordinate lnglat="12.70720731887936,51.35674781742452,0" />
+    <coordinate lnglat="12.5411553350881,51.39196967709191,0" />
+    <coordinate lnglat="12.38035534842228,51.43586607074532,0" />
+    <coordinate lnglat="12.22595665784887,51.48812743166861,0" />
+    <coordinate lnglat="12.07907385517675,51.54838410023429,0" />
+    <coordinate lnglat="11.94078014406659,51.61620836621346,0" />
+    <coordinate lnglat="11.81210057922254,51.69111686760029,-7.081154781429788e-10" />
+    <coordinate lnglat="11.69400523267954,51.77257334850095,0" />
+    <coordinate lnglat="11.58740230283508,51.85999177810811,0" />
+    <coordinate lnglat="11.4931311918402,51.95273983184661,0" />
+    <coordinate lnglat="11.41195558809219,52.0501427343654,0" />
+    <coordinate lnglat="11.34455660272689,52.15148746209681,0" />
+    <coordinate lnglat="11.29152602198996,52.25602730054191,0" />
+    <coordinate lnglat="11.25335975087991,52.3629867482139,-7.081154781429788e-10" />
+    <coordinate lnglat="11.23045153711956,52.47156675523927,0" />
+    <coordinate lnglat="11.22308707783718,52.5809502799542,0" />
+    <coordinate lnglat="11.23143862373828,52.69030814145032,0" />
+    <coordinate lnglat="11.25556020634517,52.79880513995433,-7.081154781429788e-10" />
+    <coordinate lnglat="11.29538362232148,52.90560641025212,0" />
+    <coordinate lnglat="11.35071531418522,53.00988396621271,0" />
+    <coordinate lnglat="11.42123428804742,53.11082338700352,0" />
+    <coordinate lnglat="11.5064912056378,53.20763058804184,0" />
+    <coordinate lnglat="11.60590877914812,53.29953861236374,0" />
+    <coordinate lnglat="11.71878358286416,53.3858143712268,0" />
+    <coordinate lnglat="11.84428937493237,53.46576525673388,-7.081154781429788e-10" />
+    <coordinate lnglat="11.98148199598268,53.5387455444291,-7.081154781429788e-10" />
+    <coordinate lnglat="12.1293058791169,53.60416250052437,-7.081154781429788e-10" />
+    <coordinate lnglat="12.28660216875973,53.66148210698802,0" />
+    <coordinate lnglat="12.45211840522027,53.71023431843996,0" />
+    <coordinate lnglat="12.62451968903573,53.75001776784713,0" />
+    <coordinate lnglat="12.80240119605388,53.78050384350266,0" />
+    <coordinate lnglat="12.98430187273152,53.80144006768912,0" />
+    <coordinate lnglat="13.16871910331937,53.81265271764331,0" />
+    <coordinate lnglat="13.35412410842287,53.81404864169653,0" />
+    <coordinate lnglat="13.5389778096134,53.80561623739488,0" />
+    <coordinate lnglat="13.72174687868826,53.78742557353881,0" />
+    <coordinate lnglat="13.90091968375311,53.75962765387888,0" />
+    <coordinate lnglat="14.07502184789499,53.72245283608835,0" />
+    <coordinate lnglat="14.24263114961958,53.67620843501209,0" />
+    <coordinate lnglat="14.40239151668358,53.62127555351496,0" />
+    <coordinate lnglat="14.55302589520626,53.55810519702819,0" />
+    <coordinate lnglat="14.69334781234582,53.48721373871695,0" />
+    <coordinate lnglat="14.82227149147034,53.40917781078322,0" />
+    <coordinate lnglat="14.93882042160847,53.32462870360106,-7.081154781429788e-10" />
+    <coordinate lnglat="15.04213432603018,53.23424635811895,0" />
+    <coordinate lnglat="15.13147451622796,53.13875303832218,0" />
+    <coordinate lnglat="15.20622765574657,53.03890676970542,0" />
+    <coordinate lnglat="15.26590799198159,52.93549462690986,0" />
+    <coordinate lnglat="15.31015814233487,52.82932594924729,-7.081154781429788e-10" />
+    <coordinate lnglat="15.33874854346354,52.72122555710617,0" />
+    <coordinate lnglat="15.3515756886287,52.61202703557185,0" />
+  </appdep>
+  <tracon>
+    <coordinate lnglat="17.37678330078798,52.27295912057684,0" />
+    <coordinate lnglat="17.31084255963435,52.05782186594272,-7.081154781429788e-10" />
+    <coordinate lnglat="17.21545014293186,51.84695810432984,0" />
+    <coordinate lnglat="17.09170266034818,51.6418988851645,0" />
+    <coordinate lnglat="16.94085968537398,51.44411339271458,0" />
+    <coordinate lnglat="16.76432711088907,51.25500082771034,0" />
+    <coordinate lnglat="16.56364133345739,51.07588310066556,0" />
+    <coordinate lnglat="16.34045437073613,50.90799829041256,0" />
+    <coordinate lnglat="16.09651996463306,50.75249482006758,0" />
+    <coordinate lnglat="15.83368068003411,50.6104263034548,0" />
+    <coordinate lnglat="15.55385597450697,50.48274701739294,0" />
+    <coordinate lnglat="15.25903118752667,50.37030795871337,0" />
+    <coordinate lnglat="14.95124737745499,50.27385344903869,0" />
+    <coordinate lnglat="14.63259191966989,50.19401825489116,0" />
+    <coordinate lnglat="14.30518976882492,50.13132519538734,0" />
+    <coordinate lnglat="13.97119528123552,50.0861832144391,0" />
+    <coordinate lnglat="13.63278448896013,50.05888589892442,0" />
+    <coordinate lnglat="13.29214771451599,50.04961042866047,0" />
+    <coordinate lnglat="12.95148241373439,50.05841694820144,0" />
+    <coordinate lnglat="12.61298613355948,50.08524835452216,0" />
+    <coordinate lnglat="12.27884947131993,50.12993049858636,0" />
+    <coordinate lnglat="11.95124892199913,50.1921728026991,0" />
+    <coordinate lnglat="11.63233950029692,50.27156929947976,0" />
+    <coordinate lnglat="11.32424702496159,50.36760010232583,0" />
+    <coordinate lnglat="11.02905995428195,50.47963332142446,0" />
+    <coordinate lnglat="10.74882066421963,50.60692744373312,0" />
+    <coordinate lnglat="10.48551606503439,50.74863419988825,0" />
+    <coordinate lnglat="10.2410674591628,50.90380194566508,0" />
+    <coordinate lnglat="10.01731955342344,51.0713795902975,0" />
+    <coordinate lnglat="9.816028553332197,51.25022110851557,0" />
+    <coordinate lnglat="9.638849287467483,51.43909067733051,0" />
+    <coordinate lnglat="9.487321336503287,51.63666848208563,0" />
+    <coordinate lnglat="9.362854175735844,51.84155723870047,0" />
+    <coordinate lnglat="9.266711382515506,52.05228947989509,0" />
+    <coordinate lnglat="9.199994011511674,52.26733565194597,0" />
+    <coordinate lnglat="9.163623301288339,52.48511306459654,0" />
+    <coordinate lnglat="9.158322944719909,52.70399572949581,0" />
+    <coordinate lnglat="9.184601231985772,52.92232511135528,0" />
+    <coordinate lnglat="9.242733455895454,53.13842180034751,0" />
+    <coordinate lnglat="9.332745051619064,53.35059809371114,0" />
+    <coordinate lnglat="9.454396021815905,53.55717144887779,0" />
+    <coordinate lnglat="9.607167267763309,53.75647873980455,0" />
+    <coordinate lnglat="9.790249500495431,53.94689121307582,0" />
+    <coordinate lnglat="10.00253543565237,54.12683000168735,0" />
+    <coordinate lnglat="10.24261597415713,54.29478201370619,0" />
+    <coordinate lnglat="10.50878103116929,54.44931597219466,0" />
+    <coordinate lnglat="10.79902559284634,54.5890983443296,0" />
+    <coordinate lnglat="11.11106145175711,54.71290886432344,0" />
+    <coordinate lnglat="11.44233489834911,54.81965532949734,0" />
+    <coordinate lnglat="11.79005043288323,54.90838733449986,0" />
+    <coordinate lnglat="12.15120031937877,54.97830860765097,0" />
+    <coordinate lnglat="12.52259954420009,55.02878762745864,0" />
+    <coordinate lnglat="12.90092548407725,55.05936622726377,0" />
+    <coordinate lnglat="13.28276135052401,55.06976594130631,0" />
+    <coordinate lnglat="13.66464227862727,55.05989190459168,0" />
+    <coordinate lnglat="14.04310278467059,55.02983418889101,0" />
+    <coordinate lnglat="14.41472424145847,54.97986653415387,0" />
+    <coordinate lnglat="14.77618101922529,54.91044251400535,0" />
+    <coordinate lnglat="15.12428401372885,54.82218925106657,0" />
+    <coordinate lnglat="15.45602042501372,54.71589886802714,0" />
+    <coordinate lnglat="15.76858884807444,54.59251791980734,0" />
+    <coordinate lnglat="16.05942897370415,54.45313509786783,0" />
+    <coordinate lnglat="16.32624545537531,54.29896752804504,0" />
+    <coordinate lnglat="16.5670257571125,54.1313459977635,0" />
+    <coordinate lnglat="16.78005204079491,53.95169944783537,-7.081154781429788e-10" />
+    <coordinate lnglat="16.96390736523013,53.76153905001969,0" />
+    <coordinate lnglat="17.11747664389656,53.56244216650429,0" />
+    <coordinate lnglat="17.23994293812802,53.3560364543211,0" />
+    <coordinate lnglat="17.33077974660155,53.14398433934633,-7.081154781429788e-10" />
+    <coordinate lnglat="17.38973999272497,52.92796804375881,0" />
+    <coordinate lnglat="17.41684241400998,52.70967531008154,0" />
+    <coordinate lnglat="17.41235602854453,52.49078592620657,-7.081154781429788e-10" />
+    <coordinate lnglat="17.37678330078798,52.27295912057684,0" />
+  </tracon>
+  <landscape>
+    <polygoncollection name="coastline">
+      <coordinate lnglat="8.942184505854323,55.8065469017407,0" />
+      <coordinate lnglat="8.468692465465628,49.9230598578994,0" />
+      <coordinate lnglat="17.48040601798386,48.7165481533024,0" />
+      <coordinate lnglat="19.66399986287496,53.87401810063907,0" />
+      <coordinate lnglat="19.65478213181671,54.44585884336776,0" />
+      <coordinate lnglat="18.85973868522108,54.3654942597913,0" />
+      <coordinate lnglat="18.57687770552647,54.43735349172074,0" />
+      <coordinate lnglat="18.52946567699641,54.63643668118413,0" />
+      <coordinate lnglat="18.32671921441564,54.83818045444717,0" />
+      <coordinate lnglat="17.19034094630607,54.73035700523176,0" />
+      <coordinate lnglat="16.96183142005109,54.62752649448291,0" />
+      <coordinate lnglat="16.50411306650065,54.55278965070529,0" />
+      <coordinate lnglat="16.18680622125796,54.30618079531768,0" />
+      <coordinate lnglat="15.86564609264654,54.243530435846,0" />
+      <coordinate lnglat="14.28546416775847,53.92614650667237,0" />
+      <coordinate lnglat="14.0577978184047,54.02611003712297,0" />
+      <coordinate lnglat="13.77889504542953,54.20591773914319,0" />
+      <coordinate lnglat="13.67103019839766,54.1687355194463,0" />
+      <coordinate lnglat="13.46724636018655,54.14907417883653,0" />
+      <coordinate lnglat="13.43346006321234,54.22358803738891,0" />
+      <coordinate lnglat="13.57320074294726,54.3212924928386,0" />
+      <coordinate lnglat="13.73953811689956,54.2812819121277,0" />
+      <coordinate lnglat="13.64120900147982,54.39292779962857,0" />
+      <coordinate lnglat="13.60494400515991,54.47936245571238,0" />
+      <coordinate lnglat="13.71116195038562,54.52844357010183,0" />
+      <coordinate lnglat="13.6243907629467,54.57893773424658,0" />
+      <coordinate lnglat="13.44484502453017,54.58245809272941,0" />
+      <coordinate lnglat="13.39496819662437,54.68928817038654,0" />
+      <coordinate lnglat="13.10425920386225,54.60579527213777,0" />
+      <coordinate lnglat="13.04385541417109,54.45050902433093,0" />
+      <coordinate lnglat="12.51636047557645,54.48375454435549,0" />
+      <coordinate lnglat="12.11626809475064,54.19019240076657,0" />
+      <coordinate lnglat="11.68008706521154,54.14146109007834,0" />
+      <coordinate lnglat="11.25865552326624,53.94223908710368,0" />
+      <coordinate lnglat="11.17273966479047,54.02734274094319,0" />
+      <coordinate lnglat="10.78838104042335,53.99730986781463,0" />
+      <coordinate lnglat="10.80353349529185,54.06255772466874,0" />
+      <coordinate lnglat="11.10202030515976,54.20374949519406,0" />
+      <coordinate lnglat="11.05901866511594,54.34102772480453,0" />
+      <coordinate lnglat="11.20117294975124,54.40309293899669,0" />
+      <coordinate lnglat="11.3088357640553,54.40113337858957,0" />
+      <coordinate lnglat="11.24580265794218,54.50718568469549,0" />
+      <coordinate lnglat="11.05541726670639,54.53855839594434,0" />
+      <coordinate lnglat="11.0165836392941,54.45620978301069,0" />
+      <coordinate lnglat="11.09785604419029,54.4231896766663,0" />
+      <coordinate lnglat="11.0552992996829,54.37850512401911,0" />
+      <coordinate lnglat="10.9243907888089,54.38967014015019,0" />
+      <coordinate lnglat="10.67728973136089,54.29157414973717,0" />
+      <coordinate lnglat="10.62231142257073,54.36120781713524,0" />
+      <coordinate lnglat="10.33106231061558,54.43847506491718,0" />
+      <coordinate lnglat="10.22451752305175,54.4192168778647,0" />
+      <coordinate lnglat="10.16342306169593,54.48142575388621,0" />
+      <coordinate lnglat="9.865302895694366,54.46379095384356,0" />
+      <coordinate lnglat="9.996064876894554,54.50978762126321,0" />
+      <coordinate lnglat="10.04852697710597,54.67989456646906,0" />
+      <coordinate lnglat="9.908044989745211,54.80554303118833,0" />
+      <coordinate lnglat="9.845560206368981,54.769847101007,0" />
+      <coordinate lnglat="9.77961437428802,54.89013579110171,0" />
+      <coordinate lnglat="10.08115235602393,54.8660772331227,0" />
+      <coordinate lnglat="10.00383069683416,54.97434795804519,0" />
+      <coordinate lnglat="9.757253177941923,55.08407754298626,0" />
+      <coordinate lnglat="9.509041772992111,55.11851579628311,0" />
+      <coordinate lnglat="9.724646253518374,55.22219749579882,0" />
+      <coordinate lnglat="9.58160921939381,55.42880759975846,0" />
+      <coordinate lnglat="9.898015428593418,55.26743233316109,0" />
+      <coordinate lnglat="10.078526260771,55.08134369915251,0" />
+      <coordinate lnglat="10.33694260400684,55.04857172607277,0" />
+      <coordinate lnglat="10.48233900327082,54.92226754748842,0" />
+      <coordinate lnglat="10.26819084018208,54.9540123738949,0" />
+      <coordinate lnglat="10.41256015501844,54.81846403916413,0" />
+      <coordinate lnglat="10.58363621028688,54.85028343008615,0" />
+      <coordinate lnglat="10.67125382452436,54.75369741951064,0" />
+      <coordinate lnglat="10.73366050197419,54.72968636906627,0" />
+      <coordinate lnglat="10.9501641556616,55.12465751487338,0" />
+      <coordinate lnglat="10.94414001009022,55.1685951596846,0" />
+      <coordinate lnglat="10.73400786202417,54.99181745232587,0" />
+      <coordinate lnglat="10.68530149592898,55.04654213123459,0" />
+      <coordinate lnglat="10.81985541469581,55.1823688160823,0" />
+      <coordinate lnglat="10.80982519174007,55.34202083552,0" />
+      <coordinate lnglat="10.65775263353215,55.6192474268248,0" />
+      <coordinate lnglat="11.08083127975911,55.63904560146166,0" />
+      <coordinate lnglat="11.16478709847833,55.5075740171779,0" />
+      <coordinate lnglat="11.12579419961064,55.36509559366466,0" />
+      <coordinate lnglat="11.26110257117551,55.20994107983562,0" />
+      <coordinate lnglat="11.40618350928527,55.18554150639036,0" />
+      <coordinate lnglat="11.6973407333305,55.14555521382359,0" />
+      <coordinate lnglat="11.87324939624622,54.98471429935104,0" />
+      <coordinate lnglat="11.69895099021957,54.9484249084416,0" />
+      <coordinate lnglat="11.51045203128233,54.83749886575449,0" />
+      <coordinate lnglat="11.18408857344019,54.97543855071938,0" />
+      <coordinate lnglat="11.00688792394953,54.90090845600111,0" />
+      <coordinate lnglat="10.95904310279796,54.81213260895977,0" />
+      <coordinate lnglat="11.2229032478115,54.70218615312747,0" />
+      <coordinate lnglat="11.48525209100509,54.61186113510271,0" />
+      <coordinate lnglat="11.68779958592957,54.6580168303202,0" />
+      <coordinate lnglat="11.859695122719,54.64625378361472,0" />
+      <coordinate lnglat="11.91982787642088,54.56650142537029,0" />
+      <coordinate lnglat="11.97798119470086,54.55941891594944,0" />
+      <coordinate lnglat="12.02847684163032,54.72300211330013,0" />
+      <coordinate lnglat="12.20446039519283,54.86770437580466,0" />
+      <coordinate lnglat="12.40262755678657,54.96146551093982,0" />
+      <coordinate lnglat="12.51922310932068,54.93790887371858,0" />
+      <coordinate lnglat="12.54618444811164,54.969144780839,0" />
+      <coordinate lnglat="12.45296966172486,55.00818590353549,0" />
+      <coordinate lnglat="12.26307394505672,55.10181887823702,0" />
+      <coordinate lnglat="12.14345178402624,55.03525402959369,0" />
+      <coordinate lnglat="12.16759030712631,55.2033581898686,0" />
+      <coordinate lnglat="12.40194473756562,55.25528961622618,0" />
+      <coordinate lnglat="12.46344192406715,55.33087848408466,0" />
+      <coordinate lnglat="12.22309768007439,55.46748632959076,0" />
+      <coordinate lnglat="12.43143068186414,55.59004422687337,0" />
+      <coordinate lnglat="12.63840329083601,55.5552410629568,0" />
+      <coordinate lnglat="12.641752326594,55.7125614115772,0" />
+      <coordinate lnglat="8.942184505854323,55.8065469017407,0" />
+    </polygoncollection>
+    <polygoncollection name="TARMAC">
+      <coordinate lnglat="13.28720478309158,52.55408954578153,0" />
+      <coordinate lnglat="13.29094687678198,52.5512667905586,0" />
+      <coordinate lnglat="13.292111227597,52.55138741550309,0" />
+      <coordinate lnglat="13.29216017215079,52.55152175047667,0" />
+      <coordinate lnglat="13.29130767536281,52.55216523558541,0" />
+      <coordinate lnglat="13.29191501580946,52.55313634691383,0" />
+      <coordinate lnglat="13.29141725212299,52.55357645850873,0" />
+      <coordinate lnglat="13.28976264746333,52.55333272244933,0" />
+      <coordinate lnglat="13.28859828056185,52.55424325901838,0" />
+      <coordinate lnglat="13.28921188315277,52.55526850947227,0" />
+      <coordinate lnglat="13.29099114003976,52.55543955126031,0" />
+      <coordinate lnglat="13.29204642557479,52.55465568773612,0" />
+      <coordinate lnglat="13.29338334190432,52.55484361400753,0" />
+      <coordinate lnglat="13.29338463374365,52.55485346908161,0" />
+      <coordinate lnglat="13.29382578694716,52.55550764510735,0" />
+      <coordinate lnglat="13.29430560496102,52.55542130586786,0" />
+      <coordinate lnglat="13.29418580003212,52.55601649250021,0" />
+      <coordinate lnglat="13.29815169467747,52.55624018419584,0" />
+      <coordinate lnglat="13.29662396387682,52.55389105930314,0" />
+      <coordinate lnglat="13.2974714297963,52.55326653006154,0" />
+      <coordinate lnglat="13.29748854605683,52.55329577035798,0" />
+      <coordinate lnglat="13.29761588655258,52.55341294137261,0" />
+      <coordinate lnglat="13.29977044133758,52.5570395926489,0" />
+      <coordinate lnglat="13.28833903697566,52.55591559276099,0" />
+      <coordinate lnglat="13.28720478309158,52.55408954578153,0" />
+    </polygoncollection>
+    <polygoncollection name="Terminal1">
+      <coordinate lnglat="13.2897194492345,52.55339155955504,0" />
+      <coordinate lnglat="13.2914373991749,52.55358473393916,0" />
+      <coordinate lnglat="13.29205099992843,52.55464296096916,0" />
+      <coordinate lnglat="13.29100191730444,52.55544381436872,0" />
+      <coordinate lnglat="13.2892342549856,52.55527107363427,0" />
+      <coordinate lnglat="13.28860113503861,52.55425415390194,0" />
+      <coordinate lnglat="13.2897194492345,52.55339155955504,0" />
+    </polygoncollection>
+  </landscape>
+  <airnavpoints>
+    <airnavpoint name="CVC R068/NRE 24.0DME" comment="CVC R068/NRE 24.0DME" id="CVC R068/NRE 24.0DME" lnglat="140.8514002454872,35.74376105285867,1219.2" radarname="CVC R068/NRE 24.0DME" uiname="CVC R068/NRE 24.0DME" stripename="CVC R068/NRE 24.0DME" type="pilot" />
+    <airnavpoint name="CVC R068/HKE 25.0DME" comment="CVC R068/HKE 25.0DME" id="CVC R068/HKE 25.0DME" lnglat="140.8795164304211,35.75299597496927,1524" radarname="CVC R068/HKE 25.0DME" uiname="CVC R068/HKE 25.0DME" stripename="CVC R068/HKE 25.0DME" type="pilot" />
+    <airnavpoint name="NRE R115/24.0DME" comment="NRE R115/24.0DME" id="NRE R115/24.0DME" lnglat="140.8068126371874,35.61316261318549,1219.2" radarname="NRE R115/24.0DME" uiname="NRE R115/24.0DME" stripename="NRE R115/24.0DME" type="pilot" />
+    <airnavpoint name="NRE R115/HKE 25.0DME" comment="NRE R115/HKE 25.0DME" id="NRE R115/HKE 25.0DME" lnglat="140.8177714523557,35.60894415374246,1524" radarname="NRE R115/HKE 25.0DME" uiname="NRE R115/HKE 25.0DME" stripename="NRE R115/HKE 25.0DME" type="pilot" />
+    <airnavpoint name="NRE R135/24.0DME" comment="NRE R135/24.0DME" id="NRE R135/24.0DME" lnglat="140.7110358703329,35.50208870803443,1219.2" radarname="NRE R135/24.0DME" uiname="NRE R135/24.0DME" stripename="NRE R135/24.0DME" type="pilot" />
+    <airnavpoint name="NRE R135/HKE 25.0DME" comment="NRE R135/HKE 25.0DME" id="NRE R135/HKE 25.0DME" lnglat="140.7110361111111,35.50208870803443,1524" radarname="NRE R135/HKE 25.0DME" uiname="NRE R135/HKE 25.0DME" stripename="NRE R135/HKE 25.0DME" type="pilot" />
+    <airnavpoint name="SNE R093/14.0DME" comment="SNE R093/14.0DME" id="SNE R093/14.0DME" lnglat="140.2680565071194,35.95127227594855,645" radarname="SNE R093/14.0DME" uiname="SNE R093/14.0DME" stripename="SNE R093/14.0DME" type="pilot" />
+    <airnavpoint name="SNE R093/16.0DME" comment="SNE R093/16.0DME" id="SNE R093/16.0DME" lnglat="140.3089942619536,35.95353683844911,525" radarname="SNE R093/16.0DME" uiname="SNE R093/16.0DME" stripename="SNE R093/16.0DME" type="pilot" />
+    <airnavpoint name="TYE R161/20.0DME" comment="TYE R161/20.0DME" id="TYE R161/20.0DME" lnglat="140.4393213013918,35.48396533202181,1828.8" radarname="TYE R161/20.0DME" uiname="TYE R161/20.0DME" stripename="TYE R161/20.0DME" type="pilot" />
+    <airnavpoint name="DT431" comment="DT431" id="DT431" lnglat="13.52868611111111,52.66744444444445,1524" radarname="DT431" uiname="DT431" stripename="DT431" type="STAR" />
+    <airnavpoint name="DT436" comment="DT436" id="DT436" lnglat="14.07045277777778,52.71800555555556,1524" radarname="DT436" uiname="DT436" stripename="DT436" type="STAR" />
+    <airnavpoint name="DT456" comment="DT456" id="DT456" lnglat="14.09072777777778,52.63568055555555,1524" radarname="DT456" uiname="DT456" stripename="DT456" type="STAR" />
+    <airnavpoint name="DT454" comment="DT454" id="DT454" lnglat="13.87426944444445,52.61578055555556,1219.2" radarname="DT454" uiname="DT454" stripename="DT454" type="STAR" />
+    <airnavpoint name="DT452" comment="DT452" id="DT452" lnglat="13.65806388888889,52.59549444444444,1219.2" radarname="DT452" uiname="DT452" stripename="DT452" type="STAR" />
+    <airnavpoint name="NASAT" comment="NASAT" id="NASAT" lnglat="13.32700277777778,52.80334166666666,2438.4" radarname="NASAT" uiname="NASAT" stripename="NASAT" type="STAR" />
+    <airnavpoint name="KOMIV" comment="KOMIV" id="KOMIV" lnglat="13.42048333333333,52.65703611111111,1828.8" radarname="KOMIV" uiname="KOMIV" stripename="KOMIV" type="STAR" />
+    <airnavpoint name="LABOX" comment="LABOX" id="LABOX" lnglat="13.54753333333333,52.58309444444446,914.3999999999999" radarname="LABOX" uiname="LABOX" stripename="LABOX" type="STAR" />
+    <airnavpoint name="PINUV" comment="PINUV" id="PINUV" lnglat="13.645,52.92749999999999,2438.4" radarname="PINUV" uiname="PINUV" stripename="PINUV" type="STAR" />
+    <airnavpoint name="RENKI" comment="RENKI" id="RENKI" lnglat="13.96167777777778,52.91484166666667,2438.4" radarname="RENKI" uiname="RENKI" stripename="RENKI" type="STAR" />
+    <airnavpoint name="TGL R260/16.0DME" comment="TGL R260/16.0DME" id="TGL R260/16.0DME" lnglat="12.85677434754811,52.51679935430477,1219.2" radarname="TGL R260/16.0DME" uiname="TGL R260/16.0DME" stripename="TGL R260/16.0DME" type="pilot" />
+    <airnavpoint name="BKD" comment="BKD" id="BKD" lnglat="11.54621666666667,53.034525,2133.6" radarname="BKD" uiname="BKD" stripename="BKD" type="SID" />
+    <airnavpoint name="DT262" comment="DT262" id="DT262" lnglat="12.99677777777778,52.53100277777777,2133.6" radarname="DT262" uiname="DT262" stripename="DT262" type="SID" />
+    <airnavpoint name="TUBRI" comment="TUBRI" id="TUBRI" lnglat="12.45575277777778,52.7222,2133.6" radarname="TUBRI" uiname="TUBRI" stripename="TUBRI" type="SID" />
+    <airnavpoint name="TGL" comment="TGL" id="TGL" lnglat="13.28756657878055,52.56150031580617,0" radarname="TGL" uiname="TGL" stripename="TGL" type="DVOR" />
+    <airnavpoint name="08LILS1000" comment="08LILS1000" id="08LILS1000" lnglat="13.25023874166865,52.55612527396581,45" radarname="08LILS1000" uiname="08LILS1000" stripename="08LILS1000" type="ILS" />
+    <airnavpoint name="08LILS2000" comment="08LILS2000" id="08LILS2000" lnglat="13.23566979502208,52.55469189201408,75" radarname="08LILS2000" uiname="08LILS2000" stripename="08LILS2000" type="ILS" />
+    <airnavpoint name="08LILS3000" comment="08LILS3000" id="08LILS3000" lnglat="13.22113971003239,52.55326035992952,105" radarname="08LILS3000" uiname="08LILS3000" stripename="08LILS3000" type="ILS" />
+    <airnavpoint name="08LILS5000" comment="08LILS5000" id="08LILS5000" lnglat="13.19203185380772,52.55038815317315,165" radarname="08LILS5000" uiname="08LILS5000" stripename="08LILS5000" type="ILS" />
+    <airnavpoint name="08LILS8000" comment="08LILS8000" id="08LILS8000" lnglat="13.14836575337851,52.54606445900825,255" radarname="08LILS8000" uiname="08LILS8000" stripename="08LILS8000" type="ILS" />
+    <airnavpoint name="08LILS13000" comment="08LILS13000" id="08LILS13000" lnglat="13.07563096928309,52.53882455601973,405" radarname="08LILS13000" uiname="08LILS13000" stripename="08LILS13000" type="ILS" />
+    <airnavpoint name="08LILS21000" comment="08LILS21000" id="08LILS21000" lnglat="12.95931368293232,52.52715033851459,645" radarname="08LILS21000" uiname="08LILS21000" stripename="08LILS21000" type="ILS" />
+    <airnavpoint name="08RILS1000" comment="08RILS1000" id="08RILS1000" lnglat="13.25973590571142,52.55518230576601,45" radarname="08RILS1000" uiname="08RILS1000" stripename="08RILS1000" type="ILS" />
+    <airnavpoint name="08RILS2000" comment="08RILS2000" id="08RILS2000" lnglat="13.24514706961692,52.55373964875653,75" radarname="08RILS2000" uiname="08RILS2000" stripename="08RILS2000" type="ILS" />
+    <airnavpoint name="08RILS3000" comment="08RILS3000" id="08RILS3000" lnglat="13.23066262461608,52.55232585263121,105" radarname="08RILS3000" uiname="08RILS3000" stripename="08RILS3000" type="ILS" />
+    <airnavpoint name="08RILS5000" comment="08RILS5000" id="08RILS5000" lnglat="13.20150467810866,52.54944724057274,165" radarname="08RILS5000" uiname="08RILS5000" stripename="08RILS5000" type="ILS" />
+    <airnavpoint name="08RILS8000" comment="08RILS8000" id="08RILS8000" lnglat="13.15786204871635,52.54512590661504,255" radarname="08RILS8000" uiname="08RILS8000" stripename="08RILS8000" type="ILS" />
+    <airnavpoint name="08RILS13000" comment="08RILS13000" id="08RILS13000" lnglat="13.08512049239168,52.53788841683276,405" radarname="08RILS13000" uiname="08RILS13000" stripename="08RILS13000" type="ILS" />
+    <airnavpoint name="08RILS21000" comment="08RILS21000" id="08RILS21000" lnglat="12.96880531638452,52.52621700568538,645" radarname="08RILS21000" uiname="08RILS21000" stripename="08RILS21000" type="ILS" />
+    <airnavpoint name="26LILS1000" comment="26LILS1000" id="26LILS1000" lnglat="13.32597393125617,52.56167752074643,45" radarname="26LILS1000" uiname="26LILS1000" stripename="26LILS1000" type="ILS" />
+    <airnavpoint name="26LILS2000" comment="26LILS2000" id="26LILS2000" lnglat="13.34036994001017,52.56308242185626,75" radarname="26LILS2000" uiname="26LILS2000" stripename="26LILS2000" type="ILS" />
+    <airnavpoint name="26LILS3000" comment="26LILS3000" id="26LILS3000" lnglat="13.35502028451901,52.56451122034316,105" radarname="26LILS3000" uiname="26LILS3000" stripename="26LILS3000" type="ILS" />
+    <airnavpoint name="26LILS5000" comment="26LILS5000" id="26LILS5000" lnglat="13.3843359571566,52.5673659129523,165" radarname="26LILS5000" uiname="26LILS5000" stripename="26LILS5000" type="ILS" />
+    <airnavpoint name="26LILS8000" comment="26LILS8000" id="26LILS8000" lnglat="13.42828584600696,52.57162893804898,255" radarname="26LILS8000" uiname="26LILS8000" stripename="26LILS8000" type="ILS" />
+    <airnavpoint name="26LILS13000" comment="26LILS13000" id="26LILS13000" lnglat="13.50122155422497,52.57866536427595,405" radarname="26LILS13000" uiname="26LILS13000" stripename="26LILS13000" type="ILS" />
+    <airnavpoint name="26LILS21000" comment="26LILS21000" id="26LILS21000" lnglat="13.61825171879102,52.58985450359915,645" radarname="26LILS21000" uiname="26LILS21000" stripename="26LILS21000" type="ILS" />
+    <airnavpoint name="26RILS1000" comment="26RILS1000" id="26RILS1000" lnglat="13.32549346682203,52.56349087501946,45" radarname="26RILS1000" uiname="26RILS1000" stripename="26RILS1000" type="ILS" />
+    <airnavpoint name="26RILS2000" comment="26RILS2000" id="26RILS2000" lnglat="13.33992086255035,52.56489836037375,75" radarname="26RILS2000" uiname="26RILS2000" stripename="26RILS2000" type="ILS" />
+    <airnavpoint name="26RILS3000" comment="26RILS3000" id="26RILS3000" lnglat="13.35455027301489,52.566323196783,105" radarname="26RILS3000" uiname="26RILS3000" stripename="26RILS3000" type="ILS" />
+    <airnavpoint name="26RILS5000" comment="26RILS5000" id="26RILS5000" lnglat="13.38391486449123,52.56917915633693,165" radarname="26RILS5000" uiname="26RILS5000" stripename="26RILS5000" type="ILS" />
+    <airnavpoint name="26RILS8000" comment="26RILS8000" id="26RILS8000" lnglat="13.42772797038964,52.57342476723607,255" radarname="26RILS8000" uiname="26RILS8000" stripename="26RILS8000" type="ILS" />
+    <airnavpoint name="26RILS13000" comment="26RILS13000" id="26RILS13000" lnglat="13.50075213369868,52.58046167528894,405" radarname="26RILS13000" uiname="26RILS13000" stripename="26RILS13000" type="ILS" />
+    <airnavpoint name="26RILS21000" comment="26RILS21000" id="26RILS21000" lnglat="13.6177271234815,52.59163221096188,645" radarname="26RILS21000" uiname="26RILS21000" stripename="26RILS21000" type="ILS" />
+  </airnavpoints>
+  <stars>
+    <star name="RENKI 3H">
+      <starpoint comment="RENKI" id="RENKI" name="RENKI" radarname="RENKI" uiname="RENKI" stripename="RENKI" />
+      <starpoint comment="PINUV" id="PINUV" name="PINUV" radarname="PINUV" uiname="PINUV" stripename="PINUV" />
+      <starpoint comment="NASAT" id="NASAT" name="NASAT" radarname="NASAT" uiname="NASAT" stripename="NASAT" />
+    </star>
+  </stars>
+  <sids>
+    <sid name="BKD 6L">
+      <sidpoint comment="DT262" id="DT262" name="DT262" radarname="DT262" uiname="DT262" stripename="DT262" />
+      <sidpoint comment="TGL R260/16.0DME" id="TGL R260/16.0DME" name="TGL R260/16.0DME" radarname="TGL R260/16.0DME" uiname="TGL R260/16.0DME" stripename="TGL R260/16.0DME" />
+      <sidpoint comment="TUBRI" id="TUBRI" name="TUBRI" radarname="TUBRI" uiname="TUBRI" stripename="TUBRI" />
+      <sidpoint comment="BKD" id="BKD" name="BKD" radarname="BKD" uiname="BKD" stripename="BKD" />
+    </sid>
+  </sids>
+  <ramp id="RAMP">
+    <!-- Taxipoints -->
+    <!--R-->
+    <connectionpoint lnglat="13.27552981038808,52.55581641494644,0" name="RW" isholdpoint="true" poiground="false" id="RW-Stop" comment="RW-Stop" radarname="" uiname="" stripename="" />
+    <!--S-->
+    <connectionpoint lnglat="13.30938795445908,52.55889532738871,0" name="SE" isholdpoint="true" poiground="false" id="SE-Stop" comment="SE-Stop" radarname="SE" uiname="SE" stripename="SE" />
+    <connectionpoint lnglat="13.27949842969966,52.555423263893,0" name="SM1" isholdpoint="false" poiground="false" id="SM1" comment="SM1" radarname="SM1" uiname="" stripename="" />
+    <connectionpoint lnglat="13.29956868687726,52.55739054078063,0" name="SM-W" isholdpoint="true" poiground="false" id="SM-E" comment="SM-E" radarname="" uiname="" stripename="" />
+    <connectionpoint lnglat="13.28529244227678,52.55599026698653,0" name="SM-W" isholdpoint="true" poiground="false" id="SM-W" comment="SM-W" radarname="" uiname="" stripename="" />
+    <!--to_08R26L-->
+    <connectionpoint lnglat="13.3094057612272,52.55890595585301,0" name="RWY26L" isholdpoint="true" poiground="true" id="SE-Start" comment="SE-Start" radarname="" uiname="Runway 26L" stripename="RWY26L" />
+    <connectionpoint lnglat="13.30941716200852,52.55889161452973,0" name="" isholdpoint="true" poiground="false" id="SE-Taxi" comment="SE-Taxi" radarname="" uiname="" stripename="" />
+    <connectionpoint lnglat="13.2755304832605,52.55582703682378,0" name="RWY08R" isholdpoint="true" poiground="true" id="RW-Start" comment="RW-Start" radarname="" uiname="Runway 08R" stripename="RWY08R" />
+    <connectionpoint lnglat="13.27551100493043,52.55582119615471,0" name="" isholdpoint="true" poiground="false" id="RW-Taxi" comment="RW-Taxi" radarname="" uiname="" stripename="" />
+    <!-- Taxipaths -->
+    <!--SE-->
+    <taxipath connectionpoint1="SE-Stop" connectionpoint2="SM-E" maxspeed="25" name="" id="SE" comment="SE" taxipath="SE">
+      <waypoint lnglat="13.30938253133569,52.5588956276458,0" name="d6068bc6-7936-4d6d-a351-4a10c8d280fc" isholdpoint="False" poiground="False" id="d6068bc6-7936-4d6d-a351-4a10c8d280fc" comment="d6068bc6-7936-4d6d-a351-4a10c8d280fc" />
+      <waypoint lnglat="13.30247012211511,52.55767415614478,0" name="9bba1ca6-56e1-4bf3-aea6-f939c403199f" isholdpoint="False" poiground="False" id="9bba1ca6-56e1-4bf3-aea6-f939c403199f" comment="9bba1ca6-56e1-4bf3-aea6-f939c403199f" />
+      <waypoint lnglat="13.29958241880508,52.55739178476297,0" name="bcd7a234-2fe8-4335-b672-6db0039d9cc9" isholdpoint="False" poiground="False" id="bcd7a234-2fe8-4335-b672-6db0039d9cc9" comment="bcd7a234-2fe8-4335-b672-6db0039d9cc9" />
+    </taxipath>
+    <taxipath connectionpoint1="SM-E" connectionpoint2="SM-W" maxspeed="25" name="" id="SE" comment="SE" taxipath="SE">
+      <waypoint lnglat="13.29952167653764,52.5573865794241,0" name="5b6db57a-b123-4e85-bfa7-cc74a710aad3" isholdpoint="False" poiground="False" id="5b6db57a-b123-4e85-bfa7-cc74a710aad3" comment="5b6db57a-b123-4e85-bfa7-cc74a710aad3" />
+      <waypoint lnglat="13.29194361199117,52.55664360509335,0" name="346d2b75-b18a-424a-993c-5d530c0e8a45" isholdpoint="False" poiground="False" id="346d2b75-b18a-424a-993c-5d530c0e8a45" comment="346d2b75-b18a-424a-993c-5d530c0e8a45" />
+    </taxipath>
+    <taxipath connectionpoint1="346d2b75-b18a-424a-993c-5d530c0e8a45" connectionpoint2="346d2b75-b18a-424a-993c-5d530c0e8a45" maxspeed="25" name="" id="SE" comment="SE" taxipath="SE">
+      <waypoint lnglat="13.2919167486466,52.55664099514694,0" name="be99276e-7815-4523-9864-d0b174a568ab" isholdpoint="False" poiground="False" id="be99276e-7815-4523-9864-d0b174a568ab" comment="be99276e-7815-4523-9864-d0b174a568ab" />
+      <waypoint lnglat="13.29061735414562,52.55651439126319,0" name="6de62daa-de47-4476-b7ad-436c3d879418" isholdpoint="False" poiground="False" id="6de62daa-de47-4476-b7ad-436c3d879418" comment="6de62daa-de47-4476-b7ad-436c3d879418" />
+    </taxipath>
+    <taxipath connectionpoint1="6de62daa-de47-4476-b7ad-436c3d879418" connectionpoint2="SM-W" maxspeed="25" name="" id="SE" comment="SE" taxipath="SE">
+      <waypoint lnglat="13.29058873897009,52.55651106444338,0" name="153aa25e-1bb9-4a68-8058-f282031bd6bc" isholdpoint="False" poiground="False" id="153aa25e-1bb9-4a68-8058-f282031bd6bc" comment="153aa25e-1bb9-4a68-8058-f282031bd6bc" />
+      <waypoint lnglat="13.28529961203778,52.55599212266216,0" name="f09f43e6-924a-410c-ba97-6205d4e3a61e" isholdpoint="False" poiground="False" id="f09f43e6-924a-410c-ba97-6205d4e3a61e" comment="f09f43e6-924a-410c-ba97-6205d4e3a61e" />
+    </taxipath>
+    <taxipath connectionpoint1="SM-W" connectionpoint2="SM1" maxspeed="25" name="" id="SE" comment="SE" taxipath="SE">
+      <waypoint lnglat="13.28528313134633,52.55599045486585,0" name="055e81e6-a6d6-4355-a6ad-a1aaeed5bac6" isholdpoint="False" poiground="False" id="055e81e6-a6d6-4355-a6ad-a1aaeed5bac6" comment="055e81e6-a6d6-4355-a6ad-a1aaeed5bac6" />
+      <waypoint lnglat="13.27951210496142,52.55542463799176,0" name="41927329-0abd-4883-849f-6d90d9368ded" isholdpoint="False" poiground="False" id="41927329-0abd-4883-849f-6d90d9368ded" comment="41927329-0abd-4883-849f-6d90d9368ded" />
+    </taxipath>
+    <taxipath connectionpoint1="SM1" connectionpoint2="RW-Stop" maxspeed="25" name="" id="SE" comment="SE" taxipath="SE">
+      <waypoint lnglat="13.27948321304078,52.55542083249617,0" name="1919d84f-8386-41b2-85b6-9baac266562a" isholdpoint="False" poiground="False" id="1919d84f-8386-41b2-85b6-9baac266562a" comment="1919d84f-8386-41b2-85b6-9baac266562a" />
+      <waypoint lnglat="13.27738112088172,52.55521708297057,0" name="00948394-81fa-4e21-a3b6-7e03b8a669b8" isholdpoint="False" poiground="False" id="00948394-81fa-4e21-a3b6-7e03b8a669b8" comment="00948394-81fa-4e21-a3b6-7e03b8a669b8" />
+      <waypoint lnglat="13.27686904280828,52.5552364196301,0" name="a5b05231-43cb-4d6c-a911-b73105c0af9a" isholdpoint="False" poiground="False" id="a5b05231-43cb-4d6c-a911-b73105c0af9a" comment="a5b05231-43cb-4d6c-a911-b73105c0af9a" />
+      <waypoint lnglat="13.27606924027903,52.55544655207152,0" name="1b1c33be-c939-4a57-8945-85dff3303883" isholdpoint="False" poiground="False" id="1b1c33be-c939-4a57-8945-85dff3303883" comment="1b1c33be-c939-4a57-8945-85dff3303883" />
+      <waypoint lnglat="13.27560747297432,52.55573956607461,0" name="fe6b4a02-634a-402a-85a6-28277b2969a8" isholdpoint="False" poiground="False" id="fe6b4a02-634a-402a-85a6-28277b2969a8" comment="fe6b4a02-634a-402a-85a6-28277b2969a8" />
+      <waypoint lnglat="13.27553619761275,52.55580878660005,0" name="51e78fcd-f8a7-40ac-99fb-c7c17d802e9a" isholdpoint="False" poiground="False" id="51e78fcd-f8a7-40ac-99fb-c7c17d802e9a" comment="51e78fcd-f8a7-40ac-99fb-c7c17d802e9a" />
+    </taxipath>
+    <!--to_08R26L-->
+    <taxipath connectionpoint1="SE-Stop" connectionpoint2="SE-Taxi" maxspeed="10" name="" id="08R-26L:SETaxi" comment="08R-26L:SETaxi" taxipath="SE">
+      <waypoint lnglat="13.30939647732613,52.55889674830831,0" name="3f47eed1-6faf-48b6-bff0-1e8f36dc3b1c" isholdpoint="False" poiground="False" id="3f47eed1-6faf-48b6-bff0-1e8f36dc3b1c" comment="3f47eed1-6faf-48b6-bff0-1e8f36dc3b1c" />
+      <waypoint lnglat="13.30941333549095,52.55889194852731,0" name="910cf892-216f-4981-9359-7f9395399dfc" isholdpoint="False" poiground="False" id="910cf892-216f-4981-9359-7f9395399dfc" comment="910cf892-216f-4981-9359-7f9395399dfc" />
+    </taxipath>
+    <taxipath connectionpoint1="3f47eed1-6faf-48b6-bff0-1e8f36dc3b1c" connectionpoint2="SE-Start" maxspeed="25" name="runway" id="08R-26L:SEStart" comment="08R-26L:SEStart" taxipath="runway">
+      <waypoint lnglat="13.30939219405185,52.55889773687644,0" name="016908ff-805c-4c5d-a1da-69f083fcd98f" isholdpoint="False" poiground="False" id="016908ff-805c-4c5d-a1da-69f083fcd98f" comment="016908ff-805c-4c5d-a1da-69f083fcd98f" />
+      <waypoint lnglat="13.30940374415009,52.55890618350346,0" name="e2a971d9-f97f-4a05-8308-b4e1f51486d2" isholdpoint="False" poiground="False" id="e2a971d9-f97f-4a05-8308-b4e1f51486d2" comment="e2a971d9-f97f-4a05-8308-b4e1f51486d2" />
+    </taxipath>
+    <taxipath connectionpoint1="RW-Stop" connectionpoint2="RW-Taxi" maxspeed="10" name="" id="08R-26L:RWTaxi" comment="08R-26L:RWTaxi" taxipath="RW">
+      <waypoint lnglat="13.27552871565811,52.55581787007407,0" name="ce2878f4-da6a-4bdb-baeb-83e8b31af430" isholdpoint="False" poiground="False" id="ce2878f4-da6a-4bdb-baeb-83e8b31af430" comment="ce2878f4-da6a-4bdb-baeb-83e8b31af430" />
+      <waypoint lnglat="13.27551327760522,52.55582113128604,0" name="5d0a97dd-878f-4886-aaaa-54ff8d1b5efa" isholdpoint="False" poiground="False" id="5d0a97dd-878f-4886-aaaa-54ff8d1b5efa" comment="5d0a97dd-878f-4886-aaaa-54ff8d1b5efa" />
+    </taxipath>
+    <taxipath connectionpoint1="ce2878f4-da6a-4bdb-baeb-83e8b31af430" connectionpoint2="RW-Start" maxspeed="25" name="runway" id="08R-26L:RWStart" comment="08R-26L:RWStart" taxipath="runway">
+      <waypoint lnglat="13.27552836155505,52.55581898648649,0" name="7755b11d-3f8d-4430-9492-50102b06daf5" isholdpoint="False" poiground="False" id="7755b11d-3f8d-4430-9492-50102b06daf5" comment="7755b11d-3f8d-4430-9492-50102b06daf5" />
+      <waypoint lnglat="13.2755312949099,52.55582596101369,0" name="8d7e5666-9276-4e6c-8cec-8d6ae3819ef1" isholdpoint="False" poiground="False" id="8d7e5666-9276-4e6c-8cec-8d6ae3819ef1" comment="8d7e5666-9276-4e6c-8cec-8d6ae3819ef1" />
+    </taxipath>
+    <!-- Runwaytaxipoints -->
+    <!--08R26L-->
+    <connectionpoint lnglat="13.27649387478313,52.55682525521537,0" name="" isholdpoint="false" poiground="false" id="08R26LW" comment="08R26LW" radarname="" uiname="" stripename="" />
+    <connectionpoint lnglat="13.30712813812811,52.55982843221253,0" name="" isholdpoint="false" poiground="false" id="08R26LE" comment="08R26LE" radarname="" uiname="" stripename="" />
+    <!-- Runwaytaxipaths -->
+    <runwaytaxipath runwaypointing="08R26LE" ramppointing="08R26LW" maxspeed="25" name="runway" id="08R-26L" taxipath="runway" comment="08R-26L">
+      <waypoint lnglat="13.30711707357168,52.55983039383631,0" name="e28f924a-b20c-459f-b62d-67aecb37a5e7" isholdpoint="False" poiground="False" id="e28f924a-b20c-459f-b62d-67aecb37a5e7" comment="e28f924a-b20c-459f-b62d-67aecb37a5e7" />
+      <waypoint lnglat="13.3001444599267,52.5591471396968,0" name="0c7b9d63-204e-483e-a587-729730e9d65f" isholdpoint="False" poiground="False" id="0c7b9d63-204e-483e-a587-729730e9d65f" comment="0c7b9d63-204e-483e-a587-729730e9d65f" />
+      <waypoint lnglat="13.29517643404015,52.55866024324739,0" name="3b76b7ff-5aed-48d1-8fac-4de4ec35c42e" isholdpoint="False" poiground="False" id="3b76b7ff-5aed-48d1-8fac-4de4ec35c42e" comment="3b76b7ff-5aed-48d1-8fac-4de4ec35c42e" />
+      <waypoint lnglat="13.29217065191495,52.5583655212961,0" name="68458245-5065-4473-b0c3-9183039037b5" isholdpoint="False" poiground="False" id="68458245-5065-4473-b0c3-9183039037b5" comment="68458245-5065-4473-b0c3-9183039037b5" />
+      <waypoint lnglat="13.28303210985568,52.55746532887932,0" name="5067724c-ba4e-46a3-8d39-790aa83099d1" isholdpoint="False" poiground="False" id="5067724c-ba4e-46a3-8d39-790aa83099d1" comment="5067724c-ba4e-46a3-8d39-790aa83099d1" />
+      <waypoint lnglat="13.28077042663852,52.55724960073382,0" name="b05b92dc-f9ff-4ca1-b7cf-1128fdd2055b" isholdpoint="False" poiground="False" id="b05b92dc-f9ff-4ca1-b7cf-1128fdd2055b" comment="b05b92dc-f9ff-4ca1-b7cf-1128fdd2055b" />
+      <waypoint lnglat="13.27650868274137,52.55682692141911,0" name="6c4545e1-94d7-4e9b-b953-ad9e1c9c5554" isholdpoint="False" poiground="False" id="6c4545e1-94d7-4e9b-b953-ad9e1c9c5554" comment="6c4545e1-94d7-4e9b-b953-ad9e1c9c5554" />
+    </runwaytaxipath>
+    <runwaytaxipath runwaypointing="RW-Taxi" ramppointing="08R26LW" maxspeed="10" name="runway" id="08R26L:RW" taxipath="runway" comment="08R26L:RW">
+      <waypoint lnglat="13.27550969782191,52.55582308396316,0" name="6edf42c1-fa70-46b8-854b-a99ba599a5ea" isholdpoint="False" poiground="False" id="6edf42c1-fa70-46b8-854b-a99ba599a5ea" comment="6edf42c1-fa70-46b8-854b-a99ba599a5ea" />
+      <waypoint lnglat="13.27550926931815,52.55583992975107,0" name="933cda1c-9849-4fc7-89c6-162f7d0848c3" isholdpoint="False" poiground="False" id="933cda1c-9849-4fc7-89c6-162f7d0848c3" comment="933cda1c-9849-4fc7-89c6-162f7d0848c3" />
+      <waypoint lnglat="13.27546881318061,52.55589156965883,0" name="c58e9edc-c9c9-4dca-a03d-02610bc487e8" isholdpoint="False" poiground="False" id="c58e9edc-c9c9-4dca-a03d-02610bc487e8" comment="c58e9edc-c9c9-4dca-a03d-02610bc487e8" />
+      <waypoint lnglat="13.2754507289496,52.55591782325786,0" name="be5a0335-3a91-4d39-a6d8-194d5bfa39fa" isholdpoint="False" poiground="False" id="be5a0335-3a91-4d39-a6d8-194d5bfa39fa" comment="be5a0335-3a91-4d39-a6d8-194d5bfa39fa" />
+      <waypoint lnglat="13.27541311422626,52.55598054467114,0" name="afc9afad-39b9-4fc5-922a-0278c2b172ca" isholdpoint="False" poiground="False" id="afc9afad-39b9-4fc5-922a-0278c2b172ca" comment="afc9afad-39b9-4fc5-922a-0278c2b172ca" />
+      <waypoint lnglat="13.27538111268888,52.55604725516822,0" name="725f62a4-b4b7-4b8b-bbc8-8d21dbf3fbe6" isholdpoint="False" poiground="False" id="725f62a4-b4b7-4b8b-bbc8-8d21dbf3fbe6" comment="725f62a4-b4b7-4b8b-bbc8-8d21dbf3fbe6" />
+      <waypoint lnglat="13.27535851833657,52.55611213785366,0" name="d38d7ce6-ac2a-4020-9fbe-bd61c03eec52" isholdpoint="False" poiground="False" id="d38d7ce6-ac2a-4020-9fbe-bd61c03eec52" comment="d38d7ce6-ac2a-4020-9fbe-bd61c03eec52" />
+      <waypoint lnglat="13.27533856627943,52.55617797052085,0" name="bb9081e6-12f2-4a6a-8071-001eec156ac1" isholdpoint="False" poiground="False" id="bb9081e6-12f2-4a6a-8071-001eec156ac1" comment="bb9081e6-12f2-4a6a-8071-001eec156ac1" />
+      <waypoint lnglat="13.27532497963988,52.55624299753983,0" name="db4849e0-3d08-4acc-b270-2cccd9d76ec7" isholdpoint="False" poiground="False" id="db4849e0-3d08-4acc-b270-2cccd9d76ec7" comment="db4849e0-3d08-4acc-b270-2cccd9d76ec7" />
+      <waypoint lnglat="13.27531681858538,52.55631395743112,0" name="014105d9-00ef-4f40-84c0-4f2bce1fdf92" isholdpoint="False" poiground="False" id="014105d9-00ef-4f40-84c0-4f2bce1fdf92" comment="014105d9-00ef-4f40-84c0-4f2bce1fdf92" />
+      <waypoint lnglat="13.27533190082031,52.55640448168341,0" name="d650d16e-b475-4a66-b837-cab051ac4e47" isholdpoint="False" poiground="False" id="d650d16e-b475-4a66-b837-cab051ac4e47" comment="d650d16e-b475-4a66-b837-cab051ac4e47" />
+      <waypoint lnglat="13.27538749811895,52.55650390374586,0" name="aac1bed1-dd82-4139-bfad-819baef73dfe" isholdpoint="False" poiground="False" id="aac1bed1-dd82-4139-bfad-819baef73dfe" comment="aac1bed1-dd82-4139-bfad-819baef73dfe" />
+      <waypoint lnglat="13.27544051339889,52.55656402650472,0" name="13d485aa-9045-44ee-9ad4-1bccbd757d13" isholdpoint="False" poiground="False" id="13d485aa-9045-44ee-9ad4-1bccbd757d13" comment="13d485aa-9045-44ee-9ad4-1bccbd757d13" />
+      <waypoint lnglat="13.27550648273921,52.55661796587786,0" name="77067d2a-cc5e-4519-b7f9-4be4850712da" isholdpoint="False" poiground="False" id="77067d2a-cc5e-4519-b7f9-4be4850712da" comment="77067d2a-cc5e-4519-b7f9-4be4850712da" />
+      <waypoint lnglat="13.27557265218709,52.5566579028315,0" name="42c0e59c-a631-45be-9c93-832a082ae5c6" isholdpoint="False" poiground="False" id="42c0e59c-a631-45be-9c93-832a082ae5c6" comment="42c0e59c-a631-45be-9c93-832a082ae5c6" />
+      <waypoint lnglat="13.27564433789114,52.55669615221272,0" name="43061d79-9548-4133-adfa-0a373ecd3ea1" isholdpoint="False" poiground="False" id="43061d79-9548-4133-adfa-0a373ecd3ea1" comment="43061d79-9548-4133-adfa-0a373ecd3ea1" />
+      <waypoint lnglat="13.27575406565989,52.55673199874958,0" name="ba445c80-6923-4446-8642-e524c28edce5" isholdpoint="False" poiground="False" id="ba445c80-6923-4446-8642-e524c28edce5" comment="ba445c80-6923-4446-8642-e524c28edce5" />
+      <waypoint lnglat="13.27595091767924,52.55676935032205,0" name="00351ac5-277f-4c13-9363-80a44eda1e19" isholdpoint="False" poiground="False" id="00351ac5-277f-4c13-9363-80a44eda1e19" comment="00351ac5-277f-4c13-9363-80a44eda1e19" />
+      <waypoint lnglat="13.27648386557319,52.55682623659419,0" name="7b1cb185-16e6-49c7-bca2-202e296e2512" isholdpoint="False" poiground="False" id="7b1cb185-16e6-49c7-bca2-202e296e2512" comment="7b1cb185-16e6-49c7-bca2-202e296e2512" />
+    </runwaytaxipath>
+    <runwaytaxipath runwaypointing="SE-Taxi" ramppointing="08R26LE" maxspeed="10" name="runway" id="08R26L:SE" taxipath="runway" comment="08R26L:SE">
+      <waypoint lnglat="13.30941950011832,52.55889211743673,0" name="3089c051-746a-484c-a8d9-2d715f27af26" isholdpoint="False" poiground="False" id="3089c051-746a-484c-a8d9-2d715f27af26" comment="3089c051-746a-484c-a8d9-2d715f27af26" />
+      <waypoint lnglat="13.30947259265221,52.558912886848,0" name="d2f1a137-e8bb-4827-bd18-f4f1144737fe" isholdpoint="False" poiground="False" id="d2f1a137-e8bb-4827-bd18-f4f1144737fe" comment="d2f1a137-e8bb-4827-bd18-f4f1144737fe" />
+      <waypoint lnglat="13.30957918522954,52.55893204077375,0" name="51ac5a84-d8bd-45b9-a6d6-1c1aed1024fd" isholdpoint="False" poiground="False" id="51ac5a84-d8bd-45b9-a6d6-1c1aed1024fd" comment="51ac5a84-d8bd-45b9-a6d6-1c1aed1024fd" />
+      <waypoint lnglat="13.30967818465805,52.55896075199021,0" name="74f06d4e-3dc4-441d-b301-3736a19cb2f2" isholdpoint="False" poiground="False" id="74f06d4e-3dc4-441d-b301-3736a19cb2f2" comment="74f06d4e-3dc4-441d-b301-3736a19cb2f2" />
+      <waypoint lnglat="13.30977363659826,52.55899464252176,0" name="3cac9a72-7e69-4213-ad3f-975dedeaddaa" isholdpoint="False" poiground="False" id="3cac9a72-7e69-4213-ad3f-975dedeaddaa" comment="3cac9a72-7e69-4213-ad3f-975dedeaddaa" />
+      <waypoint lnglat="13.30986307029129,52.55903405739707,0" name="b0d56858-faaa-42a7-ab17-f5b7f0160eb1" isholdpoint="False" poiground="False" id="b0d56858-faaa-42a7-ab17-f5b7f0160eb1" comment="b0d56858-faaa-42a7-ab17-f5b7f0160eb1" />
+      <waypoint lnglat="13.30994130464895,52.55908190803004,0" name="234e8de5-dc9a-4f57-91ee-0cbb03be6f46" isholdpoint="False" poiground="False" id="234e8de5-dc9a-4f57-91ee-0cbb03be6f46" comment="234e8de5-dc9a-4f57-91ee-0cbb03be6f46" />
+      <waypoint lnglat="13.31000692794153,52.55913287151118,0" name="be0944c8-13d3-484f-a6e0-97b672e87cf5" isholdpoint="False" poiground="False" id="be0944c8-13d3-484f-a6e0-97b672e87cf5" comment="be0944c8-13d3-484f-a6e0-97b672e87cf5" />
+      <waypoint lnglat="13.31006705196157,52.55919061364554,0" name="991161ff-3e6a-4e05-992d-e29efd3b617e" isholdpoint="False" poiground="False" id="991161ff-3e6a-4e05-992d-e29efd3b617e" comment="991161ff-3e6a-4e05-992d-e29efd3b617e" />
+      <waypoint lnglat="13.31011479171076,52.55924838546559,0" name="fd73bbaa-dfd3-48a0-b89f-e3118731dd25" isholdpoint="False" poiground="False" id="fd73bbaa-dfd3-48a0-b89f-e3118731dd25" comment="fd73bbaa-dfd3-48a0-b89f-e3118731dd25" />
+      <waypoint lnglat="13.31014887562386,52.55931219551404,0" name="ea06aa36-ef3e-4e92-92c0-46132bef36c9" isholdpoint="False" poiground="False" id="ea06aa36-ef3e-4e92-92c0-46132bef36c9" comment="ea06aa36-ef3e-4e92-92c0-46132bef36c9" />
+      <waypoint lnglat="13.31017354575355,52.55937653814618,0" name="d2022b93-8d30-42e5-97d5-2af048bd2748" isholdpoint="False" poiground="False" id="d2022b93-8d30-42e5-97d5-2af048bd2748" comment="d2022b93-8d30-42e5-97d5-2af048bd2748" />
+      <waypoint lnglat="13.31018436464784,52.5594431021357,0" name="d4574ebe-680a-47ff-beb8-ea00713f50ae" isholdpoint="False" poiground="False" id="d4574ebe-680a-47ff-beb8-ea00713f50ae" comment="d4574ebe-680a-47ff-beb8-ea00713f50ae" />
+      <waypoint lnglat="13.31018058155827,52.55951011297558,0" name="8fb47777-1691-4d24-92b2-4cac6bdb97eb" isholdpoint="False" poiground="False" id="8fb47777-1691-4d24-92b2-4cac6bdb97eb" comment="8fb47777-1691-4d24-92b2-4cac6bdb97eb" />
+      <waypoint lnglat="13.31016508496365,52.55957743776224,0" name="6ac12ae6-22ab-438b-a295-5fc8c552e174" isholdpoint="False" poiground="False" id="6ac12ae6-22ab-438b-a295-5fc8c552e174" comment="6ac12ae6-22ab-438b-a295-5fc8c552e174" />
+      <waypoint lnglat="13.31015141729419,52.55964135081869,0" name="ccbad8c2-0e06-45b5-81e1-4285e54c974b" isholdpoint="False" poiground="False" id="ccbad8c2-0e06-45b5-81e1-4285e54c974b" comment="ccbad8c2-0e06-45b5-81e1-4285e54c974b" />
+      <waypoint lnglat="13.31012282853799,52.55970714922947,0" name="c74e3532-d75b-4488-92b4-824cd152f37e" isholdpoint="False" poiground="False" id="c74e3532-d75b-4488-92b4-824cd152f37e" comment="c74e3532-d75b-4488-92b4-824cd152f37e" />
+      <waypoint lnglat="13.3100834059863,52.55976982466747,0" name="65181593-b224-4985-8919-4db796a92485" isholdpoint="False" poiground="False" id="65181593-b224-4985-8919-4db796a92485" comment="65181593-b224-4985-8919-4db796a92485" />
+      <waypoint lnglat="13.31002895697556,52.55982885148516,0" name="46b78f36-1111-4e6e-beaa-c15e04533841" isholdpoint="False" poiground="False" id="46b78f36-1111-4e6e-beaa-c15e04533841" comment="46b78f36-1111-4e6e-beaa-c15e04533841" />
+      <waypoint lnglat="13.30995875024915,52.55987906106342,0" name="40181312-b163-4a5a-bb79-238e5e150415" isholdpoint="False" poiground="False" id="40181312-b163-4a5a-bb79-238e5e150415" comment="40181312-b163-4a5a-bb79-238e5e150415" />
+      <waypoint lnglat="13.30988227037748,52.55992676878805,0" name="3ed2179c-c577-46dd-a132-556efc965c43" isholdpoint="False" poiground="False" id="3ed2179c-c577-46dd-a132-556efc965c43" comment="3ed2179c-c577-46dd-a132-556efc965c43" />
+      <waypoint lnglat="13.30978796704212,52.55996614092427,0" name="f4e547a8-4ca1-40a9-ac6b-3f491546026c" isholdpoint="False" poiground="False" id="f4e547a8-4ca1-40a9-ac6b-3f491546026c" comment="f4e547a8-4ca1-40a9-ac6b-3f491546026c" />
+      <waypoint lnglat="13.3096965146877,52.5599968884844,0" name="b42166a7-b49b-4bca-8ee0-bb824489c180" isholdpoint="False" poiground="False" id="b42166a7-b49b-4bca-8ee0-bb824489c180" comment="b42166a7-b49b-4bca-8ee0-bb824489c180" />
+      <waypoint lnglat="13.30959178435008,52.5600191937423,0" name="272ff316-ebcb-458f-9529-decbc37e221f" isholdpoint="False" poiground="False" id="272ff316-ebcb-458f-9529-decbc37e221f" comment="272ff316-ebcb-458f-9529-decbc37e221f" />
+      <waypoint lnglat="13.3094794676019,52.56003262610947,0" name="9f950d0b-5b4b-4e5b-862b-434f21e2b9e9" isholdpoint="False" poiground="False" id="9f950d0b-5b4b-4e5b-862b-434f21e2b9e9" comment="9f950d0b-5b4b-4e5b-862b-434f21e2b9e9" />
+      <waypoint lnglat="13.30937227993664,52.56003490623601,0" name="49ca3c40-52a6-4130-b68e-21a132b73077" isholdpoint="False" poiground="False" id="49ca3c40-52a6-4130-b68e-21a132b73077" comment="49ca3c40-52a6-4130-b68e-21a132b73077" />
+      <waypoint lnglat="13.30713323788509,52.55983115549397,0" name="9f3b3765-bcb8-4e9c-89b5-b4e43c3ab20c" isholdpoint="False" poiground="False" id="9f3b3765-bcb8-4e9c-89b5-b4e43c3ab20c" comment="9f3b3765-bcb8-4e9c-89b5-b4e43c3ab20c" />
+    </runwaytaxipath>
+    <!-- Gates -->
+    <gate lnglat="13.29071529289127,52.55570914436116,0" parkingdirection="211" minwidth="30" maxwidth="42" name="GATE 3" isholdpoint="false" poiground="true" id="Gate3" comment="Gate3" radarname="3" uiname="Gate 3" stripename="GATE 3" />
+    <!-- Gatepaths -->
+    <gatepath connectionpoint="Gate3" gate="346d2b75-b18a-424a-993c-5d530c0e8a45" maxspeed="10" id="gate3E" comment="gate3E">
+      <waypoint lnglat="13.29072114200337,52.55571825417642,0" name="5df12302-f3c3-42f7-8c66-9b5d7ea59526" isholdpoint="False" poiground="False" id="5df12302-f3c3-42f7-8c66-9b5d7ea59526" comment="5df12302-f3c3-42f7-8c66-9b5d7ea59526" />
+      <waypoint lnglat="13.29112680653344,52.55612441211927,0" name="963ad6ab-a7ef-4c25-8a61-32c4583e343d" isholdpoint="False" poiground="False" id="963ad6ab-a7ef-4c25-8a61-32c4583e343d" comment="963ad6ab-a7ef-4c25-8a61-32c4583e343d" />
+      <waypoint lnglat="13.29154435370224,52.55653311647318,0" name="49375de2-3bd9-473f-bb12-d472b36c170e" isholdpoint="False" poiground="False" id="49375de2-3bd9-473f-bb12-d472b36c170e" comment="49375de2-3bd9-473f-bb12-d472b36c170e" />
+      <waypoint lnglat="13.29161833888046,52.55657776546035,0" name="ad66ae64-0470-46d8-a274-e3160180b656" isholdpoint="False" poiground="False" id="ad66ae64-0470-46d8-a274-e3160180b656" comment="ad66ae64-0470-46d8-a274-e3160180b656" />
+      <waypoint lnglat="13.29169879050209,52.55660632282633,0" name="c1902346-dc58-4ba8-8f5a-6baf7f6868fb" isholdpoint="False" poiground="False" id="c1902346-dc58-4ba8-8f5a-6baf7f6868fb" comment="c1902346-dc58-4ba8-8f5a-6baf7f6868fb" />
+      <waypoint lnglat="13.29178228516751,52.5566234027186,0" name="b3506348-1ef6-40f4-b6c4-1f88c2b47ea9" isholdpoint="False" poiground="False" id="b3506348-1ef6-40f4-b6c4-1f88c2b47ea9" comment="b3506348-1ef6-40f4-b6c4-1f88c2b47ea9" />
+      <waypoint lnglat="13.2918667748742,52.55663495463392,0" name="39de829c-b1f6-4b4b-8467-fb489b52078c" isholdpoint="False" poiground="False" id="39de829c-b1f6-4b4b-8467-fb489b52078c" comment="39de829c-b1f6-4b4b-8467-fb489b52078c" />
+      <waypoint lnglat="13.2919304963962,52.55664234038626,0" name="3bcf50a8-6146-4be1-9414-a4841a052be2" isholdpoint="False" poiground="False" id="3bcf50a8-6146-4be1-9414-a4841a052be2" comment="3bcf50a8-6146-4be1-9414-a4841a052be2" />
+    </gatepath>
+    <gatepath connectionpoint="Gate3" gate="153aa25e-1bb9-4a68-8058-f282031bd6bc" maxspeed="10" id="gate3W" comment="gate3W">
+      <waypoint lnglat="13.29072114200337,52.55571825417642,0" name="45a7d376-23d1-464f-8364-d277a1b87a96" isholdpoint="False" poiground="False" id="45a7d376-23d1-464f-8364-d277a1b87a96" comment="45a7d376-23d1-464f-8364-d277a1b87a96" />
+      <waypoint lnglat="13.29112680653344,52.55612441211927,0" name="1f2a6e67-b332-4231-80f8-737ce36d80f8" isholdpoint="False" poiground="False" id="1f2a6e67-b332-4231-80f8-737ce36d80f8" comment="1f2a6e67-b332-4231-80f8-737ce36d80f8" />
+      <waypoint lnglat="13.29115527921017,52.5561602746026,0" name="f1c457fb-e99a-4fea-8cdf-e65df6030faf" isholdpoint="False" poiground="False" id="f1c457fb-e99a-4fea-8cdf-e65df6030faf" comment="f1c457fb-e99a-4fea-8cdf-e65df6030faf" />
+      <waypoint lnglat="13.29117912949722,52.55621434065108,0" name="71740b47-df8f-4a84-ae11-4b18d5bd6b93" isholdpoint="False" poiground="False" id="71740b47-df8f-4a84-ae11-4b18d5bd6b93" comment="71740b47-df8f-4a84-ae11-4b18d5bd6b93" />
+      <waypoint lnglat="13.29118358488831,52.55625978191157,0" name="b2056c11-380e-4334-a14c-bda9422ed2e3" isholdpoint="False" poiground="False" id="b2056c11-380e-4334-a14c-bda9422ed2e3" comment="b2056c11-380e-4334-a14c-bda9422ed2e3" />
+      <waypoint lnglat="13.29117777153194,52.55629420556926,0" name="345cca42-86f8-48ed-b03a-560e6d4e2b81" isholdpoint="False" poiground="False" id="345cca42-86f8-48ed-b03a-560e6d4e2b81" comment="345cca42-86f8-48ed-b03a-560e6d4e2b81" />
+      <waypoint lnglat="13.29116660573483,52.55633168570269,0" name="e86f5282-0cad-4e3a-bcbc-c894824eecc0" isholdpoint="False" poiground="False" id="e86f5282-0cad-4e3a-bcbc-c894824eecc0" comment="e86f5282-0cad-4e3a-bcbc-c894824eecc0" />
+      <waypoint lnglat="13.29114737207716,52.5563599384354,0" name="f4cc690f-31ac-40c2-8c4d-db87836e484e" isholdpoint="False" poiground="False" id="f4cc690f-31ac-40c2-8c4d-db87836e484e" comment="f4cc690f-31ac-40c2-8c4d-db87836e484e" />
+      <waypoint lnglat="13.29108497046201,52.5564214125831,0" name="961bb92c-7165-4b64-9453-296a3b71630a" isholdpoint="False" poiground="False" id="961bb92c-7165-4b64-9453-296a3b71630a" comment="961bb92c-7165-4b64-9453-296a3b71630a" />
+      <waypoint lnglat="13.29104704766812,52.55644674068239,0" name="7ed8bfb0-e01c-49d0-8a21-a8261a9d9ed5" isholdpoint="False" poiground="False" id="7ed8bfb0-e01c-49d0-8a21-a8261a9d9ed5" comment="7ed8bfb0-e01c-49d0-8a21-a8261a9d9ed5" />
+      <waypoint lnglat="13.29097581758565,52.55647897273314,0" name="501e59c0-592c-413b-9051-359e80a716d6" isholdpoint="False" poiground="False" id="501e59c0-592c-413b-9051-359e80a716d6" comment="501e59c0-592c-413b-9051-359e80a716d6" />
+      <waypoint lnglat="13.29095040507797,52.55648783418771,0" name="106c7243-8094-448e-aeca-00a0b1273484" isholdpoint="False" poiground="False" id="106c7243-8094-448e-aeca-00a0b1273484" comment="106c7243-8094-448e-aeca-00a0b1273484" />
+      <waypoint lnglat="13.29085644820413,52.55650953497895,0" name="8ebf9d59-998a-4d3b-b0fa-9f6743a77e4d" isholdpoint="False" poiground="False" id="8ebf9d59-998a-4d3b-b0fa-9f6743a77e4d" comment="8ebf9d59-998a-4d3b-b0fa-9f6743a77e4d" />
+      <waypoint lnglat="13.29076586490543,52.55651905002328,0" name="8416a323-e9d0-40e1-a4fb-7011346f8731" isholdpoint="False" poiground="False" id="8416a323-e9d0-40e1-a4fb-7011346f8731" comment="8416a323-e9d0-40e1-a4fb-7011346f8731" />
+      <waypoint lnglat="13.29068133174344,52.55651744815916,0" name="87114f08-3b90-4499-95e9-8abe61a89ddb" isholdpoint="False" poiground="False" id="87114f08-3b90-4499-95e9-8abe61a89ddb" comment="87114f08-3b90-4499-95e9-8abe61a89ddb" />
+      <waypoint lnglat="13.29060262146766,52.55651204487305,0" name="d95c642b-2228-48ab-a65e-1493161cda1d" isholdpoint="False" poiground="False" id="d95c642b-2228-48ab-a65e-1493161cda1d" comment="d95c642b-2228-48ab-a65e-1493161cda1d" />
+    </gatepath>
+  </ramp>
+  <runway id="26L" name="26L" arrivalpoint="26L:arrival">
+    <!-- TakeOffPoints -->
+    <takeoffpoint lnglat="13.30712295233396,52.55983128079453,0" name="" isholdpoint="false" poitower="false" id="26L:Start" comment="26L:Start" />
+    <takeoffpoint lnglat="13.27432176088049,52.5566127157971,335" name="26L:End" isholdpoint="false" poitower="false" id="26L:End" comment="26L:End" />
+    <!-- Lineuppaths -->
+    <lineuppath towardsrunway="26L:Start" ramp="RAMP" towardsramp="SE-Start" name="26L-S" maxspeed="25" id="26LLineupS" comment="26LLineupS">
+      <waypoint lnglat="13.30941556021568,52.55890870747078,0" name="1a806f34-ace5-4048-8077-4b1d24ac3e45" isholdpoint="False" poitower="False" id="1a806f34-ace5-4048-8077-4b1d24ac3e45" comment="1a806f34-ace5-4048-8077-4b1d24ac3e45" />
+      <waypoint lnglat="13.309476092055,52.55891375791339,0" name="b86b494b-0952-4a69-adad-0c8406212304" isholdpoint="False" poitower="False" id="b86b494b-0952-4a69-adad-0c8406212304" comment="b86b494b-0952-4a69-adad-0c8406212304" />
+      <waypoint lnglat="13.30958154456025,52.55893280916651,0" name="70501e57-7cb0-4582-8e6e-243974d0564e" isholdpoint="False" poitower="False" id="70501e57-7cb0-4582-8e6e-243974d0564e" comment="70501e57-7cb0-4582-8e6e-243974d0564e" />
+      <waypoint lnglat="13.30968107068333,52.55896084689166,0" name="8aff623f-67be-4d02-8bea-ec8c62bd0868" isholdpoint="False" poitower="False" id="8aff623f-67be-4d02-8bea-ec8c62bd0868" comment="8aff623f-67be-4d02-8bea-ec8c62bd0868" />
+      <waypoint lnglat="13.30977598201546,52.55899561252438,0" name="642560cb-0686-4aa5-95f6-58b029fc2c5c" isholdpoint="False" poitower="False" id="642560cb-0686-4aa5-95f6-58b029fc2c5c" comment="642560cb-0686-4aa5-95f6-58b029fc2c5c" />
+      <waypoint lnglat="13.30986379917922,52.5590348542214,0" name="e7f4d23b-8a99-4b46-ab2c-ed00f70cf1ab" isholdpoint="False" poitower="False" id="e7f4d23b-8a99-4b46-ab2c-ed00f70cf1ab" comment="e7f4d23b-8a99-4b46-ab2c-ed00f70cf1ab" />
+      <waypoint lnglat="13.30994130826128,52.55908202777731,0" name="1b400628-7988-4188-910e-9ec751e35bc5" isholdpoint="False" poitower="False" id="1b400628-7988-4188-910e-9ec751e35bc5" comment="1b400628-7988-4188-910e-9ec751e35bc5" />
+      <waypoint lnglat="13.31000747643336,52.55913303015996,0" name="21f8b201-9163-40ec-a100-008be1891312" isholdpoint="False" poitower="False" id="21f8b201-9163-40ec-a100-008be1891312" comment="21f8b201-9163-40ec-a100-008be1891312" />
+      <waypoint lnglat="13.31006631548501,52.55919090511841,0" name="f4295588-0c8d-40fe-ac0a-c7d55590ee08" isholdpoint="False" poitower="False" id="f4295588-0c8d-40fe-ac0a-c7d55590ee08" comment="f4295588-0c8d-40fe-ac0a-c7d55590ee08" />
+      <waypoint lnglat="13.31011584049336,52.55924967163165,0" name="298cf667-fd67-4bd2-ada2-49259a6635de" isholdpoint="False" poitower="False" id="298cf667-fd67-4bd2-ada2-49259a6635de" comment="298cf667-fd67-4bd2-ada2-49259a6635de" />
+      <waypoint lnglat="13.31015194399221,52.55931422565873,0" name="92220785-0189-4506-9382-1930fd053641" isholdpoint="False" poitower="False" id="92220785-0189-4506-9382-1930fd053641" comment="92220785-0189-4506-9382-1930fd053641" />
+      <waypoint lnglat="13.31017434831279,52.55937841885645,0" name="b1a52384-26f7-4126-8f4c-7bf6635a9453" isholdpoint="False" poitower="False" id="b1a52384-26f7-4126-8f4c-7bf6635a9453" comment="b1a52384-26f7-4126-8f4c-7bf6635a9453" />
+      <waypoint lnglat="13.31018408043087,52.55944401595124,0" name="83ff650a-b8f0-4965-97bf-b4bf7efb6c75" isholdpoint="False" poitower="False" id="83ff650a-b8f0-4965-97bf-b4bf7efb6c75" comment="83ff650a-b8f0-4965-97bf-b4bf7efb6c75" />
+      <waypoint lnglat="13.3101804507337,52.55951077125598,0" name="70b26586-a325-4025-a913-efbd55461e7a" isholdpoint="False" poitower="False" id="70b26586-a325-4025-a913-efbd55461e7a" comment="70b26586-a325-4025-a913-efbd55461e7a" />
+      <waypoint lnglat="13.31016521335848,52.5595769450327,0" name="10e54280-94bd-436f-983a-419d6eb631e3" isholdpoint="False" poitower="False" id="10e54280-94bd-436f-983a-419d6eb631e3" comment="10e54280-94bd-436f-983a-419d6eb631e3" />
+      <waypoint lnglat="13.31014929853984,52.55964147602099,0" name="2f7a0005-472d-4b59-8814-29bfeca8aa8d" isholdpoint="False" poitower="False" id="2f7a0005-472d-4b59-8814-29bfeca8aa8d" comment="2f7a0005-472d-4b59-8814-29bfeca8aa8d" />
+      <waypoint lnglat="13.31012139487098,52.5597092814883,0" name="09020777-7cf9-463b-bd8a-62b436a50909" isholdpoint="False" poitower="False" id="09020777-7cf9-463b-bd8a-62b436a50909" comment="09020777-7cf9-463b-bd8a-62b436a50909" />
+      <waypoint lnglat="13.31008286421246,52.55976931599952,0" name="ca6a1e7f-ee18-4072-b8d1-69f74cd1f8a7" isholdpoint="False" poitower="False" id="ca6a1e7f-ee18-4072-b8d1-69f74cd1f8a7" comment="ca6a1e7f-ee18-4072-b8d1-69f74cd1f8a7" />
+      <waypoint lnglat="13.31002811658589,52.55982701411997,0" name="435e3af9-2d9d-4ce5-8e97-f6800504d3a1" isholdpoint="False" poitower="False" id="435e3af9-2d9d-4ce5-8e97-f6800504d3a1" comment="435e3af9-2d9d-4ce5-8e97-f6800504d3a1" />
+      <waypoint lnglat="13.30995890348202,52.55987947792754,0" name="21122688-3125-4987-87d4-3d3db3cb51f4" isholdpoint="False" poitower="False" id="21122688-3125-4987-87d4-3d3db3cb51f4" comment="21122688-3125-4987-87d4-3d3db3cb51f4" />
+      <waypoint lnglat="13.30988082324708,52.55992616165096,0" name="e8c3b189-3cb5-4eca-be57-b703a981527a" isholdpoint="False" poitower="False" id="e8c3b189-3cb5-4eca-be57-b703a981527a" comment="e8c3b189-3cb5-4eca-be57-b703a981527a" />
+      <waypoint lnglat="13.30978987779467,52.55996491446588,0" name="a703e68c-c933-4485-95c6-6c987144b498" isholdpoint="False" poitower="False" id="a703e68c-c933-4485-95c6-6c987144b498" comment="a703e68c-c933-4485-95c6-6c987144b498" />
+      <waypoint lnglat="13.30969318064588,52.55999607640232,0" name="14e28c0c-17cb-44f5-9028-55fac74e089f" isholdpoint="False" poitower="False" id="14e28c0c-17cb-44f5-9028-55fac74e089f" comment="14e28c0c-17cb-44f5-9028-55fac74e089f" />
+      <waypoint lnglat="13.30958905078157,52.56001942590369,0" name="0936acdb-c681-4ec0-90f4-36bbafa12e5f" isholdpoint="False" poitower="False" id="0936acdb-c681-4ec0-90f4-36bbafa12e5f" comment="0936acdb-c681-4ec0-90f4-36bbafa12e5f" />
+      <waypoint lnglat="13.30948074355542,52.56003153545394,0" name="dae43579-adc9-4ed2-8cab-7b8354606640" isholdpoint="False" poitower="False" id="dae43579-adc9-4ed2-8cab-7b8354606640" comment="dae43579-adc9-4ed2-8cab-7b8354606640" />
+      <waypoint lnglat="13.30937286611964,52.56003465528134,0" name="fbeb5da8-cb15-4832-b04c-6d86ec9cd6a6" isholdpoint="False" poitower="False" id="fbeb5da8-cb15-4832-b04c-6d86ec9cd6a6" comment="fbeb5da8-cb15-4832-b04c-6d86ec9cd6a6" />
+      <waypoint lnglat="13.30713248416091,52.55983276131573,0" name="a427400c-4916-4a8b-aaa4-00732779b316" isholdpoint="False" poitower="False" id="a427400c-4916-4a8b-aaa4-00732779b316" comment="a427400c-4916-4a8b-aaa4-00732779b316" />
+    </lineuppath>
+    <!-- Takeoffpaths -->
+    <takeoffpath startpoint="26L:Start" endpoint="26L:End" maxspeed="-1" id="26L" comment="26L" />
+    <!-- Touchdownwaypoints -->
+    <touchdownwaypoint lnglat="13.31125978346985,52.56023242162621,15" name="RWY26L" isholdpoint="false" poitower="false" isarrivalpoint="true" id="26L:arrival" comment="26L:arrival" radarname="26L" uiname="Runway 26L" stripename="RWY26L" />
+    <touchdownwaypoint lnglat="13.30389930721248,52.55950762374532,2" name="touchdown" isholdpoint="false" poitower="false" isarrivalpoint="false" id="26L:touchdown" comment="26L:touchdown" radarname="" uiname="" stripename="" />
+    <touchdownwaypoint lnglat="13.27649204914565,52.55682800981005,0" name="RW" isholdpoint="false" poitower="false" isarrivalpoint="false" id="26L:RW" comment="26L:RW" radarname="" uiname="RW" stripename="" />
+    <!-- Touchdownways -->
+    <touchdownway startpoint="26L:arrival" endpoint="26L:touchdown" maxspeed="25" comment="26L:arrival-touchdown">
+      <waypoint lnglat="13.3112449343165,52.56023855776616,0" name="02cb8f78-12a9-4fdb-bd3c-4f0207a2ffd8" isholdpoint="False" poiground="False" id="02cb8f78-12a9-4fdb-bd3c-4f0207a2ffd8" comment="02cb8f78-12a9-4fdb-bd3c-4f0207a2ffd8" />
+      <waypoint lnglat="13.30392016903545,52.55951670545257,0" name="0ee3b15b-f48f-4d8c-ab5d-b9e6a72b8e81" isholdpoint="False" poiground="False" id="0ee3b15b-f48f-4d8c-ab5d-b9e6a72b8e81" comment="0ee3b15b-f48f-4d8c-ab5d-b9e6a72b8e81" />
+    </touchdownway>
+    <touchdownway startpoint="26L:touchdown" endpoint="26L:RW" maxspeed="25" comment="26L:touchdown-RW">
+      <waypoint lnglat="13.30388383635916,52.5595144320687,0" name="d867b28e-5d40-4dc7-8dad-6002744d87b8" isholdpoint="False" poiground="False" id="d867b28e-5d40-4dc7-8dad-6002744d87b8" comment="d867b28e-5d40-4dc7-8dad-6002744d87b8" />
+      <waypoint lnglat="13.27651012373084,52.55682934675776,0" name="1c9d2804-3b0b-407f-80fa-a6352a0f7ca7" isholdpoint="False" poiground="False" id="1c9d2804-3b0b-407f-80fa-a6352a0f7ca7" comment="1c9d2804-3b0b-407f-80fa-a6352a0f7ca7" />
+    </touchdownway>
+    <!-- Exitpaths -->
+    <exitpath towardsrunway="26L:RW" ramp="RAMP" towardsramp="ba445c80-6923-4446-8642-e524c28edce5" maxspeed="25" id="26LExit:RW" comment="26LExit:RW">
+      <waypoint lnglat="13.27647845647888,52.55682681403352,0" name="b4b646fe-3b7b-4cbb-ab25-98b0a77d463e" isholdpoint="False" poiground="False" id="b4b646fe-3b7b-4cbb-ab25-98b0a77d463e" comment="b4b646fe-3b7b-4cbb-ab25-98b0a77d463e" />
+      <waypoint lnglat="13.27640086055521,52.55681708970596,0" name="773a89be-59dc-477d-b4a1-4cb55e8091db" isholdpoint="False" poiground="False" id="773a89be-59dc-477d-b4a1-4cb55e8091db" comment="773a89be-59dc-477d-b4a1-4cb55e8091db" />
+      <waypoint lnglat="13.27618753172253,52.5567962903504,0" name="888ba973-87cc-4335-9f73-639a34532cdb" isholdpoint="False" poiground="False" id="888ba973-87cc-4335-9f73-639a34532cdb" comment="888ba973-87cc-4335-9f73-639a34532cdb" />
+      <waypoint lnglat="13.27597150405196,52.55677013228308,0" name="6ca87368-fdeb-42e1-b7e3-5250e1d7dd9f" isholdpoint="False" poiground="False" id="6ca87368-fdeb-42e1-b7e3-5250e1d7dd9f" comment="6ca87368-fdeb-42e1-b7e3-5250e1d7dd9f" />
+      <waypoint lnglat="13.27576129053347,52.55673394188342,0" name="85c7f4eb-389f-4781-92ec-b4f4d84f604a" isholdpoint="False" poiground="False" id="85c7f4eb-389f-4781-92ec-b4f4d84f604a" comment="85c7f4eb-389f-4781-92ec-b4f4d84f604a" />
+    </exitpath>
+    <!-- FINAL -->
+    <finals>
+      <final name="DEFAULT">
+        <finalpoint comment="26LILS21000" id="26LILS21000" name="26LILS21000" radarname="26LILS21000" uiname="26LILS21000" stripename="26LILS21000" />
+        <finalpoint comment="26LILS13000" id="26LILS13000" name="26LILS13000" radarname="26LILS13000" uiname="26LILS13000" stripename="26LILS13000" />
+        <finalpoint comment="26LILS8000" id="26LILS8000" name="26LILS8000" radarname="26LILS8000" uiname="26LILS8000" stripename="26LILS8000" />
+        <finalpoint comment="26LILS5000" id="26LILS5000" name="26LILS5000" radarname="26LILS5000" uiname="26LILS5000" stripename="26LILS5000" />
+        <finalpoint comment="26LILS3000" id="26LILS3000" name="26LILS3000" radarname="26LILS3000" uiname="26LILS3000" stripename="26LILS3000" />
+        <finalpoint comment="26LILS2000" id="26LILS2000" name="26LILS2000" radarname="26LILS2000" uiname="26LILS2000" stripename="26LILS2000" />
+        <finalpoint comment="26LILS1000" id="26LILS1000" name="26LILS1000" radarname="26LILS1000" uiname="26LILS1000" stripename="26LILS1000" />
+      </final>
+      <final name="NASAT 26L">
+        <finalpoint comment="NASAT" id="NASAT" name="NASAT" radarname="NASAT" uiname="NASAT" stripename="NASAT" />
+        <finalpoint comment="KOMIV" id="KOMIV" name="KOMIV" radarname="KOMIV" uiname="KOMIV" stripename="KOMIV" />
+        <finalpoint comment="DT431" id="DT431" name="DT431" radarname="DT431" uiname="DT431" stripename="DT431" />
+        <finalpoint comment="DT436" id="DT436" name="DT436" radarname="DT436" uiname="DT436" stripename="DT436" />
+        <finalpoint comment="DT456" id="DT456" name="DT456" radarname="DT456" uiname="DT456" stripename="DT456" />
+        <finalpoint comment="DT454" id="DT454" name="DT454" radarname="DT454" uiname="DT454" stripename="DT454" />
+        <finalpoint comment="DT452" id="DT452" name="DT452" radarname="DT452" uiname="DT452" stripename="DT452" />
+        <finalpoint comment="LABOX" id="LABOX" name="LABOX" radarname="LABOX" uiname="LABOX" stripename="LABOX" />
+        <finalpoint comment="26LILS13000" id="26LILS13000" name="26LILS13000" radarname="26LILS13000" uiname="26LILS13000" stripename="26LILS13000" />
+        <finalpoint comment="26LILS8000" id="26LILS8000" name="26LILS8000" radarname="26LILS8000" uiname="26LILS8000" stripename="26LILS8000" />
+        <finalpoint comment="26LILS5000" id="26LILS5000" name="26LILS5000" radarname="26LILS5000" uiname="26LILS5000" stripename="26LILS5000" />
+        <finalpoint comment="26LILS3000" id="26LILS3000" name="26LILS3000" radarname="26LILS3000" uiname="26LILS3000" stripename="26LILS3000" />
+        <finalpoint comment="26LILS2000" id="26LILS2000" name="26LILS2000" radarname="26LILS2000" uiname="26LILS2000" stripename="26LILS2000" />
+        <finalpoint comment="26LILS1000" id="26LILS1000" name="26LILS1000" radarname="26LILS1000" uiname="26LILS1000" stripename="26LILS1000" />
+      </final>
+    </finals>
+    <!-- valid STARs -->
+    <star name="RENKI 3H" />
+    <!-- valid SIDs -->
+    <sid name="BKD 6L" />
+    <!-- valid GoAround Point-->
+    <goaroundpoint name="NASAT" />
+  </runway>
+</airport>

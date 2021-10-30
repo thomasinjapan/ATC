@@ -252,6 +252,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\Tegel_2014.atc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="data\Haneda_2012.kml" />
+    <None Include="data\Hiroshima.kml" />
+    <None Include="data\Naha.kml" />
+    <None Include="data\Narita_2012.kml" />
+    <None Include="data\Tegel_2014.kml" />
     <None Include="Resources\imgHoldTaxi.png" />
     <None Include="Resources\imgContinueTaxi.png" />
     <None Include="Resources\imgRunway.png" />
