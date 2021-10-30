@@ -3,51 +3,40 @@
 <Document>
 	<name>Tegel_2014.kml</name>
 	<open>1</open>
-	<Style id="sh_G">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/G.png</href>
-			</Icon>
-			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<ListStyle>
-			<ItemIcon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/G-lv.png</href>
-			</ItemIcon>
-		</ListStyle>
-	</Style>
-	<Style id="sh_placemark_circle_highlight0">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_placemark_circle_highlight">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sn_triangle">
+	<Style id="sn_triangle0">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
 			</Icon>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 	</Style>
-	<Style id="sn_placemark_circle30">
+	<Style id="inline1630">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin50">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline167">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline163</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline172</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_placemark_circle4">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
@@ -55,35 +44,7 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sn_placemark_circle2">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_placemark_circle1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle4</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight40</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_placemark_circle">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin">
+	<Style id="sh_ylw-pushpin10">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -91,14 +52,12 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
 			<color>ff0000ff</color>
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin3">
+	<Style id="sh_ylw-pushpin15">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -107,76 +66,28 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 		<LineStyle>
-			<color>ffffffaa</color>
-			<width>0</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>bfd9d9d9</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_R">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_R</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_R0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ffff00aa</color>
-			<width>3</width>
+			<color>ffffaa00</color>
+			<width>4</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin">
+	<StyleMap id="msn_ylw-pushpin2">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin</styleUrl>
+			<styleUrl>#sn_ylw-pushpin2</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+			<styleUrl>#sh_ylw-pushpin9</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin0">
+	<StyleMap id="msn_blue-pushpin">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin12</styleUrl>
+			<styleUrl>#sn_blue-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin12</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_triangle">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<StyleMap id="inline173">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#inline172</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#inline164</styleUrl>
+			<styleUrl>#sh_blue-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_placemark_circle0">
@@ -189,231 +100,11 @@
 			<styleUrl>#sh_placemark_circle_highlight3</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_target">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<StyleMap id="inline166">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#inline171</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#inline178</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="inline165">
-		<LineStyle>
-			<color>ff00ffff</color>
-			<width>20</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin0">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_star">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="inline4600">
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>2</width>
-		</LineStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin6</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin13</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_triangle">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_triangle</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_triangle0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_placemark_circle_highlight4">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_blue-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<StyleMap id="inline180">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#inline181</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#inline176</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_placemark_circle_highlight5">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin1">
-		<IconStyle>
-			<color>ff00aa00</color>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="inline181">
+	<Style id="inline1720">
 		<LineStyle>
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sn_T">
-		<IconStyle>
-			<color>ffffffaa</color>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/T.png</href>
-			</Icon>
-			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<ListStyle>
-			<ItemIcon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/T-lv.png</href>
-			</ItemIcon>
-		</ListStyle>
-	</Style>
-	<Style id="sn_triangle0">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<StyleMap id="msn_blue-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_blue-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_blue-pushpin</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="inline0000">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#inline1801</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#inline4600</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_placemark_circle_highlight3">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="inline174">
-		<LineStyle>
-			<color>ffffffaa</color>
-			<width>20</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin10</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_target">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin3">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin5</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin8</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin20">
 		<Pair>
 			<key>normal</key>
@@ -424,47 +115,22 @@
 			<styleUrl>#sh_ylw-pushpin3</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="inline177">
+	<Style id="inline165">
 		<LineStyle>
-			<width>2</width>
+			<color>ff00ffff</color>
+			<width>20</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin4">
+	<StyleMap id="msn_triangle">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+			<styleUrl>#sn_triangle</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin9</styleUrl>
+			<styleUrl>#sh_triangle0</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_star">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin2">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffffffaa</color>
-			<width>5</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>bfffaaff</color>
-		</PolyStyle>
-	</Style>
 	<Style id="sn_placemark_circle1">
 		<IconStyle>
 			<scale>1.2</scale>
@@ -473,46 +139,6 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_target">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_target</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_target</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin5">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin9</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin7</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_placemark_circle10">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight4</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin6">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin4</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="sh_ylw-pushpin21">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -529,17 +155,30 @@
 			<color>00ffffff</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="inline162">
+	<Style id="sh_ylw-pushpin16">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_T">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#inline169</styleUrl>
+			<styleUrl>#sn_T</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#inline167</styleUrl>
+			<styleUrl>#sh_T</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin3">
+	<Style id="sn_ylw-pushpin5">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -547,24 +186,12 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
 			<color>ffff0055</color>
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_triangle0">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin4">
+	<Style id="sn_ylw-pushpin2">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -572,8 +199,453 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin15">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight1">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight4">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight10">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="inline1801">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin12">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_star">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_star</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_star</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline169">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin12">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin70</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin21</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_R">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_R</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_R0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline181">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight40">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="inline164">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_target">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="inline176">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_placemark_circle2">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin9">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin7">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_target">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_target</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_target</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin8">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline180">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline181</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline176</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_G">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin8">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline177">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight3">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="inline182">
+		<LineStyle>
+			<color>ffffffaa</color>
+			<width>20</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_G">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_G</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_G</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline168">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline174</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline182</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline1670">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_G">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/G-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin20">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffffaa</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>bfffaaff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin14</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin7">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_triangle0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_triangle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_triangle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_star">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
+			</Icon>
+		</IconStyle>
 	</Style>
 	<Style id="sn_ylw-pushpin30">
 		<IconStyle>
@@ -591,31 +663,136 @@
 			<color>bfd9d9d9</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="msn_triangle0">
+	<StyleMap id="msn_ylw-pushpin5">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_triangle0</styleUrl>
+			<styleUrl>#sn_ylw-pushpin12</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_triangle</styleUrl>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_T">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_T</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_T</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="inline164">
+	<Style id="inline174">
 		<LineStyle>
-			<width>2</width>
+			<color>ffffffaa</color>
+			<width>20</width>
 		</LineStyle>
 	</Style>
+	<Style id="sn_placemark_circle30">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_triangle">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin13">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline4600">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline179">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>20</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline178">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>20</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_placemark_circle0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_target">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight4</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_R0">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -630,55 +807,25 @@
 			</ItemIcon>
 		</ListStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin5">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin0">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ffffff00</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin7">
+	<StyleMap id="inline162">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin13</styleUrl>
+			<styleUrl>#inline169</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin14</styleUrl>
+			<styleUrl>#inline1670</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin1">
+	<Style id="sh_triangle0">
 		<IconStyle>
-			<color>ff00aa00</color>
-			<scale>1.3</scale>
+			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
 			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 	</Style>
-	<Style id="sn_placemark_circle3">
+	<Style id="sn_placemark_circle5">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
@@ -686,62 +833,61 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sn_G">
+	<Style id="sn_triangle">
 		<IconStyle>
-			<scale>1.1</scale>
+			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/G.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
 			</Icon>
-			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<ListStyle>
-			<ItemIcon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/G-lv.png</href>
-			</ItemIcon>
-		</ListStyle>
 	</Style>
-	<Style id="sn_R">
+	<StyleMap id="msn_ylw-pushpin12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_placemark_circle">
 		<IconStyle>
-			<scale>1.1</scale>
+			<scale>1.2</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/R.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
 			</Icon>
-			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<ListStyle>
-			<ItemIcon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
-			</ItemIcon>
-		</ListStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin6">
+	<Style id="sh_ylw-pushpin4">
 		<IconStyle>
-			<scale>1.1</scale>
+			<scale>1.3</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
-			<color>ff00ff00</color>
-			<width>4</width>
+			<color>ffffff00</color>
+			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_placemark_circle2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin8">
+	<Style id="sh_ylw-pushpin11">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="inline172">
+		<LineStyle>
+			<color>ff00aa00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin13">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#sn_ylw-pushpin4</styleUrl>
@@ -751,30 +897,130 @@
 			<styleUrl>#sh_ylw-pushpin5</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_placemark_circle5">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle5</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight10</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin2">
+	<Style id="sn_ylw-pushpin9">
 		<IconStyle>
-			<scale>1.3</scale>
+			<scale>1.1</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
 			<color>ff00ff00</color>
 			<width>4</width>
 		</LineStyle>
+	</Style>
+	<Style id="sn_star">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline166">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline171</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline178</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight5">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="inline175">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline177</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1630</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline171">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>20</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_blue-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_T">
+		<IconStyle>
+			<color>ffffffaa</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/T.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/T-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin11">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="inline0000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1801</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline4600</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin4">
+		<IconStyle>
+			<color>ff00aa00</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
 	</Style>
 	<StyleMap id="inline183">
 		<Pair>
@@ -786,68 +1032,7 @@
 			<styleUrl>#inline179</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_placemark_circle9">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle30</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight5</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin4">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ffff0055</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
-	<Style id="inline179">
-		<LineStyle>
-			<color>ff00ffff</color>
-			<width>20</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_placemark_circle">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="inline169">
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin5">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="inline">
-		<LineStyle>
-			<color>ff00aa00</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin7">
+	<Style id="sn_ylw-pushpin14">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -855,229 +1040,12 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff00ff00</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_placemark_circle0">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<StyleMap id="inline0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#inline</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#inline1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_placemark_circle100">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="inline171">
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>20</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_placemark_circle4">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin9">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin8</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin8">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ffffff00</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin9">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin50">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin11</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin6">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ffff00aa</color>
-			<width>3</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="inline168">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#inline174</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#inline182</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin10">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin7">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin11">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff00ffff</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin8">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin9">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
-	<Style id="inline163">
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin12">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
 			<color>ffffaa00</color>
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="inline167">
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin10">
+	<Style id="sh_ylw-pushpin17">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -1085,23 +1053,17 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
-			<color>ff00ffff</color>
+			<color>ffff0055</color>
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin10">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin1</styleUrl>
-		</Pair>
-	</StyleMap>
+	<Style id="inline163">
+		<LineStyle>
+			<color>ff00aa00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin13">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -1110,73 +1072,21 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
-			<color>ffff0055</color>
+			<color>ff00ffff</color>
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="inline178">
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>20</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin11">
+	<StyleMap id="inline173">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin7</styleUrl>
+			<styleUrl>#inline1720</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin2</styleUrl>
+			<styleUrl>#inline164</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="inline175">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#inline177</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#inline163</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin30">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin70</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin21</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_placemark_circle5">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin11">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffffffaa</color>
-			<width>5</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>bfffaaff</color>
-		</PolyStyle>
-	</Style>
 	<Style id="sn_ylw-pushpin70">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -1193,149 +1103,74 @@
 			<color>00ffffff</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sh_placemark_circle_highlight1">
+	<Style id="sn_R">
 		<IconStyle>
-			<scale>1.2</scale>
+			<scale>1.1</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R.png</href>
 			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/R-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
 	</Style>
-	<Style id="inline182">
-		<LineStyle>
-			<color>ffffffaa</color>
-			<width>20</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin12">
+	<StyleMap id="msn_ylw-pushpin11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin6">
 		<IconStyle>
-			<scale>1.3</scale>
+			<scale>1.1</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ffffaa00</color>
-			<width>4</width>
-		</LineStyle>
 	</Style>
-	<Style id="inline1">
-		<LineStyle>
+	<Style id="sh_ylw-pushpin5">
+		<IconStyle>
 			<color>ff00aa00</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_placemark_circle_highlight10">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin13">
-		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff00ff00</color>
-			<width>4</width>
-		</LineStyle>
 	</Style>
-	<Style id="inline172">
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="inline176">
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin12">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin11</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin10</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="inline1801">
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>2</width>
-		</LineStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_star">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_star</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_star</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_T">
+	<Style id="sn_T">
 		<IconStyle>
 			<color>ffffffaa</color>
-			<scale>1.3</scale>
+			<scale>1.1</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/paddle/T.png</href>
 			</Icon>
 			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<ListStyle>
 			<ItemIcon>
 				<href>http://maps.google.com/mapfiles/kml/paddle/T-lv.png</href>
 			</ItemIcon>
 		</ListStyle>
 	</Style>
-	<StyleMap id="msn_G">
+	<StyleMap id="msn_placemark_circle5">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_G</styleUrl>
+			<styleUrl>#sn_placemark_circle5</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_G</styleUrl>
+			<styleUrl>#sh_placemark_circle_highlight10</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_blue-pushpin">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sh_placemark_circle_highlight40">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<Style id="sh_ylw-pushpin14">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -1344,12 +1179,89 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
-			<color>ffff0055</color>
+			<color>ffffffaa</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>bfffaaff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
 			<width>4</width>
 		</LineStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight40</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_placemark_circle3">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffffaa</color>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>bfd9d9d9</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_blue-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
 	</Style>
 	<Folder>
 		<name>Tegel_2014</name>
@@ -1535,11 +1447,11 @@ maxcrosswind:90</description>
 				<open>1</open>
 				<Placemark>
 					<name>TGL 16.0DME</name>
-					<styleUrl>#inline0</styleUrl>
+					<styleUrl>#inline167</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
-							12.85681093926601,52.51714358341184,0 12.85197917739994,52.54013763310876,0 12.85045747153319,52.56330033394421,0 12.85226263515159,52.58645553480159,0 12.85738616967287,52.60942686315919,0 12.8657941694429,52.63203907100944,0 12.87742742379315,52.65411938062955,0 12.8922017202126,52.67549881965162,0 12.91000835095571,52.69601353470734,0 12.93071482350982,52.71550607284735,0 12.95416577329826,52.73382661996044,0 12.98018407483236,52.75083418555811,0 13.00857214527612,52.76639772354454,-7.081154781429788e-10 13.03911343209289,52.78039717896836,0 13.07157407414782,52.79272445125162,0 13.10570472338801,52.80328426501127,0 13.14124251206493,52.81199494032725,-7.081154781429788e-10 13.17791314844855,52.81878905516146,-7.081154781429788e-10 13.21543312215758,52.82361399358587,0 13.25351199864012,52.82643237452407,0 13.29185478102294,52.8272223568347,0 13.33016431654129,52.82597781775273,0 13.3681437240871,52.82270840293678,0 13.40549881909452,52.81743944763068,0 13.44194051202095,52.81021176971382,0 13.47718715708295,52.80108133667105,0 13.51096682865489,52.79011880973575,0 13.54301950381737,52.77740896963542,0 13.57309913092308,52.76305002947624,0 13.60097556569284,52.7471528413305,-7.081154781429788e-10 13.62643635822771,52.72984000402147,0 13.64928837637281,52.71124488042722,0 13.66935925305227,52.69151053333698,0 13.68649864745958,52.67078858948659,0 13.7005793122878,52.64923804187171,-7.081154781429788e-10 13.71149796147163,52.6270240007857,0 13.71917593514634,52.60431640425837,-7.081154781429788e-10 13.72355966066946,52.58128869868505,0 13.72462091056608,52.55811650043823,-7.081154781429788e-10 13.72235686012188,52.53497624915578,0 13.71678994903969,52.51204386320697,0 13.70796755308124,52.48949340756246,0 13.6959614729281,52.46749578394444,0 13.68086724861407,52.44621745272078,-7.081154781429788e-10 13.66280330880843,52.42581919554095,0 13.64190996497415,52.40645492720257,0 13.61834826100008,52.38827056469324,0 13.59229868932639,52.37140296078329,0 13.56395978486675,52.35597890895629,0 13.53354660819801,52.34211422586448,0 13.50128912955819,52.32991291688823,0 13.46743052518834,52.31946642977024,0 13.43222539749206,52.31085300068563,0 13.39593793038716,52.30413709650438,-7.081154781429788e-10 13.35883999110549,52.29936895640152,0 13.32120918957328,52.29658423537582,0 13.28332690639111,52.29580375164707,0 13.24547630033797,52.29703333931791,0 13.20794030625847,52.30026380710358,0 13.17099963415954,52.30547100335465,-7.081154781429788e-10 13.13493078034779,52.31261598701838,0 13.1000040614784,52.32164530360522,0 13.06648168245853,52.33249136464478,0 13.03461584924859,52.34507292852867,0 13.00464693772115,52.35929568004803,-7.081154781429788e-10 12.97680172986048,52.37505290533554,0 12.95129172870207,52.39222625832135,0 12.92831156350352,52.41068661420505,0 12.90803749668892,52.4302950048376,0 12.89062604409943,52.45090363029735,0 12.87621271999254,52.47235694033839,0 12.86491091804046,52.49449277879128,0 12.85681093926601,52.51714358341184,0 
+							12.85681093926601,52.51714358341184,0 12.85197917739994,52.54013763310876,0 12.85045747153319,52.56330033394421,0 12.85226263515159,52.58645553480159,0 12.85738616967287,52.6094268631592,0 12.8657941694429,52.63203907100944,0 12.87742742379315,52.65411938062955,0 12.8922017202126,52.67549881965162,0 12.91000835095571,52.69601353470734,0 12.93071482350982,52.71550607284735,0 12.95416577329826,52.73382661996044,0 12.98018407483236,52.75083418555811,0 13.00857214527612,52.76639772354454,-7.081154781429788e-10 13.03911343209289,52.78039717896835,0 13.07157407414782,52.79272445125162,0 13.10570472338801,52.80328426501127,0 13.14124251206493,52.81199494032725,-7.081154781429788e-10 13.17791314844855,52.81878905516146,-7.081154781429788e-10 13.21543312215758,52.82361399358587,0 13.25351199864012,52.82643237452407,0 13.29185478102294,52.8272223568347,0 13.33016431654129,52.82597781775273,0 13.3681437240871,52.82270840293678,0 13.40549881909452,52.81743944763068,0 13.44194051202095,52.81021176971382,0 13.47718715708295,52.80108133667105,0 13.51096682865489,52.79011880973575,0 13.54301950381737,52.77740896963542,0 13.57309913092308,52.76305002947624,0 13.60097556569284,52.7471528413305,-7.081154781429788e-10 13.62643635822771,52.72984000402147,0 13.64928837637281,52.71124488042722,0 13.66935925305227,52.69151053333698,0 13.68649864745958,52.67078858948659,0 13.7005793122878,52.64923804187171,-7.081154781429788e-10 13.71149796147163,52.6270240007857,0 13.71917593514634,52.60431640425837,-7.081154781429788e-10 13.72355966066946,52.58128869868505,0 13.72462091056608,52.55811650043823,-7.081154781429788e-10 13.72235686012188,52.53497624915578,0 13.71678994903969,52.51204386320697,0 13.70796755308124,52.48949340756246,0 13.6959614729281,52.46749578394444,0 13.68086724861407,52.44621745272078,-7.081154781429788e-10 13.66280330880843,52.42581919554095,0 13.64190996497415,52.40645492720257,0 13.61834826100008,52.38827056469324,0 13.59229868932639,52.37140296078329,0 13.56395978486675,52.35597890895629,0 13.53354660819801,52.34211422586448,0 13.50128912955819,52.32991291688824,0 13.46743052518834,52.31946642977023,0 13.43222539749206,52.31085300068563,0 13.39593793038716,52.30413709650438,-7.081154781429788e-10 13.35883999110549,52.29936895640152,0 13.32120918957328,52.29658423537581,0 13.28332690639111,52.29580375164707,0 13.24547630033797,52.29703333931791,0 13.20794030625847,52.30026380710358,0 13.17099963415954,52.30547100335464,-7.081154781429788e-10 13.13493078034779,52.31261598701838,0 13.1000040614784,52.32164530360522,0 13.06648168245853,52.33249136464478,0 13.03461584924859,52.34507292852867,0 13.00464693772115,52.35929568004803,-7.081154781429788e-10 12.97680172986048,52.37505290533554,0 12.95129172870207,52.39222625832135,0 12.92831156350352,52.41068661420505,0 12.90803749668892,52.4302950048376,0 12.89062604409943,52.45090363029735,0 12.87621271999254,52.47235694033839,0 12.86491091804046,52.49449277879128,0 12.85681093926601,52.51714358341184,0 
 						</coordinates>
 					</LineString>
 				</Placemark>
@@ -2904,12 +2816,20 @@ maxcrosswind:90</description>
 		</Folder>
 		<Folder>
 			<name>STARs</name>
+			<open>1</open>
 			<Folder>
 				<name>RENKI 3H</name>
 				<open>1</open>
 				<description>RENKI
 PINUV
-NASAT</description>
+NASAT
+KOMIV
+DT431
+DT436
+DT456
+DT454
+DT452
+LABOX</description>
 			</Folder>
 		</Folder>
 		<Folder>
@@ -2975,11 +2895,11 @@ StripeName:GATE 3</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin9</styleUrl>
+					<styleUrl>#msn_ylw-pushpin12</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
-							13.29072114200337,52.55571825417642,0 13.29112680653344,52.55612441211927,0 13.29154435370224,52.55653311647318,0 13.29161833888046,52.55657776546035,0 13.29169879050209,52.55660632282633,0 13.29178228516751,52.5566234027186,0 13.2918667748742,52.55663495463392,0 13.2919304963962,52.55664234038626,0 
+							13.29072114200337,52.55571825417642,0 13.29112680653344,52.55612441211927,0 13.29154435370224,52.55653311647319,0 13.29161833888046,52.55657776546035,0 13.29169879050209,52.55660632282634,0 13.29178228516751,52.5566234027186,0 13.2918667748742,52.55663495463392,0 13.2919304963962,52.55664234038626,0 
 						</coordinates>
 					</LineString>
 				</Placemark>
@@ -2995,7 +2915,7 @@ StripeName:GATE 3</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin9</styleUrl>
+					<styleUrl>#msn_ylw-pushpin12</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -3036,7 +2956,7 @@ StripeName:</description>
 							<range>42.560922726748</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin8</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.27553499906351,52.55580960391832,0</coordinates>
@@ -3073,7 +2993,7 @@ StripeName:SE</description>
 							<range>33.42226086976054</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin8</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.30938797506138,52.55889637685357,0</coordinates>
@@ -3103,7 +3023,7 @@ StripeName:</description>
 							<range>188.0542938319923</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin3</styleUrl>
+						<styleUrl>#msn_ylw-pushpin6</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.27949842969966,52.555423263893,0</coordinates>
@@ -3134,7 +3054,7 @@ StripeName:</description>
 							<range>106.0264554112334</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin3</styleUrl>
+						<styleUrl>#msn_ylw-pushpin6</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.29956868687726,52.55739054078063,0</coordinates>
@@ -3165,7 +3085,7 @@ StripeName:</description>
 							<range>87.05852518679879</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin3</styleUrl>
+						<styleUrl>#msn_ylw-pushpin6</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.28529244227678,52.55599026698653,0</coordinates>
@@ -3201,7 +3121,7 @@ StripeName:RWY26L</description>
 							<range>33.42226086914916</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin8</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.30940933917112,52.55890699472147,0</coordinates>
@@ -3234,7 +3154,7 @@ StripeName:</description>
 							<range>53.37638930460493</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin3</styleUrl>
+						<styleUrl>#msn_ylw-pushpin6</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.30941716200852,52.55889161452973,0</coordinates>
@@ -3266,7 +3186,7 @@ StripeName:RWY08R</description>
 							<range>68.77932203506161</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin8</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.2755304832605,52.55582703682378,0</coordinates>
@@ -3298,7 +3218,7 @@ StripeName:</description>
 							<range>29.19584813228564</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin8</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.27551100493043,52.55582119615471,0</coordinates>
@@ -3326,7 +3246,7 @@ taxipath:SE</description>
 							<range>2301.56737565422</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin12</styleUrl>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3349,7 +3269,7 @@ taxipath:SE</description>
 							<range>1039.235107497616</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin12</styleUrl>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3372,7 +3292,7 @@ taxipath:SE</description>
 							<range>1039.235107497616</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin12</styleUrl>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3395,7 +3315,7 @@ taxipath:SE</description>
 							<range>1039.235107497616</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin12</styleUrl>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3418,7 +3338,7 @@ taxipath:SE</description>
 							<range>1039.235107497616</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin12</styleUrl>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3441,7 +3361,7 @@ taxipath:SE</description>
 							<range>1039.235107497616</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin12</styleUrl>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3467,7 +3387,7 @@ taxipath:runway</description>
 							<range>1000</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin2</styleUrl>
+						<styleUrl>#msn_ylw-pushpin5</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3489,7 +3409,7 @@ taxipath:runway</description>
 							<range>1000</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin5</styleUrl>
+						<styleUrl>#msn_ylw-pushpin8</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3510,7 +3430,7 @@ taxipath:SE</description>
 							<tilt>45</tilt>
 							<range>1000</range>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin1</styleUrl>
+						<styleUrl>#msn_ylw-pushpin4</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3531,7 +3451,7 @@ taxipath:RW</description>
 							<tilt>45</tilt>
 							<range>1000</range>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin11</styleUrl>
+						<styleUrl>#msn_ylw-pushpin14</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
@@ -3629,11 +3549,11 @@ taxipath:runway</description>
 						<tilt>45</tilt>
 						<range>5122.962123148852</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin</styleUrl>
+					<styleUrl>#msn_ylw-pushpin2</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
-							13.30711707357168,52.55983039383631,0 13.3001444599267,52.5591471396968,0 13.29517643404015,52.55866024324739,0 13.29217065191495,52.5583655212961,0 13.28303210985568,52.55746532887932,0 13.28077042663852,52.55724960073382,0 13.27650868274137,52.55682692141911,0 
+							13.30711707357168,52.5598303938363,0 13.3001444599267,52.5591471396968,0 13.29517643404015,52.55866024324739,0 13.29217065191495,52.5583655212961,0 13.28303210985568,52.55746532887932,0 13.28077042663852,52.55724960073382,0 13.27650868274137,52.55682692141911,0 
 						</coordinates>
 					</LineString>
 				</Placemark>
@@ -3656,11 +3576,11 @@ taxipath:runway</description>
 						<range>1000</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin4</styleUrl>
+					<styleUrl>#msn_ylw-pushpin7</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
-							13.27550969782191,52.55582308396316,0 13.27550926931815,52.55583992975107,0 13.27546881318061,52.55589156965883,0 13.2754507289496,52.55591782325786,0 13.27541311422626,52.55598054467114,0 13.27538111268888,52.55604725516822,0 13.27535851833657,52.55611213785366,0 13.27533856627943,52.55617797052085,0 13.27532497963988,52.55624299753983,0 13.27531681858538,52.55631395743112,0 13.27533190082031,52.55640448168341,0 13.27538749811895,52.55650390374586,0 13.27544051339889,52.55656402650472,0 13.27550648273921,52.55661796587786,0 13.27557265218709,52.5566579028315,0 13.27564433789114,52.55669615221272,0 13.27575406565989,52.55673199874958,0 13.27595091767924,52.55676935032205,0 13.27648386557319,52.55682623659419,0 
+							13.27550969782191,52.55582308396316,0 13.27550926931815,52.55583992975107,0 13.27546881318061,52.55589156965883,0 13.2754507289496,52.55591782325786,0 13.27541311422626,52.55598054467113,0 13.27538111268888,52.55604725516822,0 13.27535851833657,52.55611213785366,0 13.27533856627943,52.55617797052085,0 13.27532497963988,52.55624299753983,0 13.27531681858538,52.55631395743112,0 13.27533190082031,52.55640448168341,0 13.27538749811895,52.55650390374586,0 13.27544051339889,52.55656402650471,0 13.27550648273921,52.55661796587786,0 13.27557265218709,52.5566579028315,0 13.27564433789114,52.55669615221272,0 13.27575406565989,52.55673199874958,0 13.27595091767924,52.55676935032205,0 13.27648386557319,52.55682623659419,0 
 						</coordinates>
 					</LineString>
 				</Placemark>
@@ -3684,11 +3604,11 @@ taxipath:runway</description>
 						<range>1000</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin4</styleUrl>
+					<styleUrl>#msn_ylw-pushpin7</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
-							13.30941950011832,52.55889211743673,0 13.30947259265221,52.558912886848,0 13.30957918522954,52.55893204077375,0 13.30967818465805,52.55896075199021,0 13.30977363659826,52.55899464252176,0 13.30986307029129,52.55903405739707,0 13.30994130464895,52.55908190803004,0 13.31000692794153,52.55913287151118,0 13.31006705196157,52.55919061364554,0 13.31011479171076,52.55924838546559,0 13.31014887562386,52.55931219551404,0 13.31017354575355,52.55937653814618,0 13.31018436464784,52.5594431021357,0 13.31018058155827,52.55951011297558,0 13.31016508496365,52.55957743776224,0 13.31015141729419,52.55964135081869,0 13.31012282853799,52.55970714922947,0 13.3100834059863,52.55976982466747,0 13.31002895697556,52.55982885148516,0 13.30995875024915,52.55987906106342,0 13.30988227037748,52.55992676878805,0 13.30978796704212,52.55996614092427,0 13.3096965146877,52.5599968884844,0 13.30959178435008,52.5600191937423,0 13.3094794676019,52.56003262610947,0 13.30937227993664,52.56003490623601,0 13.30713323788509,52.55983115549397,0 
+							13.30941950011832,52.55889211743673,0 13.30947259265221,52.558912886848,0 13.30957918522954,52.55893204077374,0 13.30967818465805,52.55896075199022,0 13.30977363659826,52.55899464252176,0 13.30986307029129,52.55903405739707,0 13.30994130464895,52.55908190803004,0 13.31000692794153,52.55913287151118,0 13.31006705196157,52.55919061364554,0 13.31011479171076,52.55924838546559,0 13.31014887562386,52.55931219551404,0 13.31017354575355,52.55937653814618,0 13.31018436464784,52.5594431021357,0 13.31018058155827,52.55951011297558,0 13.31016508496365,52.55957743776224,0 13.31015141729419,52.55964135081868,0 13.31012282853799,52.55970714922946,0 13.3100834059863,52.55976982466747,0 13.31002895697556,52.55982885148516,0 13.30995875024915,52.55987906106342,0 13.30988227037748,52.55992676878805,0 13.30978796704212,52.55996614092426,0 13.3096965146877,52.5599968884844,0 13.30959178435008,52.5600191937423,0 13.3094794676019,52.56003262610947,0 13.30937227993664,52.56003490623601,0 13.30713323788509,52.55983115549397,0 
 						</coordinates>
 					</LineString>
 				</Placemark>
@@ -3696,6 +3616,7 @@ taxipath:runway</description>
 		</Folder>
 		<Folder>
 			<name>Runway</name>
+			<open>1</open>
 			<description>id:26L
 name:26L
 arrivalpoint:26L:arrival</description>
@@ -3725,7 +3646,7 @@ poitower:false</description>
 						<range>72.69595644001753</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin10</styleUrl>
+					<styleUrl>#msn_ylw-pushpin13</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
 						<coordinates>13.30712295233396,52.55983128079453,0</coordinates>
@@ -3754,7 +3675,7 @@ poiground:false</description>
 						<range>457.7130080836488</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin10</styleUrl>
+					<styleUrl>#msn_ylw-pushpin13</styleUrl>
 					<Point>
 						<extrude>1</extrude>
 						<altitudeMode>relativeToGround</altitudeMode>
@@ -3788,11 +3709,11 @@ maxspeed:25</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin6</styleUrl>
+					<styleUrl>#msn_ylw-pushpin9</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
-							13.30941556021568,52.55890870747078,0 13.309476092055,52.55891375791339,0 13.30958154456025,52.55893280916651,0 13.30968107068333,52.55896084689166,0 13.30977598201546,52.55899561252438,0 13.30986379917922,52.5590348542214,0 13.30994130826128,52.55908202777731,0 13.31000747643336,52.55913303015996,0 13.31006631548501,52.55919090511841,0 13.31011584049336,52.55924967163165,0 13.31015194399221,52.55931422565873,0 13.31017434831279,52.55937841885645,0 13.31018408043087,52.55944401595124,0 13.3101804507337,52.55951077125598,0 13.31016521335848,52.5595769450327,0 13.31014929853984,52.55964147602099,0 13.31012139487098,52.5597092814883,0 13.31008286421246,52.55976931599952,0 13.31002811658589,52.55982701411997,0 13.30995890348202,52.55987947792754,0 13.30988082324708,52.55992616165096,0 13.30978987779467,52.55996491446588,0 13.30969318064588,52.55999607640232,0 13.30958905078157,52.56001942590369,0 13.30948074355542,52.56003153545394,0 13.30937286611964,52.56003465528134,0 13.30713248416091,52.55983276131573,0 
+							13.30941556021568,52.55890870747077,0 13.309476092055,52.55891375791339,0 13.30958154456025,52.55893280916651,0 13.30968107068333,52.55896084689166,0 13.30977598201546,52.55899561252438,0 13.30986379917922,52.5590348542214,0 13.30994130826128,52.55908202777731,0 13.31000747643336,52.55913303015996,0 13.31006631548501,52.55919090511841,0 13.31011584049336,52.55924967163165,0 13.31015194399221,52.55931422565873,0 13.31017434831279,52.55937841885645,0 13.31018408043087,52.55944401595124,0 13.3101804507337,52.55951077125598,0 13.31016521335848,52.5595769450327,0 13.31014929853984,52.55964147602099,0 13.31012139487098,52.5597092814883,0 13.31008286421246,52.55976931599952,0 13.31002811658589,52.55982701411997,0 13.30995890348202,52.55987947792754,0 13.30988082324708,52.55992616165095,0 13.30978987779467,52.55996491446588,0 13.30969318064588,52.55999607640232,0 13.30958905078157,52.56001942590369,0 13.30948074355542,52.56003153545394,0 13.30937286611964,52.56003465528134,0 13.30713248416091,52.55983276131573,0 
 						</coordinates>
 					</LineString>
 				</Placemark>
@@ -3916,7 +3837,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<styleUrl>#msn_ylw-pushpin3</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -3936,7 +3857,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<styleUrl>#msn_ylw-pushpin3</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -3959,7 +3880,7 @@ StripeName:</description>
 						<range>1000</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin7</styleUrl>
+					<styleUrl>#msn_ylw-pushpin10</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -3970,6 +3891,7 @@ StripeName:</description>
 			</Folder>
 			<Folder>
 				<name>FINALS</name>
+				<open>1</open>
 				<Folder>
 					<name>DEFAULT</name>
 					<description>26LILS21000
@@ -3983,15 +3905,7 @@ StripeName:</description>
 				<Folder>
 					<name>NASAT 26L</name>
 					<open>1</open>
-					<description>NASAT
-KOMIV
-DT431
-DT436
-DT456
-DT454
-DT452
-LABOX
-#26LILS21000
+					<description>#26LILS21000
 26LILS13000
 26LILS8000
 26LILS5000
