@@ -2553,6 +2553,7 @@ maxcrosswind:90</description>
 		</Placemark>
 		<Folder>
 			<name>Landscape</name>
+			<open>1</open>
 			<Placemark>
 				<name>coastline</name>
 				<styleUrl>#msn_ylw-pushpin30</styleUrl>
