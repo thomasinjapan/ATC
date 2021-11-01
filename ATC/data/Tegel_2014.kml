@@ -50,6 +50,16 @@
 			</Icon>
 		</IconStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin5</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin916">
 		<Pair>
 			<key>normal</key>
@@ -77,6 +87,16 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#inline178</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_triangle7">
@@ -125,6 +145,17 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<StyleMap id="msn_ylw-pushpin207">
 		<Pair>
 			<key>normal</key>
@@ -168,19 +199,6 @@
 			<styleUrl>#sh_ylw-pushpin266</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin239">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff00aa</color>
-			<width>3</width>
-		</LineStyle>
-	</Style>
 	<StyleMap id="msn_ylw-pushpin265">
 		<Pair>
 			<key>normal</key>
@@ -234,6 +252,21 @@
 			<styleUrl>#sh_blue-pushpin05</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin1315">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -257,7 +290,7 @@
 			<styleUrl>#sh_ylw-pushpin245</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin0">
+	<Style id="sn_ylw-pushpin2">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -360,14 +393,14 @@
 			<styleUrl>#sh_triangle05</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin">
+	<StyleMap id="msn_ylw-pushpin1">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin2</styleUrl>
+			<styleUrl>#sn_ylw-pushpin5</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+			<styleUrl>#sh_ylw-pushpin8</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sh_blue-pushpin">
@@ -391,6 +424,21 @@
 		</IconStyle>
 		<LineStyle>
 			<color>ffff0055</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffffaa00</color>
 			<width>4</width>
 		</LineStyle>
 	</Style>
@@ -421,6 +469,16 @@
 			<width>20</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin265">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -468,6 +526,21 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffffaa00</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin1803">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -504,16 +577,6 @@
 			<styleUrl>#sh_placemark_circle_highlight100</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin294">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin3112</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin285</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="sh_ylw-pushpin229">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -527,6 +590,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin294">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3112</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin285</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sn_ylw-pushpin180">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -540,14 +613,14 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin0">
+	<StyleMap id="msn_ylw-pushpin3">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#sn_ylw-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin5</styleUrl>
+			<styleUrl>#sh_ylw-pushpin16</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin146">
@@ -630,16 +703,6 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin307">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin704</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin2115</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="sn_ylw-pushpin275">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -802,19 +865,6 @@
 			<styleUrl>#sh_triangle11</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin209">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ff00ffff</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
 	<Style id="sh_ylw-pushpin1305">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -842,19 +892,6 @@
 				<href>http://maps.google.com/mapfiles/kml/paddle/T-lv.png</href>
 			</ItemIcon>
 		</ListStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin227">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff00aa</color>
-			<width>3</width>
-		</LineStyle>
 	</Style>
 	<Style id="inline1810">
 		<LineStyle>
@@ -917,7 +954,7 @@
 			</ItemIcon>
 		</ListStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin0">
+	<Style id="sh_ylw-pushpin1">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -945,6 +982,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sn_ylw-pushpin614">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -971,7 +1018,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin1">
+	<Style id="sn_ylw-pushpin4">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -1016,7 +1063,7 @@
 			<styleUrl>#sh_blue-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin1">
+	<Style id="sh_ylw-pushpin2">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -1183,6 +1230,16 @@
 			<width>20</width>
 		</LineStyle>
 	</Style>
+	<Style id="sh_star">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<StyleMap id="msn_ylw-pushpin1107">
 		<Pair>
 			<key>normal</key>
@@ -1203,16 +1260,6 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin229">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin209</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin208</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="sn_ylw-pushpin206">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -1255,19 +1302,16 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin208">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ff00ffff</color>
-			<width>4</width>
-		</LineStyle>
-	</Style>
+	<StyleMap id="msn_star">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_star</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_star</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin197">
 		<Pair>
 			<key>normal</key>
@@ -1315,6 +1359,16 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_blue-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_blue-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_blue-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin249">
 		<Pair>
 			<key>normal</key>
@@ -1374,14 +1428,14 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin1">
+	<StyleMap id="msn_ylw-pushpin5">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin4</styleUrl>
+			<styleUrl>#sn_ylw-pushpin7</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+			<styleUrl>#sh_ylw-pushpin15</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin189">
@@ -1503,6 +1557,16 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin209">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin293</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1315</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sn_ylw-pushpin3112">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -1516,16 +1580,6 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin209">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin293</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin1315</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin703">
 		<Pair>
 			<key>normal</key>
@@ -1536,7 +1590,22 @@
 			<styleUrl>#sh_ylw-pushpin1214</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin2">
+	<Style id="sh_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin5">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -1551,7 +1620,7 @@
 			<width>3</width>
 		</LineStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin3">
+	<Style id="sn_ylw-pushpin6">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -1692,14 +1761,14 @@
 			<styleUrl>#sh_ylw-pushpin248</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin2">
+	<StyleMap id="msn_ylw-pushpin6">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin6</styleUrl>
+			<styleUrl>#sn_ylw-pushpin17</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+			<styleUrl>#sh_ylw-pushpin2</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin518">
@@ -1751,6 +1820,21 @@
 		</IconStyle>
 		<LineStyle>
 			<color>ff00ffff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff0055</color>
 			<width>4</width>
 		</LineStyle>
 	</Style>
@@ -1820,6 +1904,16 @@
 			<styleUrl>#sh_ylw-pushpin718</styleUrl>
 		</Pair>
 	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin10</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sn_ylw-pushpin189">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -1849,7 +1943,7 @@
 			<styleUrl>#sh_ylw-pushpin276</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin4">
+	<Style id="sn_ylw-pushpin7">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -1864,6 +1958,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin13</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin179">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -1971,6 +2075,21 @@
 			<styleUrl>#sh_placemark_circle_highlight41</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sn_ylw-pushpin8">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin237">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -1981,6 +2100,21 @@
 		</IconStyle>
 		<LineStyle>
 			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffffaa00</color>
 			<width>4</width>
 		</LineStyle>
 	</Style>
@@ -1998,6 +2132,21 @@
 				<href>http://maps.google.com/mapfiles/kml/paddle/T-lv.png</href>
 			</ItemIcon>
 		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin9">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffffaa00</color>
+			<width>4</width>
+		</LineStyle>
 	</Style>
 	<StyleMap id="msn_ylw-pushpin608">
 		<Pair>
@@ -2100,14 +2249,14 @@
 			<styleUrl>#sh_ylw-pushpin249</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin3">
+	<StyleMap id="msn_ylw-pushpin9">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+			<styleUrl>#sn_ylw-pushpin2</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+			<styleUrl>#sh_ylw-pushpin17</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_placemark_circle31">
@@ -2167,22 +2316,6 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin704">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffffffaa</color>
-			<width>5</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>00ffffff</color>
-		</PolyStyle>
-	</Style>
 	<Style id="inline1821">
 		<LineStyle>
 			<color>ffffffaa</color>
@@ -2200,6 +2333,18 @@
 		<BalloonStyle>
 		</BalloonStyle>
 	</Style>
+	<Style id="sh_ylw-pushpin6">
+		<IconStyle>
+			<color>ff00aa00</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<StyleMap id="msn_placemark_circle1000">
 		<Pair>
 			<key>normal</key>
@@ -2210,7 +2355,7 @@
 			<styleUrl>#sh_placemark_circle_highlight15</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin2">
+	<Style id="sh_ylw-pushpin7">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2260,6 +2405,21 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
+	<Style id="sn_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin2211">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -2273,6 +2433,16 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin307">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin704</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2115</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin318">
 		<Pair>
 			<key>normal</key>
@@ -2352,6 +2522,22 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<Style id="sh_ylw-pushpin2115">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffffaa</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
 	<Style id="sh_triangle11">
 		<IconStyle>
 			<scale>1.4</scale>
@@ -2388,6 +2574,22 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<Style id="sn_ylw-pushpin704">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffffaa</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin1302">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -2401,7 +2603,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin3">
+	<Style id="sh_ylw-pushpin8">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2429,7 +2631,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin2115">
+	<Style id="sh_ylw-pushpin9">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2437,13 +2639,12 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
 		<LineStyle>
-			<color>ffffffaa</color>
-			<width>5</width>
+			<color>ff00ffff</color>
+			<width>4</width>
 		</LineStyle>
-		<PolyStyle>
-			<color>00ffffff</color>
-		</PolyStyle>
 	</Style>
 	<Style id="sn_ylw-pushpin207">
 		<IconStyle>
@@ -2458,14 +2659,14 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin4">
+	<StyleMap id="msn_ylw-pushpin10">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+			<styleUrl>#sn_ylw-pushpin6</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin2</styleUrl>
+			<styleUrl>#sh_ylw-pushpin7</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin245">
@@ -2533,6 +2734,33 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<Style id="sn_ylw-pushpin11">
+		<IconStyle>
+			<color>ff00aa00</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
 	<StyleMap id="msn_ylw-pushpin196">
 		<Pair>
 			<key>normal</key>
@@ -2581,6 +2809,16 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin11</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin178">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -2680,6 +2918,21 @@
 			</Icon>
 		</IconStyle>
 	</Style>
+	<Style id="sn_ylw-pushpin12">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
 	<StyleMap id="msn_ylw-pushpin1412">
 		<Pair>
 			<key>normal</key>
@@ -2694,6 +2947,17 @@
 		<LineStyle>
 			<width>2</width>
 		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin11">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin1015">
 		<IconStyle>
@@ -2759,6 +3023,17 @@
 			<styleUrl>#sh_target3</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sh_ylw-pushpin12">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin1115">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -2767,6 +3042,17 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
+	</Style>
+	<Style id="sh_blue-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin246">
 		<IconStyle>
@@ -2809,6 +3095,16 @@
 			</Icon>
 		</IconStyle>
 	</Style>
+	<Style id="sn_star">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin2211">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -2842,6 +3138,17 @@
 			<styleUrl>#sh_ylw-pushpin523</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sn_blue-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin259">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -2864,6 +3171,16 @@
 			<fill>0</fill>
 		</PolyStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin9</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sn_ylw-pushpin246">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -2888,6 +3205,21 @@
 		<LineStyle>
 			<color>ff0000ff</color>
 			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin13">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4</width>
 		</LineStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin616">
@@ -2955,6 +3287,36 @@
 			<styleUrl>#sh_ylw-pushpin247</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sn_ylw-pushpin13">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin14">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00aa00</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin523">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -2964,7 +3326,7 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin4">
+	<Style id="sh_ylw-pushpin15">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2988,7 +3350,7 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin5">
+	<Style id="sn_ylw-pushpin14">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -3048,7 +3410,7 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin5">
+	<Style id="sh_ylw-pushpin16">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3122,6 +3484,16 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin295">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -3153,7 +3525,7 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin6">
+	<Style id="sh_ylw-pushpin17">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3218,16 +3590,17 @@
 			<styleUrl>#sh_ylw-pushpin1612</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin259">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin239</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin227</styleUrl>
-		</Pair>
-	</StyleMap>
+	<Style id="sn_ylw-pushpin15">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin1990">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -3251,6 +3624,11 @@
 			<styleUrl>#sh_ylw-pushpin1803</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="inline1670">
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<StyleMap id="msn_ylw-pushpin198">
 		<Pair>
 			<key>normal</key>
@@ -3261,11 +3639,6 @@
 			<styleUrl>#sh_ylw-pushpin148</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="inline1670">
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
 	<Style id="inline17200">
 		<LineStyle>
 			<width>2</width>
@@ -3304,14 +3677,24 @@
 			<styleUrl>#sh_placemark_circle_highlight04</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin5">
+	<StyleMap id="msn_ylw-pushpin14">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+			<styleUrl>#sn_ylw-pushpin4</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin12</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin2114">
@@ -3341,10 +3724,10 @@
 			</ItemIcon>
 		</ListStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin6">
+	<StyleMap id="msn_ylw-pushpin16">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin5</styleUrl>
+			<styleUrl>#sn_ylw-pushpin14</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -3409,6 +3792,31 @@
 			</ItemIcon>
 		</ListStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin16">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00aa00</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
 	<StyleMap id="msn_ylw-pushpin199">
 		<Pair>
 			<key>normal</key>
@@ -3463,7 +3871,7 @@
 			<styleUrl>#sh_ylw-pushpin258</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin6">
+	<Style id="sn_ylw-pushpin17">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -3569,6 +3977,7 @@ maxcrosswind:90</description>
 		</Placemark>
 		<Folder>
 			<name>Landscape</name>
+			<open>1</open>
 			<Placemark>
 				<name>coastline</name>
 				<styleUrl>#msn_ylw-pushpin307</styleUrl>
@@ -3577,7 +3986,7 @@ maxcrosswind:90</description>
 					<outerBoundaryIs>
 						<LinearRing>
 							<coordinates>
-								8.942184505854323,55.8065469017407,0 8.468692465465628,49.9230598578994,0 17.48040601798386,48.7165481533024,0 19.66399986287496,53.87401810063907,0 19.65478213181671,54.44585884336776,0 18.85973868522108,54.3654942597913,0 18.57687770552647,54.43735349172074,0 18.52946567699641,54.63643668118413,0 18.32671921441564,54.83818045444717,0 17.19034094630607,54.73035700523176,0 16.96183142005109,54.62752649448291,0 16.50411306650065,54.55278965070529,0 16.18680622125796,54.30618079531768,0 15.86564609264654,54.243530435846,0 14.28546416775847,53.92614650667237,0 14.0577978184047,54.02611003712297,0 13.77889504542953,54.20591773914319,0 13.67103019839766,54.1687355194463,0 13.46724636018655,54.14907417883653,0 13.43346006321234,54.22358803738891,0 13.57320074294726,54.3212924928386,0 13.73953811689956,54.2812819121277,0 13.64120900147982,54.39292779962857,0 13.60494400515991,54.47936245571238,0 13.71116195038562,54.52844357010183,0 13.6243907629467,54.57893773424658,0 13.44484502453017,54.58245809272941,0 13.39496819662437,54.68928817038654,0 13.10425920386225,54.60579527213777,0 13.04385541417109,54.45050902433093,0 12.51636047557645,54.48375454435549,0 12.11626809475064,54.19019240076657,0 11.68008706521154,54.14146109007834,0 11.25865552326624,53.94223908710368,0 11.17273966479047,54.02734274094319,0 10.78838104042335,53.99730986781463,0 10.80353349529185,54.06255772466874,0 11.10202030515976,54.20374949519406,0 11.05901866511594,54.34102772480453,0 11.20117294975124,54.40309293899669,0 11.3088357640553,54.40113337858957,0 11.24580265794218,54.50718568469549,0 11.05541726670639,54.53855839594434,0 11.0165836392941,54.45620978301069,0 11.09785604419029,54.4231896766663,0 11.0552992996829,54.37850512401911,0 10.9243907888089,54.38967014015019,0 10.67728973136089,54.29157414973717,0 10.62231142257073,54.36120781713524,0 10.33106231061558,54.43847506491718,0 10.22451752305175,54.4192168778647,0 10.16342306169593,54.48142575388621,0 9.865302895694366,54.46379095384356,0 9.996064876894554,54.50978762126321,0 10.04852697710597,54.67989456646906,0 9.908044989745211,54.80554303118833,0 9.845560206368981,54.769847101007,0 9.77961437428802,54.89013579110171,0 10.08115235602393,54.8660772331227,0 10.00383069683416,54.97434795804519,0 9.757253177941923,55.08407754298626,0 9.509041772992111,55.11851579628311,0 9.724646253518374,55.22219749579882,0 9.58160921939381,55.42880759975846,0 9.898015428593418,55.26743233316109,0 10.078526260771,55.08134369915251,0 10.33694260400684,55.04857172607277,0 10.48233900327082,54.92226754748842,0 10.26819084018208,54.9540123738949,0 10.41256015501844,54.81846403916413,0 10.58363621028688,54.85028343008615,0 10.67125382452436,54.75369741951064,0 10.73366050197419,54.72968636906627,0 10.9501641556616,55.12465751487338,0 10.94414001009022,55.1685951596846,0 10.73400786202417,54.99181745232587,0 10.68530149592898,55.04654213123459,0 10.81985541469581,55.1823688160823,0 10.80982519174007,55.34202083552,0 10.65775263353215,55.6192474268248,0 11.08083127975911,55.63904560146166,0 11.16478709847833,55.5075740171779,0 11.12579419961064,55.36509559366466,0 11.26110257117551,55.20994107983562,0 11.40618350928527,55.18554150639036,0 11.6973407333305,55.14555521382359,0 11.87324939624622,54.98471429935104,0 11.69895099021957,54.9484249084416,0 11.51045203128233,54.83749886575449,0 11.18408857344019,54.97543855071938,0 11.00688792394953,54.90090845600111,0 10.95904310279796,54.81213260895977,0 11.2229032478115,54.70218615312747,0 11.48525209100509,54.61186113510271,0 11.68779958592957,54.6580168303202,0 11.859695122719,54.64625378361472,0 11.91982787642088,54.56650142537029,0 11.97798119470086,54.55941891594944,0 12.02847684163032,54.72300211330013,0 12.20446039519283,54.86770437580466,0 12.40262755678657,54.96146551093982,0 12.51922310932068,54.93790887371858,0 12.54618444811164,54.969144780839,0 12.45296966172486,55.00818590353549,0 12.26307394505672,55.10181887823702,0 12.14345178402624,55.03525402959369,0 12.16759030712631,55.2033581898686,0 12.40194473756562,55.25528961622618,0 12.46344192406715,55.33087848408466,0 12.22309768007439,55.46748632959076,0 12.43143068186414,55.59004422687337,0 12.63840329083601,55.5552410629568,0 12.641752326594,55.7125614115772,0 8.942184505854323,55.8065469017407,0 
+								8.120717672315575,55.75927883172994,0 8.054206890329214,55.5698604017391,0 8.403357116148506,55.34093274643934,0 8.302394724899038,54.84881722879413,0 8.334717089430058,54.55562131922152,0 8.593360768209306,54.32813602514437,0 8.552962385740789,53.94674597840076,0 8.115462660230893,53.79278211865833,0 8.136348899754131,53.59314938300754,0 8.002435292991137,53.7843984610451,0 7.051453165530271,53.69240388439026,0 6.676200944943115,53.59848397979492,0 6.953729126414832,53.39723991305485,0 6.571205818359259,53.54980057886453,0 8.539450292888521,48.64342399835729,0 20.00567534639669,48.63996692435064,0 19.66399986287496,53.87401810063907,0 19.65478213181671,54.44585884336776,0 18.85973868522108,54.3654942597913,0 18.57687770552647,54.43735349172074,0 18.52946567699641,54.63643668118413,0 18.32671921441564,54.83818045444717,0 17.19034094630607,54.73035700523176,0 16.96183142005109,54.62752649448291,0 16.50411306650065,54.55278965070529,0 16.18680622125796,54.30618079531768,0 15.86564609264654,54.243530435846,0 14.28546416775847,53.92614650667237,0 14.0577978184047,54.02611003712297,0 13.77889504542953,54.20591773914319,0 13.67103019839766,54.1687355194463,0 13.46724636018655,54.14907417883653,0 13.43346006321234,54.22358803738891,0 13.57320074294726,54.3212924928386,0 13.73953811689956,54.2812819121277,0 13.64120900147982,54.39292779962857,0 13.60494400515991,54.47936245571238,0 13.71116195038562,54.52844357010183,0 13.6243907629467,54.57893773424658,0 13.44484502453017,54.58245809272941,0 13.39496819662437,54.68928817038654,0 13.10425920386225,54.60579527213777,0 13.04385541417109,54.45050902433093,0 12.51636047557645,54.48375454435549,0 12.11626809475064,54.19019240076657,0 11.68008706521154,54.14146109007834,0 11.25865552326624,53.94223908710368,0 11.17273966479047,54.02734274094319,0 10.78838104042335,53.99730986781463,0 10.80353349529185,54.06255772466874,0 11.10202030515976,54.20374949519406,0 11.05901866511594,54.34102772480453,0 11.20117294975124,54.40309293899669,0 11.3088357640553,54.40113337858957,0 11.24580265794218,54.50718568469549,0 11.05541726670639,54.53855839594434,0 11.0165836392941,54.45620978301069,0 11.09785604419029,54.4231896766663,0 11.0552992996829,54.37850512401911,0 10.9243907888089,54.38967014015019,0 10.67728973136089,54.29157414973717,0 10.62231142257073,54.36120781713524,0 10.33106231061558,54.43847506491718,0 10.22451752305175,54.4192168778647,0 10.16342306169593,54.48142575388621,0 9.865302895694366,54.46379095384356,0 9.996064876894554,54.50978762126321,0 10.04852697710597,54.67989456646906,0 9.908044989745211,54.80554303118833,0 9.845560206368981,54.769847101007,0 9.77961437428802,54.89013579110171,0 10.08115235602393,54.8660772331227,0 10.00383069683416,54.97434795804519,0 9.757253177941923,55.08407754298626,0 9.509041772992111,55.11851579628311,0 9.724646253518374,55.22219749579882,0 9.58160921939381,55.42880759975846,0 9.898015428593418,55.26743233316109,0 10.078526260771,55.08134369915251,0 10.33694260400684,55.04857172607277,0 10.48233900327082,54.92226754748842,0 10.26819084018208,54.9540123738949,0 10.41256015501844,54.81846403916413,0 10.58363621028688,54.85028343008615,0 10.67125382452436,54.75369741951064,0 10.73366050197419,54.72968636906627,0 10.9501641556616,55.12465751487338,0 10.94414001009022,55.1685951596846,0 10.73400786202417,54.99181745232587,0 10.68530149592898,55.04654213123459,0 10.81985541469581,55.1823688160823,0 10.80982519174007,55.34202083552,0 10.65775263353215,55.6192474268248,0 11.08083127975911,55.63904560146166,0 11.16478709847833,55.5075740171779,0 11.12579419961064,55.36509559366466,0 11.26110257117551,55.20994107983562,0 11.40618350928527,55.18554150639036,0 11.6973407333305,55.14555521382359,0 11.87324939624622,54.98471429935104,0 11.69895099021957,54.9484249084416,0 11.51045203128233,54.83749886575449,0 11.18408857344019,54.97543855071938,0 11.00688792394953,54.90090845600111,0 10.95904310279796,54.81213260895977,0 11.2229032478115,54.70218615312747,0 11.48525209100509,54.61186113510271,0 11.68779958592957,54.6580168303202,0 11.859695122719,54.64625378361472,0 11.91982787642088,54.56650142537029,0 11.97798119470086,54.55941891594944,0 12.02847684163032,54.72300211330013,0 12.20446039519283,54.86770437580466,0 12.40262755678657,54.96146551093982,0 12.51922310932068,54.93790887371858,0 12.54618444811164,54.969144780839,0 12.45296966172486,55.00818590353549,0 12.26307394505672,55.10181887823702,0 12.14345178402624,55.03525402959369,0 12.16759030712631,55.2033581898686,0 12.40194473756562,55.25528961622618,0 12.46344192406715,55.33087848408466,0 12.22309768007439,55.46748632959076,0 12.43143068186414,55.59004422687337,0 12.63840329083601,55.5552410629568,0 12.641752326594,55.7125614115772,0 8.120717672315575,55.75927883172994,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -3695,6 +4104,7 @@ maxcrosswind:90</description>
 			<name>Airnavpoints</name>
 			<Folder>
 				<name>arrival</name>
+				<open>1</open>
 				<Placemark>
 					<name>CVC R068/NRE 24.0DME</name>
 					<description>type:pilot</description>
@@ -4089,6 +4499,34 @@ maxcrosswind:90</description>
 						<altitudeMode>relativeToGround</altitudeMode>
 						<gx:drawOrder>1</gx:drawOrder>
 						<coordinates>13.54753333333333,52.58309444444446,914.3999999999999</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>ROGAB</name>
+					<open>1</open>
+					<description>type:STAR</description>
+					<LookAt>
+						<gx:TimeStamp><when>2020-04-18</when>
+</gx:TimeStamp>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.24980459348443</longitude>
+						<latitude>52.5815344204273</latitude>
+						<altitude>0</altitude>
+						<heading>-0.06866566689742032</heading>
+						<tilt>34.15158753625192</tilt>
+						<range>102017.5290243396</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_star</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.54981388888889,52.58518055555556,914.3999999999999</coordinates>
 					</Point>
 				</Placemark>
 				<Placemark>
@@ -5037,8 +5475,11 @@ maxcrosswind:90</description>
 		</Folder>
 		<Folder>
 			<name>STARs</name>
+			<visibility>0</visibility>
+			<open>1</open>
 			<Folder>
 				<name>RENKI 3H</name>
+				<visibility>0</visibility>
 				<description>RENKI
 PINUV
 NASAT
@@ -5046,15 +5487,16 @@ KOMIV
 DT431
 DT436
 DT456
-DT454
-DT452
-LABOX</description>
+DT454</description>
 			</Folder>
 		</Folder>
 		<Folder>
 			<name>SIDs</name>
+			<visibility>0</visibility>
+			<open>1</open>
 			<Folder>
 				<name>BKD 6L</name>
+				<visibility>0</visibility>
 				<description>DT262
 TGL R260/16.0DME
 TUBRI
@@ -5674,6 +6116,7 @@ StripeName:GATE 8</description>
 				<open>1</open>
 				<Folder>
 					<name>N</name>
+					<open>1</open>
 					<Placemark>
 						<name>NM-W</name>
 						<description>name:NM-W
@@ -5803,6 +6246,36 @@ StripeName:</description>
 				<Folder>
 					<name>S</name>
 					<open>1</open>
+					<Placemark>
+						<name>SE</name>
+						<description>name:SE
+isholdpoint:false
+poiground:false
+radarName:SE
+UIName:
+StripeName:</description>
+						<LookAt>
+							<gx:TimeStamp><when>2014-09-05</when>
+</gx:TimeStamp>
+							<gx:ViewerOptions>
+								<gx:option name="historicalimagery"></gx:option>
+								<gx:option enabled="0" name="sunlight"></gx:option>
+								<gx:option enabled="0" name="streetview"></gx:option>
+							</gx:ViewerOptions>
+							<longitude>13.30977059450706</longitude>
+							<latitude>52.56095403099865</latitude>
+							<altitude>0</altitude>
+							<heading>-17.56546672646317</heading>
+							<tilt>20.58665664596131</tilt>
+							<range>131.1760848301474</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
+						<Point>
+							<gx:drawOrder>1</gx:drawOrder>
+							<coordinates>13.30977049446837,52.56107297779614,0</coordinates>
+						</Point>
+					</Placemark>
 					<Placemark>
 						<name>SE-Stop</name>
 						<description>name:SE
@@ -6218,7 +6691,7 @@ StripeName:</description>
 						<description>name:RWY26L-S
 isholdpoint:true
 poiground:true
-radarName:SE
+radarName:SE-S
 UIName:Runway 26L-S
 StripeName:RWY26L-S</description>
 						<LookAt>
@@ -6239,7 +6712,7 @@ StripeName:RWY26L-S</description>
 							<range>33.42226086914916</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin6</styleUrl>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.30940933917112,52.55890699472147,0</coordinates>
@@ -6367,7 +6840,7 @@ StripeName:RWY08R</description>
 							<range>68.77932203506161</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin6</styleUrl>
+						<styleUrl>#msn_ylw-pushpin16</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.2755304832605,52.55582703682378,0</coordinates>
@@ -6534,11 +7007,44 @@ StripeName:TS</description>
 						</Point>
 					</Placemark>
 					<Placemark>
+						<name>TM</name>
+						<description>name:TM
+isholdpoint:true
+poiground:true
+radarName:TM
+UIName:TM
+StripeName:TM</description>
+						<LookAt>
+							<gx:TimeSpan>
+								<begin>2014-09-03T23:59:59Z</begin>
+								<end>2014-09-04</end>
+							</gx:TimeSpan>
+							<gx:ViewerOptions>
+								<gx:option name="historicalimagery"></gx:option>
+								<gx:option enabled="0" name="sunlight"></gx:option>
+								<gx:option enabled="0" name="streetview"></gx:option>
+							</gx:ViewerOptions>
+							<longitude>13.28334270168378</longitude>
+							<latitude>52.55802070086722</latitude>
+							<altitude>0</altitude>
+							<heading>0.005522705672884717</heading>
+							<tilt>29.38550444573571</tilt>
+							<range>384.076935278562</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
+						<Point>
+							<gx:drawOrder>1</gx:drawOrder>
+							<coordinates>13.28138308153685,52.55824566844684,0</coordinates>
+						</Point>
+					</Placemark>
+					<Placemark>
 						<name>TM-S</name>
+						<open>1</open>
 						<description>name:TM-S
 isholdpoint:true
 poiground:true
-radarName:TM-S
+radarName:
 UIName:TM-S
 StripeName:TM-S</description>
 						<LookAt>
@@ -6559,7 +7065,7 @@ StripeName:TM-S</description>
 							<range>95.92659590376789</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin1106</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.28144689782178,52.55800277755794,0</coordinates>
@@ -6602,7 +7108,7 @@ StripeName:RW-N</description>
 						<description>name:TE-SS
 isholdpoint:true
 poiground:true
-radarName:TE-SS
+radarName:
 UIName:TE-SS
 StripeName:TE-SS</description>
 						<LookAt>
@@ -6621,7 +7127,7 @@ StripeName:TE-SS</description>
 							<range>115.5662088551652</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin187</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.2935224885514,52.55918975381155,0</coordinates>
@@ -6630,6 +7136,7 @@ StripeName:TE-SS</description>
 				</Folder>
 				<Folder>
 					<name>to_08L26R</name>
+					<open>1</open>
 					<Placemark>
 						<name>SE-NN-Start</name>
 						<description>name:RWY26R-S
@@ -6654,7 +7161,7 @@ StripeName:RWY26R-S</description>
 							<range>35.70862224484792</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin187</styleUrl>
+						<styleUrl>#msn_ylw-pushpin15</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.30969909676114,52.56127293545173,0</coordinates>
@@ -6755,7 +7262,7 @@ StripeName:</description>
 						<description>name:TM-N
 isholdpoint:true
 poiground:true
-radarName:TM-N
+radarName:
 UIName:TM-N
 StripeName:TM-N</description>
 						<LookAt>
@@ -6774,7 +7281,7 @@ StripeName:TM-N</description>
 							<range>65.1477517396427</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin187</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.28132225675388,52.5584800235074,0</coordinates>
@@ -6811,13 +7318,13 @@ StripeName:TN</description>
 						</Point>
 					</Placemark>
 					<Placemark>
-						<name>TE-NN</name>
-						<description>name:TE-NN
+						<name>TE-N</name>
+						<description>name:TE-N
 isholdpoint:true
 poiground:true
-radarName:TE-NN
-UIName:TE-NN
-StripeName:TE-NN</description>
+radarName:TE-N
+UIName:TE-N
+StripeName:TE-N</description>
 						<LookAt>
 							<gx:TimeStamp><when>2014-09-05</when>
 </gx:TimeStamp>
@@ -6834,7 +7341,7 @@ StripeName:TE-NN</description>
 							<range>318.6299616983263</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin187</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.29300067436426,52.56116112240666,0</coordinates>
@@ -6845,7 +7352,7 @@ StripeName:TE-NN</description>
 						<description>name:TE-NS
 isholdpoint:true
 poiground:true
-radarName:TE-NS
+radarName:
 UIName:TE-NS
 StripeName:TE-NS</description>
 						<LookAt>
@@ -6864,10 +7371,43 @@ StripeName:TE-NS</description>
 							<range>112.3928007382214</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin187</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.29340117334384,52.55966351661156,0</coordinates>
+						</Point>
+					</Placemark>
+					<Placemark>
+						<name>TE</name>
+						<open>1</open>
+						<description>name:TE
+isholdpoint:true
+poiground:true
+radarName:TE
+UIName:TE
+StripeName:TE</description>
+						<LookAt>
+							<gx:TimeSpan>
+								<begin>2014-09-03T23:59:59Z</begin>
+								<end>2014-09-04</end>
+							</gx:TimeSpan>
+							<gx:ViewerOptions>
+								<gx:option name="historicalimagery"></gx:option>
+								<gx:option enabled="0" name="sunlight"></gx:option>
+								<gx:option enabled="0" name="streetview"></gx:option>
+							</gx:ViewerOptions>
+							<longitude>13.29395947236156</longitude>
+							<latitude>52.55966116631966</latitude>
+							<altitude>0</altitude>
+							<heading>0.01481179670691808</heading>
+							<tilt>30.00089072134154</tilt>
+							<range>198.621729243491</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
+						<Point>
+							<gx:drawOrder>1</gx:drawOrder>
+							<coordinates>13.29346159863859,52.55943644192308,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark>
@@ -6905,7 +7445,7 @@ StripeName:</description>
 						<description>name:RWY08L-N
 isholdpoint:true
 poiground:true
-radarName:
+radarName:NW
 UIName:Runway 08L-N
 StripeName:RWY08L-N</description>
 						<LookAt>
@@ -6926,7 +7466,7 @@ StripeName:RWY08L-N</description>
 							<range>53.00243725901005</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin199</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.2659939273878,52.55992747549341,0</coordinates>
@@ -6997,7 +7537,7 @@ StripeName:</description>
 						<description>name:RWY08L-S
 isholdpoint:true
 poiground:true
-radarName:
+radarName:SW
 UIName:Runway 08L-S
 StripeName:RWY08L-S</description>
 						<LookAt>
@@ -7016,7 +7556,7 @@ StripeName:RWY08L-S</description>
 							<range>81.58341832047581</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin187</styleUrl>
+						<styleUrl>#msn_ylw-pushpin11</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.26551159314354,52.55624857575398,0</coordinates>
@@ -7056,6 +7596,7 @@ StripeName:</description>
 			</Folder>
 			<Folder>
 				<name>Taxipaths</name>
+				<open>1</open>
 				<Folder>
 					<name>N</name>
 					<Placemark>
@@ -7127,6 +7668,7 @@ taxipath:N</description>
 				</Folder>
 				<Folder>
 					<name>S</name>
+					<open>1</open>
 					<Placemark>
 						<name>SE</name>
 						<description>maxspeed:25
@@ -7141,11 +7683,34 @@ taxipath:S</description>
 							<range>2301.56737565422</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin229</styleUrl>
+						<styleUrl>#msn_ylw-pushpin12</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
-								13.30981098613071,52.56092052506205,0 13.3097233497766,52.56124398037312,0 
+								13.30976759257114,52.56108491710629,0 13.3097233497766,52.56124398037312,0 
+							</coordinates>
+						</LineString>
+					</Placemark>
+					<Placemark>
+						<name>SE</name>
+						<open>1</open>
+						<description>maxspeed:25
+name:
+taxipath:S</description>
+						<LookAt>
+							<longitude>140.3869790501581</longitude>
+							<latitude>35.76359205382425</latitude>
+							<altitude>0</altitude>
+							<heading>0</heading>
+							<tilt>45</tilt>
+							<range>2301.56737565422</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#msn_ylw-pushpin12</styleUrl>
+						<LineString>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.30981098613071,52.56092052506205,0 13.30977290366031,52.56106206016738,0 
 							</coordinates>
 						</LineString>
 					</Placemark>
@@ -7416,6 +7981,7 @@ taxipath:SE</description>
 				</Folder>
 				<Folder>
 					<name>T</name>
+					<open>1</open>
 					<Placemark>
 						<name>TE</name>
 						<description>maxspeed:25
@@ -7540,11 +8106,34 @@ taxipath:T</description>
 							<range>1039.235107497616</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin196</styleUrl>
+						<styleUrl>#msn_ylw-pushpin8</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
-								13.28132168978539,52.55847180242156,0 13.28144637369784,52.55801509388237,0 
+								13.28138641279334,52.55823328334985,0 13.28144637369784,52.55801509388237,0 
+							</coordinates>
+						</LineString>
+					</Placemark>
+					<Placemark>
+						<name>TM</name>
+						<open>1</open>
+						<description>maxspeed:10
+name:
+taxipath:T</description>
+						<LookAt>
+							<longitude>13.30448247507038</longitude>
+							<latitude>52.55814370620439</latitude>
+							<altitude>0</altitude>
+							<heading>0</heading>
+							<tilt>45</tilt>
+							<range>1039.235107497616</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#msn_ylw-pushpin8</styleUrl>
+						<LineString>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.28132168978539,52.55847180242156,0 13.28137638473464,52.55827056608648,0 
 							</coordinates>
 						</LineString>
 					</Placemark>
@@ -7562,11 +8151,34 @@ taxipath:T</description>
 							<range>1039.235107497616</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin196</styleUrl>
+						<styleUrl>#msn_ylw-pushpin8</styleUrl>
 						<LineString>
 							<tessellate>1</tessellate>
 							<coordinates>
-								13.29340463309902,52.55965117177703,0 13.29351930412154,52.55920540026023,0 
+								13.29346335730026,52.55942451086869,0 13.29351930412154,52.55920540026023,0 
+							</coordinates>
+						</LineString>
+					</Placemark>
+					<Placemark>
+						<name>TE</name>
+						<open>1</open>
+						<description>maxspeed:10
+name:
+taxipath:T</description>
+						<LookAt>
+							<longitude>13.30448247507038</longitude>
+							<latitude>52.55814370620439</latitude>
+							<altitude>0</altitude>
+							<heading>0</heading>
+							<tilt>45</tilt>
+							<range>1039.235107497616</range>
+							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+						</LookAt>
+						<styleUrl>#msn_ylw-pushpin8</styleUrl>
+						<LineString>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.29340463309902,52.55965117177703,0 13.29345903599257,52.55945382732188,0 
 							</coordinates>
 						</LineString>
 					</Placemark>
@@ -8266,7 +8878,6 @@ StripeName:</description>
 				<open>1</open>
 				<Placemark>
 					<name>08R-26L</name>
-					<visibility>0</visibility>
 					<description>maxspeed:50
 name:runway
 taxipath:runway</description>
@@ -8278,7 +8889,7 @@ taxipath:runway</description>
 						<tilt>45</tilt>
 						<range>5122.962123148852</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin</styleUrl>
+					<styleUrl>#msn_ylw-pushpin1</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -8299,7 +8910,7 @@ taxipath:runway</description>
 						<tilt>45</tilt>
 						<range>5122.962123148852</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin259</styleUrl>
+					<styleUrl>#msn_ylw-pushpin17</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -8390,7 +9001,7 @@ taxipath:runway</description>
 				</Placemark>
 				<Placemark>
 					<name>08R26L:SE-cross</name>
-					<description>maxspeed:10
+					<description>maxspeed:25
 name:runway
 taxipath:runway</description>
 					<LookAt>
@@ -8407,7 +9018,7 @@ taxipath:runway</description>
 						<range>1000</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin219</styleUrl>
+					<styleUrl>#msn_ylw-pushpin13</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9148,7 +9759,6 @@ taxipath:runway</description>
 		</Folder>
 		<Folder>
 			<name>Runway</name>
-			<open>1</open>
 			<description>id:26L
 name:26L
 arrivalpoint:26L:arrival</description>
@@ -9277,7 +9887,6 @@ maxspeed:25</description>
 			</Folder>
 			<Folder>
 				<name>Touchdownwaypoints</name>
-				<open>1</open>
 				<Placemark>
 					<name>26L:arrival</name>
 					<description>name:RWY26L
@@ -9555,7 +10164,6 @@ StripeName:</description>
 				</Placemark>
 				<Placemark>
 					<name>26L:speeddown3</name>
-					<open>1</open>
 					<description>name:speeddown3
 isholdpoint:false
 poitower:false
@@ -9624,7 +10232,6 @@ StripeName:</description>
 			</Folder>
 			<Folder>
 				<name>Touchdownways</name>
-				<open>1</open>
 				<Placemark>
 					<name>26L:arrival-touchdown</name>
 					<description>maxspeed:75</description>
@@ -9655,7 +10262,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin5</styleUrl>
+					<styleUrl>#msn_ylw-pushpin14</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9675,7 +10282,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin5</styleUrl>
+					<styleUrl>#msn_ylw-pushpin14</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9695,7 +10302,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin2</styleUrl>
+					<styleUrl>#msn_ylw-pushpin6</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9705,7 +10312,6 @@ StripeName:</description>
 				</Placemark>
 				<Placemark>
 					<name>26L:TE-speeddown2</name>
-					<open>1</open>
 					<description>maxspeed:50</description>
 					<LookAt>
 						<longitude>140.3794715079197</longitude>
@@ -9715,7 +10321,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin5</styleUrl>
+					<styleUrl>#msn_ylw-pushpin14</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9734,7 +10340,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin5</styleUrl>
+					<styleUrl>#msn_ylw-pushpin14</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9754,7 +10360,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin4</styleUrl>
+					<styleUrl>#msn_ylw-pushpin10</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9764,7 +10370,6 @@ StripeName:</description>
 				</Placemark>
 				<Placemark>
 					<name>26L:TM-speeddown3</name>
-					<open>1</open>
 					<description>maxspeed:50</description>
 					<LookAt>
 						<longitude>140.3794715079197</longitude>
@@ -9774,7 +10379,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin5</styleUrl>
+					<styleUrl>#msn_ylw-pushpin14</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9794,7 +10399,7 @@ StripeName:</description>
 						<tilt>45</tilt>
 						<range>1000</range>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin5</styleUrl>
+					<styleUrl>#msn_ylw-pushpin14</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9805,7 +10410,6 @@ StripeName:</description>
 			</Folder>
 			<Folder>
 				<name>Exitpaths</name>
-				<open>1</open>
 				<Placemark>
 					<name>26LExit:TR</name>
 					<description>maxspeed:10</description>
@@ -9818,7 +10422,7 @@ StripeName:</description>
 						<range>1000</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin3</styleUrl>
+					<styleUrl>#msn_ylw-pushpin9</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9839,7 +10443,7 @@ StripeName:</description>
 						<range>1000</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin3</styleUrl>
+					<styleUrl>#msn_ylw-pushpin9</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9860,7 +10464,7 @@ StripeName:</description>
 						<range>1000</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<styleUrl>#msn_ylw-pushpin3</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9870,7 +10474,6 @@ StripeName:</description>
 				</Placemark>
 				<Placemark>
 					<name>26LExit:TM</name>
-					<open>1</open>
 					<description>maxspeed:10</description>
 					<LookAt>
 						<longitude>140.390146299783</longitude>
@@ -9881,7 +10484,7 @@ StripeName:</description>
 						<range>1000</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_ylw-pushpin1</styleUrl>
+					<styleUrl>#msn_ylw-pushpin5</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
@@ -9925,13 +10528,928 @@ StripeName:</description>
 				</Folder>
 				<Folder>
 					<name>NASAT 26L</name>
-					<description>#26LILS21000
+					<description>#NASAT
+#KOMIV
+#DT431
+#DT436
+#DT456
+DT454
+DT452
+LABOX
 26LILS13000
 26LILS8000
 26LILS5000
 26LILS3000
 26LILS2000
 26LILS1000</description>
+				</Folder>
+			</Folder>
+			<Folder>
+				<name>STARs</name>
+				<description>RENKI 3H</description>
+			</Folder>
+			<Folder>
+				<name>SIDs</name>
+				<description>BKD 6L</description>
+			</Folder>
+			<Folder>
+				<name>Goaround</name>
+				<description>NASAT</description>
+			</Folder>
+		</Folder>
+		<Folder>
+			<name>Runway</name>
+			<open>1</open>
+			<description>id:26R
+name:26R
+arrivalpoint:26R:arrival</description>
+			<LookAt>
+				<longitude>13.29279077217517</longitude>
+				<latitude>52.55874791590063</latitude>
+				<altitude>335</altitude>
+				<heading>0</heading>
+				<tilt>45</tilt>
+				<range>3916.936486558744</range>
+			</LookAt>
+			<Folder>
+				<name>Takeoffpoints</name>
+				<visibility>0</visibility>
+				<Placemark>
+					<name>26R:Start</name>
+					<visibility>0</visibility>
+					<description>name:
+isholdpoint:false
+poitower:false</description>
+					<LookAt>
+						<gx:TimeStamp><when>2014-09-05</when>
+</gx:TimeStamp>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.30842141779481</longitude>
+						<latitude>52.56159461005856</latitude>
+						<altitude>0</altitude>
+						<heading>0.02262533791169555</heading>
+						<tilt>21.98201777333283</tilt>
+						<range>184.1526991336775</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin2</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.30854816818578,52.56183899724756,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:End</name>
+					<visibility>0</visibility>
+					<description>name:26R:End
+isholdpoint:false
+poiground:false</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2012-10-19T23:59:59Z</begin>
+							<end>2012-10-20</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.26479090674434</longitude>
+						<latitude>52.55755471715678</latitude>
+						<altitude>0</altitude>
+						<heading>-0.4090164713430566</heading>
+						<tilt>28.84537269322495</tilt>
+						<range>140.0037222777105</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin2</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.26479090674434,52.55755471715677,335</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Takeoffpaths</name>
+				<visibility>0</visibility>
+				<Folder>
+					<name>26R</name>
+					<visibility>0</visibility>
+					<description>takeoffstartpoint:26R:Start
+takeoffendpoint:26R:End
+maxspeed:-1</description>
+				</Folder>
+			</Folder>
+			<Folder>
+				<name>Lineuppaths</name>
+				<visibility>0</visibility>
+				<Placemark>
+					<name>26RLineupS</name>
+					<visibility>0</visibility>
+					<description>name:26R-S
+maxspeed:25</description>
+					<LookAt>
+						<longitude>140.3779940051889</longitude>
+						<latitude>35.80463952934731</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin7</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.30969913252977,52.56128432423084,0 13.30971257056609,52.56130772132421,0 13.30965662009575,52.5615028913318,0 13.30963094707003,52.56157367991774,0 13.30959705122848,52.56163964229767,0 13.30954776577448,52.56169114100803,0 13.30947402867299,52.56174702949735,0 13.30939276776665,52.56179274127641,0 13.3092992772721,52.56182763856762,0 13.30919846229424,52.5618538136381,0 13.30908639170753,52.5618685391651,0 13.30897846110058,52.56187320164995,0 13.30855938028744,52.5618397562076,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26RLineupN</name>
+					<visibility>0</visibility>
+					<description>name:26R-N
+maxspeed:25</description>
+					<LookAt>
+						<longitude>13.3085342502639</longitude>
+						<latitude>52.56035804616442</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin7</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.30932031099049,52.56272280625872,0 13.30934401578594,52.56269138045291,0 13.30944301192912,52.56230993406341,0 13.30943173749871,52.56219952446452,0 13.30937490732153,52.56211272776832,0 13.30929190315986,52.56202493904537,0 13.30921275099754,52.56197862648109,0 13.30910501880427,52.56192760091142,0 13.30886412041606,52.56188007012011,0 13.30856315273286,52.56184023724666,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Touchdownwaypoints</name>
+				<open>1</open>
+				<Placemark>
+					<name>26R:arrival</name>
+					<description>name:RWY26R
+isholdpoint:false
+poitower:false
+isarrivalpoint:true
+radarName:26R
+UIName:Runway 26R
+StripeName:RWY26R</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2012-10-19T23:59:59Z</begin>
+							<end>2012-10-20</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.31142886977796</longitude>
+						<latitude>52.56059745252801</latitude>
+						<altitude>0</altitude>
+						<heading>-3.969022641482275</heading>
+						<tilt>28.81219341744844</tilt>
+						<range>394.8086124262535</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.31078246398167,52.56205202967814,15</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:touchdown</name>
+					<description>name:touchdown
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.30347692402269</longitude>
+						<latitude>52.5613629660024</latitude>
+						<altitude>0</altitude>
+						<heading>-0.003655230300382784</heading>
+						<tilt>23.46772948213778</tilt>
+						<range>107.9264977041075</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.30303048139896,52.56129826364523,2</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:speeddown1</name>
+					<description>name:26R-speeddown1
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.29491926827388</longitude>
+						<latitude>52.56046780338617</latitude>
+						<altitude>0</altitude>
+						<heading>-0.003779362262688413</heading>
+						<tilt>26.48375959817604</tilt>
+						<range>224.6802233433825</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.29546182018872,52.56055486239839,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:TE-N</name>
+					<description>name:TE-N
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:TE-N
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.29491926827388</longitude>
+						<latitude>52.56046780338617</latitude>
+						<altitude>0</altitude>
+						<heading>-0.003779362262688413</heading>
+						<tilt>26.48375959817604</tilt>
+						<range>224.6802233433825</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.29420724095682,52.5604307841569,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:TE-S</name>
+					<open>1</open>
+					<description>name:TE-S
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:TE-S
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.29413109037799</longitude>
+						<latitude>52.56025198074889</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0008601666987892124</heading>
+						<tilt>15.68027640384173</tilt>
+						<range>112.4675999510065</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.29415155719907,52.56042604517954,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:RW</name>
+					<description>name:RW
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:RW
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.28346874203322</longitude>
+						<latitude>52.55929174338431</latitude>
+						<altitude>0</altitude>
+						<heading>0.0001431183037189407</heading>
+						<tilt>22.58709536700985</tilt>
+						<range>113.2694088770491</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.28314173442049,52.55934930115407,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:TN</name>
+					<open>1</open>
+					<description>name:TN
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:TN
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.28222891843207</longitude>
+						<latitude>52.5591648170156</latitude>
+						<altitude>0</altitude>
+						<heading>-0.0008821649220268848</heading>
+						<tilt>21.03320903675594</tilt>
+						<range>78.01426818629295</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.28188352172322,52.55922604159718,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:TM</name>
+					<open>1</open>
+					<description>name:TM
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:TM
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.28206617183717</longitude>
+						<latitude>52.55922211591274</latitude>
+						<altitude>0</altitude>
+						<heading>0.0001788451012798909</heading>
+						<tilt>20.5977626677617</tilt>
+						<range>70.54847496008733</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.28184769306272,52.55922186593522,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:speeddown3</name>
+					<open>1</open>
+					<description>name:26R-speeddown3
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.27037680795784</longitude>
+						<latitude>52.55806701084546</latitude>
+						<altitude>0</altitude>
+						<heading>-0.007567321877732484</heading>
+						<tilt>25.33385949866499</tilt>
+						<range>393.6314773785818</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.2694599920096,52.55800276755701,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:NW</name>
+					<open>1</open>
+					<description>name:NW
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:NW
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.26850330797407</longitude>
+						<latitude>52.55765077217108</latitude>
+						<altitude>0</altitude>
+						<heading>-6.023508552350465</heading>
+						<tilt>21.18892932543242</tilt>
+						<range>174.7587460905868</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.26816667533508,52.55788001617659,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26R:SW</name>
+					<open>1</open>
+					<description>name:SW
+isholdpoint:false
+poitower:false
+isarrivalpoint:false
+radarName:
+UIName:SW
+StripeName:</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.26850330797407</longitude>
+						<latitude>52.55765077217108</latitude>
+						<altitude>0</altitude>
+						<heading>-6.023508552350465</heading>
+						<tilt>21.18892932543242</tilt>
+						<range>174.7587460905868</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_blue-pushpin0</styleUrl>
+					<Point>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>13.26809712320439,52.55787416301396,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Touchdownways</name>
+				<open>1</open>
+				<Placemark>
+					<name>2RL:arrival-touchdown</name>
+					<description>maxspeed:75</description>
+					<LookAt>
+						<longitude>13.30758255167597</longitude>
+						<latitude>52.55987763160937</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin4</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.31075996340679,52.56205126346578,0 13.30304835064239,52.56130047569668,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:touchdown-speeddown1</name>
+					<description>maxspeed:50</description>
+					<LookAt>
+						<longitude>13.29993791951063</longitude>
+						<latitude>52.55912374625873</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin4</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.30298743480124,52.56129668584202,0 13.29548215078954,52.56055831088943,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:speeddown1-TE-N</name>
+					<open>1</open>
+					<description>maxspeed:25</description>
+					<LookAt>
+						<longitude>140.3794715079197</longitude>
+						<latitude>35.80330268471434</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin4</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.29545475370418,52.56055831071012,0 13.29421568568743,52.56043740820007,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:TEN-TES</name>
+					<open>1</open>
+					<description>maxspeed:25</description>
+					<LookAt>
+						<longitude>13.29463203395955</longitude>
+						<latitude>52.55860889403816</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin4</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.29419902009449,52.56043366801156,0 13.29416309775454,52.56042942943812,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:TE-RW</name>
+					<open>1</open>
+					<description>maxspeed:50</description>
+					<LookAt>
+						<longitude>13.28924958252234</longitude>
+						<latitude>52.55808085450437</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1120.460647296427</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.2941396018717,52.56042624205045,0 13.28315275766471,52.55935184188335,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:RW-TN</name>
+					<description>maxspeed:25</description>
+					<LookAt>
+						<longitude>13.28331891009652</longitude>
+						<latitude>52.55749943485039</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.2831322808222,52.55934959012464,0 13.28189226598269,52.55922839931808,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:TS-TM</name>
+					<open>1</open>
+					<description>maxspeed:25</description>
+					<LookAt>
+						<longitude>13.28261856337083</longitude>
+						<latitude>52.55742931820431</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.2818762987287,52.55922685789752,0 13.28185660253226,52.55922435843423,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:TM-speeddown3</name>
+					<open>1</open>
+					<description>maxspeed:50</description>
+					<LookAt>
+						<longitude>13.28016719891555</longitude>
+						<latitude>52.55718970973489</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.28183436588774,52.5592230464774,0 13.26949697660469,52.55801411501799,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:speeddown3-NW</name>
+					<open>1</open>
+					<description>maxspeed:25</description>
+					<LookAt>
+						<longitude>13.27712917670445</longitude>
+						<latitude>52.55689104146202</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.26943419870131,52.55800560120668,0 13.26819357521763,52.55788272093405,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26R:NW-SW</name>
+					<open>1</open>
+					<description>maxspeed:25</description>
+					<LookAt>
+						<longitude>13.27712917670445</longitude>
+						<latitude>52.55689104146202</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.26815575931366,52.55787914691317,0 13.26810666171135,52.55787605576721,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Exitpaths</name>
+				<open>1</open>
+				<Placemark>
+					<name>26RExit:TE-N</name>
+					<description>maxspeed:10</description>
+					<LookAt>
+						<longitude>13.29437389245668</longitude>
+						<latitude>52.55853743605739</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.29419573918878,52.5604339853238,0 13.29391810527648,52.5604197810914,0 13.29366528813048,52.56042279597083,0 13.2934999179343,52.56043946501273,0 13.29336452052048,52.56047634160964,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26RExit:TE-S</name>
+					<open>1</open>
+					<description>maxspeed:10</description>
+					<LookAt>
+						<longitude>13.29437389245668</longitude>
+						<latitude>52.55853743605739</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.29413910110498,52.5604249136336,0 13.29397471367798,52.56041136859508,0 13.29378204415771,52.56036456110784,0 13.2936078131258,52.56030030850189,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26RExit:RW</name>
+					<description>maxspeed:35</description>
+					<LookAt>
+						<longitude>13.29437389245668</longitude>
+						<latitude>52.55853743605739</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.28312952267723,52.55935023869625,0 13.28189306216885,52.55922801118799,0 13.28103910421147,52.5591303444368,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26RExit:TN</name>
+					<open>1</open>
+					<description>maxspeed:10</description>
+					<LookAt>
+						<longitude>13.29437389245668</longitude>
+						<latitude>52.55853743605739</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.28187624748349,52.55922792804136,0 13.28176685112624,52.55921937682163,0 13.28163978572232,52.55922292799096,0 13.2815209596404,52.559231614934,0 13.28140622616053,52.55924559494519,0 13.28133114374378,52.55925852643751,0 13.28128087717084,52.5592776160338,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26RExit:TM</name>
+					<open>1</open>
+					<description>maxspeed:10</description>
+					<LookAt>
+						<longitude>13.29437389245668</longitude>
+						<latitude>52.55853743605739</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.28183474458527,52.55922211368734,0 13.28164360226012,52.55919671020849,0 13.28155544361746,52.55917588462445,0 13.28147679708603,52.55914620633584,0 13.2813992199878,52.55911814096283,0 13.28133252050894,52.55907214622344,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26RExit:NW</name>
+					<open>1</open>
+					<description>maxspeed:25</description>
+					<LookAt>
+						<longitude>13.29437389245668</longitude>
+						<latitude>52.55853743605739</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.26815557768079,52.55788006924804,0 13.26771597879186,52.55783982887056,0 13.26725361228586,52.55781862397716,0 13.26707986136588,52.55782430416257,0 13.26692067952016,52.55784238322876,0 13.26671770567627,52.55787771660482,0 13.26652371097351,52.55792905411075,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>26RExit:SW</name>
+					<open>1</open>
+					<description>maxspeed:25</description>
+					<LookAt>
+						<longitude>13.29437389245668</longitude>
+						<latitude>52.55853743605739</latitude>
+						<altitude>0</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_ylw-pushpin0</styleUrl>
+					<LineString>
+						<tessellate>1</tessellate>
+						<coordinates>
+							13.26808760433773,52.55787343816088,0 13.26757661295665,52.55781697646204,0 13.26729490404924,52.55777993146159,0 13.26704852867248,52.55772737913191,0 13.26675734263125,52.55763898761245,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>FINALS</name>
+				<open>1</open>
+				<Folder>
+					<name>DEFAULT</name>
+					<description>26RILS21000
+26RILS13000
+26RILS8000
+26RILS5000
+26RILS3000
+26RILS2000
+26RILS1000</description>
+				</Folder>
+				<Folder>
+					<name>NASAT 26R</name>
+					<open>1</open>
+					<description>#NASAT
+#KOMIV
+#DT431
+#DT436
+#DT456
+DT454
+ROGAB
+26RILS13000
+26RILS8000
+26RILS5000
+26RILS3000
+26RILS2000
+26RILS1000</description>
 				</Folder>
 			</Folder>
 			<Folder>
