@@ -16,6 +16,12 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<Style id="inline">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin1910">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -42,14 +48,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sn_placemark_circle13">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
+	<StyleMap id="inline0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline12</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin">
 		<Pair>
 			<key>normal</key>
@@ -57,7 +65,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin5</styleUrl>
+			<styleUrl>#sh_ylw-pushpin6</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin916">
@@ -92,11 +100,11 @@
 	<StyleMap id="msn_ylw-pushpin0">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin12</styleUrl>
+			<styleUrl>#sn_ylw-pushpin13</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+			<styleUrl>#sh_ylw-pushpin5</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_triangle7">
@@ -166,6 +174,12 @@
 			<styleUrl>#sh_ylw-pushpin305</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin178">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -222,16 +236,6 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_placemark_circle90">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle300</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight51</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin1106">
 		<Pair>
 			<key>normal</key>
@@ -362,14 +366,6 @@
 			<styleUrl>#sh_ylw-pushpin165</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_placemark_circle_highlight100">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<Style id="sh_ylw-pushpin256">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -393,6 +389,12 @@
 			<styleUrl>#sh_triangle05</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="inline2">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<StyleMap id="msn_ylw-pushpin1">
 		<Pair>
 			<key>normal</key>
@@ -400,7 +402,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin8</styleUrl>
+			<styleUrl>#sh_ylw-pushpin9</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sh_blue-pushpin">
@@ -472,11 +474,11 @@
 	<StyleMap id="msn_ylw-pushpin2">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin11</styleUrl>
+			<styleUrl>#sn_ylw-pushpin12</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+			<styleUrl>#sh_ylw-pushpin7</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sh_ylw-pushpin265">
@@ -567,16 +569,6 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_placemark_circle51">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle50</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight100</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="sh_ylw-pushpin229">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -620,7 +612,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin16</styleUrl>
+			<styleUrl>#sh_ylw-pushpin17</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin146">
@@ -648,14 +640,6 @@
 			<color>ff0000ff</color>
 			<width>4</width>
 		</LineStyle>
-	</Style>
-	<Style id="sn_placemark_circle300">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
 	</Style>
 	<StyleMap id="msn_ylw-pushpin258">
 		<Pair>
@@ -690,6 +674,12 @@
 			<styleUrl>#sh_ylw-pushpin506</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="inline3">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin158">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -798,6 +788,17 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<Style id="sn_placemark_circle7">
 		<IconStyle>
 			<scale>1.2</scale>
@@ -855,6 +856,12 @@
 			</ItemIcon>
 		</ListStyle>
 	</Style>
+	<Style id="inline4">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<StyleMap id="msn_triangle03">
 		<Pair>
 			<key>normal</key>
@@ -863,6 +870,16 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#sh_triangle11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="inline5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline4</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sh_ylw-pushpin1305">
@@ -954,7 +971,7 @@
 			</ItemIcon>
 		</ListStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin1">
+	<Style id="sh_ylw-pushpin2">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -1063,7 +1080,7 @@
 			<styleUrl>#sh_blue-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin2">
+	<Style id="sh_ylw-pushpin3">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -1131,6 +1148,16 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin238">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -1142,6 +1169,12 @@
 		<LineStyle>
 			<color>ff0000ff</color>
 			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="inline6">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
 		</LineStyle>
 	</Style>
 	<Style id="sn_ylw-pushpin247">
@@ -1286,14 +1319,6 @@
 			<styleUrl>#sh_ylw-pushpin265</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_placemark_circle_highlight04">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<Style id="sh_triangle05">
 		<IconStyle>
 			<scale>1.4</scale>
@@ -1301,6 +1326,16 @@
 				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
 			</Icon>
 		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
 	</Style>
 	<StyleMap id="msn_star">
 		<Pair>
@@ -1435,7 +1470,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin15</styleUrl>
+			<styleUrl>#sh_ylw-pushpin16</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin189">
@@ -1448,14 +1483,6 @@
 			<styleUrl>#sh_ylw-pushpin246</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_placemark_circle21">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<StyleMap id="msn_ylw-pushpin187">
 		<Pair>
 			<key>normal</key>
@@ -1544,6 +1571,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="inline7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline11</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin2013">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -1590,7 +1627,7 @@
 			<styleUrl>#sh_ylw-pushpin1214</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin3">
+	<Style id="sh_ylw-pushpin4">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -1666,6 +1703,12 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
+	<Style id="inline8">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin199">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -1701,14 +1744,6 @@
 			<color>ff00ff00</color>
 			<width>4</width>
 		</LineStyle>
-	</Style>
-	<Style id="sh_placemark_circle_highlight15">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin141">
 		<IconStyle>
@@ -1764,11 +1799,11 @@
 	<StyleMap id="msn_ylw-pushpin6">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin17</styleUrl>
+			<styleUrl>#sn_ylw-pushpin18</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin2</styleUrl>
+			<styleUrl>#sh_ylw-pushpin3</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin518">
@@ -1779,6 +1814,16 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#sh_ylw-pushpin1813</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_G00">
@@ -1823,7 +1868,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin4">
+	<Style id="sh_ylw-pushpin5">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -1838,13 +1883,11 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sn_placemark_circle50">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
-			</Icon>
-		</IconStyle>
+	<Style id="inline9">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
 	</Style>
 	<Style id="sn_ylw-pushpin168">
 		<IconStyle>
@@ -1911,7 +1954,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin10</styleUrl>
+			<styleUrl>#sh_ylw-pushpin11</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin189">
@@ -1958,6 +2001,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="inline10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline14</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline19</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin8">
 		<Pair>
 			<key>normal</key>
@@ -1965,7 +2018,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin13</styleUrl>
+			<styleUrl>#sh_ylw-pushpin14</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sh_ylw-pushpin179">
@@ -2052,6 +2105,16 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_placemark_circle101">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight41</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin258">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -2065,16 +2128,6 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_placemark_circle101">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle7</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight41</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="sn_ylw-pushpin8">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -2103,7 +2156,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin5">
+	<Style id="sh_ylw-pushpin6">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2225,6 +2278,12 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<Style id="inline11">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sh_G4">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -2256,7 +2315,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin17</styleUrl>
+			<styleUrl>#sh_ylw-pushpin18</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_placemark_circle31">
@@ -2333,7 +2392,7 @@
 		<BalloonStyle>
 		</BalloonStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin6">
+	<Style id="sh_ylw-pushpin7">
 		<IconStyle>
 			<color>ff00aa00</color>
 			<scale>1.3</scale>
@@ -2345,17 +2404,7 @@
 		<BalloonStyle>
 		</BalloonStyle>
 	</Style>
-	<StyleMap id="msn_placemark_circle1000">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle21</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight15</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin7">
+	<Style id="sh_ylw-pushpin8">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2405,6 +2454,19 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
+	<Style id="sh_ylw-pushpin2211">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin10">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -2418,19 +2480,6 @@
 		<LineStyle>
 			<color>ff0000ff</color>
 			<width>4</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin2211">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffffff00</color>
-			<width>2</width>
 		</LineStyle>
 	</Style>
 	<StyleMap id="msn_ylw-pushpin307">
@@ -2453,6 +2502,12 @@
 			<styleUrl>#sh_ylw-pushpin1513</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="inline12">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<StyleMap id="inline168">
 		<Pair>
 			<key>normal</key>
@@ -2546,6 +2601,12 @@
 			</Icon>
 		</IconStyle>
 	</Style>
+	<Style id="inline13">
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin1413">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -2603,7 +2664,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin8">
+	<Style id="sh_ylw-pushpin9">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2631,7 +2692,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin9">
+	<Style id="sh_ylw-pushpin10">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2666,7 +2727,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin7</styleUrl>
+			<styleUrl>#sh_ylw-pushpin8</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin245">
@@ -2695,6 +2756,12 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<Style id="inline14">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin148">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -2707,6 +2774,17 @@
 			<color>ff0000ff</color>
 			<width>4</width>
 		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin11">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin2070">
 		<IconStyle>
@@ -2734,7 +2812,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin11">
+	<Style id="sn_ylw-pushpin12">
 		<IconStyle>
 			<color>ff00aa00</color>
 			<scale>1.1</scale>
@@ -2746,7 +2824,7 @@
 		<BalloonStyle>
 		</BalloonStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin10">
+	<Style id="sh_ylw-pushpin11">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2816,7 +2894,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin11</styleUrl>
+			<styleUrl>#sh_ylw-pushpin12</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sh_ylw-pushpin178">
@@ -2918,7 +2996,7 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin12">
+	<Style id="sn_ylw-pushpin13">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -2948,7 +3026,7 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin11">
+	<Style id="sh_ylw-pushpin12">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3000,6 +3078,16 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="inline15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline9</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin1612">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -3023,7 +3111,7 @@
 			<styleUrl>#sh_target3</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin12">
+	<Style id="sh_ylw-pushpin13">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3077,6 +3165,12 @@
 			<styleUrl>#sh_ylw-pushpin1305</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="inline16">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<StyleMap id="msn_G4">
 		<Pair>
 			<key>normal</key>
@@ -3118,6 +3212,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="inline17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline16</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin1212">
 		<Pair>
 			<key>normal</key>
@@ -3174,11 +3278,11 @@
 	<StyleMap id="msn_ylw-pushpin12">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin13</styleUrl>
+			<styleUrl>#sn_ylw-pushpin14</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin9</styleUrl>
+			<styleUrl>#sh_ylw-pushpin10</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin246">
@@ -3194,6 +3298,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="inline18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sn_ylw-pushpin1413">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -3207,7 +3321,7 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin13">
+	<Style id="sh_ylw-pushpin14">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3287,7 +3401,7 @@
 			<styleUrl>#sh_ylw-pushpin247</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin13">
+	<Style id="sn_ylw-pushpin14">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -3302,7 +3416,7 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin14">
+	<Style id="sh_ylw-pushpin15">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3326,7 +3440,7 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin15">
+	<Style id="sh_ylw-pushpin16">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3350,7 +3464,7 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin14">
+	<Style id="sn_ylw-pushpin15">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -3388,6 +3502,12 @@
 			<fill>0</fill>
 		</PolyStyle>
 	</Style>
+	<Style id="inline19">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
 	<Style id="sh_blue-pushpin05">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -3410,7 +3530,7 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin16">
+	<Style id="sh_ylw-pushpin17">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3453,14 +3573,6 @@
 			<styleUrl>#sh_ylw-pushpin179</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_placemark_circle_highlight51">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<StyleMap id="inline1621">
 		<Pair>
 			<key>normal</key>
@@ -3491,7 +3603,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sh_ylw-pushpin295">
@@ -3525,7 +3637,7 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin17">
+	<Style id="sh_ylw-pushpin18">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -3590,7 +3702,7 @@
 			<styleUrl>#sh_ylw-pushpin1612</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin15">
+	<Style id="sn_ylw-pushpin16">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -3667,16 +3779,6 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_placemark_circle14">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_placemark_circle13</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_placemark_circle_highlight04</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin14">
 		<Pair>
 			<key>normal</key>
@@ -3684,17 +3786,17 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+			<styleUrl>#sh_ylw-pushpin2</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin15">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin15</styleUrl>
+			<styleUrl>#sn_ylw-pushpin16</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin12</styleUrl>
+			<styleUrl>#sh_ylw-pushpin13</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin2114">
@@ -3727,7 +3829,7 @@
 	<StyleMap id="msn_ylw-pushpin16">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin14</styleUrl>
+			<styleUrl>#sn_ylw-pushpin15</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -3795,14 +3897,14 @@
 	<StyleMap id="msn_ylw-pushpin17">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin16</styleUrl>
+			<styleUrl>#sn_ylw-pushpin17</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin14</styleUrl>
+			<styleUrl>#sh_ylw-pushpin15</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin16">
+	<Style id="sn_ylw-pushpin17">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -3871,7 +3973,7 @@
 			<styleUrl>#sh_ylw-pushpin258</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin17">
+	<Style id="sn_ylw-pushpin18">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -3886,6 +3988,16 @@
 			<width>4</width>
 		</LineStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin1214">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -3947,6 +4059,7 @@ maxcrosswind:90</description>
 		</Placemark>
 		<Placemark>
 			<name>tower</name>
+			<visibility>0</visibility>
 			<styleUrl>#inline166</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
@@ -3977,9 +4090,9 @@ maxcrosswind:90</description>
 		</Placemark>
 		<Folder>
 			<name>Landscape</name>
-			<open>1</open>
 			<Placemark>
 				<name>coastline</name>
+				<visibility>0</visibility>
 				<styleUrl>#msn_ylw-pushpin307</styleUrl>
 				<Polygon>
 					<tessellate>1</tessellate>
@@ -4023,7 +4136,80 @@ maxcrosswind:90</description>
 		</Folder>
 		<Folder>
 			<name>helpers</name>
-			<visibility>0</visibility>
+			<open>1</open>
+			<Placemark>
+				<name>Line Measure</name>
+				<styleUrl>#inline7</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						14.07043418730012,52.71811468037561,0 14.09072270734889,52.63571433140638,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Line Measure</name>
+				<styleUrl>#inline5</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						14.09070587068552,52.63577926772523,0 13.87408284253704,52.61591718855723,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Line Measure</name>
+				<open>1</open>
+				<styleUrl>#inline18</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						14.07081385396729,52.71804422384777,0 13.52846252206686,52.66743605730651,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Line Measure</name>
+				<open>1</open>
+				<styleUrl>#inline15</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						13.42048255625928,52.65703720646206,0 13.52868481921667,52.66745266097319,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Line Measure</name>
+				<open>1</open>
+				<styleUrl>#inline0</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						13.42048255625928,52.65703720646206,0 13.32618862379443,52.80461459723924,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Circle Measure</name>
+				<styleUrl>#inline10</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						14.07601950732239,52.69324245094481,-7.081154781429788e-10 14.07243712893313,52.69304365510119,0 14.06883980471644,52.69303474142118,-7.081154781429788e-10 14.06525486564201,52.69321577762722,0 14.06170954906477,52.69358538827296,0 14.05823079283292,52.69414076513992,0 14.05484503161329,52.69487768846613,0 14.05157799694433,52.69579055884912,0 14.04845452250014,52.69687243958698,-7.081154781429788e-10 14.04549835601522,52.69811510914369,0 14.04273197927264,52.69950912334907,0 14.04017643750404,52.70104388687137,0 14.03785117948455,52.70270773343062,0 14.0357739095313,52.7044880141553,0 14.03396045253167,52.70637119342261,-7.081154781429788e-10 14.03242463303497,52.70834295146621,0 14.03117816934217,52.71038829298259,0 14.03023058342036,52.71249166092095,0 14.02958912735518,52.71463705460093,0 14.02925872693308,52.71680815126753,0 14.02924194282044,52.71898843016497,0 14.02953894967463,52.72116129819,0 14.03014753338937,52.72331021617042,0 14.03106310653793,52.72541882480855,0 14.03227874193977,52.72747106932849,0 14.03378522413624,52.72945132187456,0 14.03557111842137,52.73134450072288,0 14.03762285693612,52.73313618539056,0 14.03992484119951,52.73481272675648,0 14.04245956031851,52.73636135134413,0 14.04520772399257,52.73777025896076,0 14.04814840930881,52.7390287129368,0 14.0512592202112,52.7401271222652,0 14.05451645842331,52.74105711500315,0 14.05789530450903,52.74181160236462,0 14.06137000767245,52.74238483300457,0 14.06491408282416,52.74277243707171,0 14.0685005133817,52.74297145968541,0 14.07210195822243,52.74298038357593,0 14.07569096117342,52.7427991407106,0 14.07924016140075,52.74242911281508,0 14.08272250305343,52.74187312078573,-7.081154781429788e-10 14.08611144252324,52.74113540307594,0 14.08938115170227,52.74022158322519,0 14.09250671565273,52.7391386267845,0 14.09546432315166,52.73789478797459,0 14.09823144863163,52.73649954649285,0 14.10078702411109,52.7349635349612,0 14.10311159979085,52.73329845757976,0 14.1051874920864,52.73151700061794,-7.081154781429788e-10 14.10699891796999,52.72963273543789,0 14.10853211460674,52.72766001480081,0 14.10977544339005,52.72561386325813,-7.081154781429788e-10 14.11071947760542,52.72350986247284,-7.081154781429788e-10 14.11135707308396,52.721364032354,0 14.11168342134102,52.7191927089176,0 14.11169608483311,52.71701241980965,0 14.11139501410562,52.71483975844367,0 14.11078254674346,52.71269125771261,0 14.1098633881759,52.71058326423629,0 14.10864457452451,52.70853181409924,0 14.10713541781745,52.70655251102027,0 14.10534743402435,52.70466040787419,0 14.10329425449296,52.70286989245921,0 14.10099152148894,52.70119457836941,0 14.09845676865557,52.69964720179109,0 14.09570928731797,52.69823952499686,0 14.09276997965671,52.69698224725843,0 14.08966119986859,52.69588492384337,0 14.08640658451575,52.69495589369956,0 14.08303087334006,52.69420221636508,0 14.07955972188479,52.69362961857265,0 14.07601950732239,52.69324245094481,-7.081154781429788e-10 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>Circle Measure</name>
+				<styleUrl>#inline17</styleUrl>
+				<LineString>
+					<tessellate>1</tessellate>
+					<coordinates>
+						14.13170588252988,52.6373411226471,0 14.13176995529141,52.63516516191761,0 14.13152130179046,52.63299409221442,-7.081154781429788e-10 14.13096186049811,52.63084443473291,0 14.13009593333958,52.6287325453114,0 14.1289301516112,52.62667449008615,-7.081154781429788e-10 14.12747342426647,52.62468592342005,0 14.12573686900243,52.62278196902756,0 14.12373372670455,52.62097710519273,0 14.12147925992965,52.6192850549441,0 14.11899063622182,52.6177186820113,-7.081154781429788e-10 14.11628679716535,52.61628989334314,0 14.11338831417978,52.61500954891625,0 14.11031723215596,52.61388737950802,0 14.10709690211698,52.61293191304637,0 14.10375180416437,52.61215041008496,0 14.10030736203663,52.61154880888329,-7.081154781429788e-10 14.09678975066544,52.61113168049933,0 14.09322569816244,52.61090219422821,0 14.08964228370697,52.61086209364264,0 14.08606673283431,52.61101168341287,-7.081154781429788e-10 14.08252621164003,52.61134982700376,0 14.07904762142441,52.61187395526583,0 14.0756573952979,52.61258008585695,0 14.07238129825427,52.61346285335059,-7.081154781429788e-10 14.06924423219643,52.61451554980758,0 14.06627004736387,52.61573017551062,0 14.06348136156931,52.61709749948495,0 14.0608993885966,52.61860712935556,-7.081154781429788e-10 14.0585437770502,52.62024759002109,0 14.05643246087315,52.62200641055877,-7.081154781429788e-10 14.0545815226696,52.62387021871126,0 14.05300507087746,52.62582484225003,0 14.05171513173897,52.62785541645535,0 14.05072155691102,52.62994649690703,0 14.05003194744425,52.63208217673761,-7.081154781429788e-10 14.04965159474131,52.63424620746426,0 14.04958343897946,52.63642212248695,0 14.04982804535356,52.6385933623181,-7.081154781429788e-10 14.05038359836229,52.64074340059305,0 14.05124591422379,52.64285586990335,0 14.0524084713691,52.64491468649305,-7.081154781429788e-10 14.05386245882202,52.64690417286569,0 14.05559684213575,52.64880917736197,0 14.05759844641848,52.65061518979105,0 14.05985205584534,52.65230845222489,0 14.06234052892242,52.65387606410229,0 14.06504492864246,52.65530608082972,0 14.06794466655059,52.65658760511656,-7.081154781429788e-10 14.0710176596259,52.657710870336,0 14.07424049877901,52.65866731526439,0 14.07758862767032,52.65944964961783,-7.081154781429788e-10 14.08103653046777,52.66005190987539,0 14.08455792708885,52.66046950495396,0 14.08812597440899,52.66069925137812,0 14.09171347186819,52.66073939767053,0 14.09529306987098,52.66058963777217,-7.081154781429788e-10 14.09883747935168,52.66025111338744,0 14.10231968086622,52.65972640523604,0 14.10571313157665,52.65901951327979,0 14.10899196851173,52.65813582607894,-7.081154781429788e-10 14.11213120651841,52.65708207951756,0 14.11510692936367,52.65586630521983,0 14.11789647250319,52.65449776905999,0 14.12047859610323,52.65298690024475,-7.081154781429788e-10 14.12283364698277,52.6513452115201,0 14.12494370823448,52.64958521112287,0 14.12679273538463,52.64772030715974,0 14.12836667806178,52.64576470515487,0 14.12965358626191,52.6437332995582,0 14.13064370042167,52.64164156005124,0 14.13132952464096,52.63950541352651,0 14.13170588252988,52.6373411226471,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
 			<Folder>
 				<name>final08L</name>
 				<visibility>0</visibility>
@@ -4102,187 +4288,182 @@ maxcrosswind:90</description>
 		</Folder>
 		<Folder>
 			<name>Airnavpoints</name>
+			<open>1</open>
 			<Folder>
 				<name>arrival</name>
 				<open>1</open>
 				<Placemark>
-					<name>CVC R068/NRE 24.0DME</name>
-					<description>type:pilot</description>
-					<LookAt>
-						<longitude>140.8541501843541</longitude>
-						<latitude>35.74377563583779</latitude>
-						<altitude>0</altitude>
-						<heading>-0.1696562214329315</heading>
-						<tilt>35.86452026518033</tilt>
-						<range>3883.524668079451</range>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</LookAt>
-					<styleUrl>#msn_placemark_circle51</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.8514002454872,35.74376105285867,1219.2</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>CVC R068/HKE 25.0DME</name>
-					<description>type:pilot</description>
-					<LookAt>
-						<longitude>140.8854659094483</longitude>
-						<latitude>35.75520884412571</latitude>
-						<altitude>0</altitude>
-						<heading>-10.99570873968755</heading>
-						<tilt>34.38480760621061</tilt>
-						<range>3609.711225079673</range>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</LookAt>
-					<styleUrl>#msn_placemark_circle51</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.8795164304211,35.75299597496927,1524</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>NRE R115/24.0DME</name>
-					<description>type:pilot</description>
-					<LookAt>
-						<longitude>140.8100463632676</longitude>
-						<latitude>35.61628573124551</latitude>
-						<altitude>0</altitude>
-						<heading>-0.191284845474297</heading>
-						<tilt>28.4382236841649</tilt>
-						<range>4553.063638342843</range>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</LookAt>
-					<styleUrl>#msn_placemark_circle90</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.8068126371874,35.61316261318549,1219.2</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>NRE R115/HKE 25.0DME</name>
-					<description>type:pilot</description>
-					<LookAt>
-						<longitude>140.8206395776543</longitude>
-						<latitude>35.61541776785166</latitude>
-						<altitude>0</altitude>
-						<heading>-11.03344575666375</heading>
-						<tilt>34.39856407746596</tilt>
-						<range>6322.605385378307</range>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</LookAt>
-					<styleUrl>#msn_placemark_circle51</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.8177714523557,35.60894415374246,1524</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>NRE R135/24.0DME</name>
-					<description>type:pilot</description>
-					<LookAt>
-						<longitude>140.7201027546962</longitude>
-						<latitude>35.50443555356271</latitude>
-						<altitude>0</altitude>
-						<heading>-0.2435390071094147</heading>
-						<tilt>28.48006355942429</tilt>
-						<range>3965.939427707819</range>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</LookAt>
-					<styleUrl>#msn_placemark_circle90</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.7110358703329,35.50208870803443,1219.2</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>NRE R135/HKE 25.0DME</name>
-					<description>type:pilot</description>
-					<LookAt>
-						<longitude>140.7201027546962</longitude>
-						<latitude>35.50443555356271</latitude>
-						<altitude>0</altitude>
-						<heading>-0.2435390071094147</heading>
-						<tilt>28.48006355942429</tilt>
-						<range>3965.939427707819</range>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</LookAt>
-					<styleUrl>#msn_placemark_circle90</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.7110361111111,35.50208870803443,1524</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>SNE R093/14.0DME</name>
-					<description>type:pilot</description>
-					<LookAt>
-						<longitude>140.2743142239237</longitude>
-						<latitude>35.95258850424322</latitude>
-						<altitude>0</altitude>
-						<heading>0.03061105294511259</heading>
-						<tilt>21.02032921783517</tilt>
-						<range>3077.182655732435</range>
-						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-					</LookAt>
-					<styleUrl>#msn_placemark_circle14</styleUrl>
-					<Point>
-						<extrude>1</extrude>
-						<altitudeMode>relativeToGround</altitudeMode>
-						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.2680565071194,35.95127227594855,645</coordinates>
-					</Point>
-				</Placemark>
-				<Placemark>
-					<name>SNE R093/16.0DME</name>
+					<name>KOMIV R339/1.5DME</name>
 					<description>type:pilot</description>
 					<Camera>
-						<longitude>140.3098807095372</longitude>
-						<latitude>35.94519093306936</latitude>
-						<altitude>3128.817427922096</altitude>
-						<heading>-7.348443162343543</heading>
-						<tilt>15.13773429458312</tilt>
-						<roll>-0.8339635542998091</roll>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.44342383105113</longitude>
+						<latitude>52.65634027750855</latitude>
+						<altitude>10089.37818393831</altitude>
+						<heading>-1.6709431044498</heading>
+						<tilt>3.422356524768038</tilt>
+						<roll>-1.356358360601557</roll>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</Camera>
-					<styleUrl>#msn_placemark_circle14</styleUrl>
+					<styleUrl>#msn_placemark_circle</styleUrl>
 					<Point>
 						<extrude>1</extrude>
 						<altitudeMode>relativeToGround</altitudeMode>
 						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.3089942619536,35.95353683844911,525</coordinates>
+						<coordinates>13.40562397838741,52.68029394297109,1524</coordinates>
 					</Point>
 				</Placemark>
 				<Placemark>
-					<name>TYE R161/20.0DME</name>
+					<name>KOMIV R081/1.5DME</name>
+					<open>1</open>
 					<description>type:pilot</description>
 					<LookAt>
-						<longitude>140.433267298931</longitude>
-						<latitude>35.47814309726234</latitude>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>13.46104722887796</longitude>
+						<latitude>52.66094882379364</latitude>
 						<altitude>0</altitude>
-						<heading>-5.005825821372512</heading>
-						<tilt>15.99069677103125</tilt>
-						<range>11317.11132730249</range>
+						<heading>-0.5595530623861731</heading>
+						<tilt>17.61304008740018</tilt>
+						<range>853.5823372359513</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 					</LookAt>
-					<styleUrl>#msn_placemark_circle1000</styleUrl>
+					<styleUrl>#msn_placemark_circle</styleUrl>
 					<Point>
 						<extrude>1</extrude>
 						<altitudeMode>relativeToGround</altitudeMode>
 						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>140.4393213013918,35.48396533202181,1828.8</coordinates>
+						<coordinates>13.46104722887796,52.66094882379364,1524</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>DT436 R261/1.5DME</name>
+					<description>type:pilot</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>14.0297051259078</longitude>
+						<latitude>52.71430514893564</latitude>
+						<altitude>0</altitude>
+						<heading>0.2377073408465501</heading>
+						<tilt>13.92947696530729</tilt>
+						<range>1734.395335061833</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_placemark_circle</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>14.0297051259078,52.71430514893564,1524</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>DT436 R171/1.5DME</name>
+					<open>1</open>
+					<description>type:pilot</description>
+					<LookAt>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>14.07655291232461</longitude>
+						<latitude>52.6932978474841</latitude>
+						<altitude>1524</altitude>
+						<heading>0</heading>
+						<tilt>45</tilt>
+						<range>1000</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_placemark_circle</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>14.07655291232461,52.6932978474841,1524</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>DT456 R352/1.5DME</name>
+					<open>1</open>
+					<description>type:pilot</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>14.08463705316992</longitude>
+						<latitude>52.66047353405844</latitude>
+						<altitude>0</altitude>
+						<heading>0.01361740103946076</heading>
+						<tilt>35.51788676081814</tilt>
+						<range>1158.767598331631</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_placemark_circle</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>14.08463705316992,52.66047353405844,1524</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>DT456 R261/1.5DME</name>
+					<open>1</open>
+					<description>type:pilot</description>
+					<LookAt>
+						<gx:TimeSpan>
+							<begin>2014-09-03T23:59:59Z</begin>
+							<end>2014-09-04</end>
+						</gx:TimeSpan>
+						<gx:ViewerOptions>
+							<gx:option name="historicalimagery"></gx:option>
+							<gx:option enabled="0" name="sunlight"></gx:option>
+							<gx:option enabled="0" name="streetview"></gx:option>
+						</gx:ViewerOptions>
+						<longitude>14.05003939714794</longitude>
+						<latitude>52.63208543896447</latitude>
+						<altitude>0</altitude>
+						<heading>-0.003408597891910438</heading>
+						<tilt>28.32933048790657</tilt>
+						<range>581.8602192106921</range>
+						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+					</LookAt>
+					<styleUrl>#msn_placemark_circle</styleUrl>
+					<Point>
+						<extrude>1</extrude>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<gx:drawOrder>1</gx:drawOrder>
+						<coordinates>14.05003939714794,52.63208543896447,1524</coordinates>
 					</Point>
 				</Placemark>
 				<Placemark>
@@ -5483,17 +5664,22 @@ maxcrosswind:90</description>
 				<description>RENKI
 PINUV
 NASAT
-KOMIV
+KOMIV R339/1.5DME
+#KOMIV
+KOMIV R081/1.5DME
 DT431
-DT436
-DT456
+DT436 R261/1.5DME
+#DT436
+DT436 R171/1.5DME
+DT456 R352/1.5DME
+#DT456
+DT456 R261/1.5DME
 DT454</description>
 			</Folder>
 		</Folder>
 		<Folder>
 			<name>SIDs</name>
 			<visibility>0</visibility>
-			<open>1</open>
 			<Folder>
 				<name>BKD 6L</name>
 				<visibility>0</visibility>
@@ -7009,8 +7195,8 @@ StripeName:TS</description>
 					<Placemark>
 						<name>TM</name>
 						<description>name:TM
-isholdpoint:true
-poiground:true
+isholdpoint:false
+poiground:false
 radarName:TM
 UIName:TM
 StripeName:TM</description>
@@ -7032,7 +7218,7 @@ StripeName:TM</description>
 							<range>384.076935278562</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin11</styleUrl>
+						<styleUrl>#msn_ylw-pushpin18</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.28138308153685,52.55824566844684,0</coordinates>
@@ -7381,8 +7567,8 @@ StripeName:TE-NS</description>
 						<name>TE</name>
 						<open>1</open>
 						<description>name:TE
-isholdpoint:true
-poiground:true
+isholdpoint:false
+poiground:false
 radarName:TE
 UIName:TE
 StripeName:TE</description>
@@ -7404,7 +7590,7 @@ StripeName:TE</description>
 							<range>198.621729243491</range>
 							<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 						</LookAt>
-						<styleUrl>#msn_ylw-pushpin11</styleUrl>
+						<styleUrl>#msn_ylw-pushpin18</styleUrl>
 						<Point>
 							<gx:drawOrder>1</gx:drawOrder>
 							<coordinates>13.29346159863859,52.55943644192308,0</coordinates>
@@ -9759,6 +9945,7 @@ taxipath:runway</description>
 		</Folder>
 		<Folder>
 			<name>Runway</name>
+			<open>1</open>
 			<description>id:26L
 name:26L
 arrivalpoint:26L:arrival</description>
@@ -10516,6 +10703,7 @@ StripeName:</description>
 			</Folder>
 			<Folder>
 				<name>FINALS</name>
+				<open>1</open>
 				<Folder>
 					<name>DEFAULT</name>
 					<description>26LILS21000
@@ -10529,10 +10717,16 @@ StripeName:</description>
 				<Folder>
 					<name>NASAT 26L</name>
 					<description>#NASAT
+#KOMIV R339/1.5DME
 #KOMIV
+#KOMIV R081/1.5DME
 #DT431
+#DT436 R261/1.5DME
 #DT436
+#DT436 R171/1.5DME
+#DT456 R352/1.5DME
 #DT456
+#DT456 R261/1.5DME
 DT454
 DT452
 LABOX
@@ -10694,7 +10888,6 @@ maxspeed:25</description>
 			</Folder>
 			<Folder>
 				<name>Touchdownwaypoints</name>
-				<open>1</open>
 				<Placemark>
 					<name>26R:arrival</name>
 					<description>name:RWY26R
@@ -11073,7 +11266,6 @@ StripeName:</description>
 			</Folder>
 			<Folder>
 				<name>Touchdownways</name>
-				<open>1</open>
 				<Placemark>
 					<name>2RL:arrival-touchdown</name>
 					<description>maxspeed:75</description>
@@ -11274,7 +11466,6 @@ StripeName:</description>
 			</Folder>
 			<Folder>
 				<name>Exitpaths</name>
-				<open>1</open>
 				<Placemark>
 					<name>26RExit:TE-N</name>
 					<description>maxspeed:10</description>
@@ -11438,10 +11629,16 @@ StripeName:</description>
 					<name>NASAT 26R</name>
 					<open>1</open>
 					<description>#NASAT
+#KOMIV R339/1.5DME
 #KOMIV
+#KOMIV R081/1.5DME
 #DT431
+#DT436 R261/1.5DME
 #DT436
+#DT436 R171/1.5DME
+#DT456 R352/1.5DME
 #DT456
+#DT456 R261/1.5DME
 DT454
 ROGAB
 26RILS13000
