@@ -1403,6 +1403,7 @@ Public Class frmAllControl
         Dim milliseconds As Long = (timeStamp - oldtime).TotalMilliseconds
         Me.lblMillisecondsBetweenTicks.Text = milliseconds \ 1 & " ms"
         Me.lblMillisecondsBetweenTicks.Tag = timeStamp
+        Me.lblFPS.Text = (1000 / milliseconds) \ 1 & " FPS"
         'Me.lblMillisecondsBetweenTicks.Text = milliseconds & " ms"
     End Sub
 
