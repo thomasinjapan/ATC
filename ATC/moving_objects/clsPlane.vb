@@ -828,6 +828,7 @@ Public Class clsPlane
                     Me.currentState = enumPlaneState.ground_awaitingPushback
                     Me.frequency = enumFrequency.ground
                     RaiseEvent statusChanged(Me)
+                    RaiseEvent radioMessage(Me, "Request Pushback for flight to " & Me.air_goalWayPoint.UIName & " via " & Me.air_currentAirPathName)
                 End If
             Case enumCommands.pushbackApproved
                 If Me.currentState = enumPlaneState.ground_awaitingPushback Then
@@ -1072,27 +1073,21 @@ Public Class clsPlane
             Case enumCommands.contactArrival
                 Me.frequency = enumFrequency.arrival
                 RaiseEvent statusChanged(Me)
-'                RaiseEvent frequencyChanged(Me)
             Case enumCommands.contactDeparture
                 Me.frequency = enumFrequency.departure
                 RaiseEvent statusChanged(Me)
- '               RaiseEvent frequencyChanged(Me)
             Case enumCommands.contactGround
                 Me.frequency = enumFrequency.ground
                 RaiseEvent statusChanged(Me)
-  '              RaiseEvent frequencyChanged(Me)
             Case enumCommands.contactTower
                 Me.frequency = enumFrequency.tower
                 RaiseEvent statusChanged(Me)
-   '             RaiseEvent frequencyChanged(Me) 
             Case enumCommands.contactArrDep
                 Me.frequency = enumFrequency.appdep
                 RaiseEvent statusChanged(Me)
-   '             RaiseEvent frequencyChanged(Me) 
             Case enumCommands.contactTracon
                 Me.frequency = enumFrequency.tracon
                 RaiseEvent statusChanged(Me)
-                '            RaiseEvent frequencyChanged(Me)
         End Select
         Me.clearCommand()
     End Sub
@@ -1372,24 +1367,48 @@ Public Class clsPlane
 
         'check if all conditions for landing are met
         Dim allowedToLand As Boolean = True
+        Dim goaroundreason As String = ""
+
         'cleardtoland not given
-        If Not Me.tower_cleardToLand Then allowedToLand = False
+        If Not Me.tower_cleardToLand Then
+            allowedToLand = False
+            goaroundreason = "no clearance"
+        End If
+
         'too fast aka breaking way too short compared to rest of runay
-        If Me.ground_breakingDistance.meters > Me.tower_assignedLandingPoint.runwayLength.meters Then allowedToLand = False
+        If Me.ground_breakingDistance.meters > Me.tower_assignedLandingPoint.runwayLength.meters Then
+            allowedToLand = False
+            goaroundreason = "too fast"
+        End If
         'angle too high
-        If mdlHelpers.diffBetweenAnglesAbs(Me.pos_direction,
-                                           Me.tower_assignedLandingPoint.landingAngle
-                                           ) > 45 Then allowedToLand = False
+        If mdlHelpers.diffBetweenAnglesAbs(Me.pos_direction, Me.tower_assignedLandingPoint.landingAngle) > 45 Then
+            allowedToLand = False
+            goaroundreason = "angle too steep to runway"
+        End If
 
         'max height
-        If Me.pos_Altitude.feet > Me.tower_assignedLandingPoint.altitude.feet Then allowedToLand = False
-        'wind direction
-        If mdlHelpers.diffBetweenAnglesAbs(Me.pos_direction, Me.tower_assignedLandingPoint.windDirectionFrom) > Me.tower_assignedLandingPoint.maxCrossWind Then allowedToLand = False
-        'if runway is free to land
-        If Not Me.tower_assignedLandingPoint.isAvailableForArrival Then allowedToLand = False
-        'if runway is not still in use by other plane
-        If Me.tower_assignedLandingPoint.isInUse Then allowedToLand = False
+        If Me.pos_Altitude.feet > Me.tower_assignedLandingPoint.altitude.feet Then
+            allowedToLand = False
+            goaroundreason = "too high"
+        End If
 
+        'wind direction
+        If mdlHelpers.diffBetweenAnglesAbs(Me.pos_direction, Me.tower_assignedLandingPoint.windDirectionFrom) > Me.tower_assignedLandingPoint.maxCrossWind Then
+            allowedToLand = False
+            goaroundreason = "angle too steep to wind"
+        End If
+
+        'if runway is free to land
+        If Not Me.tower_assignedLandingPoint.isAvailableForArrival Then
+            allowedToLand = False
+            goaroundreason = "runway not available"
+        End If
+
+        'if runway is not still in use by other plane
+        If Me.tower_assignedLandingPoint.isInUse Then
+            allowedToLand = False
+            goaroundreason = "runway in use"
+        End If
 
         '!!! if runway is active missing
 
@@ -1417,6 +1436,7 @@ Public Class clsPlane
             Me.tower_assignedLandingPoint = Nothing
             Me.tower_cleardToLand = False
             Me.currentState = enumPlaneState.tower_freeFlight
+            RaiseEvent radioMessage(Me, "going around - " & goaroundreason)
 
         End If
     End Sub

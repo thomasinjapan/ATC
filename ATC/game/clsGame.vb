@@ -830,7 +830,6 @@ Public Class clsGame
                     Dim listOfRunways As List(Of clsRunWay) = Me.AirPort.openDepartureRunwaysAsListOfRunways
                     Dim selectedRunway As clsRunWay = listOfRunways(randomizer.Next(0, listOfRunways.Count))
                     selectedSID = selectedRunway.SIDs(randomizer.Next(0, selectedRunway.SIDs.Count))
-
                 Else
                     'take any SID
                     selectedSID = Me.AirPort.SIDs(randomizer.Next(0, Me.AirPort.SIDs.GetUpperBound(0) + 1))
@@ -851,6 +850,7 @@ Public Class clsGame
                     .plane = chosenPlane.callsign,
                     .command = clsPlane.enumCommands.askForPushback
                 }
+
             End If
 
             'prepare next time to end a gate
