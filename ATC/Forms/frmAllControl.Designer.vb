@@ -42,6 +42,7 @@ Partial Class frmAllControl
         Me.cmdTowerContactGround = New System.Windows.Forms.Button()
         Me.tabControls = New System.Windows.Forms.TabControl()
         Me.pagGround = New System.Windows.Forms.TabPage()
+        Me.txtGroundMessages = New System.Windows.Forms.TextBox()
         Me.cmdGroundChangeTaxi = New System.Windows.Forms.Button()
         Me.cmdGroundClearVia = New System.Windows.Forms.Button()
         Me.lblGroundTaxiTo = New System.Windows.Forms.Label()
@@ -51,6 +52,7 @@ Partial Class frmAllControl
         Me.cmdGroundContinueTaxi = New System.Windows.Forms.Button()
         Me.cmdGroundHold = New System.Windows.Forms.Button()
         Me.pagTower = New System.Windows.Forms.TabPage()
+        Me.txtTowerMessages = New System.Windows.Forms.TextBox()
         Me.lblTowerExitVia = New System.Windows.Forms.Label()
         Me.cmdTowerExitVia = New System.Windows.Forms.Button()
         Me.lblTowerCurrentRunway = New System.Windows.Forms.Label()
@@ -74,6 +76,7 @@ Partial Class frmAllControl
         Me.cmdTowerContinueTaxi = New System.Windows.Forms.Button()
         Me.cmdTowerContactApproach = New System.Windows.Forms.Button()
         Me.pagAppDep = New System.Windows.Forms.TabPage()
+        Me.txtAppDepMessages = New System.Windows.Forms.TextBox()
         Me.cmdAppDepEnterSTARVia = New System.Windows.Forms.Button()
         Me.lblArrDepCurrentRunway = New System.Windows.Forms.Label()
         Me.cmdAppDepExpectRunway = New System.Windows.Forms.Button()
@@ -116,9 +119,6 @@ Partial Class frmAllControl
         Me.cmsTowerExitVia = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.cmsGroundTaxiTo = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.cmsAppDepSTARvia = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.txtGroundMessages = New System.Windows.Forms.TextBox()
-        Me.txtTowerMessages = New System.Windows.Forms.TextBox()
-        Me.txtAppDepMessages = New System.Windows.Forms.TextBox()
         Me.lstGround = New ATC.ctlStripeList()
         Me.cltWindRose = New ATC.ctlWindRose()
         Me.lstTower = New ATC.ctlStripeList()
@@ -187,7 +187,7 @@ Partial Class frmAllControl
         Me.cmdSpecialDespawn.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdSpecialDespawn.Location = New System.Drawing.Point(432, 6)
         Me.cmdSpecialDespawn.Name = "cmdSpecialDespawn"
-        Me.cmdSpecialDespawn.Size = New System.Drawing.Size(362, 23)
+        Me.cmdSpecialDespawn.Size = New System.Drawing.Size(628, 23)
         Me.cmdSpecialDespawn.TabIndex = 11
         Me.cmdSpecialDespawn.Text = "despawn selected | ✂"
         Me.cmdSpecialDespawn.UseVisualStyleBackColor = True
@@ -199,7 +199,7 @@ Partial Class frmAllControl
         Me.cmdSpecialSpawn.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdSpecialSpawn.Location = New System.Drawing.Point(432, 35)
         Me.cmdSpecialSpawn.Name = "cmdSpecialSpawn"
-        Me.cmdSpecialSpawn.Size = New System.Drawing.Size(362, 23)
+        Me.cmdSpecialSpawn.Size = New System.Drawing.Size(628, 23)
         Me.cmdSpecialSpawn.TabIndex = 12
         Me.cmdSpecialSpawn.Text = "Spawn new | ✨"
         Me.cmdSpecialSpawn.UseVisualStyleBackColor = True
@@ -226,8 +226,6 @@ Partial Class frmAllControl
         '
         'cmdAppDepAdjustSpeed
         '
-        Me.cmdAppDepAdjustSpeed.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdAppDepAdjustSpeed.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!)
         Me.cmdAppDepAdjustSpeed.Location = New System.Drawing.Point(529, 163)
         Me.cmdAppDepAdjustSpeed.Name = "cmdAppDepAdjustSpeed"
@@ -238,8 +236,6 @@ Partial Class frmAllControl
         '
         'trkAppDepSpeed
         '
-        Me.trkAppDepSpeed.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.trkAppDepSpeed.Location = New System.Drawing.Point(529, 112)
         Me.trkAppDepSpeed.Maximum = 490
         Me.trkAppDepSpeed.Minimum = 140
@@ -250,7 +246,6 @@ Partial Class frmAllControl
         '
         'txtAppDepHeading
         '
-        Me.txtAppDepHeading.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtAppDepHeading.Location = New System.Drawing.Point(692, 54)
         Me.txtAppDepHeading.Name = "txtAppDepHeading"
         Me.txtAppDepHeading.Size = New System.Drawing.Size(68, 20)
@@ -258,8 +253,6 @@ Partial Class frmAllControl
         '
         'cmdAppDepHeading
         '
-        Me.cmdAppDepHeading.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdAppDepHeading.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!)
         Me.cmdAppDepHeading.Location = New System.Drawing.Point(529, 80)
         Me.cmdAppDepHeading.Name = "cmdAppDepHeading"
@@ -274,15 +267,13 @@ Partial Class frmAllControl
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblAppDepHeading.Location = New System.Drawing.Point(526, 54)
         Me.lblAppDepHeading.Name = "lblAppDepHeading"
-        Me.lblAppDepHeading.Size = New System.Drawing.Size(154, 18)
+        Me.lblAppDepHeading.Size = New System.Drawing.Size(420, 18)
         Me.lblAppDepHeading.TabIndex = 16
         Me.lblAppDepHeading.Text = "Targetheading:"
         Me.lblAppDepHeading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'trkAppDepHeading
         '
-        Me.trkAppDepHeading.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.trkAppDepHeading.LargeChange = 10
         Me.trkAppDepHeading.Location = New System.Drawing.Point(526, 6)
         Me.trkAppDepHeading.Maximum = 360
@@ -337,7 +328,7 @@ Partial Class frmAllControl
         Me.tabControls.Location = New System.Drawing.Point(12, 12)
         Me.tabControls.Name = "tabControls"
         Me.tabControls.SelectedIndex = 0
-        Me.tabControls.Size = New System.Drawing.Size(872, 473)
+        Me.tabControls.Size = New System.Drawing.Size(1138, 473)
         Me.tabControls.TabIndex = 19
         '
         'pagGround
@@ -357,10 +348,21 @@ Partial Class frmAllControl
         Me.pagGround.Location = New System.Drawing.Point(4, 22)
         Me.pagGround.Name = "pagGround"
         Me.pagGround.Padding = New System.Windows.Forms.Padding(3)
-        Me.pagGround.Size = New System.Drawing.Size(864, 447)
+        Me.pagGround.Size = New System.Drawing.Size(1130, 447)
         Me.pagGround.TabIndex = 0
         Me.pagGround.Text = "Ground"
         Me.pagGround.UseVisualStyleBackColor = True
+        '
+        'txtGroundMessages
+        '
+        Me.txtGroundMessages.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtGroundMessages.Location = New System.Drawing.Point(662, 8)
+        Me.txtGroundMessages.Multiline = True
+        Me.txtGroundMessages.Name = "txtGroundMessages"
+        Me.txtGroundMessages.Size = New System.Drawing.Size(462, 433)
+        Me.txtGroundMessages.TabIndex = 52
         '
         'cmdGroundChangeTaxi
         '
@@ -478,10 +480,21 @@ Partial Class frmAllControl
         Me.pagTower.Location = New System.Drawing.Point(4, 22)
         Me.pagTower.Name = "pagTower"
         Me.pagTower.Padding = New System.Windows.Forms.Padding(3)
-        Me.pagTower.Size = New System.Drawing.Size(864, 447)
+        Me.pagTower.Size = New System.Drawing.Size(1130, 447)
         Me.pagTower.TabIndex = 1
         Me.pagTower.Text = "Tower"
         Me.pagTower.UseVisualStyleBackColor = True
+        '
+        'txtTowerMessages
+        '
+        Me.txtTowerMessages.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtTowerMessages.Location = New System.Drawing.Point(856, 6)
+        Me.txtTowerMessages.Multiline = True
+        Me.txtTowerMessages.Name = "txtTowerMessages"
+        Me.txtTowerMessages.Size = New System.Drawing.Size(268, 435)
+        Me.txtTowerMessages.TabIndex = 53
         '
         'lblTowerExitVia
         '
@@ -580,8 +593,6 @@ Partial Class frmAllControl
         '
         'cmdTowerAltitude
         '
-        Me.cmdTowerAltitude.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdTowerAltitude.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!)
         Me.cmdTowerAltitude.Location = New System.Drawing.Point(695, 163)
         Me.cmdTowerAltitude.Name = "cmdTowerAltitude"
@@ -646,7 +657,7 @@ Partial Class frmAllControl
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.Location = New System.Drawing.Point(514, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(153, 18)
+        Me.Label1.Size = New System.Drawing.Size(419, 18)
         Me.Label1.TabIndex = 30
         Me.Label1.Text = "Targetheading:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -732,10 +743,21 @@ Partial Class frmAllControl
         Me.pagAppDep.Location = New System.Drawing.Point(4, 22)
         Me.pagAppDep.Name = "pagAppDep"
         Me.pagAppDep.Padding = New System.Windows.Forms.Padding(3)
-        Me.pagAppDep.Size = New System.Drawing.Size(864, 447)
+        Me.pagAppDep.Size = New System.Drawing.Size(1130, 447)
         Me.pagAppDep.TabIndex = 2
         Me.pagAppDep.Text = "Approach/Departure"
         Me.pagAppDep.UseVisualStyleBackColor = True
+        '
+        'txtAppDepMessages
+        '
+        Me.txtAppDepMessages.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtAppDepMessages.Location = New System.Drawing.Point(766, 6)
+        Me.txtAppDepMessages.Multiline = True
+        Me.txtAppDepMessages.Name = "txtAppDepMessages"
+        Me.txtAppDepMessages.Size = New System.Drawing.Size(358, 435)
+        Me.txtAppDepMessages.TabIndex = 54
         '
         'cmdAppDepEnterSTARVia
         '
@@ -853,7 +875,7 @@ Partial Class frmAllControl
         'trkAppDepAltitude
         '
         Me.trkAppDepAltitude.LargeChange = 500
-        Me.trkAppDepAltitude.Location = New System.Drawing.Point(704, 192)
+        Me.trkAppDepAltitude.Location = New System.Drawing.Point(715, 192)
         Me.trkAppDepAltitude.Maximum = 10000
         Me.trkAppDepAltitude.Name = "trkAppDepAltitude"
         Me.trkAppDepAltitude.Orientation = System.Windows.Forms.Orientation.Vertical
@@ -865,8 +887,7 @@ Partial Class frmAllControl
         '
         'cmdAppDepContactTower
         '
-        Me.cmdAppDepContactTower.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cmdAppDepContactTower.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmdAppDepContactTower.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!)
         Me.cmdAppDepContactTower.Location = New System.Drawing.Point(529, 418)
         Me.cmdAppDepContactTower.Name = "cmdAppDepContactTower"
@@ -901,7 +922,7 @@ Partial Class frmAllControl
         Me.pagGame.Location = New System.Drawing.Point(4, 22)
         Me.pagGame.Name = "pagGame"
         Me.pagGame.Padding = New System.Windows.Forms.Padding(3)
-        Me.pagGame.Size = New System.Drawing.Size(864, 447)
+        Me.pagGame.Size = New System.Drawing.Size(1130, 447)
         Me.pagGame.TabIndex = 3
         Me.pagGame.Text = "Game"
         Me.pagGame.UseVisualStyleBackColor = True
@@ -988,7 +1009,7 @@ Partial Class frmAllControl
         Me.trkMaxPlanes.Maximum = 200
         Me.trkMaxPlanes.Minimum = 1
         Me.trkMaxPlanes.Name = "trkMaxPlanes"
-        Me.trkMaxPlanes.Size = New System.Drawing.Size(362, 45)
+        Me.trkMaxPlanes.Size = New System.Drawing.Size(628, 45)
         Me.trkMaxPlanes.TabIndex = 23
         Me.trkMaxPlanes.TickFrequency = 5
         Me.trkMaxPlanes.Value = 1
@@ -1119,35 +1140,6 @@ Partial Class frmAllControl
         Me.cmsAppDepSTARvia.Name = "cmsAppDepSTARvia"
         Me.cmsAppDepSTARvia.Size = New System.Drawing.Size(61, 4)
         '
-        'txtGroundMessages
-        '
-        Me.txtGroundMessages.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtGroundMessages.Location = New System.Drawing.Point(330, 202)
-        Me.txtGroundMessages.Multiline = True
-        Me.txtGroundMessages.Name = "txtGroundMessages"
-        Me.txtGroundMessages.Size = New System.Drawing.Size(528, 239)
-        Me.txtGroundMessages.TabIndex = 52
-        '
-        'txtTowerMessages
-        '
-        Me.txtTowerMessages.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtTowerMessages.Location = New System.Drawing.Point(695, 333)
-        Me.txtTowerMessages.Multiline = True
-        Me.txtTowerMessages.Name = "txtTowerMessages"
-        Me.txtTowerMessages.Size = New System.Drawing.Size(163, 79)
-        Me.txtTowerMessages.TabIndex = 53
-        '
-        'txtAppDepMessages
-        '
-        Me.txtAppDepMessages.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtAppDepMessages.Location = New System.Drawing.Point(529, 197)
-        Me.txtAppDepMessages.Multiline = True
-        Me.txtAppDepMessages.Name = "txtAppDepMessages"
-        Me.txtAppDepMessages.Size = New System.Drawing.Size(163, 144)
-        Me.txtAppDepMessages.TabIndex = 54
-        '
         'lstGround
         '
         Me.lstGround.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -1200,7 +1192,7 @@ Partial Class frmAllControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(896, 497)
+        Me.ClientSize = New System.Drawing.Size(1162, 497)
         Me.Controls.Add(Me.tabControls)
         Me.Name = "frmAllControl"
         Me.Text = "Command Center"

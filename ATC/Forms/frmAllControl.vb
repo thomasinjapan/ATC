@@ -737,22 +737,18 @@ Public Class frmAllControl
     Friend Sub messageReceived(ByRef frequency As clsPlane.enumFrequency, ByRef message As String) Handles Game.radioMessage
         Select Case frequency
             Case clsPlane.enumFrequency.appdep, clsPlane.enumFrequency.arrival, clsPlane.enumFrequency.departure
-                Me.txtAppDepMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text
+                Me.txtAppDepMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtAppDepMessages.Text
             Case clsPlane.enumFrequency.ground
                 Me.txtGroundMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text
-            Case clsPlane.enumFrequency.tracon
-                Me.txtGroundMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text
             Case clsPlane.enumFrequency.tower
-                Me.txtTowerMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text
+                Me.txtTowerMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtTowerMessages.Text
             Case clsPlane.enumFrequency.radioOff
                 'do nothing
-            Case clsPlane.enumFrequency.undefined
+            Case clsPlane.enumFrequency.undefined, clsPlane.enumFrequency.tracon
                 Me.txtGroundMessages.Text = DateTime.Now.ToString(">>hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text & "<<"
                 Me.txtTowerMessages.Text = DateTime.Now.ToString(">>hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text & "<<"
                 Me.txtAppDepMessages.Text = DateTime.Now.ToString(">>hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text & "<<"
-
             Case Else
-
 
         End Select
 
@@ -916,7 +912,7 @@ Public Class frmAllControl
 
     End Sub
 
-    Private Sub cmdContactTower2_Click(sender As Object, e As EventArgs) Handles cmdAppDepContactTower.Click
+    Private Sub cmdAppDepContactTower_Click(sender As Object, e As EventArgs) Handles cmdAppDepContactTower.Click
         Me.Game.selectedPlane.commandInfo = New clsPlane.structCommandInfo With {
             .plane = Me.Game.selectedPlane.callsign,
             .command = clsPlane.enumCommands.contactTower

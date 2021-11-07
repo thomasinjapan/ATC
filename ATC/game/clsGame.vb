@@ -29,12 +29,18 @@ Public Class clsGame
         RaiseEvent EventCardFound(card)
     End Sub
 
+    <Serializable> Friend Structure structRadioMessageNetwork
+        Friend frequency As clsPlane.enumFrequency
+        Friend message As String
+    End Structure
+
     <Serializable> Friend Structure structNetworkPackageToClient
         Friend planeSkeletons As List(Of clsPlane.structPlaneSkeleton)
         Friend windDirectionTo As Double
         Friend openArrivalRunwayIDs As List(Of String)
         Friend openDepartureRunwayIDs As List(Of String)
         Friend usedRunwayIDs As List(Of String)
+        Friend radioMessage As structRadioMessageNetwork
     End Structure
 
     'universe
@@ -70,6 +76,9 @@ Public Class clsGame
     '!!! should be part of airport
     Friend Property planeTypes As List(Of clsPlane.structPlaneTypeInfo)
 
+    'network buffer info
+    Friend NetworkRadioMessageBuffer As New List(Of structRadioMessageNetwork)
+
     'meta
     Friend Property maxPlanes As Long                                   'maximal number of planes
     Friend crashedPlanes As Long
@@ -89,6 +98,7 @@ Public Class clsGame
     Friend Event usedRunwaysChanged()                              'supposed to be raised if the runway availability has changed
     Friend Event ticked(ByVal milliseconds As Long)
     Friend Event radioMessage(ByRef frequency As clsPlane.enumFrequency, ByRef message As String)
+
 
     'load instance as server
     Public Sub New(ByVal airportFilePath As String, Optional ByVal maxGroundPlanes As Long = Long.MaxValue, Optional ByVal maxPlanes As Long = Long.MaxValue)
@@ -528,6 +538,7 @@ Public Class clsGame
 
     Friend Sub MessageSent(ByRef plane As clsPlane, ByVal message As String)
         RaiseEvent radioMessage(plane.frequency, plane.callsign & ": " & message)
+        Me.NetworkRadioMessageBuffer.Add(New structRadioMessageNetwork With {.frequency = plane.frequency, .message = plane.callsign & ": " & message})
     End Sub
 
     ''' <summary>
@@ -1038,7 +1049,6 @@ Public Class clsGame
 
                     'if plane is not nothing, the command is for a plane
                     If Not command.plane Is Nothing Then
-
                         'hand over the commands to the plane so that the plane can react
                         'find plane based on callsign to makse sure that it gets the command asasigned
                         Dim relevantPlane As clsPlane = Me.Planes.Find(Function(p As clsPlane) p.callsign = command.plane)
@@ -1071,6 +1081,11 @@ Public Class clsGame
                             command.airGoAroundPointCommandParameter = ParameterTuple.Item2
                         End If
 
+                        If Not command.radioMessage.message Is Nothing Then
+                            RaiseEvent radioMessage(command.radioMessage.frequency, command.radioMessage.message)
+                        End If
+
+
                         relevantPlane.commandInfo = command
                     ElseIf Not command.towerRunwayID Is Nothing Then
                         'update new runwaystate of given runway
@@ -1081,6 +1096,8 @@ Public Class clsGame
 
                         Me.AirPort.getRunWayByID(command.towerRunwayID).isAvailableForDeparture = command.towerRunwayIsNewActiveForDeparture
                         RaiseEvent availableRunwaysDepartureChanged()
+                    ElseIf Not command.radioMessage.message Is Nothing Then
+                        RaiseEvent radioMessage(command.radioMessage.frequency, command.radioMessage.message)
                     End If
 
                 End If
@@ -1095,52 +1112,6 @@ Public Class clsGame
         sendUpdateToClients()
     End Sub
 
-    'Private Function copyPlane(ByRef singlePlane As clsPlane) As clsPlane
-    '    Dim newplane As clsPlane = Nothing
-
-    '    If Not singlePlane Is Nothing Then
-    '        newplane = New clsPlane()
-    '        newplane.modelInfo = singlePlane.modelInfo
-    '        newplane.air_currentAirPathName = singlePlane.air_currentAirPathName
-    '        newplane.air_currentAirWay = singlePlane.air_currentAirWay
-    '        newplane.air_flightPath = singlePlane.air_flightPath
-    '        newplane.air_goalWayPoint = singlePlane.air_goalWayPoint
-    '        newplane.air_nextWayPoint = singlePlane.air_nextWayPoint
-    '        newplane.air_terminal = singlePlane.air_terminal
-    '        newplane.callsign = singlePlane.callsign
-    '        newplane.currentState = singlePlane.currentState
-    '        newplane.frequency = singlePlane.frequency
-    '        newplane.ground_currentTaxiWay = singlePlane.ground_currentTaxiWay
-    '        newplane.ground_goalWayPoint = singlePlane.ground_goalWayPoint
-    '        newplane.ground_nextWayPoint = singlePlane.ground_nextWayPoint
-    '        newplane.ground_taxiPath = singlePlane.ground_taxiPath
-    '        newplane.ground_terminal = singlePlane.ground_terminal
-    '        newplane.mov_speed_absolute = singlePlane.mov_speed_absolute
-    '        newplane.mov_speed_rotation = singlePlane.mov_speed_rotation
-    '        newplane.pointDetectionCircle = singlePlane.pointDetectionCircle
-    '        newplane.pos_Altitude = singlePlane.pos_Altitude
-    '        newplane.pos_direction = singlePlane.pos_direction
-    '        newplane.pos_X = singlePlane.pos_X
-    '        newplane.pos_Y = singlePlane.pos_Y
-    '        newplane.target_altitude = singlePlane.target_altitude
-    '        newplane.target_direction = singlePlane.target_direction
-    '        newplane.target_speed = singlePlane.target_speed
-    '        newplane.tower_assignedLandingPoint = singlePlane.tower_assignedLandingPoint
-    '        newplane.tower_cleardToLand = singlePlane.tower_cleardToLand
-    '        newplane.tower_currentTakeOffWay = singlePlane.tower_currentTakeOffWay
-    '        newplane.tower_currentTouchDownWay = singlePlane.tower_currentTouchDownWay
-    '        newplane.tower_goalTakeOffWayPoint = singlePlane.tower_goalTakeOffWayPoint
-    '        newplane.tower_goAroundPoint = singlePlane.tower_goAroundPoint
-    '        newplane.tower_LineUpApproved = singlePlane.tower_LineUpApproved
-    '        newplane.tower_nextTakeOffWayPoint = singlePlane.tower_nextTakeOffWayPoint
-    '        newplane.tower_nextTouchDownPoint = singlePlane.tower_nextTouchDownPoint
-    '        newplane.tower_takeOffApproved = singlePlane.tower_takeOffApproved
-    '        newplane.tower_takeOffPath = singlePlane.tower_takeOffPath
-    '        newplane.tower_touchDownPath = singlePlane.tower_touchDownPath
-    '    End If
-    '    Return newplane
-    'End Function
-
     Friend Sub sendUpdateToClients()
         If Me.TCPServerClientPlayers.Count > 0 Then
             Dim planeSkeletons As New List(Of clsPlane.structPlaneSkeleton)
@@ -1151,14 +1122,22 @@ Public Class clsGame
                 planeSkeletons.Add(newplane)
             Next
 
+            Dim radioMessage As structRadioMessageNetwork = Nothing
+            If Not Me.NetworkRadioMessageBuffer.Count = 0 Then
+                radioMessage = Me.NetworkRadioMessageBuffer.First
+                Me.NetworkRadioMessageBuffer.Remove(Me.NetworkRadioMessageBuffer.First)
+            End If
 
             Dim message As New structNetworkPackageToClient With {
                 .openArrivalRunwayIDs = Me.AirPort.openArrivalRunwayIDsAsListOfStrings,
                 .openDepartureRunwayIDs = Me.AirPort.openDepartureRunwayIDsAsListOfStrings,
                 .usedRunwayIDs = Me.AirPort.usedRunwayIDsAsListOfStrings,
                 .windDirectionTo = Me.AirPort.windDirectionTo,
-                .planeSkeletons = planeSkeletons
+                .planeSkeletons = planeSkeletons,
+                .radioMessage = radioMessage
             }
+
+
 
             Try
                 Dim formatter As New BinaryFormatter
@@ -1192,7 +1171,7 @@ Public Class clsGame
             Catch ex As Exception
 
             End Try
-        End If
+            End If
     End Sub
 
     Private Sub tmrClientListen_Tick(sender As Object, e As EventArgs) Handles tmrClientListen.Tick
@@ -1294,7 +1273,7 @@ Public Class clsGame
                     If Not planeToChange.tower_LineUpApproved = singleplane.tower_LineUpApproved Then planeToChange.tower_LineUpApproved = singleplane.tower_LineUpApproved
 
 
-                    '!!! check if "IS" operator works since the info comes from remote; maybe chech w/ names is better
+                    '!!! check if "IS" operator works since the info comes from remote; maybe check w/ names is better
                     'for all items w/ ID, change only value if (only either one is NULL or plane to change is not null and their value is different
                     'template to copy:
                     '' point:   If (planeToChange.PC Is Nothing Xor singleplane.SP Is Nothing) Or (Not planeToChange.PC Is Nothing AndAlso Not (planeToChange.PC.objectID = singleplane.SP)) Then planeToChange.PC = AirPort.getNavigationPointById(singleplane.SP)
@@ -1452,6 +1431,10 @@ Public Class clsGame
                     RaiseEvent usedRunwaysChanged()
                 End If
 
+                If Not message.radioMessage.message Is Nothing Then
+                    RaiseEvent radioMessage(message.radioMessage.frequency, message.radioMessage.message)
+                End If
+
 
                 Dim stampTickEnd As DateTime = Now
                 Console.WriteLine("end reading and handling package|" & Format(stampTickEnd, "HH:mm:ss ffff"))
@@ -1551,4 +1534,5 @@ Public Class clsGame
             End While
         Next
     End Sub
+
 End Class
