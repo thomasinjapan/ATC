@@ -88,6 +88,7 @@ Public Class clsGame
     Friend Event availableRunwaysDepartureChanged()                              'supposed to be raised if the opened runway has changed remotely from the server
     Friend Event usedRunwaysChanged()                              'supposed to be raised if the runway availability has changed
     Friend Event ticked(ByVal milliseconds As Long)
+    Friend Event radioMessage(ByRef frequency As clsPlane.enumFrequency, ByRef message As String)
 
     'load instance as server
     Public Sub New(ByVal airportFilePath As String, Optional ByVal maxGroundPlanes As Long = Long.MaxValue, Optional ByVal maxPlanes As Long = Long.MaxValue)
@@ -162,7 +163,7 @@ Public Class clsGame
     End Sub
 
     ''' <summary>
-    ''' listens if plane frequenct of selected plane has changed and rauses event as game
+    ''' listens if plane frequency of selected plane has changed and raises event as game
     ''' </summary>
     ''' <param name="plane"></param>
     Friend Sub listenSelectedPlaneFrequency(ByRef plane As clsPlane) Handles selectedPlane.frequencyChanged
@@ -465,6 +466,8 @@ Public Class clsGame
         AddHandler plane.takenOff, AddressOf Me.addTakeOff
         AddHandler plane.gated, AddressOf Me.addGated
         AddHandler plane.arrived, AddressOf Me.addArrived
+        AddHandler plane.radioMessage, AddressOf Me.MessageSent
+
 
         AddHandler plane.cardFound, AddressOf Me.cardFound
 
@@ -521,6 +524,10 @@ Public Class clsGame
 
     Friend Sub frequencyChanged(ByRef Plane As clsPlane)
         RaiseEvent planeFrequencyChanged(Plane)
+    End Sub
+
+    Friend Sub MessageSent(ByRef plane As clsPlane, ByVal message As String)
+        RaiseEvent radioMessage(plane.frequency, plane.callsign & ": " & message)
     End Sub
 
     ''' <summary>
@@ -620,6 +627,7 @@ Public Class clsGame
             AddHandler newPlane.gated, AddressOf Me.addGated
             AddHandler newPlane.arrived, AddressOf Me.addArrived
 
+            AddHandler newPlane.radioMessage, AddressOf Me.MessageSent
 
             AddHandler newPlane.cardFound, AddressOf Me.cardFound
 
@@ -987,6 +995,7 @@ Public Class clsGame
 
                 Me.spawn(plane)
                 RaiseEvent spawnedPlane(plane)
+                RaiseEvent radioMessage(plane.frequency, plane.callsign & ": On your frequency!")
 
             End If
 
@@ -995,6 +1004,7 @@ Public Class clsGame
             Me.timerSpawn.Interval = randomizer.Next(Me.minSpawnDelay, Me.maxSpawnDelay + 1)
 
             Me.timerSpawn.Enabled = True
+
 
             GC.Collect()
 

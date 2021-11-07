@@ -48,11 +48,9 @@ Partial Class frmAllControl
         Me.cmdGroundTaxiTo = New System.Windows.Forms.Button()
         Me.lblVia = New System.Windows.Forms.Label()
         Me.txtVia = New System.Windows.Forms.TextBox()
-        Me.lstGround = New ATC.ctlStripeList()
         Me.cmdGroundContinueTaxi = New System.Windows.Forms.Button()
         Me.cmdGroundHold = New System.Windows.Forms.Button()
         Me.pagTower = New System.Windows.Forms.TabPage()
-        Me.cltWindRose = New ATC.ctlWindRose()
         Me.lblTowerExitVia = New System.Windows.Forms.Label()
         Me.cmdTowerExitVia = New System.Windows.Forms.Button()
         Me.lblTowerCurrentRunway = New System.Windows.Forms.Label()
@@ -75,7 +73,6 @@ Partial Class frmAllControl
         Me.cmdTowerHold = New System.Windows.Forms.Button()
         Me.cmdTowerContinueTaxi = New System.Windows.Forms.Button()
         Me.cmdTowerContactApproach = New System.Windows.Forms.Button()
-        Me.lstTower = New ATC.ctlStripeList()
         Me.pagAppDep = New System.Windows.Forms.TabPage()
         Me.cmdAppDepEnterSTARVia = New System.Windows.Forms.Button()
         Me.lblArrDepCurrentRunway = New System.Windows.Forms.Label()
@@ -91,8 +88,8 @@ Partial Class frmAllControl
         Me.cmdAppDepAltitude = New System.Windows.Forms.Button()
         Me.trkAppDepAltitude = New System.Windows.Forms.TrackBar()
         Me.cmdAppDepContactTower = New System.Windows.Forms.Button()
-        Me.lstAppDep = New ATC.ctlStripeList()
         Me.pagGame = New System.Windows.Forms.TabPage()
+        Me.lblFPS = New System.Windows.Forms.Label()
         Me.lblMillisecondsBetweenTicks = New System.Windows.Forms.Label()
         Me.lblGatedAtTerminal = New System.Windows.Forms.Label()
         Me.dtpEndGateUntil = New System.Windows.Forms.DateTimePicker()
@@ -110,7 +107,6 @@ Partial Class frmAllControl
         Me.cmdShowAppDepRadar = New System.Windows.Forms.Button()
         Me.cmdShowTowerRadar = New System.Windows.Forms.Button()
         Me.cmdShowGroundRadar = New System.Windows.Forms.Button()
-        Me.lstGame = New ATC.ctlStripeList()
         Me.tmrTick = New System.Windows.Forms.Timer(Me.components)
         Me.cmsAppDepSTAR = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.cmsAppDepSID = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -120,7 +116,14 @@ Partial Class frmAllControl
         Me.cmsTowerExitVia = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.cmsGroundTaxiTo = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.cmsAppDepSTARvia = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.lblFPS = New System.Windows.Forms.Label()
+        Me.txtGroundMessages = New System.Windows.Forms.TextBox()
+        Me.txtTowerMessages = New System.Windows.Forms.TextBox()
+        Me.txtAppDepMessages = New System.Windows.Forms.TextBox()
+        Me.lstGround = New ATC.ctlStripeList()
+        Me.cltWindRose = New ATC.ctlWindRose()
+        Me.lstTower = New ATC.ctlStripeList()
+        Me.lstAppDep = New ATC.ctlStripeList()
+        Me.lstGame = New ATC.ctlStripeList()
         CType(Me.trkAppDepSpeed, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.trkAppDepHeading, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabControls.SuspendLayout()
@@ -339,6 +342,7 @@ Partial Class frmAllControl
         '
         'pagGround
         '
+        Me.pagGround.Controls.Add(Me.txtGroundMessages)
         Me.pagGround.Controls.Add(Me.cmdGroundChangeTaxi)
         Me.pagGround.Controls.Add(Me.cmdGroundClearVia)
         Me.pagGround.Controls.Add(Me.lblGroundTaxiTo)
@@ -414,16 +418,6 @@ Partial Class frmAllControl
         Me.txtVia.Size = New System.Drawing.Size(85, 20)
         Me.txtVia.TabIndex = 9
         '
-        'lstGround
-        '
-        Me.lstGround.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.lstGround.BackColor = System.Drawing.SystemColors.Control
-        Me.lstGround.Location = New System.Drawing.Point(3, 6)
-        Me.lstGround.Name = "lstGround"
-        Me.lstGround.Size = New System.Drawing.Size(321, 435)
-        Me.lstGround.TabIndex = 8
-        '
         'cmdGroundContinueTaxi
         '
         Me.cmdGroundContinueTaxi.Font = New System.Drawing.Font("Segoe UI Emoji", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -450,12 +444,13 @@ Partial Class frmAllControl
         '
         'pagTower
         '
-        Me.pagTower.Controls.Add(Me.cltWindRose)
+        Me.pagTower.Controls.Add(Me.txtTowerMessages)
         Me.pagTower.Controls.Add(Me.lblTowerExitVia)
         Me.pagTower.Controls.Add(Me.cmdTowerExitVia)
         Me.pagTower.Controls.Add(Me.lblTowerCurrentRunway)
         Me.pagTower.Controls.Add(Me.cmdTowerExpectRunway)
         Me.pagTower.Controls.Add(Me.cmdTowerEnterFinal)
+        Me.pagTower.Controls.Add(Me.cltWindRose)
         Me.pagTower.Controls.Add(Me.lstTowerOpenedRunwaysDeparture)
         Me.pagTower.Controls.Add(Me.Label4)
         Me.pagTower.Controls.Add(Me.lblAvailabeRunways)
@@ -487,14 +482,6 @@ Partial Class frmAllControl
         Me.pagTower.TabIndex = 1
         Me.pagTower.Text = "Tower"
         Me.pagTower.UseVisualStyleBackColor = True
-        '
-        'cltWindRose
-        '
-        Me.cltWindRose.BackColor = System.Drawing.Color.Transparent
-        Me.cltWindRose.Location = New System.Drawing.Point(695, 192)
-        Me.cltWindRose.Name = "cltWindRose"
-        Me.cltWindRose.Size = New System.Drawing.Size(135, 135)
-        Me.cltWindRose.TabIndex = 51
         '
         'lblTowerExitVia
         '
@@ -717,18 +704,9 @@ Partial Class frmAllControl
         Me.cmdTowerContactApproach.Text = "Contact Approach  | 💬🛬"
         Me.cmdTowerContactApproach.UseVisualStyleBackColor = True
         '
-        'lstTower
-        '
-        Me.lstTower.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.lstTower.BackColor = System.Drawing.SystemColors.Control
-        Me.lstTower.Location = New System.Drawing.Point(6, 6)
-        Me.lstTower.Name = "lstTower"
-        Me.lstTower.Size = New System.Drawing.Size(321, 435)
-        Me.lstTower.TabIndex = 35
-        '
         'pagAppDep
         '
+        Me.pagAppDep.Controls.Add(Me.txtAppDepMessages)
         Me.pagAppDep.Controls.Add(Me.cmdAppDepEnterSTARVia)
         Me.pagAppDep.Controls.Add(Me.lblArrDepCurrentRunway)
         Me.pagAppDep.Controls.Add(Me.cmdAppDepExpectRunway)
@@ -897,16 +875,6 @@ Partial Class frmAllControl
         Me.cmdAppDepContactTower.Text = "Contact Tower | 💬🗼"
         Me.cmdAppDepContactTower.UseVisualStyleBackColor = True
         '
-        'lstAppDep
-        '
-        Me.lstAppDep.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.lstAppDep.BackColor = System.Drawing.SystemColors.Control
-        Me.lstAppDep.Location = New System.Drawing.Point(6, 6)
-        Me.lstAppDep.Name = "lstAppDep"
-        Me.lstAppDep.Size = New System.Drawing.Size(321, 435)
-        Me.lstAppDep.TabIndex = 25
-        '
         'pagGame
         '
         Me.pagGame.Controls.Add(Me.lblFPS)
@@ -937,6 +905,15 @@ Partial Class frmAllControl
         Me.pagGame.TabIndex = 3
         Me.pagGame.Text = "Game"
         Me.pagGame.UseVisualStyleBackColor = True
+        '
+        'lblFPS
+        '
+        Me.lblFPS.AutoSize = True
+        Me.lblFPS.Location = New System.Drawing.Point(568, 346)
+        Me.lblFPS.Name = "lblFPS"
+        Me.lblFPS.Size = New System.Drawing.Size(36, 13)
+        Me.lblFPS.TabIndex = 30
+        Me.lblFPS.Text = "0 FPS"
         '
         'lblMillisecondsBetweenTicks
         '
@@ -1098,16 +1075,6 @@ Partial Class frmAllControl
         Me.cmdShowGroundRadar.Text = "New Ground Radar Window"
         Me.cmdShowGroundRadar.UseVisualStyleBackColor = True
         '
-        'lstGame
-        '
-        Me.lstGame.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.lstGame.BackColor = System.Drawing.SystemColors.Control
-        Me.lstGame.Location = New System.Drawing.Point(6, 6)
-        Me.lstGame.Name = "lstGame"
-        Me.lstGame.Size = New System.Drawing.Size(321, 435)
-        Me.lstGame.TabIndex = 13
-        '
         'tmrTick
         '
         Me.tmrTick.Enabled = True
@@ -1152,14 +1119,82 @@ Partial Class frmAllControl
         Me.cmsAppDepSTARvia.Name = "cmsAppDepSTARvia"
         Me.cmsAppDepSTARvia.Size = New System.Drawing.Size(61, 4)
         '
-        'lblFPS
+        'txtGroundMessages
         '
-        Me.lblFPS.AutoSize = True
-        Me.lblFPS.Location = New System.Drawing.Point(568, 346)
-        Me.lblFPS.Name = "lblFPS"
-        Me.lblFPS.Size = New System.Drawing.Size(36, 13)
-        Me.lblFPS.TabIndex = 30
-        Me.lblFPS.Text = "0 FPS"
+        Me.txtGroundMessages.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtGroundMessages.Location = New System.Drawing.Point(330, 202)
+        Me.txtGroundMessages.Multiline = True
+        Me.txtGroundMessages.Name = "txtGroundMessages"
+        Me.txtGroundMessages.Size = New System.Drawing.Size(528, 239)
+        Me.txtGroundMessages.TabIndex = 52
+        '
+        'txtTowerMessages
+        '
+        Me.txtTowerMessages.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtTowerMessages.Location = New System.Drawing.Point(695, 333)
+        Me.txtTowerMessages.Multiline = True
+        Me.txtTowerMessages.Name = "txtTowerMessages"
+        Me.txtTowerMessages.Size = New System.Drawing.Size(163, 79)
+        Me.txtTowerMessages.TabIndex = 53
+        '
+        'txtAppDepMessages
+        '
+        Me.txtAppDepMessages.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtAppDepMessages.Location = New System.Drawing.Point(529, 197)
+        Me.txtAppDepMessages.Multiline = True
+        Me.txtAppDepMessages.Name = "txtAppDepMessages"
+        Me.txtAppDepMessages.Size = New System.Drawing.Size(163, 144)
+        Me.txtAppDepMessages.TabIndex = 54
+        '
+        'lstGround
+        '
+        Me.lstGround.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.lstGround.BackColor = System.Drawing.SystemColors.Control
+        Me.lstGround.Location = New System.Drawing.Point(3, 6)
+        Me.lstGround.Name = "lstGround"
+        Me.lstGround.Size = New System.Drawing.Size(321, 435)
+        Me.lstGround.TabIndex = 8
+        '
+        'cltWindRose
+        '
+        Me.cltWindRose.BackColor = System.Drawing.Color.Transparent
+        Me.cltWindRose.Location = New System.Drawing.Point(695, 192)
+        Me.cltWindRose.Name = "cltWindRose"
+        Me.cltWindRose.Size = New System.Drawing.Size(135, 135)
+        Me.cltWindRose.TabIndex = 51
+        '
+        'lstTower
+        '
+        Me.lstTower.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.lstTower.BackColor = System.Drawing.SystemColors.Control
+        Me.lstTower.Location = New System.Drawing.Point(6, 6)
+        Me.lstTower.Name = "lstTower"
+        Me.lstTower.Size = New System.Drawing.Size(321, 435)
+        Me.lstTower.TabIndex = 35
+        '
+        'lstAppDep
+        '
+        Me.lstAppDep.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.lstAppDep.BackColor = System.Drawing.SystemColors.Control
+        Me.lstAppDep.Location = New System.Drawing.Point(6, 6)
+        Me.lstAppDep.Name = "lstAppDep"
+        Me.lstAppDep.Size = New System.Drawing.Size(321, 435)
+        Me.lstAppDep.TabIndex = 25
+        '
+        'lstGame
+        '
+        Me.lstGame.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.lstGame.BackColor = System.Drawing.SystemColors.Control
+        Me.lstGame.Location = New System.Drawing.Point(6, 6)
+        Me.lstGame.Name = "lstGame"
+        Me.lstGame.Size = New System.Drawing.Size(321, 435)
+        Me.lstGame.TabIndex = 13
         '
         'frmAllControl
         '
@@ -1288,4 +1323,7 @@ Partial Class frmAllControl
     Friend WithEvents cmdGroundChangeTaxi As Button
     Friend WithEvents lblMillisecondsBetweenTicks As Label
     Friend WithEvents lblFPS As Label
+    Friend WithEvents txtGroundMessages As TextBox
+    Friend WithEvents txtTowerMessages As TextBox
+    Friend WithEvents txtAppDepMessages As TextBox
 End Class

@@ -734,6 +734,30 @@ Public Class frmAllControl
         End Select
     End Sub
 
+    Friend Sub messageReceived(ByRef frequency As clsPlane.enumFrequency, ByRef message As String) Handles Game.radioMessage
+        Select Case frequency
+            Case clsPlane.enumFrequency.appdep, clsPlane.enumFrequency.arrival, clsPlane.enumFrequency.departure
+                Me.txtAppDepMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text
+            Case clsPlane.enumFrequency.ground
+                Me.txtGroundMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text
+            Case clsPlane.enumFrequency.tracon
+                Me.txtGroundMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text
+            Case clsPlane.enumFrequency.tower
+                Me.txtTowerMessages.Text = DateTime.Now.ToString("hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text
+            Case clsPlane.enumFrequency.radioOff
+                'do nothing
+            Case clsPlane.enumFrequency.undefined
+                Me.txtGroundMessages.Text = DateTime.Now.ToString(">>hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text & "<<"
+                Me.txtTowerMessages.Text = DateTime.Now.ToString(">>hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text & "<<"
+                Me.txtAppDepMessages.Text = DateTime.Now.ToString(">>hh:MM:ss") & " - " & message & vbNewLine & Me.txtGroundMessages.Text & "<<"
+
+            Case Else
+
+
+        End Select
+
+    End Sub
+
     Private Sub txtDirection_TextChanged(sender As TextBox, e As EventArgs) Handles txtAppDepHeading.TextChanged
 
         Dim deg As Integer = CInt(0 & sender.Text)

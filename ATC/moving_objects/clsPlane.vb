@@ -359,8 +359,10 @@ Public Class clsPlane
     Friend Property frequency As enumFrequency
         Set(value As enumFrequency)
             If Me._frequency <> value Then
+                RaiseEvent radioMessage(Me, "Thanks, Have a nice day!")
                 Me._frequency = value
                 RaiseEvent frequencyChanged(Me)
+                RaiseEvent radioMessage(Me, "On your frequency.")
             End If
         End Set
         Get
@@ -472,6 +474,7 @@ Public Class clsPlane
     Friend Event takenOff(ByRef plane As clsPlane)
     Friend Event gated(ByRef plane As clsPlane)
     Friend Event arrived(ByRef plane As clsPlane)
+    Friend Event radioMessage(ByRef plane As clsPlane, ByVal message As String)
 
     Public Sub New()
         MyBase.New()
@@ -1402,7 +1405,7 @@ Public Class clsPlane
             Me.warpTo(Me.tower_assignedLandingPoint)
             If Not Me.ground_nextWayPoint.altitude Is Nothing Then Me.target_altitude.feet = Me.ground_nextWayPoint.altitude.feet Else Me.target_altitude.feet = 0
 
-            'delete all airborne related informaiton
+            'delete all airborne related information
             Me.clearAirCommands(False, False)
 
         Else
