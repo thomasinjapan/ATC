@@ -800,6 +800,7 @@ Public Class clsPlane
             Case enumPlaneState.tower_takingOff
                 tickTowerTakingOff(timespan)
             Case enumPlaneState.tower_Departed
+                RaiseEvent radioMessage(Me, "Contacting TRACON. Have a nice day")
                 RaiseEvent Departed(Me)
             Case enumPlaneState.tower_freeFlight
                 tickTowerFreeFlight(timespan)
