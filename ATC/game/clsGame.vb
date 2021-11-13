@@ -990,6 +990,7 @@ Public Class clsGame
                 Me.spawn(plane)
                 RaiseEvent spawnedPlane(plane)
                 RaiseEvent radioMessage(plane.frequency, plane.callsign & ": On your frequency!")
+                mdlNetworkhandling.serverSendUpdateToClients(Me, enumNetworkMessageType.radioMessage, New structRadioMessageNetwork With {.frequency = plane.frequency, .message = plane.callsign & ": On your frequency!"})
 
             End If
 
