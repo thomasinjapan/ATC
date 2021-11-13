@@ -8,7 +8,8 @@ Imports System.Xml.Serialization
 
 Module mdlNetworkhandling
     <Serializable> Public Enum enumNetworkMessageType As Byte
-        keyframe = 1
+        keyframe
+        radioMessage
     End Enum
 
     <Serializable> Friend Structure structNetworkMessageFromServer
@@ -31,39 +32,41 @@ Module mdlNetworkhandling
     End Structure
 
 
-    Friend Sub sendUpdateToClients(ByRef game As clsGame, ByVal messageType As enumNetworkMessageType)
+    Friend Sub serverSendUpdateToClients(ByRef game As clsGame, ByVal messageType As enumNetworkMessageType, Optional ByRef messageParameter As Object = Nothing)
         If game.TCPServerClientPlayers.Count > 0 Then
-            Dim planeSkeletons As New List(Of clsPlane.structPlaneSkeleton)
-
-            For Each singlePlane As clsPlane In game.Planes
-                Dim newplane As clsPlane.structPlaneSkeleton = singlePlane.skeleton
-
-                planeSkeletons.Add(newplane)
-            Next
-
-            Dim radioMessage As structRadioMessageNetwork = Nothing
-            If Not game.NetworkRadioMessageBuffer.Count = 0 Then
-                radioMessage = game.NetworkRadioMessageBuffer.First
-                game.NetworkRadioMessageBuffer.Remove(game.NetworkRadioMessageBuffer.First)
-            End If
 
             'define what to send based on message type
             Dim messageContent As Object = Nothing
             Select Case messageType
                 Case enumNetworkMessageType.keyframe
+                    Dim planeSkeletons As New List(Of clsPlane.structPlaneSkeleton)
+
+                    For Each singlePlane As clsPlane In game.Planes
+                        Dim newplane As clsPlane.structPlaneSkeleton = singlePlane.skeleton
+
+                        planeSkeletons.Add(newplane)
+                    Next
+
+
                     messageContent = New structNetworkKeyframeMessagefromServer With {
                     .openArrivalRunwayIDs = game.AirPort.openArrivalRunwayIDsAsListOfStrings,
                     .openDepartureRunwayIDs = game.AirPort.openDepartureRunwayIDsAsListOfStrings,
                     .usedRunwayIDs = game.AirPort.usedRunwayIDsAsListOfStrings,
                     .windDirectionTo = game.AirPort.windDirectionTo,
-                    .planeSkeletons = planeSkeletons,
-                    .radioMessage = radioMessage
-                }
+                    .planeSkeletons = planeSkeletons
+                    }
+                Case enumNetworkMessageType.radioMessage
+                    'need to cast to make sure that all info is correct
+                    Dim radioMessage = DirectCast(messageParameter, structRadioMessageNetwork)
+                    messageContent = New structRadioMessageNetwork With {
+                        .frequency = radioMessage.frequency,
+                        .message = radioMessage.message
+                    }
             End Select
 
             'prepare the message
             Dim message As New mdlNetworkhandling.structNetworkMessageFromServer With {
-                .nwmMessageType = enumNetworkMessageType.keyframe,
+                .nwmMessageType = messageType,
                 .nwmMessage = messageContent
             }
 
@@ -103,7 +106,7 @@ Module mdlNetworkhandling
     End Sub
 
 
-    Friend Sub receiveUpdateFromServer(ByRef game As clsGame)
+    Friend Sub clientReceiveUpdateFromServer(ByRef game As clsGame)
         If game.serverConnected AndAlso game.TCPClientStream.DataAvailable Then
             Try
                 Dim stampTickStart As DateTime = Now
@@ -133,6 +136,8 @@ Module mdlNetworkhandling
                 Select Case message.nwmMessageType
                     Case enumNetworkMessageType.keyframe
                         ClientReceiveKeyFrame(game, message.nwmMessage)
+                    Case enumNetworkMessageType.radioMessage
+                        ClientReceiveRadioMessage(game, message.nwmMessage)
                 End Select
 
 
@@ -389,10 +394,10 @@ Module mdlNetworkhandling
             game.raiseEventManuallyUsedRunwaysChanged()
         End If
 
-        If Not message.radioMessage.message Is Nothing Then
-            'RaiseEvent radioMessage(message.radioMessage.frequency, message.radioMessage.message)
-            game.raiseEventManuallyRadioMessage(message.radioMessage.frequency, message.radioMessage.message)
-        End If
-
     End Sub
+
+    Sub ClientReceiveRadioMessage(ByRef game As clsGame, ByRef message As structRadioMessageNetwork)
+        game.raiseEventManuallyRadioMessage(message.frequency, message.message)
+    End Sub
+
 End Module

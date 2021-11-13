@@ -60,8 +60,6 @@ Public Class clsGame
     '!!! should be part of airport
     Friend Property planeTypes As List(Of clsPlane.structPlaneTypeInfo)
 
-    'network buffer info
-    Friend NetworkRadioMessageBuffer As New List(Of structRadioMessageNetwork)
 
     'meta
     Friend Property maxPlanes As Long                                   'maximal number of planes
@@ -75,7 +73,7 @@ Public Class clsGame
     'events
     Friend Event selectedPlaneStatusChanged(ByRef plane As clsPlane)    'supposed to be raused if a plane changed the status
     Friend Event planeFrequencyChanged(ByRef plane As clsPlane)         'supposed to be raised if a plane changes frequency
-    Public Shared Event spawnedPlane(ByRef plane As clsPlane)                  'supposed to be raised if a plane spawns
+    Friend Event spawnedPlane(ByRef plane As clsPlane)                  'supposed to be raised if a plane spawns
     Friend Event despawnedPlane(ByRef plane As clsPlane)                'supposed to be raused if a plane despawns
     Friend Event availableRunwaysArrivalChanged()                              'supposed to be raised if the opened runway has changed remotely from the server
     Friend Event availableRunwaysDepartureChanged()                              'supposed to be raised if the opened runway has changed remotely from the server
@@ -522,7 +520,8 @@ Public Class clsGame
 
     Friend Sub MessageSent(ByRef plane As clsPlane, ByVal message As String)
         RaiseEvent radioMessage(plane.frequency, plane.callsign & ": " & message)
-        Me.NetworkRadioMessageBuffer.Add(New structRadioMessageNetwork With {.frequency = plane.frequency, .message = plane.callsign & ": " & message})
+        mdlNetworkhandling.serverSendUpdateToClients(Me, enumNetworkMessageType.radioMessage, New structRadioMessageNetwork With {.frequency = plane.frequency, .message = plane.callsign & ": " & message})
+        'Me.NetworkRadioMessageBuffer.Add(New structRadioMessageNetwork With {.frequency = plane.frequency, .message = plane.callsign & ": " & message})
     End Sub
 
     ''' <summary>
@@ -1093,11 +1092,11 @@ Public Class clsGame
     End Sub
 
     Private Sub tmrServerSend_Tick(sender As Object, e As EventArgs) Handles tmrServerSendKeyFrame.Tick
-        mdlNetworkhandling.sendUpdateToClients(Me, enumNetworkMessageType.keyframe)
+        mdlNetworkhandling.serverSendUpdateToClients(Me, enumNetworkMessageType.keyframe)
     End Sub
 
     Private Sub tmrClientListen_Tick(sender As Object, e As EventArgs) Handles tmrClientListen.Tick
-        mdlNetworkhandling.receiveUpdateFromServer(Me)
+        mdlNetworkhandling.clientReceiveUpdateFromServer(Me)
     End Sub
 
     Friend Sub sendCommandsToServer(ByRef commandInfo As clsPlane.structCommandInfo)
