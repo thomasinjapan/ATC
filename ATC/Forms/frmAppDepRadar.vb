@@ -10,6 +10,7 @@ Public Class frmAppDepRadar
         Me.ctlWindRose.loadAirport(Me.Game.AirPort)
         Me.ctlWindRose.refreshRateInMs = 1000
         'Me.ctlWindRose.BackColor = Color.MidnightBlue
+        Me.trkTimerIterval.Value = Me.tmrTick.Interval
 
         Dim dimension As Integer
         If Me.picAppDep.Height < Me.picAppDep.Width Then
@@ -221,21 +222,6 @@ Public Class frmAppDepRadar
             Next
         End If
 
-        ''paint wind arrow
-        'Dim penWind As New Pen(Color.LightGray, 2)
-        'Dim windXscale As Double = 30
-        'Dim windYscale As Double = 30
-
-        'Dim beta1 As Double = (Me.Game.AirPort.windDirectionTo + (180))
-        'Dim beta2 As Double = (Me.Game.AirPort.windDirectionTo - (90 + 45))
-        'Dim beta3 As Double = (Me.Game.AirPort.windDirectionTo + (90 + 45))
-        'Dim windPoint1 As New Point(windXscale + (15 * Math.Sin(beta1 * Math.PI / 180)), (windYscale) - 15 * Math.Cos(beta1 * Math.PI / 180))
-        'Dim windPoint2 As New Point(windXscale + (5 * Math.Sin(beta2 * Math.PI / 180)), (windYscale) - 5 * Math.Cos(beta2 * Math.PI / 180))
-        'Dim windPoint3 As New Point(windXscale + (5 * Math.Sin(beta3 * Math.PI / 180)), (windYscale) - 5 * Math.Cos(beta3 * Math.PI / 180))
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint1)
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint2)
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint3)
-
         'paint planes
         For Each singlePlane As clsPlane In Me.Game.Planes
             Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, e)
@@ -246,6 +232,7 @@ Public Class frmAppDepRadar
         If Me.chkShowFramerate.Checked Then
             Me.lblFPS.Visible = True
             Me.lblMillisecondsBetweenFrames.Visible = True
+            Me.trkTimerIterval.Visible = True
             Dim timeStamp As DateTime = Now
             Dim oldtime As DateTime = Me.lblMillisecondsBetweenFrames.Tag
             Dim milliseconds As Long = (timeStamp - oldtime).TotalMilliseconds
@@ -255,6 +242,7 @@ Public Class frmAppDepRadar
         Else
             Me.lblFPS.Visible = False
             Me.lblMillisecondsBetweenFrames.Visible = False
+            Me.trkTimerIterval.Visible = False
         End If
 
         GC.Collect()
@@ -283,24 +271,8 @@ Public Class frmAppDepRadar
                 planeColor.Color = Color.Red
             End If
 
-
-            'as an open triangle pointing to degree direction
-            'point1 is plane location
-            'point 2 is plane location w/ distance of 5 and degree - (90+45)
-            'Dim cockpitX As Double = singlePlane.pos_X.meters + singlePlane.collisionRadius.meters * Math.Sin(singlePlane.pos_direction * Math.PI / 180)
-            'Dim cockpitY As Double = singlePlane.pos_Y.meters - singlePlane.collisionRadius.meters * Math.Cos(singlePlane.pos_direction * Math.PI / 180)
-
-
             Dim planeXscale As Double = (singlePlane.cockpitLocation.X.meters - offsetX) * multiplyerX
             Dim planeYscale As Double = (singlePlane.cockpitLocation.Y.meters - offsetY) * multiplyerY
-
-            ''prepare triangle
-            'Dim beta1 As Double = (singlePlane.pos_direction - (90 + 45))
-            'Dim beta2 As Double = (singlePlane.pos_direction + (90 + 45))
-            'Dim planePoint2 As New Point(planeXscale + (10 * Math.Sin(beta1 * Math.PI / 180)), (planeYscale) - 10 * Math.Cos(beta1 * Math.PI / 180))
-            ''point 3 is plane location w/ distance of 5 and degree + (90+45)
-            'Dim planePoint3 As New Point(planeXscale + (10 * Math.Sin(beta2 * Math.PI / 180)), (planeYscale) - 10 * Math.Cos(beta2 * Math.PI / 180))
-
 
             'circle preparation
             Dim widthheight As Double = singlePlane.modelInfo.length.meters * multiplyerX
@@ -448,6 +420,10 @@ Public Class frmAppDepRadar
 
     Private Sub picTracon_MouseUp(sender As Object, e As MouseEventArgs) Handles picAppDep.MouseUp
         sender.Cursor = Cursors.Default
+    End Sub
+
+    Private Sub trkTimerIterval_ValueChanged(sender As Object, e As EventArgs) Handles trkTimerIterval.ValueChanged
+        Me.tmrTick.Interval = sender.value
     End Sub
 
 End Class

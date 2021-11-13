@@ -9,6 +9,8 @@ Public Class frmTowerRadar
         Me.Game = frmMenu.Game
         Me.ctlWindRose.loadAirport(Me.Game.AirPort)
         Me.ctlWindRose.refreshRateInMs = 1000
+        Me.trkTimerIterval.Value = Me.tmrTick.Interval
+
     End Sub
 
     Friend Sub Tick(ByVal timespan As TimeSpan)
@@ -194,6 +196,7 @@ Public Class frmTowerRadar
         If Me.chkShowFramerate.Checked Then
             Me.lblFPS.Visible = True
             Me.lblMillisecondsBetweenFrames.Visible = True
+            Me.trkTimerIterval.Visible = True
             Dim timeStamp As DateTime = Now
             Dim oldtime As DateTime = Me.lblMillisecondsBetweenFrames.Tag
             Dim milliseconds As Long = (timeStamp - oldtime).TotalMilliseconds
@@ -203,6 +206,7 @@ Public Class frmTowerRadar
         Else
             Me.lblFPS.Visible = False
             Me.lblMillisecondsBetweenFrames.Visible = False
+            Me.trkTimerIterval.Visible = False
         End If
         GC.Collect()
     End Sub
@@ -391,4 +395,7 @@ Public Class frmTowerRadar
         sender.Cursor = Cursors.Default
     End Sub
 
+    Private Sub trkTimerIterval_ValueChanged(sender As Object, e As EventArgs) Handles trkTimerIterval.ValueChanged
+        Me.tmrTick.Interval = sender.value
+    End Sub
 End Class

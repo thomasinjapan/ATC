@@ -25,14 +25,16 @@ Partial Class frmTowerRadar
         Me.components = New System.ComponentModel.Container()
         Me.picTowerRadar = New System.Windows.Forms.PictureBox()
         Me.pnlTower = New System.Windows.Forms.Panel()
+        Me.chkShowFramerate = New System.Windows.Forms.CheckBox()
+        Me.lblFPS = New System.Windows.Forms.Label()
+        Me.lblMillisecondsBetweenFrames = New System.Windows.Forms.Label()
         Me.chkRenderBackground = New System.Windows.Forms.CheckBox()
         Me.ctlWindRose = New ATC.ctlWindRose()
         Me.tmrTick = New System.Windows.Forms.Timer(Me.components)
-        Me.lblMillisecondsBetweenFrames = New System.Windows.Forms.Label()
-        Me.lblFPS = New System.Windows.Forms.Label()
-        Me.chkShowFramerate = New System.Windows.Forms.CheckBox()
+        Me.trkTimerIterval = New System.Windows.Forms.TrackBar()
         CType(Me.picTowerRadar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTower.SuspendLayout()
+        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picTowerRadar
@@ -55,6 +57,7 @@ Partial Class frmTowerRadar
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlTower.BackColor = System.Drawing.Color.Transparent
+        Me.pnlTower.Controls.Add(Me.trkTimerIterval)
         Me.pnlTower.Controls.Add(Me.chkShowFramerate)
         Me.pnlTower.Controls.Add(Me.lblFPS)
         Me.pnlTower.Controls.Add(Me.lblMillisecondsBetweenFrames)
@@ -65,6 +68,38 @@ Partial Class frmTowerRadar
         Me.pnlTower.Name = "pnlTower"
         Me.pnlTower.Size = New System.Drawing.Size(776, 426)
         Me.pnlTower.TabIndex = 1
+        '
+        'chkShowFramerate
+        '
+        Me.chkShowFramerate.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.chkShowFramerate.AutoSize = True
+        Me.chkShowFramerate.Location = New System.Drawing.Point(758, 410)
+        Me.chkShowFramerate.Name = "chkShowFramerate"
+        Me.chkShowFramerate.Size = New System.Drawing.Size(15, 14)
+        Me.chkShowFramerate.TabIndex = 7
+        Me.chkShowFramerate.UseVisualStyleBackColor = True
+        '
+        'lblFPS
+        '
+        Me.lblFPS.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblFPS.Location = New System.Drawing.Point(642, 409)
+        Me.lblFPS.Name = "lblFPS"
+        Me.lblFPS.Size = New System.Drawing.Size(51, 13)
+        Me.lblFPS.TabIndex = 6
+        Me.lblFPS.Text = "0FPS"
+        Me.lblFPS.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblMillisecondsBetweenFrames
+        '
+        Me.lblMillisecondsBetweenFrames.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblMillisecondsBetweenFrames.BackColor = System.Drawing.SystemColors.Control
+        Me.lblMillisecondsBetweenFrames.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblMillisecondsBetweenFrames.Location = New System.Drawing.Point(699, 409)
+        Me.lblMillisecondsBetweenFrames.Name = "lblMillisecondsBetweenFrames"
+        Me.lblMillisecondsBetweenFrames.Size = New System.Drawing.Size(53, 13)
+        Me.lblMillisecondsBetweenFrames.TabIndex = 5
+        Me.lblMillisecondsBetweenFrames.Text = "0 ms"
+        Me.lblMillisecondsBetweenFrames.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'chkRenderBackground
         '
@@ -92,37 +127,19 @@ Partial Class frmTowerRadar
         '
         Me.tmrTick.Enabled = True
         '
-        'lblMillisecondsBetweenFrames
+        'trkTimerIterval
         '
-        Me.lblMillisecondsBetweenFrames.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblMillisecondsBetweenFrames.BackColor = System.Drawing.SystemColors.Control
-        Me.lblMillisecondsBetweenFrames.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblMillisecondsBetweenFrames.Location = New System.Drawing.Point(723, 409)
-        Me.lblMillisecondsBetweenFrames.Name = "lblMillisecondsBetweenFrames"
-        Me.lblMillisecondsBetweenFrames.Size = New System.Drawing.Size(29, 13)
-        Me.lblMillisecondsBetweenFrames.TabIndex = 5
-        Me.lblMillisecondsBetweenFrames.Text = "0 ms"
-        Me.lblMillisecondsBetweenFrames.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblFPS
-        '
-        Me.lblFPS.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblFPS.Location = New System.Drawing.Point(684, 410)
-        Me.lblFPS.Name = "lblFPS"
-        Me.lblFPS.Size = New System.Drawing.Size(33, 13)
-        Me.lblFPS.TabIndex = 6
-        Me.lblFPS.Text = "0FPS"
-        Me.lblFPS.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'chkShowFramerate
-        '
-        Me.chkShowFramerate.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.chkShowFramerate.AutoSize = True
-        Me.chkShowFramerate.Location = New System.Drawing.Point(758, 410)
-        Me.chkShowFramerate.Name = "chkShowFramerate"
-        Me.chkShowFramerate.Size = New System.Drawing.Size(15, 14)
-        Me.chkShowFramerate.TabIndex = 7
-        Me.chkShowFramerate.UseVisualStyleBackColor = True
+        Me.trkTimerIterval.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.trkTimerIterval.AutoSize = False
+        Me.trkTimerIterval.LargeChange = 1000
+        Me.trkTimerIterval.Location = New System.Drawing.Point(3, 409)
+        Me.trkTimerIterval.Maximum = 5000
+        Me.trkTimerIterval.Minimum = 30
+        Me.trkTimerIterval.Name = "trkTimerIterval"
+        Me.trkTimerIterval.Size = New System.Drawing.Size(633, 15)
+        Me.trkTimerIterval.TabIndex = 12
+        Me.trkTimerIterval.Value = 30
         '
         'frmTowerRadar
         '
@@ -135,6 +152,7 @@ Partial Class frmTowerRadar
         CType(Me.picTowerRadar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlTower.ResumeLayout(False)
         Me.pnlTower.PerformLayout()
+        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -147,4 +165,5 @@ Partial Class frmTowerRadar
     Friend WithEvents lblMillisecondsBetweenFrames As Label
     Friend WithEvents lblFPS As Label
     Friend WithEvents chkShowFramerate As CheckBox
+    Friend WithEvents trkTimerIterval As TrackBar
 End Class
