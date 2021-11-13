@@ -1089,27 +1089,52 @@ Public Class frmAllControl
         Me.supressAvailableRunwayCheckListEvaluation = True
         Dim arrivalPointList As List(Of clsRunWay) = Me.lstTowerOpenedRunwaysArrival.Tag
         For C1 As Long = 0 To arrivalPointList.Count - 1
+            'check checkboxes based on availability
+            'color the "expect runways" menu items
             If arrivalPointList(C1).isAvailableForArrival Then
+                'set checkbox of runway based on if it is available
                 Me.lstTowerOpenedRunwaysArrival.SetItemCheckState(C1, CheckState.Checked)
+                Me.cmsAppDepRunways.Items(CInt(C1)).BackColor = Color.LightGreen
+                Me.cmsTowerRunways.Items(CInt(C1)).BackColor = Color.LightGreen
             Else
+                'set checkbox of runway based on if it is available
                 Me.lstTowerOpenedRunwaysArrival.SetItemCheckState(C1, CheckState.Unchecked)
+                Me.cmsAppDepRunways.Items(CInt(C1)).BackColor = Color.Salmon
+                Me.cmsTowerRunways.Items(CInt(C1)).BackColor = Color.Salmon
             End If
+
         Next
         Me.supressAvailableRunwayCheckListEvaluation = False
     End Sub
 
-    'listens if a runway has been opened or closed for depaerture (usually by the server)
+    'listens if a runway has been opened or closed for departure (usually by the server)
     Friend Sub listenToRunwayDepartureUpdates() Handles Game.availableRunwaysDepartureChanged
         Me.supressAvailableRunwayCheckListEvaluation = True
+
         Dim arrivalPointList As List(Of clsRunWay) = Me.lstTowerOpenedRunwaysDeparture.Tag
         For C1 As Long = 0 To arrivalPointList.Count - 1
+            'check checkboxes based on availability
             If arrivalPointList(C1).isAvailableForDeparture Then
                 Me.lstTowerOpenedRunwaysDeparture.SetItemCheckState(C1, CheckState.Checked)
             Else
                 Me.lstTowerOpenedRunwaysDeparture.SetItemCheckState(C1, CheckState.Unchecked)
             End If
+
+            'make taxito options colored based on availability
+            '!!! inefficient
+            For Each singleRunwayMenuItem As System.Windows.Forms.ToolStripDropDownItem In DirectCast(Me.cmsGroundTaxiTo.Items(1), System.Windows.Forms.ToolStripDropDownItem).DropDownItems
+                Dim relatedRunway As clsRunWay = Me.Game.AirPort.getRunwayByConnectionPoint(Me.Game.AirPort.getConnectionPointByName(singleRunwayMenuItem.Tag))
+                If relatedRunway.isAvailableForDeparture Then
+                    singleRunwayMenuItem.BackColor = Color.LightGreen
+                Else
+                    singleRunwayMenuItem.BackColor = Color.Salmon
+                End If
+
+            Next
+
         Next
-        Me.supressAvailableRunwayCheckListEvaluation = False
+
+            Me.supressAvailableRunwayCheckListEvaluation = False
     End Sub
 
     Private Sub lstTowerOpenedRunways_ItemCheck(sender As CheckedListBox, e As ItemCheckEventArgs) Handles lstTowerOpenedRunwaysArrival.ItemCheck
@@ -1121,6 +1146,8 @@ Public Class frmAllControl
 
             Dim isAvailableForLanding As Boolean = (arrivalPointList(e.Index).canHandleArrivals AndAlso arrivalPointList(e.Index).isAvailableForArrival)
             Dim isAvailableForTakeoff As Boolean = arrivalPointList(e.Index).isAvailableForDeparture
+
+            listenToRunwayArrivalUpdates()
 
             Dim runwayCommand As New clsPlane.structCommandInfo With {.towerRunwayID = arrivalPointList(e.Index).objectID, .towerRunwayIsNewActiveForArrival = isAvailableForLanding, .towerRunwayIsNewActiveForDeparture = isAvailableForTakeoff}
             Me.Game.sendCommandsToServer(runwayCommand)
@@ -1138,6 +1165,7 @@ Public Class frmAllControl
             Dim isAvailableForLanding As Boolean = (departurePointList(e.Index).canHandleArrivals AndAlso departurePointList(e.Index).isAvailableForArrival)
             Dim isAvailableForTakeoff As Boolean = departurePointList(e.Index).isAvailableForDeparture
 
+            listenToRunwayDepartureUpdates()
 
             Dim runwayCommand As New clsPlane.structCommandInfo With {.towerRunwayID = departurePointList(e.Index).objectID, .towerRunwayIsNewActiveForDeparture = isAvailableForTakeoff, .towerRunwayIsNewActiveForArrival = isAvailableForLanding}
             Me.Game.sendCommandsToServer(runwayCommand)
@@ -1427,5 +1455,7 @@ Public Class frmAllControl
         'Me.lblMillisecondsBetweenTicks.Text = milliseconds & " ms"
     End Sub
 
+    Private Sub lstTowerOpenedRunwaysDeparture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstTowerOpenedRunwaysDeparture.SelectedIndexChanged
 
+    End Sub
 End Class
