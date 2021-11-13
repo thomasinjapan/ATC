@@ -257,8 +257,8 @@ Public Class frmMenu
         Me.Game.tmrServerListen = New Timer With {.Interval = 100, .Enabled = False}
         Me.Game.tmrServerListen.Enabled = True
 
-        Me.Game.tmrServerSend = New Timer With {.Interval = 200, .Enabled = False}
-        Me.Game.tmrServerSend.Enabled = True
+        Me.Game.tmrServerSendKeyFrame = New Timer With {.Interval = 200, .Enabled = False}
+        Me.Game.tmrServerSendKeyFrame.Enabled = True
 
         Me.Text &= " - server"
         frmAllControl.Text &= " - server"
@@ -268,7 +268,7 @@ Public Class frmMenu
 
         'network
         Me.trkClientUpdate.Enabled = True
-        Me.trkClientUpdate.Value = Me.Game.tmrServerSend.Interval
+        Me.trkClientUpdate.Value = Me.Game.tmrServerSendKeyFrame.Interval
         Me.lblClientUpdate.Text = Me.trkClientUpdate.Value & " ms"
 
         'adjust interval to send based on size of airport
@@ -281,7 +281,7 @@ Public Class frmMenu
         'MsgBox(streamTargetMessage.Length)
 
         Me.trkClientUpdate.Value = streamTargetMessage.Length \ 4000
-        Me.Game.tmrServerSend.Interval = Me.trkClientUpdate.Value
+        Me.Game.tmrServerSendKeyFrame.Interval = Me.trkClientUpdate.Value
         Me.lblClientUpdate.Text = Me.trkClientUpdate.Value & " ms"
 
     End Sub
@@ -354,7 +354,7 @@ Public Class frmMenu
 
     Private Sub trkClientUpdate_Scroll(sender As Object, e As EventArgs) Handles trkClientUpdate.Scroll
         If Not Me.Game Is Nothing Then
-            Me.Game.tmrServerSend.Interval = Me.trkClientUpdate.Value
+            Me.Game.tmrServerSendKeyFrame.Interval = Me.trkClientUpdate.Value
             Me.lblClientUpdate.Text = Me.trkClientUpdate.Value & " ms"
         End If
     End Sub
