@@ -22,7 +22,7 @@ Public Class frmGroundRadar
         recalculateOffsets()
         Me.ctlWindRose.loadAirport(Me.Game.AirPort)
         Me.ctlWindRose.refreshRateInMs = 1000
-
+        Me.trkTimerIterval.Value = Me.tmrTick.Interval
     End Sub
 
     Friend Function isVisible(ByRef X As Long, ByRef Y As Long) As Boolean
@@ -430,6 +430,7 @@ Public Class frmGroundRadar
         If Me.chkShowFramerate.Checked Then
             Me.lblFPS.Visible = True
             Me.lblMillisecondsBetweenFrames.Visible = True
+            Me.trkTimerIterval.Visible = True
             Dim timeStamp As DateTime = Now
             Dim oldtime As DateTime = Me.lblMillisecondsBetweenFrames.Tag
             Dim milliseconds As Long = (timeStamp - oldtime).TotalMilliseconds
@@ -439,6 +440,7 @@ Public Class frmGroundRadar
         Else
             Me.lblFPS.Visible = False
             Me.lblMillisecondsBetweenFrames.Visible = False
+            Me.trkTimerIterval.Visible = False
         End If
 
 
@@ -554,10 +556,6 @@ Public Class frmGroundRadar
         End If
     End Sub
 
-    'Private Sub PictureBox1_Resize(sender As PictureBox, e As EventArgs) Handles picGroundRadar.Resize
-    '    sender.Refresh()
-    'End Sub
-
     Friend Sub Tick(ByVal timespan As TimeSpan)
         Me.picGroundRadar.Refresh()
     End Sub
@@ -666,4 +664,9 @@ Public Class frmGroundRadar
     Private Sub chkShowLabels_GotFocus(sender As Object, e As EventArgs) Handles chkShowLabels.GotFocus
         Me.Focus()
     End Sub
+
+    Private Sub trkTimerIterval_ValueChanged(sender As Object, e As EventArgs) Handles trkTimerIterval.ValueChanged
+        Me.tmrTick.Interval = sender.value
+    End Sub
+
 End Class

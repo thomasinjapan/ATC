@@ -25,6 +25,7 @@ Partial Class frmGroundRadar
         Me.components = New System.ComponentModel.Container()
         Me.picGroundRadar = New System.Windows.Forms.PictureBox()
         Me.pnlGround = New System.Windows.Forms.Panel()
+        Me.trkTimerIterval = New System.Windows.Forms.TrackBar()
         Me.chkShowLabels = New System.Windows.Forms.CheckBox()
         Me.chkShowFramerate = New System.Windows.Forms.CheckBox()
         Me.lblFPS = New System.Windows.Forms.Label()
@@ -34,6 +35,7 @@ Partial Class frmGroundRadar
         Me.tmrTick = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picGroundRadar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlGround.SuspendLayout()
+        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picGroundRadar
@@ -56,6 +58,7 @@ Partial Class frmGroundRadar
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlGround.BackColor = System.Drawing.Color.Transparent
         Me.pnlGround.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlGround.Controls.Add(Me.trkTimerIterval)
         Me.pnlGround.Controls.Add(Me.chkShowLabels)
         Me.pnlGround.Controls.Add(Me.chkShowFramerate)
         Me.pnlGround.Controls.Add(Me.lblFPS)
@@ -67,6 +70,20 @@ Partial Class frmGroundRadar
         Me.pnlGround.Name = "pnlGround"
         Me.pnlGround.Size = New System.Drawing.Size(776, 426)
         Me.pnlGround.TabIndex = 9
+        '
+        'trkTimerIterval
+        '
+        Me.trkTimerIterval.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.trkTimerIterval.AutoSize = False
+        Me.trkTimerIterval.LargeChange = 1000
+        Me.trkTimerIterval.Location = New System.Drawing.Point(3, 406)
+        Me.trkTimerIterval.Maximum = 5000
+        Me.trkTimerIterval.Minimum = 30
+        Me.trkTimerIterval.Name = "trkTimerIterval"
+        Me.trkTimerIterval.Size = New System.Drawing.Size(633, 15)
+        Me.trkTimerIterval.TabIndex = 10
+        Me.trkTimerIterval.Value = 30
         '
         'chkShowLabels
         '
@@ -93,9 +110,9 @@ Partial Class frmGroundRadar
         'lblFPS
         '
         Me.lblFPS.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblFPS.Location = New System.Drawing.Point(682, 407)
+        Me.lblFPS.Location = New System.Drawing.Point(642, 407)
         Me.lblFPS.Name = "lblFPS"
-        Me.lblFPS.Size = New System.Drawing.Size(33, 13)
+        Me.lblFPS.Size = New System.Drawing.Size(54, 13)
         Me.lblFPS.TabIndex = 4
         Me.lblFPS.Text = "0FPS"
         Me.lblFPS.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -105,9 +122,9 @@ Partial Class frmGroundRadar
         Me.lblMillisecondsBetweenFrames.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblMillisecondsBetweenFrames.BackColor = System.Drawing.SystemColors.Control
         Me.lblMillisecondsBetweenFrames.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblMillisecondsBetweenFrames.Location = New System.Drawing.Point(721, 407)
+        Me.lblMillisecondsBetweenFrames.Location = New System.Drawing.Point(702, 407)
         Me.lblMillisecondsBetweenFrames.Name = "lblMillisecondsBetweenFrames"
-        Me.lblMillisecondsBetweenFrames.Size = New System.Drawing.Size(29, 13)
+        Me.lblMillisecondsBetweenFrames.Size = New System.Drawing.Size(48, 13)
         Me.lblMillisecondsBetweenFrames.TabIndex = 3
         Me.lblMillisecondsBetweenFrames.Text = "0 ms"
         Me.lblMillisecondsBetweenFrames.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -151,6 +168,7 @@ Partial Class frmGroundRadar
         CType(Me.picGroundRadar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlGround.ResumeLayout(False)
         Me.pnlGround.PerformLayout()
+        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -164,4 +182,5 @@ Partial Class frmGroundRadar
     Friend WithEvents lblFPS As Label
     Friend WithEvents chkShowFramerate As CheckBox
     Friend WithEvents chkShowLabels As CheckBox
+    Friend WithEvents trkTimerIterval As TrackBar
 End Class

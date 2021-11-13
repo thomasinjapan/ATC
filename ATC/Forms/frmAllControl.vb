@@ -1455,7 +1455,4 @@ Public Class frmAllControl
         'Me.lblMillisecondsBetweenTicks.Text = milliseconds & " ms"
     End Sub
 
-    Private Sub lstTowerOpenedRunwaysDeparture_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstTowerOpenedRunwaysDeparture.SelectedIndexChanged
-
-    End Sub
 End Class
