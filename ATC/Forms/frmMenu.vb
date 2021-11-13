@@ -23,7 +23,10 @@ Public Class frmMenu
         Me.trkChangeWindMaxDelay.Value = 45
 
 
+        'Dim Thread1 = New System.Threading.Thread(AddressOf showGroundRadar)
+        'Thread1.Start()
         frmGroundRadar.Show()
+
         frmGroundRadar.Left = 1
         frmGroundRadar.Top = 1
 
