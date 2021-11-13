@@ -59,7 +59,7 @@ Public Class clsPlane
         Friend towerRunwayID As String
         Friend towerRunwayIsNewActiveForArrival As Boolean
         Friend towerRunwayIsNewActiveForDeparture As Boolean
-        Friend radioMessage As clsGame.structRadioMessageNetwork
+        Friend radioMessage As mdlNetworkhandling.structRadioMessageNetwork
     End Structure
 
     <Serializable> Friend Structure structPathStepSkeleton

@@ -170,6 +170,7 @@
     <Compile Include="Forms\frmAppDepRadar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="modules\mdlNetworkhandling.vb" />
     <Compile Include="moving_objects\clsDistanceCollection.vb" />
     <Compile Include="moving_objects\clsLocation.vb" />
     <Compile Include="moving_objects\clsMovingObject.vb" />

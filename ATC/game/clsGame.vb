@@ -5,8 +5,6 @@ Imports System.Runtime.Serialization
 Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.Xml.Serialization
 
-' foo test
-
 <Serializable>
 Public Class clsGame
     Friend Const PLANE_HISTORY As Long = 20
@@ -28,20 +26,6 @@ Public Class clsGame
     Friend Sub cardFound(ByRef card As clsAStarCard)
         RaiseEvent EventCardFound(card)
     End Sub
-
-    <Serializable> Friend Structure structRadioMessageNetwork
-        Friend frequency As clsPlane.enumFrequency
-        Friend message As String
-    End Structure
-
-    <Serializable> Friend Structure structNetworkPackageToClient
-        Friend planeSkeletons As List(Of clsPlane.structPlaneSkeleton)
-        Friend windDirectionTo As Double
-        Friend openArrivalRunwayIDs As List(Of String)
-        Friend openDepartureRunwayIDs As List(Of String)
-        Friend usedRunwayIDs As List(Of String)
-        Friend radioMessage As structRadioMessageNetwork
-    End Structure
 
     'universe
     Friend WithEvents Universe As Timer
@@ -1109,69 +1093,7 @@ Public Class clsGame
     End Sub
 
     Private Sub tmrServerSend_Tick(sender As Object, e As EventArgs) Handles tmrServerSend.Tick
-        sendUpdateToClients()
-    End Sub
-
-    Friend Sub sendUpdateToClients()
-        If Me.TCPServerClientPlayers.Count > 0 Then
-            Dim planeSkeletons As New List(Of clsPlane.structPlaneSkeleton)
-
-            For Each singlePlane As clsPlane In Me.Planes
-                Dim newplane As clsPlane.structPlaneSkeleton = singlePlane.skeleton
-
-                planeSkeletons.Add(newplane)
-            Next
-
-            Dim radioMessage As structRadioMessageNetwork = Nothing
-            If Not Me.NetworkRadioMessageBuffer.Count = 0 Then
-                radioMessage = Me.NetworkRadioMessageBuffer.First
-                Me.NetworkRadioMessageBuffer.Remove(Me.NetworkRadioMessageBuffer.First)
-            End If
-
-            Dim message As New structNetworkPackageToClient With {
-                .openArrivalRunwayIDs = Me.AirPort.openArrivalRunwayIDsAsListOfStrings,
-                .openDepartureRunwayIDs = Me.AirPort.openDepartureRunwayIDsAsListOfStrings,
-                .usedRunwayIDs = Me.AirPort.usedRunwayIDsAsListOfStrings,
-                .windDirectionTo = Me.AirPort.windDirectionTo,
-                .planeSkeletons = planeSkeletons,
-                .radioMessage = radioMessage
-            }
-
-
-
-            Try
-                Dim formatter As New BinaryFormatter
-                Dim streamTarget As New MemoryStream()
-                Dim streamTargetMessage As New MemoryStream()
-
-                formatter.Serialize(streamTargetMessage, message)
-                'formatter.Serialize(streamTargetMessage, planeSkeletons(5))
-
-                Dim byteArrayMessage() As Byte = streamTargetMessage.ToArray
-
-                Dim arraySize As Int32 = byteArrayMessage.Length
-                Dim arraySizeArray() As Byte = BitConverter.GetBytes(arraySize)
-                Dim byteArray() As Byte = arraySizeArray.Concat(byteArrayMessage).ToArray
-
-                ' Me.TCPServerClient.Send(byteArray)
-                For Each singleClient As TcpClient In Me.TCPServerClientPlayers
-                    Dim stampTickStart As DateTime = Now
-                    Console.WriteLine("end reading and handling package|" & Format(stampTickStart, "HH:mm:ss ffff"))
-                    Console.WriteLine("package size sent to " & singleClient.Client.RemoteEndPoint.ToString & "|" & Format(stampTickStart, "HH:mm:ss ffff") & "|" & byteArray.Length)
-
-                    singleClient.Client.Send(byteArray)
-
-                    Dim stampTickEnd As DateTime = Now
-
-                    Console.WriteLine("finished sending package|" & Format(stampTickEnd, "HH:mm:ss ffff"))
-                    Console.WriteLine("duration sending package |" & (stampTickEnd - stampTickStart).TotalMilliseconds & "|" & (stampTickEnd - stampTickStart).Ticks)
-
-
-                Next
-            Catch ex As Exception
-
-            End Try
-            End If
+        mdlNetworkhandling.sendUpdateToClients(Me)
     End Sub
 
     Private Sub tmrClientListen_Tick(sender As Object, e As EventArgs) Handles tmrClientListen.Tick
@@ -1192,7 +1114,7 @@ Public Class clsGame
                 '    bytesread += 1
                 'End While
 
-                Dim message As structNetworkPackageToClient
+                Dim message As structNetworkKeyframeMessagefromServer
                 Dim formatter As New BinaryFormatter
 
                 Dim streamTarget As New MemoryStream(messageAsByteArray)
