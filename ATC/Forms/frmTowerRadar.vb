@@ -17,6 +17,16 @@ Public Class frmTowerRadar
 
     End Sub
 
+    Friend Sub timerhandling()
+        Dim sleeper As New Threading.ManualResetEvent(False)
+
+        Do
+            sleeper.WaitOne(1) 'wait one MS
+
+            Me.Tick()
+        Loop
+    End Sub
+
     Friend Sub Tick()
         'paint picture in separate this non-ui thread and then transfer it to the pic as one image
         Dim image As Image = paintTowerRadarImage()
@@ -27,16 +37,6 @@ Public Class frmTowerRadar
             Console.WriteLine(ex.Message)
         End Try
 
-    End Sub
-
-    Friend Sub timerhandling()
-        Dim sleeper As New Threading.ManualResetEvent(False)
-
-        Do
-            sleeper.WaitOne(1) 'wait one MS
-
-            Me.Tick()
-        Loop
     End Sub
 
     Friend Function paintTowerRadarImage() As Image
@@ -212,12 +212,12 @@ Public Class frmTowerRadar
         Next
 
         'paint planes
+        'make copy to avoid collision of threads (one updating the list, the other painting
         Dim allplanes(Me.Game.Planes.Count - 1) As clsPlane
         Me.Game.Planes.CopyTo(allplanes)
 
-
         For Each singlePlane As clsPlane In allplanes
-            Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
+            If Not singlePlane Is Me.Game.selectedPlane Then Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
         Next
 
         If Not Me.Game.selectedPlane Is Nothing Then Me.paintPlane(Me.Game.selectedPlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)

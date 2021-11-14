@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmAppDepRadar
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,21 +20,17 @@ Partial Class frmAppDepRadar
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.picAppDep = New System.Windows.Forms.PictureBox()
         Me.pnlAppDep = New System.Windows.Forms.Panel()
-        Me.trkTimerIterval = New System.Windows.Forms.TrackBar()
         Me.chkShowFramerate = New System.Windows.Forms.CheckBox()
         Me.lblFPS = New System.Windows.Forms.Label()
         Me.lblMillisecondsBetweenFrames = New System.Windows.Forms.Label()
         Me.chkRenderBackground = New System.Windows.Forms.CheckBox()
         Me.ctlWindRose = New ATC.ctlWindRose()
-        Me.tmrTick = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picAppDep, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlAppDep.SuspendLayout()
-        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picAppDep
@@ -58,7 +54,6 @@ Partial Class frmAppDepRadar
         Me.pnlAppDep.AutoScroll = True
         Me.pnlAppDep.BackColor = System.Drawing.Color.Transparent
         Me.pnlAppDep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pnlAppDep.Controls.Add(Me.trkTimerIterval)
         Me.pnlAppDep.Controls.Add(Me.chkShowFramerate)
         Me.pnlAppDep.Controls.Add(Me.lblFPS)
         Me.pnlAppDep.Controls.Add(Me.lblMillisecondsBetweenFrames)
@@ -69,20 +64,6 @@ Partial Class frmAppDepRadar
         Me.pnlAppDep.Name = "pnlAppDep"
         Me.pnlAppDep.Size = New System.Drawing.Size(776, 426)
         Me.pnlAppDep.TabIndex = 1
-        '
-        'trkTimerIterval
-        '
-        Me.trkTimerIterval.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.trkTimerIterval.AutoSize = False
-        Me.trkTimerIterval.LargeChange = 1000
-        Me.trkTimerIterval.Location = New System.Drawing.Point(3, 405)
-        Me.trkTimerIterval.Maximum = 5000
-        Me.trkTimerIterval.Minimum = 30
-        Me.trkTimerIterval.Name = "trkTimerIterval"
-        Me.trkTimerIterval.Size = New System.Drawing.Size(633, 15)
-        Me.trkTimerIterval.TabIndex = 11
-        Me.trkTimerIterval.Value = 30
         '
         'chkShowFramerate
         '
@@ -138,10 +119,6 @@ Partial Class frmAppDepRadar
         Me.ctlWindRose.Size = New System.Drawing.Size(64, 64)
         Me.ctlWindRose.TabIndex = 1
         '
-        'tmrTick
-        '
-        Me.tmrTick.Enabled = True
-        '
         'frmAppDepRadar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -153,18 +130,15 @@ Partial Class frmAppDepRadar
         CType(Me.picAppDep, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlAppDep.ResumeLayout(False)
         Me.pnlAppDep.PerformLayout()
-        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents picAppDep As PictureBox
     Friend WithEvents pnlAppDep As Panel
-    Friend WithEvents tmrTick As Timer
     Friend WithEvents ctlWindRose As ctlWindRose
     Friend WithEvents chkRenderBackground As CheckBox
     Friend WithEvents lblMillisecondsBetweenFrames As Label
     Friend WithEvents lblFPS As Label
     Friend WithEvents chkShowFramerate As CheckBox
-    Friend WithEvents trkTimerIterval As TrackBar
 End Class

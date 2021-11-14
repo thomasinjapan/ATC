@@ -559,10 +559,8 @@ Public Class frmGroundRadar
         Dim allplanes(Me.Game.Planes.Count - 1) As clsPlane
         Me.Game.Planes.CopyTo(allplanes)
 
-
-
         For Each singlePlane As clsPlane In allplanes
-            Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
+            If Not singlePlane Is Me.Game.selectedPlane Then Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
         Next
 
         If Not Me.Game.selectedPlane Is Nothing Then Me.paintPlane(Me.Game.selectedPlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
