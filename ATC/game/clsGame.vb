@@ -633,9 +633,9 @@ Public Class clsGame
     End Sub
 
     Private Sub Universe_Tick(sender As Timer, e As EventArgs) Handles Universe.Tick
-        Console.WriteLine("universe since last tick|" & (Now.Ticks - Me.oldTimeTicks).ToString)
+        'Console.WriteLine("universe since last tick|" & (Now.Ticks - Me.oldTimeTicks).ToString)
         Dim stampTickStart As DateTime = Now
-        Console.WriteLine("universe tick start|" & Format(stampTickStart, "HH:mm:ss ffff"))
+        'Console.WriteLine("universe tick start|" & Format(stampTickStart, "HH:mm:ss ffff"))
         'briefly stop the ticker to make sure that we have no parallel streams
         sender.Enabled = False
         'me.oldtimestamp = Nothing
@@ -658,13 +658,13 @@ Public Class clsGame
         Me.AirPort.tick(timeDifference)
 
         Dim stampPlaneStart As DateTime = Now
-        Console.WriteLine("planes tick start|" & Format(stampPlaneStart, "HH:mm:ss ffff"))
+        'Console.WriteLine("planes tick start|" & Format(stampPlaneStart, "HH:mm:ss ffff"))
         For C1 As Long = 0 To Me.Planes.Count - 1
             Me.Planes(C1).tick(timeDifference)
         Next
         Dim stampPlaneEnd As DateTime = Now
-        Console.WriteLine("planes tick end|" & Format(stampPlaneEnd, "HH:mm:ss ffff"))
-        Console.WriteLine("planes tick duration|" & (stampPlaneEnd - stampPlaneStart).TotalMilliseconds & "|" & (stampPlaneEnd - stampPlaneStart).Ticks)
+        'Console.WriteLine("planes tick end|" & Format(stampPlaneEnd, "HH:mm:ss ffff"))
+        'Console.WriteLine("planes tick duration|" & (stampPlaneEnd - stampPlaneStart).TotalMilliseconds & "|" & (stampPlaneEnd - stampPlaneStart).Ticks)
 
 
         '!!!-- check for planes that should be despawned
@@ -730,8 +730,8 @@ Public Class clsGame
         sender.Enabled = True
 
         Dim stampTickEnd As DateTime = Now
-        Console.WriteLine("universe tick end|" & Format(stampTickEnd, "HH:mm:ss ffff"))
-        Console.WriteLine("universe tick duration|" & (stampTickEnd - stampTickStart).TotalMilliseconds & "|" & (stampTickEnd - stampTickStart).Ticks)
+        'Console.WriteLine("universe tick end|" & Format(stampTickEnd, "HH:mm:ss ffff"))
+        'Console.WriteLine("universe tick duration|" & (stampTickEnd - stampTickStart).TotalMilliseconds & "|" & (stampTickEnd - stampTickStart).Ticks)
         RaiseEvent ticked((stampTickEnd - stampTickStart).TotalMilliseconds)
     End Sub
 

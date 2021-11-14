@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmTowerRadar
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,8 @@ Partial Class frmTowerRadar
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.picTowerRadar = New System.Windows.Forms.PictureBox()
         Me.pnlTower = New System.Windows.Forms.Panel()
         Me.chkShowFramerate = New System.Windows.Forms.CheckBox()
@@ -30,11 +29,8 @@ Partial Class frmTowerRadar
         Me.lblMillisecondsBetweenFrames = New System.Windows.Forms.Label()
         Me.chkRenderBackground = New System.Windows.Forms.CheckBox()
         Me.ctlWindRose = New ATC.ctlWindRose()
-        Me.tmrTick = New System.Windows.Forms.Timer(Me.components)
-        Me.trkTimerIterval = New System.Windows.Forms.TrackBar()
         CType(Me.picTowerRadar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTower.SuspendLayout()
-        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picTowerRadar
@@ -57,7 +53,6 @@ Partial Class frmTowerRadar
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlTower.BackColor = System.Drawing.Color.Transparent
-        Me.pnlTower.Controls.Add(Me.trkTimerIterval)
         Me.pnlTower.Controls.Add(Me.chkShowFramerate)
         Me.pnlTower.Controls.Add(Me.lblFPS)
         Me.pnlTower.Controls.Add(Me.lblMillisecondsBetweenFrames)
@@ -123,24 +118,6 @@ Partial Class frmTowerRadar
         Me.ctlWindRose.Size = New System.Drawing.Size(64, 64)
         Me.ctlWindRose.TabIndex = 1
         '
-        'tmrTick
-        '
-        Me.tmrTick.Enabled = True
-        '
-        'trkTimerIterval
-        '
-        Me.trkTimerIterval.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.trkTimerIterval.AutoSize = False
-        Me.trkTimerIterval.LargeChange = 1000
-        Me.trkTimerIterval.Location = New System.Drawing.Point(3, 409)
-        Me.trkTimerIterval.Maximum = 5000
-        Me.trkTimerIterval.Minimum = 30
-        Me.trkTimerIterval.Name = "trkTimerIterval"
-        Me.trkTimerIterval.Size = New System.Drawing.Size(633, 15)
-        Me.trkTimerIterval.TabIndex = 12
-        Me.trkTimerIterval.Value = 30
-        '
         'frmTowerRadar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -152,18 +129,15 @@ Partial Class frmTowerRadar
         CType(Me.picTowerRadar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlTower.ResumeLayout(False)
         Me.pnlTower.PerformLayout()
-        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents picTowerRadar As PictureBox
     Friend WithEvents pnlTower As Panel
-    Friend WithEvents tmrTick As Timer
     Friend WithEvents ctlWindRose As ctlWindRose
     Friend WithEvents chkRenderBackground As CheckBox
     Friend WithEvents lblMillisecondsBetweenFrames As Label
     Friend WithEvents lblFPS As Label
     Friend WithEvents chkShowFramerate As CheckBox
-    Friend WithEvents trkTimerIterval As TrackBar
 End Class

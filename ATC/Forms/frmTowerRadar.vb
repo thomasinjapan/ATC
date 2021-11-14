@@ -1,7 +1,9 @@
 ﻿Option Explicit On
+Imports System.ComponentModel
 
 Public Class frmTowerRadar
     Friend Game As clsGame
+    Dim threadGraphics As Threading.Thread
 
     Dim mouseLocationBeforeMove As Point
 
@@ -9,16 +11,39 @@ Public Class frmTowerRadar
         Me.Game = frmMenu.Game
         Me.ctlWindRose.loadAirport(Me.Game.AirPort)
         Me.ctlWindRose.refreshRateInMs = 1000
-        Me.trkTimerIterval.Value = Me.tmrTick.Interval
+
+        Me.threadGraphics = New Threading.Thread(AddressOf timerhandling)
+        threadGraphics.Start()
 
     End Sub
 
-    Friend Sub Tick(ByVal timespan As TimeSpan)
+    Friend Sub Tick()
+        'paint picture in separate this non-ui thread and then transfer it to the pic as one image
+        Dim image As Image = paintTowerRadarImage()
 
-        Me.picTowerRadar.Refresh()
+        Try
+            Me.Invoke(Sub() updateImage(image))
+        Catch ex As Exception
+            Console.WriteLine(ex.Message)
+        End Try
+
     End Sub
 
-    Private Sub picTowerRadar_Paint(sender As Object, e As PaintEventArgs) Handles picTowerRadar.Paint
+    Friend Sub timerhandling()
+        Dim sleeper As New Threading.ManualResetEvent(False)
+
+        Do
+            sleeper.WaitOne(1) 'wait one MS
+
+            Me.Tick()
+        Loop
+    End Sub
+
+    Friend Function paintTowerRadarImage() As Image
+        Dim picturebox As New PictureBox
+        picturebox.Image = New Bitmap(Me.picTowerRadar.Width, Me.picTowerRadar.Height)
+        Dim graphics As Graphics = Graphics.FromImage(picturebox.Image)
+
         Dim backcolor As Color = Color.White
         Dim penTaxiWay As Pen = New Pen(Color.Blue, 2)
         Dim penActiveTaxiWay As Pen = New Pen(Color.Violet, 3)
@@ -34,7 +59,7 @@ Public Class frmTowerRadar
         Dim penRunway = New Pen(Color.Gray, 4)
 
 
-        sender.BackColor = backcolor
+        picturebox.BackColor = backcolor
 
         'prepare dimensions
         'get most left point
@@ -63,7 +88,7 @@ Public Class frmTowerRadar
                 For C1 As Long = 0 To singleLineCollection.Count - 2
                     Dim point1 As New Point((singleLineCollection(C1).pos_X - offsetX) * multiplyerX, (singleLineCollection(C1).pos_Y - offsetY) * multiplyerY)
                     Dim point2 As New Point((singleLineCollection(C1 + 1).pos_X - offsetX) * multiplyerX, (singleLineCollection(C1 + 1).pos_Y - offsetY) * multiplyerY)
-                    e.Graphics.DrawLine(penLandscape, point1, point2)
+                    graphics.DrawLine(penLandscape, point1, point2)
                 Next
             Next
             For Each singlePolygonsCollection As List(Of clsNavigationPoint) In Me.Game.AirPort.landscape.Polygons
@@ -71,11 +96,11 @@ Public Class frmTowerRadar
                 For C1 As Long = 0 To singlePolygonsCollection.Count - 2
                     Dim point1 As New Point((singlePolygonsCollection(C1).pos_X - offsetX) * multiplyerX, (singlePolygonsCollection(C1).pos_Y - offsetY) * multiplyerY)
                     Dim point2 As New Point((singlePolygonsCollection(C1 + 1).pos_X - offsetX) * multiplyerX, (singlePolygonsCollection(C1 + 1).pos_Y - offsetY) * multiplyerY)
-                    e.Graphics.DrawLine(penLandscape, point1, point2)
+                    graphics.DrawLine(penLandscape, point1, point2)
 
                     points.Add(point1)
                 Next
-                e.Graphics.FillPolygon(brushLandscape, points.ToArray)
+                graphics.FillPolygon(brushLandscape, points.ToArray)
             Next
         End If
 
@@ -88,9 +113,9 @@ Public Class frmTowerRadar
 
                 Select Case NavPoint.NavPointType
                     Case clsAirNavPoint.enumAirNavPointType.ILS
-                        e.Graphics.FillEllipse(brushILS, New Rectangle(point.X - 1, point.Y - 1, 3, 3))
+                        graphics.FillEllipse(brushILS, New Rectangle(point.X - 1, point.Y - 1, 3, 3))
                     Case clsAirNavPoint.enumAirNavPointType.LOC
-                        e.Graphics.DrawEllipse(penDebugPoint, New Rectangle(point.X, point.Y, 2, 2))
+                        graphics.DrawEllipse(penDebugPoint, New Rectangle(point.X, point.Y, 2, 2))
                 End Select
 
             End If
@@ -106,7 +131,7 @@ Public Class frmTowerRadar
                 Dim point1 As New Point((takeoffpath.waySections.First.taxiWayPoint1.pos_X - offsetX) * multiplyerX, (takeoffpath.waySections.First.taxiWayPoint1.pos_Y - offsetY) * multiplyerY)
                 Dim point2 As New Point((takeoffpath.waySections.First.taxiWayPoint2.pos_X - offsetX) * multiplyerX, (takeoffpath.waySections.First.taxiWayPoint2.pos_Y - offsetY) * multiplyerY)
 
-                e.Graphics.DrawLine(penRunway, point1, point2)
+                graphics.DrawLine(penRunway, point1, point2)
             Next
 
 
@@ -115,11 +140,11 @@ Public Class frmTowerRadar
             '    Dim point1 As New Point((touchdownway.taxiWayPoint1.pos_X - offsetX) * multiplyerX, (touchdownway.taxiWayPoint1.pos_Y - offsetY) * multiplyerY)
             '    Dim point2 As New Point((touchdownway.taxiWayPoint2.pos_X - offsetX) * multiplyerX, (touchdownway.taxiWayPoint2.pos_Y - offsetY) * multiplyerY)
 
-            '    e.Graphics.DrawEllipse(penLandingWayPoint, New Rectangle(point1, New Size(2, 2)))
-            '    e.Graphics.DrawEllipse(penLandingWayPoint, New Rectangle(point2, New Size(2, 2)))
+            '   Graphics.DrawEllipse(penLandingWayPoint, New Rectangle(point1, New Size(2, 2)))
+            '   Graphics.DrawEllipse(penLandingWayPoint, New Rectangle(point2, New Size(2, 2)))
 
-            '    e.Graphics.DrawLine(penRunway, point1, point2)
-            '    e.Graphics.DrawLine(penLandingWayPoint, point1, point2)
+            '   Graphics.DrawLine(penRunway, point1, point2)
+            '   Graphics.DrawLine(penLandingWayPoint, point1, point2)
             'Next
         Next
         For Each runway As clsRunWay In Me.Game.AirPort.runWays
@@ -146,12 +171,12 @@ Public Class frmTowerRadar
                 Else
                     brushPOI = New SolidBrush(Color.FromArgb(127, Color.Red))
                 End If
-                Dim textWidth As Long = e.Graphics.MeasureString(runwayName, textFont).Width
-                Dim textHeight As Long = e.Graphics.MeasureString(runwayName, textFont).Height
-                e.Graphics.FillRectangle(brushPOI, textPoint.X, textPoint.Y, textWidth, textHeight)
+                Dim textWidth As Long = graphics.MeasureString(runwayName, textFont).Width
+                Dim textHeight As Long = graphics.MeasureString(runwayName, textFont).Height
+                graphics.FillRectangle(brushPOI, textPoint.X, textPoint.Y, textWidth, textHeight)
 
                 'actual string
-                e.Graphics.DrawString(runwayName, textFont, textColor, textPoint)
+                graphics.DrawString(runwayName, textFont, textColor, textPoint)
             End If
 
         Next
@@ -183,35 +208,26 @@ Public Class frmTowerRadar
             point1.X -= drawRadius
             point1.Y -= drawRadius
 
-            e.Graphics.DrawEllipse(penCircle, New Rectangle(point1, New Size(drawRadius * 2, drawRadius * 2)))
+            graphics.DrawEllipse(penCircle, New Rectangle(point1, New Size(drawRadius * 2, drawRadius * 2)))
         Next
 
         'paint planes
-        For Each singlePlane As clsPlane In Me.Game.Planes
-            Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, e)
+        Dim allplanes(Me.Game.Planes.Count - 1) As clsPlane
+        Me.Game.Planes.CopyTo(allplanes)
+
+
+        For Each singlePlane As clsPlane In allplanes
+            Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
         Next
 
-        If Not Me.Game.selectedPlane Is Nothing Then Me.paintPlane(Me.Game.selectedPlane, offsetX, offsetY, multiplyerX, multiplyerY, e)
+        If Not Me.Game.selectedPlane Is Nothing Then Me.paintPlane(Me.Game.selectedPlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
 
-        If Me.chkShowFramerate.Checked Then
-            Me.lblFPS.Visible = True
-            Me.lblMillisecondsBetweenFrames.Visible = True
-            Me.trkTimerIterval.Visible = True
-            Dim timeStamp As DateTime = Now
-            Dim oldtime As DateTime = Me.lblMillisecondsBetweenFrames.Tag
-            Dim milliseconds As Long = (timeStamp - oldtime).TotalMilliseconds
-            Me.lblMillisecondsBetweenFrames.Text = milliseconds & " ms"
-            Me.lblFPS.Text = (1000 / milliseconds) \ 1 & " FPS"
-            Me.lblMillisecondsBetweenFrames.Tag = timeStamp
-        Else
-            Me.lblFPS.Visible = False
-            Me.lblMillisecondsBetweenFrames.Visible = False
-            Me.trkTimerIterval.Visible = False
-        End If
         GC.Collect()
-    End Sub
 
-    Private Sub paintPlane(ByRef singlePlane As clsPlane, ByVal offsetX As Double, ByVal offsety As Double, ByVal multiplyerX As Double, ByVal multiplyerY As Double, ByRef e As PaintEventArgs)
+        Return picturebox.Image
+    End Function
+
+    Private Sub paintPlane(ByRef singlePlane As clsPlane, ByVal offsetX As Double, ByVal offsety As Double, ByVal multiplyerX As Double, ByVal multiplyerY As Double, ByRef graphics As Graphics)
 
 
         If singlePlane.isTowerRadarRelevant Then
@@ -258,7 +274,7 @@ Public Class frmTowerRadar
                 Dim historyYscale As Double = (singlePlane.air_FlightPathHistory(index).Item2.meters - offsety) * multiplyerY
 
                 Dim rectangleHistory As New Rectangle(historyXscale - rectangleWidth \ 2, historyYscale - rectangleWidth \ 2, rectangleWidth, rectangleWidth)
-                e.Graphics.FillRectangle(brushHistoryAlpha, rectangleHistory)
+                graphics.FillRectangle(brushHistoryAlpha, rectangleHistory)
             Next
 
 
@@ -273,7 +289,7 @@ Public Class frmTowerRadar
                 penPlane = New Pen(planeColor, 1)
             End If
 
-            e.Graphics.DrawEllipse(penCollisionCircle, New Rectangle(New Point(centerPointX, centerPointY), New Size(widthheight, widthheight)))
+            graphics.DrawEllipse(penCollisionCircle, New Rectangle(New Point(centerPointX, centerPointY), New Size(widthheight, widthheight)))
 
             ''direction arrow
             'e.Graphics.DrawLine(penPlane, New Point(planeXscale, planeYscale), planePoint2)
@@ -281,7 +297,7 @@ Public Class frmTowerRadar
 
 
             'crashed plane
-            If singlePlane.currentState = clsPlane.enumPlaneState.special_crashed Then e.Graphics.FillEllipse(brushCrashedPlane, New Rectangle(New Point(centerPointX, centerPointY), New Size(widthheight, widthheight)))
+            If singlePlane.currentState = clsPlane.enumPlaneState.special_crashed Then graphics.FillEllipse(brushCrashedPlane, New Rectangle(New Point(centerPointX, centerPointY), New Size(widthheight, widthheight)))
 
             ''pointdetection
             'Dim detectionPointScaleX As Double = (singlePlane.cockpitLocation.X.meters - offsetX) * multiplyerX
@@ -312,8 +328,8 @@ Public Class frmTowerRadar
             If singlePlane Is Me.Game.selectedPlane Then planeColor.Color = Color.Red
 
             'name and type
-            e.Graphics.DrawString(callSign, textFont, planeColor, pointCallSign)
-            e.Graphics.DrawString(planeType, textFont, planeColor, pointPlaneType)
+            graphics.DrawString(callSign, textFont, planeColor, pointCallSign)
+            graphics.DrawString(planeType, textFont, planeColor, pointPlaneType)
 
             'write altitude and target altitude
             If singlePlane.pos_Altitude.feet > singlePlane.target_altitude.feet Then
@@ -335,12 +351,31 @@ Public Class frmTowerRadar
 
             'line between plane location and label
             Dim linePoint1 As New Point(planeXscale + 3, planeYscale + 3)
-            e.Graphics.DrawLine(penPlane, linePoint1, pointCallSign)
+            graphics.DrawLine(penPlane, linePoint1, pointCallSign)
 
             'write text
-            e.Graphics.DrawString(altitude & altitudeTarget & " " & speed & speedTarget, textFont, planeColor, pointAltitude)
+            graphics.DrawString(altitude & altitudeTarget & " " & speed & speedTarget, textFont, planeColor, pointAltitude)
 
         End If
+    End Sub
+
+    Friend Sub updateImage(ByRef image As Image)
+        Me.picTowerRadar.Image = image
+        If Me.chkShowFramerate.Checked Then
+            Me.lblFPS.Visible = True
+            Me.lblMillisecondsBetweenFrames.Visible = True
+        Else
+            Me.lblFPS.Visible = False
+            Me.lblMillisecondsBetweenFrames.Visible = False
+        End If
+
+        Dim timeStamp As DateTime = Now
+        Dim oldtime As DateTime = Me.lblMillisecondsBetweenFrames.Tag
+        Dim milliseconds As Long = (timeStamp - oldtime).TotalMilliseconds
+        Me.lblMillisecondsBetweenFrames.Text = milliseconds & " ms"
+        Me.lblFPS.Text = (1000 / milliseconds) \ 1 & " FPS"
+        Me.lblMillisecondsBetweenFrames.Tag = timeStamp
+
     End Sub
 
     Private Sub picTowerRadar_Resize(sender As PictureBox, e As EventArgs) Handles picTowerRadar.Resize
@@ -369,10 +404,6 @@ Public Class frmTowerRadar
         End If
     End Sub
 
-    Private Sub tmrTick_Tick(sender As Timer, e As EventArgs) Handles tmrTick.Tick
-        Me.Tick(New TimeSpan(sender.Interval))
-    End Sub
-
     Private Sub picTowerRadar_MouseMove(sender As Object, e As MouseEventArgs) Handles picTowerRadar.MouseMove
         If e.Button = MouseButtons.Right Then
             Dim X As Long = e.X
@@ -395,7 +426,9 @@ Public Class frmTowerRadar
         sender.Cursor = Cursors.Default
     End Sub
 
-    Private Sub trkTimerIterval_ValueChanged(sender As Object, e As EventArgs) Handles trkTimerIterval.ValueChanged
-        Me.tmrTick.Interval = sender.value
+    Private Sub frmTowerRadar_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        If Me.threadGraphics.IsAlive Then
+            Me.threadGraphics.Abort()
+        End If
     End Sub
 End Class

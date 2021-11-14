@@ -8,8 +8,9 @@ Public Class frmGroundRadar
     Friend WithEvents Game As clsGame
 
     Dim devMode As Boolean = True
-    Dim mouseLocationBeforeMove As Point
     Dim threadGraphics As Threading.Thread
+
+    Dim mouseLocationBeforeMove As Point
 
 
     'dimensions to draw locations
@@ -18,16 +19,7 @@ Public Class frmGroundRadar
     Dim multiplyerX As Double
     Dim multiplyerY As Double
 
-    Friend Sub timerhandling()
-        Dim sleeper As New Threading.ManualResetEvent(False)
 
-        Do
-            sleeper.WaitOne(1) 'timer interval in ms.
-            'when timer expires
-            'do updates
-            Me.Tick()
-        Loop
-    End Sub
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -164,6 +156,15 @@ Public Class frmGroundRadar
         End If
     End Sub
 
+    Friend Sub timerhandling()
+        Dim sleeper As New Threading.ManualResetEvent(False)
+
+        Do
+            sleeper.WaitOne(1) 'wait one MS
+
+            Me.Tick()
+        Loop
+    End Sub
 
     Friend Function paintGroundRadarImage() As Image
 
@@ -554,7 +555,13 @@ Public Class frmGroundRadar
         'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint3)
 
         'paint planes
-        For Each singlePlane As clsPlane In Me.Game.Planes
+        'make copy to avoid collision of threads (one updating the list, the other painting
+        Dim allplanes(Me.Game.Planes.Count - 1) As clsPlane
+        Me.Game.Planes.CopyTo(allplanes)
+
+
+
+        For Each singlePlane As clsPlane In allplanes
             Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
         Next
 
@@ -565,7 +572,6 @@ Public Class frmGroundRadar
 
         Return picturebox.Image
     End Function
-
 
 
     Friend Sub updateImage(ByRef image As Image)
