@@ -217,7 +217,15 @@ Public Class frmTowerRadar
         Me.Game.Planes.CopyTo(allplanes)
 
         For Each singlePlane As clsPlane In allplanes
-            If Not singlePlane Is Me.Game.selectedPlane Then Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
+            If Me.Game.selectedPlane Is Nothing Then
+                Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
+            Else
+                If Not Me.Game.selectedPlane.callsign = singlePlane.callsign Then
+                    Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
+                Else
+
+                End If
+            End If
         Next
 
         If Not Me.Game.selectedPlane Is Nothing Then Me.paintPlane(Me.Game.selectedPlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
@@ -228,7 +236,6 @@ Public Class frmTowerRadar
     End Function
 
     Private Sub paintPlane(ByRef singlePlane As clsPlane, ByVal offsetX As Double, ByVal offsety As Double, ByVal multiplyerX As Double, ByVal multiplyerY As Double, ByRef graphics As Graphics)
-
 
         If singlePlane.isTowerRadarRelevant Then
             Dim penEntryPoint As Pen = New Pen(Color.Green, 3)
