@@ -520,7 +520,11 @@ Public Class frmGroundRadar
 
         'paint taxipath of selected plane
         If Not Game.selectedPlane Is Nothing AndAlso Not Me.Game.selectedPlane.ground_taxiPath Is Nothing Then
-            For Each singlePathWay As clsAStarEngine.structPathStep In Me.Game.selectedPlane.ground_taxiPath
+            'make copy to avoid collision of threads (one updating the list, the other painting)
+            Dim allPathSteps(Me.Game.selectedPlane.ground_taxiPath.Count - 1) As clsAStarEngine.structPathStep
+            Me.Game.selectedPlane.ground_taxiPath.CopyTo(allPathSteps)
+
+            For Each singlePathWay As clsAStarEngine.structPathStep In allPathSteps
 
                 Dim point1 As Point
                 Dim point2 As Point

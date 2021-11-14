@@ -246,7 +246,11 @@ Public Class frmAppDepRadar
 
         'paint flightpath of selected plane
         If Not Game.selectedPlane Is Nothing AndAlso Not Me.Game.selectedPlane.air_flightPath Is Nothing Then
-            For Each singlePathWay As clsAStarEngine.structPathStep In Me.Game.selectedPlane.air_flightPath
+            'make copy to avoid collision of threads (one updating the list, the other painting)
+            Dim allPathSteps(Me.Game.selectedPlane.air_flightPath.Count - 1) As clsAStarEngine.structPathStep
+            Me.Game.selectedPlane.air_flightPath.CopyTo(allPathSteps)
+
+            For Each singlePathWay As clsAStarEngine.structPathStep In allPathSteps
 
                 Dim point1 As Point
                 Dim point2 As Point
@@ -266,7 +270,7 @@ Public Class frmAppDepRadar
         End If
 
         'paint planes
-        'make copy to avoid collision of threads (one updating the list, the other painting
+        'make copy to avoid collision of threads (one updating the list, the other painting)
         Dim allplanes(Me.Game.Planes.Count - 1) As clsPlane
         Me.Game.Planes.CopyTo(allplanes)
 
