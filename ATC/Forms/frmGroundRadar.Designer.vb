@@ -22,20 +22,16 @@ Partial Class frmGroundRadar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.picGroundRadar = New System.Windows.Forms.PictureBox()
         Me.pnlGround = New System.Windows.Forms.Panel()
-        Me.trkTimerIterval = New System.Windows.Forms.TrackBar()
         Me.chkShowLabels = New System.Windows.Forms.CheckBox()
         Me.chkShowFramerate = New System.Windows.Forms.CheckBox()
         Me.lblFPS = New System.Windows.Forms.Label()
         Me.lblMillisecondsBetweenFrames = New System.Windows.Forms.Label()
         Me.chkRenderBackground = New System.Windows.Forms.CheckBox()
         Me.ctlWindRose = New ATC.ctlWindRose()
-        Me.tmrTick = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picGroundRadar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlGround.SuspendLayout()
-        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picGroundRadar
@@ -58,7 +54,6 @@ Partial Class frmGroundRadar
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlGround.BackColor = System.Drawing.Color.Transparent
         Me.pnlGround.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pnlGround.Controls.Add(Me.trkTimerIterval)
         Me.pnlGround.Controls.Add(Me.chkShowLabels)
         Me.pnlGround.Controls.Add(Me.chkShowFramerate)
         Me.pnlGround.Controls.Add(Me.lblFPS)
@@ -70,20 +65,6 @@ Partial Class frmGroundRadar
         Me.pnlGround.Name = "pnlGround"
         Me.pnlGround.Size = New System.Drawing.Size(776, 426)
         Me.pnlGround.TabIndex = 9
-        '
-        'trkTimerIterval
-        '
-        Me.trkTimerIterval.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.trkTimerIterval.AutoSize = False
-        Me.trkTimerIterval.LargeChange = 1000
-        Me.trkTimerIterval.Location = New System.Drawing.Point(3, 406)
-        Me.trkTimerIterval.Maximum = 5000
-        Me.trkTimerIterval.Minimum = 30
-        Me.trkTimerIterval.Name = "trkTimerIterval"
-        Me.trkTimerIterval.Size = New System.Drawing.Size(633, 15)
-        Me.trkTimerIterval.TabIndex = 10
-        Me.trkTimerIterval.Value = 30
         '
         'chkShowLabels
         '
@@ -151,11 +132,6 @@ Partial Class frmGroundRadar
         Me.ctlWindRose.Size = New System.Drawing.Size(64, 64)
         Me.ctlWindRose.TabIndex = 1
         '
-        'tmrTick
-        '
-        Me.tmrTick.Enabled = True
-        Me.tmrTick.Interval = 30
-        '
         'frmGroundRadar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -168,19 +144,16 @@ Partial Class frmGroundRadar
         CType(Me.picGroundRadar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlGround.ResumeLayout(False)
         Me.pnlGround.PerformLayout()
-        CType(Me.trkTimerIterval, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents picGroundRadar As PictureBox
     Friend WithEvents pnlGround As Panel
-    Friend WithEvents tmrTick As Timer
     Friend WithEvents ctlWindRose As ctlWindRose
     Friend WithEvents chkRenderBackground As CheckBox
     Friend WithEvents lblMillisecondsBetweenFrames As Label
     Friend WithEvents lblFPS As Label
     Friend WithEvents chkShowFramerate As CheckBox
     Friend WithEvents chkShowLabels As CheckBox
-    Friend WithEvents trkTimerIterval As TrackBar
 End Class

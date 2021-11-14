@@ -1172,7 +1172,16 @@ Public Class frmAllControl
         End If
     End Sub
 
+    'Friend Sub showGroundRadar()
+    '    Dim newWindow As New frmGroundRadar
+    '    newWindow.Game = Me.Game
+    '    newWindow.Show()
+    'End Sub
+
     Private Sub cmdShowGroundRadar_Click(sender As Object, e As EventArgs) Handles cmdShowGroundRadar.Click
+        'Dim Thread1 = New System.Threading.Thread(AddressOf showGroundRadar)
+        'Thread1.Start()
+
         Dim newWindow As New frmGroundRadar
         'newWindow.Game = Me.Game
         newWindow.Show()
