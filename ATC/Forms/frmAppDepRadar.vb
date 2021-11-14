@@ -275,7 +275,7 @@ Public Class frmAppDepRadar
         Me.Game.Planes.CopyTo(allplanes)
 
         For Each singlePlane As clsPlane In allplanes
-            If Not singlePlane Is Me.Game.selectedPlane Then Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
+            Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
         Next
 
         If Not Me.Game.selectedPlane Is Nothing Then Me.paintPlane(Me.Game.selectedPlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
@@ -329,7 +329,6 @@ Public Class frmAppDepRadar
                 graphics.FillRectangle(brushHistoryAlpha, rectangleHistory)
             Next
 
-
             'mark selected plane differently
             Dim penPlane As Pen
             Dim penCollisionCircle As Pen
@@ -345,13 +344,6 @@ Public Class frmAppDepRadar
 
             'crashed plane
             If singlePlane.currentState = clsPlane.enumPlaneState.special_crashed Then graphics.FillEllipse(brushCrashedPlane, New Rectangle(New Point(pointXCollisionCircle, pointYCollisionCircle), New Size(widthheight, widthheight)))
-
-            ''pointdetection
-            'Dim detectionPointScaleX As Double = (singlePlane.cockpitLocation.X.meters - offsetX) * multiplyerX
-            'Dim detectionpointScaleY As Double = (singlePlane.cockpitLocation.Y.meters - offsetY) * multiplyerY
-            'Dim detectionPointScaleDiameter As Double = singlePlane.pointDetectionCircle.meters * multiplyerX
-
-            'e.Graphics.DrawEllipse(penTaxiWay, New Rectangle(New Point(detectionPointScaleX, detectionpointScaleY), New Size(detectionPointScaleDiameter, detectionPointScaleDiameter)))
 
             'write label
             Dim callSign As String = singlePlane.callsign

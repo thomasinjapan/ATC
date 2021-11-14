@@ -543,21 +543,6 @@ Public Class frmGroundRadar
             Next
         End If
 
-        ''paint wind arrow
-        'Dim penWind As New Pen(Color.Blue, 2)
-        'Dim windXscale As Double = 30
-        'Dim windYscale As Double = 30
-
-        'Dim beta1 As Double = (Me.Game.AirPort.windDirectionTo + (180))
-        'Dim beta2 As Double = (Me.Game.AirPort.windDirectionTo - (90 + 45))
-        'Dim beta3 As Double = (Me.Game.AirPort.windDirectionTo + (90 + 45))
-        'Dim windPoint1 As New Point(windXscale + (15 * Math.Sin(beta1 * Math.PI / 180)), (windYscale) - 15 * Math.Cos(beta1 * Math.PI / 180))
-        'Dim windPoint2 As New Point(windXscale + (5 * Math.Sin(beta2 * Math.PI / 180)), (windYscale) - 5 * Math.Cos(beta2 * Math.PI / 180))
-        'Dim windPoint3 As New Point(windXscale + (5 * Math.Sin(beta3 * Math.PI / 180)), (windYscale) - 5 * Math.Cos(beta3 * Math.PI / 180))
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint1)
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint2)
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint3)
-
         'paint planes
         'make copy to avoid collision of threads (one updating the list, the other painting
         Dim allplanes(Me.Game.Planes.Count - 1) As clsPlane

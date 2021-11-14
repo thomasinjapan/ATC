@@ -134,18 +134,6 @@ Public Class frmTowerRadar
                 graphics.DrawLine(penRunway, point1, point2)
             Next
 
-
-            ''paint landingways
-            'For Each touchdownway In runway.touchDownWays
-            '    Dim point1 As New Point((touchdownway.taxiWayPoint1.pos_X - offsetX) * multiplyerX, (touchdownway.taxiWayPoint1.pos_Y - offsetY) * multiplyerY)
-            '    Dim point2 As New Point((touchdownway.taxiWayPoint2.pos_X - offsetX) * multiplyerX, (touchdownway.taxiWayPoint2.pos_Y - offsetY) * multiplyerY)
-
-            '   Graphics.DrawEllipse(penLandingWayPoint, New Rectangle(point1, New Size(2, 2)))
-            '   Graphics.DrawEllipse(penLandingWayPoint, New Rectangle(point2, New Size(2, 2)))
-
-            '   Graphics.DrawLine(penRunway, point1, point2)
-            '   Graphics.DrawLine(penLandingWayPoint, point1, point2)
-            'Next
         Next
         For Each runway As clsRunWay In Me.Game.AirPort.runWays
 
@@ -181,23 +169,6 @@ Public Class frmTowerRadar
 
         Next
 
-
-
-        ''paint wind arrow
-        'Dim penWind As New Pen(Color.Blue, 2)
-        'Dim windXscale As Double = 30
-        'Dim windYscale As Double = 30
-
-        'Dim beta1 As Double = (Me.Game.AirPort.windDirectionTo + (180))
-        'Dim beta2 As Double = (Me.Game.AirPort.windDirectionTo - (90 + 45))
-        'Dim beta3 As Double = (Me.Game.AirPort.windDirectionTo + (90 + 45))
-        'Dim windPoint1 As New Point(windXscale + (15 * Math.Sin(beta1 * Math.PI / 180)), (windYscale) - 15 * Math.Cos(beta1 * Math.PI / 180))
-        'Dim windPoint2 As New Point(windXscale + (5 * Math.Sin(beta2 * Math.PI / 180)), (windYscale) - 5 * Math.Cos(beta2 * Math.PI / 180))
-        'Dim windPoint3 As New Point(windXscale + (5 * Math.Sin(beta3 * Math.PI / 180)), (windYscale) - 5 * Math.Cos(beta3 * Math.PI / 180))
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint1)
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint2)
-        'e.Graphics.DrawLine(penWind, New Point(windXscale, windYscale), windPoint3)
-
         'circles
         Dim penCircle As New Pen(Color.Gray, 1)
         For C1 As Long = 1 To 5
@@ -217,15 +188,7 @@ Public Class frmTowerRadar
         Me.Game.Planes.CopyTo(allplanes)
 
         For Each singlePlane As clsPlane In allplanes
-            If Me.Game.selectedPlane Is Nothing Then
-                Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
-            Else
-                If Not Me.Game.selectedPlane.callsign = singlePlane.callsign Then
-                    Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
-                Else
-
-                End If
-            End If
+            Me.paintPlane(singlePlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
         Next
 
         If Not Me.Game.selectedPlane Is Nothing Then Me.paintPlane(Me.Game.selectedPlane, offsetX, offsetY, multiplyerX, multiplyerY, graphics)
@@ -235,7 +198,7 @@ Public Class frmTowerRadar
         Return picturebox.Image
     End Function
 
-    Private Sub paintPlane(ByRef singlePlane As clsPlane, ByVal offsetX As Double, ByVal offsety As Double, ByVal multiplyerX As Double, ByVal multiplyerY As Double, ByRef graphics As Graphics)
+    Private Sub paintPlane(ByRef singlePlane As clsPlane, ByVal offsetX As Double, ByVal offsetY As Double, ByVal multiplyerX As Double, ByVal multiplyerY As Double, ByRef graphics As Graphics)
 
         If singlePlane.isTowerRadarRelevant Then
             Dim penEntryPoint As Pen = New Pen(Color.Green, 3)
@@ -257,20 +220,13 @@ Public Class frmTowerRadar
                 planeColor.Color = Color.Red
             End If
 
-
             Dim planeXscale As Double = (singlePlane.cockpitLocation.X.meters - offsetX) * multiplyerX
-            Dim planeYscale As Double = (singlePlane.cockpitLocation.Y.meters - offsety) * multiplyerY
-
-            'Dim beta1 As Double = (singlePlane.pos_direction - (90 + 45))
-            'Dim beta2 As Double = (singlePlane.pos_direction + (90 + 45))
-            'Dim planePoint2 As New Point(planeXscale + (10 * Math.Sin(beta1 * Math.PI / 180)), (planeYscale) - 10 * Math.Cos(beta1 * Math.PI / 180))
-            ''point 3 is plane location w/ distance of 5 and degree + (90+45)
-            'Dim planePoint3 As New Point(planeXscale + (10 * Math.Sin(beta2 * Math.PI / 180)), (planeYscale) - 10 * Math.Cos(beta2 * Math.PI / 180))
+            Dim planeYscale As Double = (singlePlane.cockpitLocation.Y.meters - offsetY) * multiplyerY
 
             'collisioncircle
             Dim widthheight As Double = singlePlane.modelInfo.length.meters * multiplyerX
             Dim centerPointX As Double = ((singlePlane.pos_X.meters - singlePlane.collisionRadius.meters) - offsetX) * multiplyerX
-            Dim centerPointY As Double = ((singlePlane.pos_Y.meters - singlePlane.collisionRadius.meters) - offsety) * multiplyerY
+            Dim centerPointY As Double = ((singlePlane.pos_Y.meters - singlePlane.collisionRadius.meters) - offsetY) * multiplyerY
 
             For C1 = 0 To singlePlane.air_FlightPathHistory.Count - 1
                 Dim rectangleWidth As Long = 5
@@ -278,12 +234,11 @@ Public Class frmTowerRadar
                 Dim brushHistoryAlpha As New SolidBrush(Color.FromArgb(rectangleAlpha, planeColor.Color))
                 Dim index As Long = singlePlane.air_FlightPathHistory.Count - C1 - 1
                 Dim historyXscale As Double = (singlePlane.air_FlightPathHistory(index).Item1.meters - offsetX) * multiplyerX
-                Dim historyYscale As Double = (singlePlane.air_FlightPathHistory(index).Item2.meters - offsety) * multiplyerY
+                Dim historyYscale As Double = (singlePlane.air_FlightPathHistory(index).Item2.meters - offsetY) * multiplyerY
 
                 Dim rectangleHistory As New Rectangle(historyXscale - rectangleWidth \ 2, historyYscale - rectangleWidth \ 2, rectangleWidth, rectangleWidth)
                 graphics.FillRectangle(brushHistoryAlpha, rectangleHistory)
             Next
-
 
             'mark selected plane differently
             Dim penPlane As Pen
@@ -298,20 +253,8 @@ Public Class frmTowerRadar
 
             graphics.DrawEllipse(penCollisionCircle, New Rectangle(New Point(centerPointX, centerPointY), New Size(widthheight, widthheight)))
 
-            ''direction arrow
-            'e.Graphics.DrawLine(penPlane, New Point(planeXscale, planeYscale), planePoint2)
-            'e.Graphics.DrawLine(penPlane, New Point(planeXscale, planeYscale), planePoint3)
-
-
             'crashed plane
             If singlePlane.currentState = clsPlane.enumPlaneState.special_crashed Then graphics.FillEllipse(brushCrashedPlane, New Rectangle(New Point(centerPointX, centerPointY), New Size(widthheight, widthheight)))
-
-            ''pointdetection
-            'Dim detectionPointScaleX As Double = (singlePlane.cockpitLocation.X.meters - offsetX) * multiplyerX
-            'Dim detectionpointScaleY As Double = (singlePlane.cockpitLocation.Y.meters - offsety) * multiplyerY
-            'Dim detectionPointScaleDiameter As Double = singlePlane.pointDetectionCircle.meters * multiplyerX
-
-            'e.Graphics.DrawEllipse(penTaxiWay, New Rectangle(New Point(detectionPointScaleX, detectionpointScaleY), New Size(detectionPointScaleDiameter, detectionPointScaleDiameter)))
 
             'write label
             Dim callSign As String = singlePlane.callsign
@@ -322,14 +265,13 @@ Public Class frmTowerRadar
             Dim speedTarget As String = singlePlane.target_speed.knots \ 1
 
             Dim rootX As Integer = 10 + ((singlePlane.pos_X.meters + singlePlane.collisionRadius.meters) - offsetX) * multiplyerX
-            Dim rootY As Integer = 10 + ((singlePlane.pos_Y.meters + singlePlane.collisionRadius.meters) - offsety) * multiplyerY
+            Dim rootY As Integer = 10 + ((singlePlane.pos_Y.meters + singlePlane.collisionRadius.meters) - offsetY) * multiplyerY
 
             Dim pointCallSign As New Point(rootX, rootY)
             Dim pointPlaneType As New Point(pointCallSign.X + 60, pointCallSign.Y)
             Dim pointAltitude As New Point(pointCallSign.X, pointCallSign.Y + 15)
 
             Dim textFont As New Font("Courier New", 10)
-
 
             If singlePlane Is Me.Game.selectedPlane Then textFont = New Font(textFont, FontStyle.Bold)
             If singlePlane Is Me.Game.selectedPlane Then planeColor.Color = Color.Red
