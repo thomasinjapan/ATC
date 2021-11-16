@@ -233,11 +233,13 @@ Public Class frmTowerRadar
                 Dim rectangleAlpha As Integer = 255 * (1 - (C1 / singlePlane.air_FlightPathHistory.Count))
                 Dim brushHistoryAlpha As New SolidBrush(Color.FromArgb(rectangleAlpha, planeColor.Color))
                 Dim index As Long = singlePlane.air_FlightPathHistory.Count - C1 - 1
-                Dim historyXscale As Double = (singlePlane.air_FlightPathHistory(index).Item1.meters - offsetX) * multiplyerX
-                Dim historyYscale As Double = (singlePlane.air_FlightPathHistory(index).Item2.meters - offsetY) * multiplyerY
+                If index >= 0 Then
+                    Dim historyXscale As Double = (singlePlane.air_FlightPathHistory(index).Item1.meters - offsetX) * multiplyerX
+                    Dim historyYscale As Double = (singlePlane.air_FlightPathHistory(index).Item2.meters - offsetY) * multiplyerY
 
-                Dim rectangleHistory As New Rectangle(historyXscale - rectangleWidth \ 2, historyYscale - rectangleWidth \ 2, rectangleWidth, rectangleWidth)
-                graphics.FillRectangle(brushHistoryAlpha, rectangleHistory)
+                    Dim rectangleHistory As New Rectangle(historyXscale - rectangleWidth \ 2, historyYscale - rectangleWidth \ 2, rectangleWidth, rectangleWidth)
+                    graphics.FillRectangle(brushHistoryAlpha, rectangleHistory)
+                End If
             Next
 
             'mark selected plane differently
