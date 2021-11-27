@@ -1044,6 +1044,13 @@ Public Class clsGame
                         If Not command.groundTaxiGoalPointCommandParameter Is Nothing Then
                             command.groundTaxiGoalPointCommandParameter = Me.AirPort.POIs(command.groundTaxiGoalPointCommandParameter.name.ToLower)
                         End If
+                        If Not command.groundTaxiViaCommandParameter Is Nothing Then
+                            Dim tmpViaConnectionPopints As New List(Of clsConnectionPoint)
+                            For Each singleViaPoint As clsConnectionPoint In command.groundTaxiViaCommandParameter
+                                tmpViaConnectionPopints.Add(Me.AirPort.allNavigationPoints.Find(Function(p As clsConnectionPoint) p.name.ToLower = singleViaPoint.name.ToLower))
+                            Next
+                            command.groundTaxiViaCommandParameter = tmpViaConnectionPopints
+                        End If
                         If Not command.groundTaxiRunwayCommandParameter Is Nothing Then
                             command.groundTaxiRunwayCommandParameter = Me.AirPort.getRunWayByID(command.groundTaxiRunwayCommandParameter.objectID)
                         End If

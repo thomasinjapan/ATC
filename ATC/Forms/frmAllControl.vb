@@ -1341,7 +1341,7 @@ Public Class frmAllControl
             Next
 
             'required as parameter in case runway changes to determine new SID
-            'if it is same as old, SID won't chane.
+            'if it is same as old, SID won't change.
             'in this case we keep it
             Dim targetRunway As clsRunWay = Me.Game.AirPort.getRunwayByConnectionPoint(Me.Game.selectedPlane.ground_goalWayPoint)
 
