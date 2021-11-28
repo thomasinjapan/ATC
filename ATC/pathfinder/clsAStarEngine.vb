@@ -10,6 +10,7 @@ Public Class clsAStarEngine
 
     <Serializable> Public Structure structPathStep
         Friend nextWayPoint As clsConnectionPoint
+        Friend nextWayPointOverrideHeightInFeet As clsDistanceCollection
         Friend taxiwayToWayPoint As clsNavigationPath
     End Structure
 

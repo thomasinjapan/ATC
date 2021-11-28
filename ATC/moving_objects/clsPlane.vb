@@ -30,8 +30,9 @@ Public Class clsPlane
         Friend air_Vcruise As clsSpeedCollection                            'cruise speed
         Friend air_Vmo As clsSpeedCollection                                'max speed
         Friend air_Vfto_V2 As clsSpeedCollection                               'speed at takeoff
-        Friend air_V2_CLIMB5000 As clsSpeedCollection                                 'speed until 5000 ft
-        Friend air_V2_CLIMBFL150 As clsSpeedCollection                           'speed until FL150
+        Friend air_V2_CLIMBTO5000 As clsSpeedCollection                                 'speed until 5000 ft
+        Friend air_V2_CLIMBTOFL150 As clsSpeedCollection                           'speed until FL150
+        Friend air_V2_CLIMBTOFL240 As clsSpeedCollection                           'speed until FL240
         Friend air_V2_DESCENTABOVELTFL100 As clsSpeedCollection                    'descent speed between FL2350 and FL100
         Friend air_V2_DESCENTBELOWFL100 As clsSpeedCollection                    'descent speed below FL100
         Friend air_AltMax As clsDistanceCollection
@@ -734,6 +735,10 @@ Public Class clsPlane
         'adjust target altitude if not overridden by ATC and if a height exists
         If Not Me.air_altitudeOverrideByATC AndAlso Not Me.air_nextWayPoint.altitude Is Nothing Then
             Me.target_altitude.feet = Me.air_nextWayPoint.altitude.feet
+
+            ''in case there is override, use the overright height
+            'If Not overrideHeightInFeet Is Nothing Then Me.target_altitude.feet = overrideHeightInFeet.feet
+
             If Me.target_altitude.feet < 0 Then Me.target_altitude.feet = Me.modelInfo.air_AltCruise.feet
         End If
 
@@ -1335,15 +1340,33 @@ Public Class clsPlane
             Me.ground_lastReachedWayPoint = Me.ground_nextWayPoint
             'if endpoint, release
             If tower_nextTakeOffWayPoint Is tower_goalTakeOffWayPoint Then
-                Me.target_speed.knots = Me.modelInfo.air_V2_CLIMB5000.knots
-                If Not Me.air_nextWayPoint Is Nothing AndAlso Not Me.air_nextWayPoint.altitude Is Nothing Then
+                Me.target_speed.knots = Me.modelInfo.air_V2_CLIMBTO5000.knots
+
+                'if there is a path assigned, enter this path
+                If Not Me.air_flightPath Is Nothing Then
+                    Me.air_nextWayPoint = Me.air_flightPath.First.nextWayPoint
+                    Me.target_altitude.feet = Me.air_nextWayPoint.altitude.feet
+
+                    'in case there is override, use the overright height
+                    If Not Me.air_flightPath.First.nextWayPointOverrideHeightInFeet Is Nothing Then Me.target_altitude.feet = Me.air_flightPath.First.nextWayPointOverrideHeightInFeet.feet
+
+                    'in case height is negative, change to cruisespeed
+                    If Me.target_altitude.feet < 0 Then Me.target_altitude.feet = Me.modelInfo.air_AltCruise.feet
+
+                    'otherwise fly to next navpoint if there is one
+                ElseIf Not Me.air_nextWayPoint Is Nothing AndAlso Not Me.air_nextWayPoint.altitude Is Nothing Then
                     'only update altitude if there is no override by ATC and a default altitude is set
                     If Not Me.air_altitudeOverrideByATC AndAlso Not Me.air_nextWayPoint.altitude Is Nothing Then
                         Me.target_altitude.feet = Me.air_nextWayPoint.altitude.feet
+
                         'in case height is negative, change to cruisespeed
                         If Me.target_altitude.feet < 0 Then Me.target_altitude.feet = Me.modelInfo.air_AltCruise.feet
                     End If
+                Else
+                    'if there is not next navpoint, just enter free flight
+                    Me.target_altitude.feet = Me.modelInfo.air_AltCruise.feet
                 End If
+
                 Me.currentState = enumPlaneState.tower_freeFlight
 
                 'game meta
@@ -1593,9 +1616,11 @@ Public Class clsPlane
         'increase speed in case plane is departing and crosses thresholds
         If Me.isDeparting Then
             If oldheight.feet < 5000 And Me.pos_Altitude.feet >= 5000 Then
-                Me.target_speed.knots = Me.modelInfo.air_V2_CLIMBFL150.knots
+                Me.target_speed.knots = Me.modelInfo.air_V2_CLIMBTOFL150.knots
             ElseIf oldheight.feet < 15000 And Me.pos_Altitude.feet >= 15000 Then
-                Me.target_speed.knots = Me.modelInfo.air_V2_CLIMBFL150.knots
+                Me.target_speed.knots = Me.modelInfo.air_V2_CLIMBTOFL240.knots
+            ElseIf oldheight.feet < 24000 And Me.pos_Altitude.feet >= 24000 Then
+                Me.target_speed.knots = Me.modelInfo.air_Vcruise.knots
             End If
         End If
 
@@ -1607,8 +1632,6 @@ Public Class clsPlane
                 Me.target_speed.knots = Me.modelInfo.air_V2_DESCENTBELOWFL100.knots
             End If
         End If
-
-
 
     End Sub
 
@@ -1794,6 +1817,10 @@ Public Class clsPlane
             'only update altitude if there is no override by ATC and a default altitude is set
             If Not Me.air_altitudeOverrideByATC AndAlso Not Me.final_nextWayPoint.altitude Is Nothing Then
                 Me.target_altitude.feet = Me.final_nextWayPoint.altitude.feet
+
+                'in case there is override, use the overright height
+                If Not Me.final_flightPath.First.nextWayPointOverrideHeightInFeet Is Nothing Then Me.target_altitude.feet = Me.final_flightPath.First.nextWayPointOverrideHeightInFeet.feet
+
                 'in case height is negative, change to cruisespeed
                 If Me.target_altitude.feet < 0 Then Me.target_altitude.feet = Me.modelInfo.air_AltCruise.feet
             End If
@@ -1833,6 +1860,10 @@ Public Class clsPlane
             'only update altitude if there is no override by ATC and a default altitude is set
             If Not Me.air_altitudeOverrideByATC AndAlso Not Me.air_nextWayPoint.altitude Is Nothing Then
                 Me.target_altitude.feet = Me.air_nextWayPoint.altitude.feet
+
+                'in case there is override, use the overright height
+                If Not Me.air_flightPath.First.nextWayPointOverrideHeightInFeet Is Nothing Then Me.target_altitude.feet = Me.air_flightPath.First.nextWayPointOverrideHeightInFeet.feet
+
                 'in case height is negative, change to cruisespeed
                 If Me.target_altitude.feet < 0 Then Me.target_altitude.feet = Me.modelInfo.air_AltCruise.feet
             End If
@@ -1871,9 +1902,13 @@ Public Class clsPlane
             If Me.tower_currentTakeOffWay.maxSpeed.knots >= 0 Then
                 Me.target_speed.knots = Me.tower_currentTakeOffWay.maxSpeed.knots
             Else
-                Me.target_speed.knots = Me.modelInfo.air_V2_CLIMB5000.knots
+                Me.target_speed.knots = Me.modelInfo.air_V2_CLIMBTO5000.knots
             End If
             Me.target_altitude.feet = Me.tower_nextTakeOffWayPoint.altitude.feet
+
+            'in case there is override, use the overright height
+            If Not Me.tower_takeOffPath.First.nextWayPointOverrideHeightInFeet Is Nothing Then Me.target_altitude.feet = Me.tower_takeOffPath.First.nextWayPointOverrideHeightInFeet.feet
+
             Me.target_direction = clsNavigationPath.directionbetweenpoints(Me.pos_X.meters, Me.pos_Y.meters, Me.tower_nextTakeOffWayPoint.pos_X, Me.tower_nextTakeOffWayPoint.pos_Y)
         End If
     End Sub
@@ -1902,6 +1937,10 @@ Public Class clsPlane
             Else
                 Me.target_speed.knots = Me.tower_currentTouchDownWay.maxSpeed.knots
                 Me.target_altitude.feet = Me.ground_nextWayPoint.altitude.feet
+
+                'in case there is override, use the overright height
+                If Not Me.tower_touchDownPath.First.nextWayPointOverrideHeightInFeet Is Nothing Then Me.target_altitude.feet = Me.tower_touchDownPath.First.nextWayPointOverrideHeightInFeet.feet
+
                 Me.target_direction = clsNavigationPath.directionbetweenpoints(Me.pos_X.meters, Me.pos_Y.meters, Me.tower_nextTouchDownPoint.pos_X, Me.tower_nextTouchDownPoint.pos_Y)
 
             End If
@@ -2042,6 +2081,10 @@ Public Class clsPlane
             Me.final_nextWayPoint = Me.final_flightPath.First.nextWayPoint
             Me.final_goalWayPoint = Me.final_flightPath.Last.nextWayPoint
             Me.target_altitude.feet = Me.final_nextWayPoint.altitude.feet
+
+            'in case there is override, use the overright height
+            If Not Me.final_flightPath.First.nextWayPointOverrideHeightInFeet Is Nothing Then Me.target_altitude.feet = Me.final_flightPath.First.nextWayPointOverrideHeightInFeet.feet
+
             Me.air_altitudeOverrideByATC = False                                                'upon entering path, the default altitudes shall count (again)
 
             'take max altitude in case target altitude < 0
@@ -2087,6 +2130,10 @@ Public Class clsPlane
         Me.air_nextWayPoint = Me.air_flightPath.First.nextWayPoint
         Me.air_goalWayPoint = Me.air_flightPath.Last.nextWayPoint
         Me.target_altitude.feet = Me.air_nextWayPoint.altitude.feet
+
+        'in case there is override, use the overright height
+        If Not Me.air_flightPath.First.nextWayPointOverrideHeightInFeet Is Nothing Then Me.target_altitude.feet = Me.air_flightPath.First.nextWayPointOverrideHeightInFeet.feet
+
         Me.air_altitudeOverrideByATC = False                                                'upon entering path, the default altitudes shall count (again)
 
         'take max altitude in case target altitude < 0

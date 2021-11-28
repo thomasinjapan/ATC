@@ -380,7 +380,12 @@ Public Class clsAirport
                 Dim newStructPathStep As New clsAStarEngine.structPathStep With {
                     .nextWayPoint = nextPoint,
                     .taxiwayToWayPoint = newPath}
+
+                'add dynamic hight if available -if an override height, define it
+                If Not SingleStar.@height Is Nothing Then newStructPathStep.nextWayPointOverrideHeightInFeet = New clsDistanceCollection(SingleStar.@height, clsDistanceCollection.enumDistanceUnits.feet)
+
                 newStarPath.Add(newStructPathStep)
+
 
                 If Not newPath Is Nothing Then Me.allNavigationPaths.Add(newPath)
 
@@ -404,16 +409,16 @@ Public Class clsAirport
                 '!!! add dynamic target speed for each section
                 Dim targetspeed As clsSpeedCollection = Nothing
 
-                '!!! add dynamic hight if available
-                Dim targetHeightInFeet As Long = Nothing
-                If Not SingleSid.@height Is Nothing Then targetHeightInFeet = SingleSid.@height
-
                 Dim name As String = xElement.<sids>(0).<sid>(C1).@name
                 Dim newPath As clsNavigationPath = Nothing
                 If Not previousPoint Is Nothing Then newPath = New clsNavigationPath(previousPoint, nextPoint, clsNavigationPath.enumPathWayType.AirWay, name, targetspeed, name, Guid.NewGuid.ToString)
                 Dim newStructPathStep As New clsAStarEngine.structPathStep With {
                     .nextWayPoint = nextPoint,
                     .taxiwayToWayPoint = newPath}
+
+                'add dynamic hight if available -if an override height, define it
+                If Not SingleSid.@height Is Nothing Then newStructPathStep.nextWayPointOverrideHeightInFeet = New clsDistanceCollection(SingleSid.@height, clsDistanceCollection.enumDistanceUnits.feet)
+
                 newSidPath.Add(newStructPathStep)
                 previousPoint = nextPoint
 
