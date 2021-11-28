@@ -264,20 +264,43 @@ Module mdlNetworkhandling
             If (planeToChange.ground_nextWayPoint Is Nothing Xor singleplane.ground_nextWayPointID Is Nothing) Or (Not planeToChange.ground_nextWayPoint Is Nothing AndAlso Not (planeToChange.ground_nextWayPoint.objectID = singleplane.ground_nextWayPointID)) Then planeToChange.ground_nextWayPoint = game.AirPort.getNavigationPointById(singleplane.ground_nextWayPointID)
 
 
+            'update taxipath on ground if necessarry
             'If Not planeToChange.ground_taxiPath Is singleplane.ground_taxiPath Then planeToChange.ground_taxiPath = singleplane.ground_taxiPath
             If Not singleplane.ground_taxiPathIDs Is Nothing Then
-                planeToChange.ground_taxiPath = New List(Of clsAStarEngine.structPathStep)
-                For Each singlePathStep As clsPlane.structPathStepSkeleton In singleplane.ground_taxiPathIDs
-                    Dim newPathStep As clsAStarEngine.structPathStep
-                    newPathStep = New clsAStarEngine.structPathStep With {
+                'first check if the IDs are the same and only change if they are different
+                Dim isDifferent As Boolean = False
+
+                If singleplane.ground_taxiPathIDs.Count <> planeToChange.ground_taxiPath.Count Then
+                    'if the number of paths is different - there was a change
+                    isDifferent = True
+                Else
+                    'if the number is different, we need to check if the IDs didnt change
+                    For C1 = 0 To singleplane.ground_taxiPathIDs.Count-1
+                        'if the IDs of the next navpoints are different, there was a change
+
+                        If planeToChange.ground_taxiPath(C1).nextWayPoint.objectID <> singleplane.ground_taxiPathIDs(C1).navigationPointID Then
+                            isDifferent = True
+                            Exit For
+                        End If
+                    Next
+
+                End If
+
+                'only update if there was a difference
+                If isDifferent Then
+                    planeToChange.ground_taxiPath = New List(Of clsAStarEngine.structPathStep)
+                    For Each singlePathStep As clsPlane.structPathStepSkeleton In singleplane.ground_taxiPathIDs
+                        Dim newPathStep As clsAStarEngine.structPathStep
+                        newPathStep = New clsAStarEngine.structPathStep With {
                                   .nextWayPoint = game.AirPort.getNavigationPointById(singlePathStep.navigationPointID),
                                   .taxiwayToWayPoint = game.AirPort.getNavigationPathById(singlePathStep.navigationPathID)
                                   }
-                    planeToChange.ground_taxiPath.Add(newPathStep)
-                Next
+                        planeToChange.ground_taxiPath.Add(newPathStep)
+                    Next
+                End If
             End If
 
-            If (planeToChange.ground_terminal Is Nothing Xor singleplane.ground_terminalID Is Nothing) Or (Not planeToChange.ground_terminal Is Nothing AndAlso Not (planeToChange.ground_terminal.objectID = singleplane.ground_terminalID)) Then planeToChange.ground_terminal = game.AirPort.getNavigationPointById(singleplane.ground_terminalID)
+                If (planeToChange.ground_terminal Is Nothing Xor singleplane.ground_terminalID Is Nothing) Or (Not planeToChange.ground_terminal Is Nothing AndAlso Not (planeToChange.ground_terminal.objectID = singleplane.ground_terminalID)) Then planeToChange.ground_terminal = game.AirPort.getNavigationPointById(singleplane.ground_terminalID)
             If (planeToChange.tower_assignedLandingPoint Is Nothing Xor singleplane.tower_assignedLandingPointID Is Nothing) Or (Not planeToChange.tower_assignedLandingPoint Is Nothing AndAlso Not (planeToChange.tower_assignedLandingPoint.objectID = singleplane.tower_assignedLandingPointID)) Then planeToChange.tower_assignedLandingPoint = game.AirPort.getNavigationPointById(singleplane.tower_assignedLandingPointID)
             If Not planeToChange.tower_cleardToLand = singleplane.tower_cleardToLand Then planeToChange.tower_cleardToLand = singleplane.tower_cleardToLand
 
