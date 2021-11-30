@@ -270,35 +270,39 @@ Module mdlNetworkhandling
                 'first check if the IDs are the same and only change if they are different
                 Dim isDifferent As Boolean = False
 
-                If singleplane.ground_taxiPathIDs.Count <> planeToChange.ground_taxiPath.Count Then
+                'if one has groundpath assigned and the other hasnt - there was a change
+                If ((Not singleplane.ground_taxiPathIDs Is Nothing) And (planeToChange.ground_taxiPath Is Nothing)) Or
+                        ((singleplane.ground_taxiPathIDs Is Nothing) And (Not planeToChange.ground_taxiPath Is Nothing)) Then
+                    isDifferent = True
+                ElseIf singleplane.ground_taxiPathIDs.Count <> planeToChange.ground_taxiPath.Count Then
                     'if the number of paths is different - there was a change
                     isDifferent = True
                 Else
                     'if the number is different, we need to check if the IDs didnt change
-                    For C1 = 0 To singleplane.ground_taxiPathIDs.Count-1
-                        'if the IDs of the next navpoints are different, there was a change
+                    For C1 = 0 To singleplane.ground_taxiPathIDs.Count - 1
+                            'if the IDs of the next navpoints are different, there was a change
 
-                        If planeToChange.ground_taxiPath(C1).nextWayPoint.objectID <> singleplane.ground_taxiPathIDs(C1).navigationPointID Then
-                            isDifferent = True
-                            Exit For
-                        End If
-                    Next
+                            If planeToChange.ground_taxiPath(C1).nextWayPoint.objectID <> singleplane.ground_taxiPathIDs(C1).navigationPointID Then
+                                isDifferent = True
+                                Exit For
+                            End If
+                        Next
 
-                End If
+                    End If
 
-                'only update if there was a difference
-                If isDifferent Then
-                    planeToChange.ground_taxiPath = New List(Of clsAStarEngine.structPathStep)
-                    For Each singlePathStep As clsPlane.structPathStepSkeleton In singleplane.ground_taxiPathIDs
+                    'only update if there was a difference
+                    If isDifferent Then
+                        planeToChange.ground_taxiPath = New List(Of clsAStarEngine.structPathStep)
+                        For Each singlePathStep As clsPlane.structPathStepSkeleton In singleplane.ground_taxiPathIDs
                         Dim newPathStep As clsAStarEngine.structPathStep
                         newPathStep = New clsAStarEngine.structPathStep With {
-                                  .nextWayPoint = game.AirPort.getNavigationPointById(singlePathStep.navigationPointID),
-                                  .taxiwayToWayPoint = game.AirPort.getNavigationPathById(singlePathStep.navigationPathID)
-                                  }
+                            .nextWayPoint = game.AirPort.getNavigationPointById(singlePathStep.navigationPointID),
+                            .taxiwayToWayPoint = game.AirPort.getNavigationPathById(singlePathStep.navigationPathID)
+                            }
                         planeToChange.ground_taxiPath.Add(newPathStep)
-                    Next
+                        Next
+                    End If
                 End If
-            End If
 
                 If (planeToChange.ground_terminal Is Nothing Xor singleplane.ground_terminalID Is Nothing) Or (Not planeToChange.ground_terminal Is Nothing AndAlso Not (planeToChange.ground_terminal.objectID = singleplane.ground_terminalID)) Then planeToChange.ground_terminal = game.AirPort.getNavigationPointById(singleplane.ground_terminalID)
             If (planeToChange.tower_assignedLandingPoint Is Nothing Xor singleplane.tower_assignedLandingPointID Is Nothing) Or (Not planeToChange.tower_assignedLandingPoint Is Nothing AndAlso Not (planeToChange.tower_assignedLandingPoint.objectID = singleplane.tower_assignedLandingPointID)) Then planeToChange.tower_assignedLandingPoint = game.AirPort.getNavigationPointById(singleplane.tower_assignedLandingPointID)

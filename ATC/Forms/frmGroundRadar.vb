@@ -526,7 +526,12 @@ Public Class frmGroundRadar
             'Me.Game.selectedPlane.ground_taxiPath.CopyTo(allPathSteps)
 
             'create a new list using the old list as basis
-            Dim allPathSteps As New List(Of clsAStarEngine.structPathStep)(Me.Game.selectedPlane.ground_taxiPath)
+            'lock the groundpath object to avoid thread collision
+            Dim allPathSteps As List(Of clsAStarEngine.structPathStep)
+            SyncLock Me.Game.selectedPlane.ground_taxiPath
+                allPathSteps = New List(Of clsAStarEngine.structPathStep)(Me.Game.selectedPlane.ground_taxiPath)
+            End SyncLock
+
 
 
             For Each singlePathWay As clsAStarEngine.structPathStep In allPathSteps
