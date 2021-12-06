@@ -1458,10 +1458,12 @@ Public Class frmAllControl
         Dim timeStamp As DateTime = Now
         Dim oldtime As DateTime = Me.lblMillisecondsBetweenTicks.Tag
         Dim milliseconds As Long = (timeStamp - oldtime).TotalMilliseconds
-        Me.lblMillisecondsBetweenTicks.Text = milliseconds \ 1 & " ms"
-        Me.lblMillisecondsBetweenTicks.Tag = timeStamp
-        Me.lblFPS.Text = (1000 / milliseconds) \ 1 & " FPS"
-        'Me.lblMillisecondsBetweenTicks.Text = milliseconds & " ms"
+        If milliseconds > 0 Then
+            Me.lblMillisecondsBetweenTicks.Text = milliseconds \ 1 & " ms"
+            Me.lblMillisecondsBetweenTicks.Tag = timeStamp
+            Me.lblFPS.Text = (1000 / milliseconds) \ 1 & " FPS"
+            'Me.lblMillisecondsBetweenTicks.Text = milliseconds & " ms"
+        End If
     End Sub
 
 End Class
