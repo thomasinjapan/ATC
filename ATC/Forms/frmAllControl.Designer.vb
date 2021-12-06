@@ -280,7 +280,9 @@ Partial Class frmAllControl
         Me.trkAppDepHeading.Minimum = 1
         Me.trkAppDepHeading.Name = "trkAppDepHeading"
         Me.trkAppDepHeading.Size = New System.Drawing.Size(234, 45)
+        Me.trkAppDepHeading.SmallChange = 10
         Me.trkAppDepHeading.TabIndex = 15
+        Me.trkAppDepHeading.TickFrequency = 10
         Me.trkAppDepHeading.TickStyle = System.Windows.Forms.TickStyle.Both
         Me.trkAppDepHeading.Value = 360
         '
@@ -670,7 +672,9 @@ Partial Class frmAllControl
         Me.trkTowerHeading.Minimum = 1
         Me.trkTowerHeading.Name = "trkTowerHeading"
         Me.trkTowerHeading.Size = New System.Drawing.Size(175, 45)
+        Me.trkTowerHeading.SmallChange = 10
         Me.trkTowerHeading.TabIndex = 29
+        Me.trkTowerHeading.TickFrequency = 10
         Me.trkTowerHeading.TickStyle = System.Windows.Forms.TickStyle.Both
         Me.trkTowerHeading.Value = 360
         '
