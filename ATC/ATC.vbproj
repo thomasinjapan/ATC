@@ -25,9 +25,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://onedrive.live.com/%3fid=3D49B563ABA917AD%2521103393&amp;cid=3D49B563ABA917AD/</InstallUrl>
+    <InstallUrl>https://1drv.ms/f/s!Aq0XqatjtUk9hqdhYJYBO1uY6bmy7A%3fe=481q3x/</InstallUrl>
     <MinimumRequiredVersion>0.2.9.0</MinimumRequiredVersion>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>0.2.9.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
