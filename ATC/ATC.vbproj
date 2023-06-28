@@ -27,7 +27,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://onedrive.live.com/%3fid=3D49B563ABA917AD%2521103393&amp;cid=3D49B563ABA917AD/</InstallUrl>
     <MinimumRequiredVersion>0.2.9.0</MinimumRequiredVersion>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>0.2.9.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
