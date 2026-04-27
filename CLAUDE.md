@@ -1,4 +1,8 @@
-# CLAUDE.md — ATC Simulation Game
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## ATC Simulation Game
 
 ## Project Overview
 
@@ -138,7 +142,7 @@ Forms subscribe to `clsGame` events via `AddHandler` after creating the game ins
 
 - **Server mode**: `New clsGame(filePath)` → `isServer = True`; starts `TcpListener`, sends airport data on connect
 - **Client mode**: `New clsGame()` → `isclient = True`; connects via `TcpClient`, receives airport data
-- **Serialization**: `BinaryFormatter` (legacy — do not change; all transmitted types are marked `<Serializable>`)
+- **Serialization**: `BinaryFormatter` — **do not replace or refactor**; every type sent over the wire is `<Serializable>` and the binary format is the live protocol between server and clients
 - **Keyframes** (`enumNetworkMessageType.keyframe`): server → clients, contains `structNetworkKeyframeMessagefromServer` (plane skeletons, wind, open runway IDs)
 - **Commands** (`structCommandInfo`): client → server, targets a plane by callsign string
 
@@ -196,6 +200,8 @@ Additional conventions:
 - **XML doc comments** (`''' <summary>...</summary>`) on utility functions in modules
 - **`<Serializable>`** attribute required on all classes/structures transmitted over the network
 - **`WithEvents`** on fields that raise events; event handlers named `ObjectName_EventName`
+
+**`Option Strict Off` means implicit type coercions compile silently.** Be deliberate: e.g., assigning a `Double` to an `Integer` field truncates without warning. When in doubt, cast explicitly (`CInt`, `CDbl`, etc.).
 
 ---
 
