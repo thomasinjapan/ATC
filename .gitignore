@@ -349,3 +349,4 @@ healthchecksdb
 
 # Obsidian
 /.obsidian
+/.claude/settings.local.json
