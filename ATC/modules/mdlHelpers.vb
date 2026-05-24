@@ -40,14 +40,17 @@ Module mdlHelpers
     ''' <param name="y2">y coordinate of point 2</param>
     ''' <returns>distance between as a positive value</returns>
     Friend Function diffBetweenPoints2D(ByVal x1 As Double, ByVal y1 As Double, ByVal x2 As Double, ByVal y2 As Double) As Double
-        Dim result As Double = Math.Sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2)
-
+        Dim dx As Double = x2 - x1
+        Dim dy As Double = y2 - y1
+        Dim result As Double = Math.Sqrt(dx * dx + dy * dy)
         Return result
     End Function
 
     Friend Function diffBetweenPoints3D(ByVal x1 As Double, ByVal y1 As Double, ByVal z1 As Double, ByVal x2 As Double, ByVal y2 As Double, ByVal z2 As Double) As Double
-        Dim result As Double = Math.Sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2 + (z2 - z1) ^ 2)
-
+        Dim dx As Double = x2 - x1
+        Dim dy As Double = y2 - y1
+        Dim dz As Double = z2 - z1
+        Dim result As Double = Math.Sqrt(dx * dx + dy * dy + dz * dz)
         Return result
     End Function
 End Module

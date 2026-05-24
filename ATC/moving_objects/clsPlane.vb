@@ -317,10 +317,14 @@ Public Class clsPlane
 
     'plane information
     Friend Property modelInfo As structPlaneTypeInfo
+    Private _collisionRadius As clsDistanceCollection = Nothing
 
     Friend ReadOnly Property collisionRadius As clsDistanceCollection
         Get
-            Return New clsDistanceCollection(Me.modelInfo.length.meters / 2, clsDistanceCollection.enumDistanceUnits.meters)
+            If _collisionRadius Is Nothing Then
+                _collisionRadius = New clsDistanceCollection(Me.modelInfo.length.meters / 2, clsDistanceCollection.enumDistanceUnits.meters)
+            End If
+            Return _collisionRadius
         End Get
     End Property
 
