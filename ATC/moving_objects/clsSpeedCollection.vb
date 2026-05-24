@@ -18,10 +18,10 @@ Public Class clsSpeedCollection
     End Property
     Friend Property inKmPerSeconds
         Get
-            Return Me.inKmPerHour / 3600
+            Return Me.knots * 0.000514444
         End Get
         Set(value)
-            Me.inKmPerHour = value * 3600
+            Me.knots = value / 0.000514444
         End Set
     End Property
 
@@ -36,10 +36,10 @@ Public Class clsSpeedCollection
 
     Friend Property inMetersPerSecond As Double
         Get
-            Return Me.inMetersPerHour / 3600
+            Return Me.knots * 0.514444
         End Get
         Set(value As Double)
-            Me.inMetersPerHour = value * 3600
+            Me.knots = value / 0.514444
         End Set
     End Property
 
@@ -53,19 +53,19 @@ Public Class clsSpeedCollection
     End Property
     Friend Property inMilesPerSecond As Double
         Get
-            Return Me.inMilesPerHour / 3600
+            Return Me.knots * 0.000319661
         End Get
         Set(value As Double)
-            Me.inMilesPerHour = value * 3600
+            Me.knots = value / 0.000319661
         End Set
     End Property
 
     Friend Property inFeetPerHour As Double
         Get
-            Return Me.inFeetPerSecond / 3600
+            Return Me.knots * 0.000468836
         End Get
         Set(value As Double)
-            Me.inFeetPerSecond = value * 3600
+            Me.knots = value / 0.000468836
         End Set
     End Property
     Friend Property inFeetPerSecond As Double

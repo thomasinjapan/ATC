@@ -317,19 +317,27 @@ Public Class clsPlane
 
     'plane information
     Friend Property modelInfo As structPlaneTypeInfo
+    Private _collisionRadius As clsDistanceCollection = Nothing
 
     Friend ReadOnly Property collisionRadius As clsDistanceCollection
         Get
-            Return New clsDistanceCollection(Me.modelInfo.length.meters / 2, clsDistanceCollection.enumDistanceUnits.meters)
+            If _collisionRadius Is Nothing Then
+                _collisionRadius = New clsDistanceCollection(Me.modelInfo.length.meters / 2, clsDistanceCollection.enumDistanceUnits.meters)
+            End If
+            Return _collisionRadius
         End Get
     End Property
 
     Friend ReadOnly Property cockpitLocation As clsLocation
         Get
+            Dim angleRad As Double = Me.pos_direction * Math.PI / 180
+            Dim sinAngle As Double = Math.Sin(angleRad)
+            Dim cosAngle As Double = Math.Cos(angleRad)
+            Dim radius As Double = Me.collisionRadius.meters
+
             Dim result As New clsLocation()
-            'be sure not to hand over the pointer but the vaulues
-            result.X.meters = Me.pos_X.meters + Me.collisionRadius.meters * Math.Sin(Me.pos_direction * Math.PI / 180)
-            result.Y.meters = Me.pos_Y.meters - Me.collisionRadius.meters * Math.Cos(Me.pos_direction * Math.PI / 180)
+            result.X.meters = Me.pos_X.meters + radius * sinAngle
+            result.Y.meters = Me.pos_Y.meters - radius * cosAngle
 
             Return result
         End Get
@@ -337,10 +345,14 @@ Public Class clsPlane
 
     Friend ReadOnly Property aftLocation As clsLocation
         Get
+            Dim angleRad As Double = Me.pos_direction * Math.PI / 180
+            Dim sinAngle As Double = Math.Sin(angleRad)
+            Dim cosAngle As Double = Math.Cos(angleRad)
+            Dim radius As Double = Me.collisionRadius.meters
+
             Dim result As New clsLocation()
-            'be sure not to hand over the pointer but the vaulues
-            result.X.meters = Me.pos_X.meters - Me.collisionRadius.meters * Math.Sin(Me.pos_direction * Math.PI / 180)
-            result.Y.meters = Me.pos_Y.meters + Me.collisionRadius.meters * Math.Cos(Me.pos_direction * Math.PI / 180)
+            result.X.meters = Me.pos_X.meters - radius * sinAngle
+            result.Y.meters = Me.pos_Y.meters + radius * cosAngle
 
             Return result
         End Get
