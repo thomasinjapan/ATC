@@ -62,10 +62,10 @@ Public Class clsSpeedCollection
 
     Friend Property inFeetPerHour As Double
         Get
-            Return Me.knots * 0.000468836
+            Return Me.knots * 6076.116
         End Get
         Set(value As Double)
-            Me.knots = value / 0.000468836
+            Me.knots = value / 6076.116
         End Set
     End Property
     Friend Property inFeetPerSecond As Double
