@@ -8,13 +8,20 @@ A Windows desktop game where you manage aircraft arrivals, departures, and groun
 
 ## Build
 
+**Requirements**: Windows, [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
+
+**Visual Studio** (recommended): open `ATC.sln`, then press `Ctrl+Shift+B` to build or `F5` to build and run.
+
+**Command line** (MSBuild):
 ```
-msbuild ATC.sln /p:Configuration=Debug /p:Platform="Any CPU"
+msbuild ATC.sln /p:Configuration=Release /p:Platform="Any CPU"
 ```
 
-Output: `ATC/bin/Debug/ATC.exe`
+Output: `ATC/bin/Release/ATC.exe`
 
-Requires .NET Framework 4.7.2 and Windows. Open `ATC.sln` in Visual Studio for the recommended IDE experience.
+> MSBuild ships with Visual Studio. On GitHub Actions the [`microsoft/setup-msbuild`](https://github.com/microsoft/setup-msbuild) action locates it automatically — see [`.github/workflows/build.yml`](.github/workflows/build.yml).
+
+[![Build](https://github.com/thomasinjapan/ATC/actions/workflows/build.yml/badge.svg)](https://github.com/thomasinjapan/ATC/actions/workflows/build.yml)
 
 ---
 
